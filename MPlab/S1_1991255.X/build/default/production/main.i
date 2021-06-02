@@ -9258,6 +9258,7 @@ void main(void)
 
     const int label =1;
     int carnet;
+    char printchar[10];
 
 
 
@@ -9287,14 +9288,15 @@ void main(void)
     int SumPrime = 0;
 
 
-
+    sprintf(printchar,"%d",carnet);
     LCDGoto(0,0);
-    LCDPutStr("Calculando...");
+    LCDPutStr("Carnet:");
+    LCDGoto(0,1);
+    LCDPutStr(printchar);
 
 
 
     int i,number=2, prime;
-    char printchar[10];
 
 
 
@@ -9354,7 +9356,7 @@ void main(void)
     LCDPutStr(printchar);
     _delay((unsigned long)((5000)*(500000/4000.0)));
     LCDClear();
-# 150 "main.c"
+# 152 "main.c"
     LCDGoto(0,0);
     LCDPutStr("Binary=");
     long Binary = 0;

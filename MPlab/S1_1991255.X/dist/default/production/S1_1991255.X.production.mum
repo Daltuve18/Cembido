@@ -1,6 +1,6 @@
 
 Memory Summary:
-    Program space        used   A22h (  2594) of  4000h words   ( 15.8%)
+    Program space        used   A3Ah (  2618) of  4000h words   ( 16.0%)
     Data space           used    CBh (   203) of   800h bytes   (  9.9%)
     EEPROM space         None available
     Configuration bits   used     2h (     2) of     2h words   (100.0%)

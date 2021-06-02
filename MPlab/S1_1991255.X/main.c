@@ -40,6 +40,7 @@ void main(void)
     
     const int label =1;// Escoja el número de la persona a utilizar
     int carnet; 
+    char printchar[10];
     
     // Elección de carnet a calcular
     
@@ -69,14 +70,15 @@ void main(void)
     int SumPrime = 0; // variable en la que debe arrojarse la suma de números primos
     /*Your code here*/
     // Impresión en pantalla para el apartado 1
-    
+    sprintf(printchar,"%d",carnet);
     LCDGoto(0,0);
-    LCDPutStr("Calculando...");
+    LCDPutStr("Carnet:");
+    LCDGoto(0,1);
+    LCDPutStr(printchar);
     
     //Declaración de variables
     
     int i,number=2, prime;
-    char printchar[10];
     
     //Cálculo de suma de números primos
     
