@@ -51,9 +51,9 @@
 [v _LCDGoto LCDGoto `(v  1 e 1 0 ]
 "159
 [v _LCDClear LCDClear `(v  1 e 1 0 ]
-"58 C:\Users\davfe\Documents\GitHub\Cembido\MPlab\S1_1991255.X\main.c
+"18 C:\Users\davfe\Documents\GitHub\Cembido\MPlab\S1_1991255.X\main.c
 [v _sumdigits sumdigits `(i  1 e 2 0 ]
-"71
+"32
 [v _main main `(v  1 e 1 0 ]
 "50 C:\Users\davfe\Documents\GitHub\Cembido\MPlab\S1_1991255.X\mcc_generated_files/mcc.c
 [v _SYSTEM_Initialize SYSTEM_Initialize `(v  1 e 1 0 ]
@@ -158,38 +158,39 @@
 [v _dbuf dbuf `[32]uc  1 s 32 dbuf ]
 "69
 [v _nout nout `i  1 s 2 nout ]
-"71 C:\Users\davfe\Documents\GitHub\Cembido\MPlab\S1_1991255.X\main.c
+"32 C:\Users\davfe\Documents\GitHub\Cembido\MPlab\S1_1991255.X\main.c
 [v _main main `(v  1 e 1 0 ]
 {
-"115
-[v main@printchar printchar `[20]uc  1 a 20 15 ]
-"179
-[v main@bin bin `[4]i  1 a 8 39 ]
-"176
-[v main@Binary Binary `l  1 a 4 35 ]
-"149
-[v main@SumDigits SumDigits `i  1 a 2 57 ]
+"79
+[v main@printchar printchar `[10]uc  1 a 10 15 ]
+"157
+[v main@bin bin `[4]i  1 a 8 29 ]
+"150
+[v main@Binary Binary `l  1 a 4 25 ]
 "114
-[v main@number number `i  1 a 2 55 ]
-[v main@i i `i  1 a 2 53 ]
-[v main@SumPrime SumPrime `i  1 a 2 51 ]
-"88
-[v main@carnet carnet `i  1 a 2 49 ]
-"114
-[v main@prime prime `i  1 a 2 47 ]
-"87
+[v main@SumDigits SumDigits `i  1 a 2 47 ]
+"78
+[v main@number number `i  1 a 2 45 ]
+[v main@i i `i  1 a 2 43 ]
+"69
+[v main@SumPrime SumPrime `i  1 a 2 41 ]
+"42
+[v main@carnet carnet `i  1 a 2 39 ]
+"78
+[v main@prime prime `i  1 a 2 37 ]
+"41
 [v main@label label `DCi  1 s 2 label ]
-"197
+"178
 } 0
-"58
+"18
 [v _sumdigits sumdigits `(i  1 e 2 0 ]
 {
-"60
+"20
 [v sumdigits@SumDigits SumDigits `i  1 a 2 2 ]
 [v sumdigits@digit digit `i  1 a 2 0 ]
-"58
+"18
 [v sumdigits@number number `i  1 p 2 9 ]
-"68
+"28
 } 0
 "5 C:\Program Files\Microchip\xc8\v2.31\pic\sources\c99\common\awmod.c
 [v ___awmod __awmod `(i  1 e 2 0 ]

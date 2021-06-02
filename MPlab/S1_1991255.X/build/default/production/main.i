@@ -7,7 +7,8 @@
 # 1 "C:/Program Files/Microchip/MPLABX/v5.45/packs/Microchip/PIC12-16F1xxx_DFP/1.2.63/xc8\\pic\\include\\language_support.h" 1 3
 # 2 "<built-in>" 2
 # 1 "main.c" 2
-# 43 "main.c"
+
+
 # 1 "C:\\Program Files\\Microchip\\xc8\\v2.31\\pic\\include\\c99\\stdio.h" 1 3
 
 
@@ -165,7 +166,7 @@ char *ctermid(char *);
 
 
 char *tempnam(const char *, const char *);
-# 43 "main.c" 2
+# 3 "main.c" 2
 
 # 1 "./mcc_generated_files/mcc.h" 1
 # 49 "./mcc_generated_files/mcc.h"
@@ -9201,7 +9202,7 @@ void SYSTEM_Initialize(void);
 void OSCILLATOR_Initialize(void);
 # 94 "./mcc_generated_files/mcc.h"
 void WDT_Initialize(void);
-# 44 "main.c" 2
+# 4 "main.c" 2
 
 # 1 "./lcd.h" 1
 # 120 "./lcd.h"
@@ -9218,7 +9219,7 @@ void WDT_Initialize(void);
   void LCDGoto(uint8_t pos, uint8_t ln);
 # 232 "./lcd.h"
   void LCDClear(void);
-# 45 "main.c" 2
+# 5 "main.c" 2
 
 
 
@@ -9245,17 +9246,20 @@ int sumdigits(int number)
 }
 
 
+
 void main(void)
 {
 
+
     SYSTEM_Initialize();
     LCD_Initialize();
-# 84 "main.c"
-    LCDGoto(0,0);
-    LCDPutStr("sumPrime=");
 
-    const int label = 1;
+
+
+    const int label =1;
     int carnet;
+
+
 
     switch (label)
     {
@@ -9280,9 +9284,20 @@ void main(void)
 
 
 
+    int SumPrime = 0;
 
-    int SumPrime = 0, i,number=2, prime;
-    char printchar[20];
+
+
+    LCDGoto(0,0);
+    LCDPutStr("sumPrime=");
+
+
+
+    int i,number=2, prime;
+    char printchar[10];
+
+
+
     while(number<=carnet)
     {
       prime = 1;
@@ -9300,32 +9315,51 @@ void main(void)
       }
       ++number;
     }
+
+
+
     sprintf(printchar,"%d",SumPrime);
     LCDGoto(0,1);
     LCDPutStr(printchar);
-    _delay((unsigned long)((2000)*(500000/4000.0)));
+    _delay((unsigned long)((3000)*(500000/4000.0)));
     LCDClear();
-# 149 "main.c"
+
+
+
+
+
+
     int SumDigits = 0;
 
-    number=SumPrime;
+
+
     LCDGoto(0,0);
     LCDPutStr("sumDigits=");
 
+
+
+    number=SumPrime;
     do
     {
       SumDigits = sumdigits(number);
       number = SumDigits;
     } while (SumDigits>10);
+
+
+
     sprintf(printchar,"%d",SumDigits);
     LCDGoto(0,1);
     LCDPutStr(printchar);
-    _delay((unsigned long)((2000)*(500000/4000.0)));
+    _delay((unsigned long)((3000)*(500000/4000.0)));
     LCDClear();
-# 174 "main.c"
+# 148 "main.c"
     LCDGoto(0,0);
     LCDPutStr("Binary=");
     long Binary = 0;
+
+
+
+
 
 
     int bin[4]={0,0,0,0};
@@ -9336,12 +9370,15 @@ void main(void)
         SumDigits = SumDigits/2;
         i++;
       }
-      Binary= (1000*bin[3])+(100*bin[2])+(10*bin[1])+(1*bin[0]);
+    Binary= (1000*bin[3])+(100*bin[2])+(10*bin[1])+(1*bin[0]);
+
+
+
 
     sprintf(printchar,"%d",Binary);
     LCDGoto(0,1);
     LCDPutStr(printchar);
-    _delay((unsigned long)((2000)*(500000/4000.0)));
+
     while (1)
     {
 

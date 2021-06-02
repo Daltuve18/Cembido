@@ -879,154 +879,148 @@ Version 4.0 HI-TECH Software Intermediate Code
 "15211
 [; ;C:/Program Files/Microchip/MPLABX/v5.45/packs/Microchip/PIC12-16F1xxx_DFP/1.2.63/xc8\pic\include\proc\pic16lf1718.h: 15211: __asm("TOSH equ 0FEFh");
 [; <" TOSH equ 0FEFh ;# ">
-"50 main.c
-[; ;main.c: 50: int last3digitsCarnet1 = 255;
+"10 main.c
+[; ;main.c: 10: int last3digitsCarnet1 = 255;
 [v _last3digitsCarnet1 `i ~T0 @X0 1 e ]
 [i _last3digitsCarnet1
 -> 255 `i
 ]
-"53
-[; ;main.c: 53: int last3digitsCarnet2 = 493;
+"13
+[; ;main.c: 13: int last3digitsCarnet2 = 493;
 [v _last3digitsCarnet2 `i ~T0 @X0 1 e ]
 [i _last3digitsCarnet2
 -> 493 `i
 ]
-"55
-[; ;main.c: 55: int last3digitsCarnet3 = 420;
+"15
+[; ;main.c: 15: int last3digitsCarnet3 = 420;
 [v _last3digitsCarnet3 `i ~T0 @X0 1 e ]
 [i _last3digitsCarnet3
 -> 420 `i
 ]
-"58
-[; ;main.c: 58: int sumdigits(int number)
+"18
+[; ;main.c: 18: int sumdigits(int number)
 [v _sumdigits `(i ~T0 @X0 1 ef1`i ]
-"59
-[; ;main.c: 59: {
+"19
+[; ;main.c: 19: {
 {
 [e :U _sumdigits ]
-"58
-[; ;main.c: 58: int sumdigits(int number)
+"18
+[; ;main.c: 18: int sumdigits(int number)
 [v _number `i ~T0 @X0 1 r1 ]
-"59
-[; ;main.c: 59: {
+"19
+[; ;main.c: 19: {
 [f ]
-"60
-[; ;main.c: 60:   int SumDigits = 0,digit;
+"20
+[; ;main.c: 20:   int SumDigits = 0,digit;
 [v _SumDigits `i ~T0 @X0 1 a ]
 [e = _SumDigits -> 0 `i ]
 [v _digit `i ~T0 @X0 1 a ]
-"61
-[; ;main.c: 61:   while (number>0)
+"21
+[; ;main.c: 21:   while (number>0)
 [e $U 737  ]
 [e :U 738 ]
-"62
-[; ;main.c: 62:   {
+"22
+[; ;main.c: 22:   {
 {
-"63
-[; ;main.c: 63:     digit = number%10;
+"23
+[; ;main.c: 23:     digit = number%10;
 [e = _digit % _number -> 10 `i ]
-"64
-[; ;main.c: 64:     SumDigits = SumDigits + digit;
+"24
+[; ;main.c: 24:     SumDigits = SumDigits + digit;
 [e = _SumDigits + _SumDigits _digit ]
-"65
-[; ;main.c: 65:     number = number /10;
+"25
+[; ;main.c: 25:     number = number /10;
 [e = _number / _number -> 10 `i ]
-"66
-[; ;main.c: 66:   }
+"26
+[; ;main.c: 26:   }
 }
 [e :U 737 ]
-"61
-[; ;main.c: 61:   while (number>0)
+"21
+[; ;main.c: 21:   while (number>0)
 [e $ > _number -> 0 `i 738  ]
 [e :U 739 ]
-"67
-[; ;main.c: 67:   return SumDigits;
+"27
+[; ;main.c: 27:   return SumDigits;
 [e ) _SumDigits ]
 [e $UE 736  ]
-"68
-[; ;main.c: 68: }
+"28
+[; ;main.c: 28: }
 [e :UE 736 ]
 }
 [v $root$_main `(v ~T0 @X0 0 e ]
-"71
-[; ;main.c: 71: void main(void)
+"32
+[; ;main.c: 32: void main(void)
 [v _main `(v ~T0 @X0 1 ef ]
-"72
-[; ;main.c: 72: {
+"33
+[; ;main.c: 33: {
 {
 [e :U _main ]
 [f ]
-"74
-[; ;main.c: 74:     SYSTEM_Initialize();
+"36
+[; ;main.c: 36:     SYSTEM_Initialize();
 [e ( _SYSTEM_Initialize ..  ]
-"75
-[; ;main.c: 75:     LCD_Initialize();
+"37
+[; ;main.c: 37:     LCD_Initialize();
 [e ( _LCD_Initialize ..  ]
-"84
-[; ;main.c: 84:     LCDGoto(0,0);
-[e ( _LCDGoto (2 , -> -> 0 `i `uc -> -> 0 `i `uc ]
-"85
-[; ;main.c: 85:     LCDPutStr("sumPrime=");
-[e ( _LCDPutStr (1 :s 1C ]
-"87
-[; ;main.c: 87:     const int label = 1;
+"41
+[; ;main.c: 41:     const int label =1;
 [v F5601 `Ci ~T0 @X0 1 s label ]
 [i F5601
 -> 1 `i
 ]
-"88
-[; ;main.c: 88:     int carnet;
+"42
+[; ;main.c: 42:     int carnet;
 [v _carnet `i ~T0 @X0 1 a ]
-"90
-[; ;main.c: 90:     switch (label)
+"46
+[; ;main.c: 46:     switch (label)
 [e $U 742  ]
-"91
-[; ;main.c: 91:     {
+"47
+[; ;main.c: 47:     {
 {
-"92
-[; ;main.c: 92:         case 1:
+"48
+[; ;main.c: 48:         case 1:
 [e :U 743 ]
-"93
-[; ;main.c: 93:         {
+"49
+[; ;main.c: 49:         {
 {
-"94
-[; ;main.c: 94:             carnet = last3digitsCarnet1;
+"50
+[; ;main.c: 50:             carnet = last3digitsCarnet1;
 [e = _carnet _last3digitsCarnet1 ]
-"95
-[; ;main.c: 95:             break;
+"51
+[; ;main.c: 51:             break;
 [e $U 741  ]
-"96
-[; ;main.c: 96:         }
+"52
+[; ;main.c: 52:         }
 }
-"97
-[; ;main.c: 97:         case 2:
+"53
+[; ;main.c: 53:         case 2:
 [e :U 744 ]
-"98
-[; ;main.c: 98:         {
+"54
+[; ;main.c: 54:         {
 {
-"99
-[; ;main.c: 99:             carnet = last3digitsCarnet2;
+"55
+[; ;main.c: 55:             carnet = last3digitsCarnet2;
 [e = _carnet _last3digitsCarnet2 ]
-"100
-[; ;main.c: 100:             break;
+"56
+[; ;main.c: 56:             break;
 [e $U 741  ]
-"101
-[; ;main.c: 101:         }
+"57
+[; ;main.c: 57:         }
 }
-"102
-[; ;main.c: 102:         default:
+"58
+[; ;main.c: 58:         default:
 [e :U 745 ]
-"103
-[; ;main.c: 103:         {
+"59
+[; ;main.c: 59:         {
 {
-"104
-[; ;main.c: 104:             carnet = last3digitsCarnet3;
+"60
+[; ;main.c: 60:             carnet = last3digitsCarnet3;
 [e = _carnet _last3digitsCarnet3 ]
-"105
-[; ;main.c: 105:         }
+"61
+[; ;main.c: 61:         }
 }
-"106
-[; ;main.c: 106:     }
+"62
+[; ;main.c: 62:     }
 }
 [e $U 741  ]
 [e :U 742 ]
@@ -1034,159 +1028,167 @@ Version 4.0 HI-TECH Software Intermediate Code
  , $ -> 2 `i 744
  745 ]
 [e :U 741 ]
-"114
-[; ;main.c: 114:     int SumPrime = 0, i,number=2, prime;
+"69
+[; ;main.c: 69:     int SumPrime = 0;
 [v _SumPrime `i ~T0 @X0 1 a ]
 [e = _SumPrime -> 0 `i ]
+"73
+[; ;main.c: 73:     LCDGoto(0,0);
+[e ( _LCDGoto (2 , -> -> 0 `i `uc -> -> 0 `i `uc ]
+"74
+[; ;main.c: 74:     LCDPutStr("sumPrime=");
+[e ( _LCDPutStr (1 :s 1C ]
+"78
+[; ;main.c: 78:     int i,number=2, prime;
 [v _i `i ~T0 @X0 1 a ]
 [v _number `i ~T0 @X0 1 a ]
 [e = _number -> 2 `i ]
 [v _prime `i ~T0 @X0 1 a ]
-"115
-[; ;main.c: 115:     char printchar[20];
-[v _printchar `uc ~T0 @X0 -> 20 `i a ]
-"116
-[; ;main.c: 116:     while(number<=carnet)
+"79
+[; ;main.c: 79:     char printchar[10];
+[v _printchar `uc ~T0 @X0 -> 10 `i a ]
+"83
+[; ;main.c: 83:     while(number<=carnet)
 [e $U 746  ]
 [e :U 747 ]
-"117
-[; ;main.c: 117:     {
+"84
+[; ;main.c: 84:     {
 {
-"118
-[; ;main.c: 118:       prime = 1;
+"85
+[; ;main.c: 85:       prime = 1;
 [e = _prime -> 1 `i ]
-"119
-[; ;main.c: 119:       for(i=2;i<=number/2;i++)
+"86
+[; ;main.c: 86:       for(i=2;i<=number/2;i++)
 {
 [e = _i -> 2 `i ]
 [e $U 752  ]
 [e :U 749 ]
-"120
-[; ;main.c: 120:       {
+"87
+[; ;main.c: 87:       {
 {
-"121
-[; ;main.c: 121:         if(number%i==0)
+"88
+[; ;main.c: 88:         if(number%i==0)
 [e $ ! == % _number _i -> 0 `i 753  ]
-"122
-[; ;main.c: 122:         {
+"89
+[; ;main.c: 89:         {
 {
-"123
-[; ;main.c: 123:           prime = 0;
+"90
+[; ;main.c: 90:           prime = 0;
 [e = _prime -> 0 `i ]
-"124
-[; ;main.c: 124:           break;
+"91
+[; ;main.c: 91:           break;
 [e $U 750  ]
-"125
-[; ;main.c: 125:         }
+"92
+[; ;main.c: 92:         }
 }
 [e :U 753 ]
-"126
-[; ;main.c: 126:       }
+"93
+[; ;main.c: 93:       }
 }
 [e ++ _i -> 1 `i ]
 [e :U 752 ]
 [e $ <= _i / _number -> 2 `i 749  ]
 [e :U 750 ]
 }
-"127
-[; ;main.c: 127:       if(prime==1)
+"94
+[; ;main.c: 94:       if(prime==1)
 [e $ ! == _prime -> 1 `i 754  ]
-"128
-[; ;main.c: 128:       {
+"95
+[; ;main.c: 95:       {
 {
-"129
-[; ;main.c: 129:         SumPrime= SumPrime+number;
+"96
+[; ;main.c: 96:         SumPrime= SumPrime+number;
 [e = _SumPrime + _SumPrime _number ]
-"130
-[; ;main.c: 130:       }
+"97
+[; ;main.c: 97:       }
 }
 [e :U 754 ]
-"131
-[; ;main.c: 131:       ++number;
+"98
+[; ;main.c: 98:       ++number;
 [e =+ _number -> 1 `i ]
-"132
-[; ;main.c: 132:     }
+"99
+[; ;main.c: 99:     }
 }
 [e :U 746 ]
-"116
-[; ;main.c: 116:     while(number<=carnet)
+"83
+[; ;main.c: 83:     while(number<=carnet)
 [e $ <= _number _carnet 747  ]
 [e :U 748 ]
-"133
-[; ;main.c: 133:     sprintf(printchar,"%d",SumPrime);
+"103
+[; ;main.c: 103:     sprintf(printchar,"%d",SumPrime);
 [e ( _sprintf (1 , (. , &U _printchar :s 2C _SumPrime ]
-"134
-[; ;main.c: 134:     LCDGoto(0,1);
+"104
+[; ;main.c: 104:     LCDGoto(0,1);
 [e ( _LCDGoto (2 , -> -> 0 `i `uc -> -> 1 `i `uc ]
-"135
-[; ;main.c: 135:     LCDPutStr(printchar);
+"105
+[; ;main.c: 105:     LCDPutStr(printchar);
 [e ( _LCDPutStr (1 -> &U _printchar `*Cuc ]
-"136
-[; ;main.c: 136:     _delay((unsigned long)((2000)*(500000/4000.0)));
-[e ( __delay (1 -> * -> -> 2000 `i `d / -> -> 500000 `l `d .4000.0 `ul ]
-"137
-[; ;main.c: 137:     LCDClear();
+"106
+[; ;main.c: 106:     _delay((unsigned long)((3000)*(500000/4000.0)));
+[e ( __delay (1 -> * -> -> 3000 `i `d / -> -> 500000 `l `d .4000.0 `ul ]
+"107
+[; ;main.c: 107:     LCDClear();
 [e ( _LCDClear ..  ]
-"149
-[; ;main.c: 149:     int SumDigits = 0;
+"114
+[; ;main.c: 114:     int SumDigits = 0;
 [v _SumDigits `i ~T0 @X0 1 a ]
 [e = _SumDigits -> 0 `i ]
-"151
-[; ;main.c: 151:     number=SumPrime;
-[e = _number _SumPrime ]
-"152
-[; ;main.c: 152:     LCDGoto(0,0);
+"118
+[; ;main.c: 118:     LCDGoto(0,0);
 [e ( _LCDGoto (2 , -> -> 0 `i `uc -> -> 0 `i `uc ]
-"153
-[; ;main.c: 153:     LCDPutStr("sumDigits=");
+"119
+[; ;main.c: 119:     LCDPutStr("sumDigits=");
 [e ( _LCDPutStr (1 :s 3C ]
-"155
-[; ;main.c: 155:     do
+"123
+[; ;main.c: 123:     number=SumPrime;
+[e = _number _SumPrime ]
+"124
+[; ;main.c: 124:     do
 [e :U 757 ]
-"156
-[; ;main.c: 156:     {
+"125
+[; ;main.c: 125:     {
 {
-"157
-[; ;main.c: 157:       SumDigits = sumdigits(number);
+"126
+[; ;main.c: 126:       SumDigits = sumdigits(number);
 [e = _SumDigits ( _sumdigits (1 _number ]
-"158
-[; ;main.c: 158:       number = SumDigits;
+"127
+[; ;main.c: 127:       number = SumDigits;
 [e = _number _SumDigits ]
-"159
-[; ;main.c: 159:     } while (SumDigits>10);
+"128
+[; ;main.c: 128:     } while (SumDigits>10);
 }
 [e $ > _SumDigits -> 10 `i 757  ]
 [e :U 756 ]
-"160
-[; ;main.c: 160:     sprintf(printchar,"%d",SumDigits);
+"132
+[; ;main.c: 132:     sprintf(printchar,"%d",SumDigits);
 [e ( _sprintf (1 , (. , &U _printchar :s 4C _SumDigits ]
-"161
-[; ;main.c: 161:     LCDGoto(0,1);
+"133
+[; ;main.c: 133:     LCDGoto(0,1);
 [e ( _LCDGoto (2 , -> -> 0 `i `uc -> -> 1 `i `uc ]
-"162
-[; ;main.c: 162:     LCDPutStr(printchar);
+"134
+[; ;main.c: 134:     LCDPutStr(printchar);
 [e ( _LCDPutStr (1 -> &U _printchar `*Cuc ]
-"163
-[; ;main.c: 163:     _delay((unsigned long)((2000)*(500000/4000.0)));
-[e ( __delay (1 -> * -> -> 2000 `i `d / -> -> 500000 `l `d .4000.0 `ul ]
-"164
-[; ;main.c: 164:     LCDClear();
+"135
+[; ;main.c: 135:     _delay((unsigned long)((3000)*(500000/4000.0)));
+[e ( __delay (1 -> * -> -> 3000 `i `d / -> -> 500000 `l `d .4000.0 `ul ]
+"136
+[; ;main.c: 136:     LCDClear();
 [e ( _LCDClear ..  ]
-"174
-[; ;main.c: 174:     LCDGoto(0,0);
+"148
+[; ;main.c: 148:     LCDGoto(0,0);
 [e ( _LCDGoto (2 , -> -> 0 `i `uc -> -> 0 `i `uc ]
-"175
-[; ;main.c: 175:     LCDPutStr("Binary=");
+"149
+[; ;main.c: 149:     LCDPutStr("Binary=");
 [e ( _LCDPutStr (1 :s 5C ]
-"176
-[; ;main.c: 176:     long Binary = 0;
+"150
+[; ;main.c: 150:     long Binary = 0;
 [v _Binary `l ~T0 @X0 1 a ]
 [e = _Binary -> -> 0 `i `l ]
 [v F5610 `i ~T0 @X0 -> 4 `i s ]
 [i F5610
 :U ..
-"179
-[; ;main.c: 179:     int bin[4]={0,0,0,0};
+"157
+[; ;main.c: 157:     int bin[4]={0,0,0,0};
 -> 0 `i
 -> 0 `i
 -> 0 `i
@@ -1195,62 +1197,59 @@ Version 4.0 HI-TECH Software Intermediate Code
 ]
 [v _bin `i ~T0 @X0 -> 4 `i a ]
 [e = _bin F5610 ]
-"180
-[; ;main.c: 180:     i=0;
+"158
+[; ;main.c: 158:     i=0;
 [e = _i -> 0 `i ]
-"181
-[; ;main.c: 181:       while (SumDigits>0)
+"159
+[; ;main.c: 159:       while (SumDigits>0)
 [e $U 758  ]
 [e :U 759 ]
-"182
-[; ;main.c: 182:       {
+"160
+[; ;main.c: 160:       {
 {
-"183
-[; ;main.c: 183:         bin[i] = SumDigits%2;
+"161
+[; ;main.c: 161:         bin[i] = SumDigits%2;
 [e = *U + &U _bin * -> -> _i `ui `ux -> -> # *U &U _bin `ui `ux % _SumDigits -> 2 `i ]
-"184
-[; ;main.c: 184:         SumDigits = SumDigits/2;
+"162
+[; ;main.c: 162:         SumDigits = SumDigits/2;
 [e = _SumDigits / _SumDigits -> 2 `i ]
-"185
-[; ;main.c: 185:         i++;
+"163
+[; ;main.c: 163:         i++;
 [e ++ _i -> 1 `i ]
-"186
-[; ;main.c: 186:       }
+"164
+[; ;main.c: 164:       }
 }
 [e :U 758 ]
-"181
-[; ;main.c: 181:       while (SumDigits>0)
+"159
+[; ;main.c: 159:       while (SumDigits>0)
 [e $ > _SumDigits -> 0 `i 759  ]
 [e :U 760 ]
-"187
-[; ;main.c: 187:       Binary= (1000*bin[3])+(100*bin[2])+(10*bin[1])+(1*bin[0]);
+"165
+[; ;main.c: 165:     Binary= (1000*bin[3])+(100*bin[2])+(10*bin[1])+(1*bin[0]);
 [e = _Binary -> + + + * -> 1000 `i *U + &U _bin * -> -> -> 3 `i `ui `ux -> -> # *U &U _bin `ui `ux * -> 100 `i *U + &U _bin * -> -> -> 2 `i `ui `ux -> -> # *U &U _bin `ui `ux * -> 10 `i *U + &U _bin * -> -> -> 1 `i `ui `ux -> -> # *U &U _bin `ui `ux * -> 1 `i *U + &U _bin * -> -> -> 0 `i `ui `ux -> -> # *U &U _bin `ui `ux `l ]
-"189
-[; ;main.c: 189:     sprintf(printchar,"%d",Binary);
+"170
+[; ;main.c: 170:     sprintf(printchar,"%d",Binary);
 [e ( _sprintf (1 , (. , &U _printchar :s 6C _Binary ]
-"190
-[; ;main.c: 190:     LCDGoto(0,1);
+"171
+[; ;main.c: 171:     LCDGoto(0,1);
 [e ( _LCDGoto (2 , -> -> 0 `i `uc -> -> 1 `i `uc ]
-"191
-[; ;main.c: 191:     LCDPutStr(printchar);
+"172
+[; ;main.c: 172:     LCDPutStr(printchar);
 [e ( _LCDPutStr (1 -> &U _printchar `*Cuc ]
-"192
-[; ;main.c: 192:     _delay((unsigned long)((2000)*(500000/4000.0)));
-[e ( __delay (1 -> * -> -> 2000 `i `d / -> -> 500000 `l `d .4000.0 `ul ]
-"193
-[; ;main.c: 193:     while (1)
+"174
+[; ;main.c: 174:     while (1)
 [e :U 762 ]
-"194
-[; ;main.c: 194:     {
+"175
+[; ;main.c: 175:     {
 {
-"196
-[; ;main.c: 196:     }
+"177
+[; ;main.c: 177:     }
 }
 [e :U 761 ]
 [e $U 762  ]
 [e :U 763 ]
-"197
-[; ;main.c: 197: }
+"178
+[; ;main.c: 178: }
 [e :UE 740 ]
 }
 [p f _sprintf 8388736 ]
