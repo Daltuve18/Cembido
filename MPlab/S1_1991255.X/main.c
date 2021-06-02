@@ -71,7 +71,7 @@ void main(void)
     // Impresión en pantalla para el apartado 1
     
     LCDGoto(0,0);
-    LCDPutStr("sumPrime=");
+    LCDPutStr("Calculando...");
     
     //Declaración de variables
     
@@ -99,11 +99,13 @@ void main(void)
     }
     
     //Impresión en pantalla del resultado
-    
+    LCDClear();
+    LCDGoto(0,0);
+    LCDPutStr("sumPrime=");
     sprintf(printchar,"%d",SumPrime);
     LCDGoto(0,1);
     LCDPutStr(printchar);
-    __delay_ms(3000);
+    __delay_ms(5000);
     LCDClear();
     
     // Parte 2: Implemente el código neceario para sumar los dígitos de SumPrime hasta 
@@ -132,7 +134,7 @@ void main(void)
     sprintf(printchar,"%d",SumDigits);
     LCDGoto(0,1);
     LCDPutStr(printchar);
-    __delay_ms(3000);
+    __delay_ms(5000);
     LCDClear();
 
 /***************************************************************************************/

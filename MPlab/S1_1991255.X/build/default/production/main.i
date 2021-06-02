@@ -9289,7 +9289,7 @@ void main(void)
 
 
     LCDGoto(0,0);
-    LCDPutStr("sumPrime=");
+    LCDPutStr("Calculando...");
 
 
 
@@ -9317,11 +9317,13 @@ void main(void)
     }
 
 
-
+    LCDClear();
+    LCDGoto(0,0);
+    LCDPutStr("sumPrime=");
     sprintf(printchar,"%d",SumPrime);
     LCDGoto(0,1);
     LCDPutStr(printchar);
-    _delay((unsigned long)((3000)*(500000/4000.0)));
+    _delay((unsigned long)((5000)*(500000/4000.0)));
     LCDClear();
 
 
@@ -9350,9 +9352,9 @@ void main(void)
     sprintf(printchar,"%d",SumDigits);
     LCDGoto(0,1);
     LCDPutStr(printchar);
-    _delay((unsigned long)((3000)*(500000/4000.0)));
+    _delay((unsigned long)((5000)*(500000/4000.0)));
     LCDClear();
-# 148 "main.c"
+# 150 "main.c"
     LCDGoto(0,0);
     LCDPutStr("Binary=");
     long Binary = 0;
