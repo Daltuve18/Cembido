@@ -1097,7 +1097,7 @@ Version 4.0 HI-TECH Software Intermediate Code
 [; ;main.c: 95:       {
 {
 "96
-[; ;main.c: 96:         SumPrime= SumPrime+number;
+[; ;main.c: 96:         SumPrime = SumPrime+number;
 [e = _SumPrime + _SumPrime _number ]
 "97
 [; ;main.c: 97:       }
@@ -1121,7 +1121,7 @@ Version 4.0 HI-TECH Software Intermediate Code
 [; ;main.c: 103:     LCDGoto(0,0);
 [e ( _LCDGoto (2 , -> -> 0 `i `uc -> -> 0 `i `uc ]
 "104
-[; ;main.c: 104:     LCDPutStr("sumPrime=");
+[; ;main.c: 104:     LCDPutStr("SumPrime=");
 [e ( _LCDPutStr (1 :s 2C ]
 "105
 [; ;main.c: 105:     sprintf(printchar,"%d",SumPrime);
@@ -1210,55 +1210,70 @@ Version 4.0 HI-TECH Software Intermediate Code
 [; ;main.c: 160:     i=0;
 [e = _i -> 0 `i ]
 "161
-[; ;main.c: 161:       while (SumDigits>0)
+[; ;main.c: 161:     number=SumDigits;
+[e = _number _SumDigits ]
+"163
+[; ;main.c: 163:       while (number>0)
 [e $U 758  ]
 [e :U 759 ]
-"162
-[; ;main.c: 162:       {
-{
-"163
-[; ;main.c: 163:         bin[i] = SumDigits%2;
-[e = *U + &U _bin * -> -> _i `ui `ux -> -> # *U &U _bin `ui `ux % _SumDigits -> 2 `i ]
 "164
-[; ;main.c: 164:         SumDigits = SumDigits/2;
-[e = _SumDigits / _SumDigits -> 2 `i ]
+[; ;main.c: 164:       {
+{
 "165
-[; ;main.c: 165:         i++;
-[e ++ _i -> 1 `i ]
+[; ;main.c: 165:         bin[i] = number%2;
+[e = *U + &U _bin * -> -> _i `ui `ux -> -> # *U &U _bin `ui `ux % _number -> 2 `i ]
 "166
-[; ;main.c: 166:       }
+[; ;main.c: 166:         number = number/2;
+[e = _number / _number -> 2 `i ]
+"167
+[; ;main.c: 167:         i++;
+[e ++ _i -> 1 `i ]
+"168
+[; ;main.c: 168:       }
 }
 [e :U 758 ]
-"161
-[; ;main.c: 161:       while (SumDigits>0)
-[e $ > _SumDigits -> 0 `i 759  ]
+"163
+[; ;main.c: 163:       while (number>0)
+[e $ > _number -> 0 `i 759  ]
 [e :U 760 ]
-"167
-[; ;main.c: 167:     Binary= (1000*bin[3])+(100*bin[2])+(10*bin[1])+(1*bin[0]);
+"169
+[; ;main.c: 169:     Binary= (1000*bin[3])+(100*bin[2])+(10*bin[1])+(1*bin[0]);
 [e = _Binary -> + + + * -> 1000 `i *U + &U _bin * -> -> -> 3 `i `ui `ux -> -> # *U &U _bin `ui `ux * -> 100 `i *U + &U _bin * -> -> -> 2 `i `ui `ux -> -> # *U &U _bin `ui `ux * -> 10 `i *U + &U _bin * -> -> -> 1 `i `ui `ux -> -> # *U &U _bin `ui `ux * -> 1 `i *U + &U _bin * -> -> -> 0 `i `ui `ux -> -> # *U &U _bin `ui `ux `l ]
-"172
-[; ;main.c: 172:     sprintf(printchar,"%d",Binary);
-[e ( _sprintf (1 , (. , &U _printchar :s 7C _Binary ]
-"173
-[; ;main.c: 173:     LCDGoto(0,1);
-[e ( _LCDGoto (2 , -> -> 0 `i `uc -> -> 1 `i `uc ]
 "174
-[; ;main.c: 174:     LCDPutStr(printchar);
-[e ( _LCDPutStr (1 -> &U _printchar `*Cuc ]
+[; ;main.c: 174:     sprintf(printchar,"%d",Binary);
+[e ( _sprintf (1 , (. , &U _printchar :s 7C _Binary ]
+"175
+[; ;main.c: 175:     LCDGoto(0,1);
+[e ( _LCDGoto (2 , -> -> 0 `i `uc -> -> 1 `i `uc ]
 "176
-[; ;main.c: 176:     while (1)
+[; ;main.c: 176:     LCDPutStr(printchar);
+[e ( _LCDPutStr (1 -> &U _printchar `*Cuc ]
+"178
+[; ;main.c: 178:     while (1)
 [e :U 762 ]
-"177
-[; ;main.c: 177:     {
-{
 "179
-[; ;main.c: 179:     }
+[; ;main.c: 179:     {
+{
+"182
+[; ;main.c: 182:         int check1 = SumPrime;
+[v _check1 `i ~T0 @X0 1 a ]
+[e = _check1 _SumPrime ]
+"183
+[; ;main.c: 183:         int check2 = SumDigits;
+[v _check2 `i ~T0 @X0 1 a ]
+[e = _check2 _SumDigits ]
+"184
+[; ;main.c: 184:         long check3 = Binary;
+[v _check3 `l ~T0 @X0 1 a ]
+[e = _check3 _Binary ]
+"186
+[; ;main.c: 186:     }
 }
 [e :U 761 ]
 [e $U 762  ]
 [e :U 763 ]
-"180
-[; ;main.c: 180: }
+"187
+[; ;main.c: 187: }
 [e :UE 740 ]
 }
 [p f _sprintf 8388736 ]
@@ -1267,5 +1282,5 @@ Version 4.0 HI-TECH Software Intermediate Code
 [a 7C 37 100 0 ]
 [a 6C 66 105 110 97 114 121 61 0 ]
 [a 4C 115 117 109 68 105 103 105 116 115 61 0 ]
-[a 2C 115 117 109 80 114 105 109 101 61 0 ]
+[a 2C 83 117 109 80 114 105 109 101 61 0 ]
 [a 1C 67 97 108 99 117 108 97 110 100 111 46 46 46 0 ]

@@ -9311,7 +9311,7 @@ void main(void)
       }
       if(prime==1)
       {
-        SumPrime= SumPrime+number;
+        SumPrime = SumPrime+number;
       }
       ++number;
     }
@@ -9319,7 +9319,7 @@ void main(void)
 
     LCDClear();
     LCDGoto(0,0);
-    LCDPutStr("sumPrime=");
+    LCDPutStr("SumPrime=");
     sprintf(printchar,"%d",SumPrime);
     LCDGoto(0,1);
     LCDPutStr(printchar);
@@ -9366,10 +9366,12 @@ void main(void)
 
     int bin[4]={0,0,0,0};
     i=0;
-      while (SumDigits>0)
+    number=SumDigits;
+
+      while (number>0)
       {
-        bin[i] = SumDigits%2;
-        SumDigits = SumDigits/2;
+        bin[i] = number%2;
+        number = number/2;
         i++;
       }
     Binary= (1000*bin[3])+(100*bin[2])+(10*bin[1])+(1*bin[0]);
@@ -9383,6 +9385,11 @@ void main(void)
 
     while (1)
     {
+
+
+        int check1 = SumPrime;
+        int check2 = SumDigits;
+        long check3 = Binary;
 
     }
 }
