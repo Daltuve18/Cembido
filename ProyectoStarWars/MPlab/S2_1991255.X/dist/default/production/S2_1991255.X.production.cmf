@@ -1,0 +1,1021 @@
+%CMF
+# %PSECTS Section
+# For each object file, details of its psects are enumerated here.
+# The begining of the section is indicated by %PSECTS.  The first
+# line indicates the name of the first object file, e.g.
+#    $foo.obj
+# Each line that follows describes a psect in that object file, until
+# the next object file.  The lines that describe a psect have the
+# format:
+#    <psect name> <class name> <space> <link address> <load addresses> <length> <delta>
+# All addresses and the length are given in unqualified hexadecimal
+# in delta units.  Any other numeric values are decimal.
+%PSECTS
+$C:\Users\davfe\AppData\Local\Temp\s217g.o
+reset_vec CODE 0 0 0 2 2
+end_init CODE 0 1D 1D 2 2
+config CONFIG 4 8007 8007 2 2
+$dist/default/production\S2_1991255.X.production.o
+cinit CODE 0 1F 1F 1C 2
+text1 CODE 0 39D 39D 18 2
+text2 CODE 0 34A 34A 1E 2
+text3 CODE 0 1E8 1E8 28 2
+text4 CODE 0 210 210 28 2
+text5 CODE 0 1B9 1B9 2F 2
+text6 CODE 0 2CB 2CB 20 2
+text7 CODE 0 42F 42F A 2
+text8 CODE 0 472 472 4 2
+text9 CODE 0 B2 B2 72 2
+text10 CODE 0 44E 44E 6 2
+text11 CODE 0 454 454 6 2
+text12 CODE 0 45A 45A 6 2
+text13 CODE 0 460 460 6 2
+text14 CODE 0 466 466 6 2
+text15 CODE 0 46C 46C 6 2
+text16 CODE 0 441 441 7 2
+text17 CODE 0 285 285 23 2
+text18 CODE 0 2A8 2A8 23 2
+text19 CODE 0 2EB 2EB 20 2
+text21 CODE 0 188 188 31 2
+text22 CODE 0 3F3 3F3 F 2
+text23 CODE 0 476 476 1 2
+text24 CODE 0 402 402 F 2
+text25 CODE 0 477 477 1 2
+text26 CODE 0 3B5 3B5 17 2
+text27 CODE 0 478 478 1 2
+text28 CODE 0 411 411 F 2
+text29 CODE 0 479 479 1 2
+text30 CODE 0 420 420 F 2
+text31 CODE 0 47A 47A 1 2
+text32 CODE 0 3CC 3CC 16 2
+text33 CODE 0 3B 3B 77 2
+text34 CODE 0 25F 25F 26 2
+text35 CODE 0 368 368 1D 2
+text36 CODE 0 238 238 27 2
+text37 CODE 0 32B 32B 1F 2
+text38 CODE 0 30B 30B 20 2
+text39 CODE 0 47B 47B 1 2
+nvBANK0 BANK0 1 55 55 C 1
+maintext CODE 0 124 124 64 2
+cstackCOMMON COMMON 1 70 70 E 1
+cstackBANK0 BANK0 1 20 20 35 1
+inittext CODE 0 448 448 6 2
+stringtext1 STRCODE 0 3E2 3E2 11 2
+intentry CODE 0 4 4 19 2
+idataBANK0 CODE 0 439 439 8 2
+idataBANK1 CODE 0 385 385 18 2
+dataBANK0 BANK0 1 61 61 8 1
+dataBANK1 BANK1 1 A0 A0 18 1
+config CONFIG 4 8007 8007 2 2
+# %UNUSED Section
+# This section enumerates the unused ranges of each CLASS. Each entry
+# is described on a single line as follows:
+#    <class name> <range> <delta>
+# Addresses given in the range are in hexadecimal and units of delta.
+%UNUSED
+RAM 69-6F 1
+RAM B8-EF 1
+RAM 120-16F 1
+RAM 1A0-1EF 1
+RAM 220-26F 1
+RAM 2A0-2EF 1
+RAM 320-36F 1
+RAM 3A0-3EF 1
+RAM 420-46F 1
+RAM 4A0-4EF 1
+RAM 520-56F 1
+RAM 5A0-5EF 1
+RAM 620-66F 1
+RAM 6A0-6EF 1
+RAM 720-76F 1
+RAM 7A0-7EF 1
+RAM 820-86F 1
+RAM 8A0-8EF 1
+RAM 920-96F 1
+RAM 9A0-9EF 1
+RAM A20-A6F 1
+RAM AA0-AEF 1
+RAM B20-B6F 1
+RAM BA0-BEF 1
+RAM C20-C6F 1
+RAM CA0-CBF 1
+BANK0 69-6F 1
+BANK1 B8-EF 1
+BANK2 120-16F 1
+BANK3 1A0-1EF 1
+BANK4 220-26F 1
+BANK5 2A0-2EF 1
+BANK6 320-36F 1
+BANK7 3A0-3EF 1
+BANK8 420-46F 1
+BANK9 4A0-4EF 1
+CONST 2-3 2
+CONST 47C-3FFF 2
+ENTRY 2-3 2
+ENTRY 47C-3FFF 2
+IDLOC 8000-8003 2
+SFR10 500-51F 1
+SFR11 580-59F 1
+SFR12 600-61F 1
+SFR13 680-69F 1
+SFR14 700-71F 1
+SFR15 780-79F 1
+SFR16 800-81F 1
+SFR17 880-89F 1
+SFR18 900-91F 1
+SFR19 980-99F 1
+SFR20 A00-A1F 1
+SFR21 A80-A9F 1
+SFR22 B00-B1F 1
+SFR23 B80-B9F 1
+SFR24 C00-C1F 1
+SFR25 C80-C9F 1
+SFR26 D00-D6F 1
+SFR27 D80-DEF 1
+SFR28 E00-E6F 1
+SFR29 E80-EEF 1
+SFR30 F00-F6F 1
+SFR31 F80-FEF 1
+STACK 2068-27EF 1
+CODE 2-3 2
+CODE 47C-3FFF 2
+SFR0 0-1F 1
+SFR1 80-9F 1
+SFR2 100-11F 1
+SFR3 180-19F 1
+SFR4 200-21F 1
+SFR5 280-29F 1
+SFR6 300-31F 1
+SFR7 380-39F 1
+SFR8 400-41F 1
+SFR9 480-49F 1
+BANK10 520-56F 1
+BANK11 5A0-5EF 1
+BANK12 620-66F 1
+BANK13 6A0-6EF 1
+BANK14 720-76F 1
+BANK15 7A0-7EF 1
+BANK16 820-86F 1
+BANK17 8A0-8EF 1
+BANK18 920-96F 1
+BANK19 9A0-9EF 1
+BANK20 A20-A6F 1
+BANK21 AA0-AEF 1
+BANK22 B20-B6F 1
+BANK23 BA0-BEF 1
+BANK24 C20-C6F 1
+BANK25 CA0-CBF 1
+BIGRAM 2000-27EF 1
+STRCODE 2-3 2
+STRCODE 47C-3FFF 2
+STRING 2-3 2
+STRING 47C-3FFF 2
+# %LINETAB Section
+# This section enumerates the file/line to address mappings.
+# The beginning of the section is indicated by %LINETAB.
+# The first line indicates the name of the first object file, e.g.
+#   $foo.obj
+# Each line that follows describes a single mapping until the next
+# object file.  Mappings have the following format:
+#    <address> <psect name> <class name> ><line number>:<file name>
+# The address is absolute and given given in unqualified hex 
+# in delta units of the psect. All mappings within an object file
+# are in ascending order of addresses.
+# All other numeric values are in decimal.
+%LINETAB
+$dist/default/production\S2_1991255.X.production.o
+1F cinit CODE >3784:C:\Users\davfe\AppData\Local\Temp\s217g.s
+1F cinit CODE >3787:C:\Users\davfe\AppData\Local\Temp\s217g.s
+1F cinit CODE >3831:C:\Users\davfe\AppData\Local\Temp\s217g.s
+20 cinit CODE >3832:C:\Users\davfe\AppData\Local\Temp\s217g.s
+21 cinit CODE >3833:C:\Users\davfe\AppData\Local\Temp\s217g.s
+22 cinit CODE >3834:C:\Users\davfe\AppData\Local\Temp\s217g.s
+23 cinit CODE >3835:C:\Users\davfe\AppData\Local\Temp\s217g.s
+24 cinit CODE >3836:C:\Users\davfe\AppData\Local\Temp\s217g.s
+25 cinit CODE >3837:C:\Users\davfe\AppData\Local\Temp\s217g.s
+26 cinit CODE >3838:C:\Users\davfe\AppData\Local\Temp\s217g.s
+27 cinit CODE >3839:C:\Users\davfe\AppData\Local\Temp\s217g.s
+28 cinit CODE >3840:C:\Users\davfe\AppData\Local\Temp\s217g.s
+2B cinit CODE >3844:C:\Users\davfe\AppData\Local\Temp\s217g.s
+2C cinit CODE >3845:C:\Users\davfe\AppData\Local\Temp\s217g.s
+2D cinit CODE >3846:C:\Users\davfe\AppData\Local\Temp\s217g.s
+2E cinit CODE >3847:C:\Users\davfe\AppData\Local\Temp\s217g.s
+2F cinit CODE >3848:C:\Users\davfe\AppData\Local\Temp\s217g.s
+30 cinit CODE >3849:C:\Users\davfe\AppData\Local\Temp\s217g.s
+31 cinit CODE >3850:C:\Users\davfe\AppData\Local\Temp\s217g.s
+32 cinit CODE >3851:C:\Users\davfe\AppData\Local\Temp\s217g.s
+33 cinit CODE >3852:C:\Users\davfe\AppData\Local\Temp\s217g.s
+34 cinit CODE >3853:C:\Users\davfe\AppData\Local\Temp\s217g.s
+37 cinit CODE >3859:C:\Users\davfe\AppData\Local\Temp\s217g.s
+37 cinit CODE >3861:C:\Users\davfe\AppData\Local\Temp\s217g.s
+38 cinit CODE >3862:C:\Users\davfe\AppData\Local\Temp\s217g.s
+39 cinit CODE >3863:C:\Users\davfe\AppData\Local\Temp\s217g.s
+4 intentry CODE >52:C:\Users\davfe\Documents\GitHub\Cembido\ProyectoStarWars\MPlab\S2_1991255.X\mcc_generated_files/interrupt_manager.c
+6 intentry CODE >55:C:\Users\davfe\Documents\GitHub\Cembido\ProyectoStarWars\MPlab\S2_1991255.X\mcc_generated_files/interrupt_manager.c
+E intentry CODE >57:C:\Users\davfe\Documents\GitHub\Cembido\ProyectoStarWars\MPlab\S2_1991255.X\mcc_generated_files/interrupt_manager.c
+17 intentry CODE >58:C:\Users\davfe\Documents\GitHub\Cembido\ProyectoStarWars\MPlab\S2_1991255.X\mcc_generated_files/interrupt_manager.c
+1A intentry CODE >60:C:\Users\davfe\Documents\GitHub\Cembido\ProyectoStarWars\MPlab\S2_1991255.X\mcc_generated_files/interrupt_manager.c
+1B intentry CODE >66:C:\Users\davfe\Documents\GitHub\Cembido\ProyectoStarWars\MPlab\S2_1991255.X\mcc_generated_files/interrupt_manager.c
+47B text39 CODE >233:C:\Users\davfe\Documents\GitHub\Cembido\ProyectoStarWars\MPlab\S2_1991255.X\mcc_generated_files/pin_manager.c
+47B text39 CODE >236:C:\Users\davfe\Documents\GitHub\Cembido\ProyectoStarWars\MPlab\S2_1991255.X\mcc_generated_files/pin_manager.c
+30B text38 CODE >74:C:\Users\davfe\Documents\GitHub\Cembido\ProyectoStarWars\MPlab\S2_1991255.X\lcd.c
+30C text38 CODE >77:C:\Users\davfe\Documents\GitHub\Cembido\ProyectoStarWars\MPlab\S2_1991255.X\lcd.c
+316 text38 CODE >80:C:\Users\davfe\Documents\GitHub\Cembido\ProyectoStarWars\MPlab\S2_1991255.X\lcd.c
+31B text38 CODE >83:C:\Users\davfe\Documents\GitHub\Cembido\ProyectoStarWars\MPlab\S2_1991255.X\lcd.c
+31F text38 CODE >86:C:\Users\davfe\Documents\GitHub\Cembido\ProyectoStarWars\MPlab\S2_1991255.X\lcd.c
+322 text38 CODE >89:C:\Users\davfe\Documents\GitHub\Cembido\ProyectoStarWars\MPlab\S2_1991255.X\lcd.c
+327 text38 CODE >92:C:\Users\davfe\Documents\GitHub\Cembido\ProyectoStarWars\MPlab\S2_1991255.X\lcd.c
+328 text38 CODE >95:C:\Users\davfe\Documents\GitHub\Cembido\ProyectoStarWars\MPlab\S2_1991255.X\lcd.c
+329 text38 CODE >98:C:\Users\davfe\Documents\GitHub\Cembido\ProyectoStarWars\MPlab\S2_1991255.X\lcd.c
+32A text38 CODE >99:C:\Users\davfe\Documents\GitHub\Cembido\ProyectoStarWars\MPlab\S2_1991255.X\lcd.c
+32B text37 CODE >115:C:\Users\davfe\Documents\GitHub\Cembido\ProyectoStarWars\MPlab\S2_1991255.X\lcd.c
+32C text37 CODE >117:C:\Users\davfe\Documents\GitHub\Cembido\ProyectoStarWars\MPlab\S2_1991255.X\lcd.c
+330 text37 CODE >120:C:\Users\davfe\Documents\GitHub\Cembido\ProyectoStarWars\MPlab\S2_1991255.X\lcd.c
+335 text37 CODE >123:C:\Users\davfe\Documents\GitHub\Cembido\ProyectoStarWars\MPlab\S2_1991255.X\lcd.c
+340 text37 CODE >125:C:\Users\davfe\Documents\GitHub\Cembido\ProyectoStarWars\MPlab\S2_1991255.X\lcd.c
+344 text37 CODE >128:C:\Users\davfe\Documents\GitHub\Cembido\ProyectoStarWars\MPlab\S2_1991255.X\lcd.c
+349 text37 CODE >129:C:\Users\davfe\Documents\GitHub\Cembido\ProyectoStarWars\MPlab\S2_1991255.X\lcd.c
+238 text36 CODE >143:C:\Users\davfe\Documents\GitHub\Cembido\ProyectoStarWars\MPlab\S2_1991255.X\lcd.c
+239 text36 CODE >146:C:\Users\davfe\Documents\GitHub\Cembido\ProyectoStarWars\MPlab\S2_1991255.X\lcd.c
+246 text36 CODE >153:C:\Users\davfe\Documents\GitHub\Cembido\ProyectoStarWars\MPlab\S2_1991255.X\lcd.c
+25A text36 CODE >156:C:\Users\davfe\Documents\GitHub\Cembido\ProyectoStarWars\MPlab\S2_1991255.X\lcd.c
+25E text36 CODE >157:C:\Users\davfe\Documents\GitHub\Cembido\ProyectoStarWars\MPlab\S2_1991255.X\lcd.c
+368 text35 CODE >101:C:\Users\davfe\Documents\GitHub\Cembido\ProyectoStarWars\MPlab\S2_1991255.X\lcd.c
+369 text35 CODE >103:C:\Users\davfe\Documents\GitHub\Cembido\ProyectoStarWars\MPlab\S2_1991255.X\lcd.c
+36D text35 CODE >106:C:\Users\davfe\Documents\GitHub\Cembido\ProyectoStarWars\MPlab\S2_1991255.X\lcd.c
+373 text35 CODE >109:C:\Users\davfe\Documents\GitHub\Cembido\ProyectoStarWars\MPlab\S2_1991255.X\lcd.c
+37E text35 CODE >112:C:\Users\davfe\Documents\GitHub\Cembido\ProyectoStarWars\MPlab\S2_1991255.X\lcd.c
+384 text35 CODE >113:C:\Users\davfe\Documents\GitHub\Cembido\ProyectoStarWars\MPlab\S2_1991255.X\lcd.c
+25F text34 CODE >131:C:\Users\davfe\Documents\GitHub\Cembido\ProyectoStarWars\MPlab\S2_1991255.X\lcd.c
+25F text34 CODE >133:C:\Users\davfe\Documents\GitHub\Cembido\ProyectoStarWars\MPlab\S2_1991255.X\lcd.c
+260 text34 CODE >136:C:\Users\davfe\Documents\GitHub\Cembido\ProyectoStarWars\MPlab\S2_1991255.X\lcd.c
+261 text34 CODE >139:C:\Users\davfe\Documents\GitHub\Cembido\ProyectoStarWars\MPlab\S2_1991255.X\lcd.c
+274 text34 CODE >136:C:\Users\davfe\Documents\GitHub\Cembido\ProyectoStarWars\MPlab\S2_1991255.X\lcd.c
+284 text34 CODE >141:C:\Users\davfe\Documents\GitHub\Cembido\ProyectoStarWars\MPlab\S2_1991255.X\lcd.c
+3B text33 CODE >71:C:\Users\davfe\Documents\GitHub\Cembido\ProyectoStarWars\MPlab\S2_1991255.X\functions.c
+3B text33 CODE >86:C:\Users\davfe\Documents\GitHub\Cembido\ProyectoStarWars\MPlab\S2_1991255.X\functions.c
+42 text33 CODE >88:C:\Users\davfe\Documents\GitHub\Cembido\ProyectoStarWars\MPlab\S2_1991255.X\functions.c
+46 text33 CODE >90:C:\Users\davfe\Documents\GitHub\Cembido\ProyectoStarWars\MPlab\S2_1991255.X\functions.c
+47 text33 CODE >93:C:\Users\davfe\Documents\GitHub\Cembido\ProyectoStarWars\MPlab\S2_1991255.X\functions.c
+4D text33 CODE >94:C:\Users\davfe\Documents\GitHub\Cembido\ProyectoStarWars\MPlab\S2_1991255.X\functions.c
+51 text33 CODE >95:C:\Users\davfe\Documents\GitHub\Cembido\ProyectoStarWars\MPlab\S2_1991255.X\functions.c
+59 text33 CODE >96:C:\Users\davfe\Documents\GitHub\Cembido\ProyectoStarWars\MPlab\S2_1991255.X\functions.c
+5E text33 CODE >97:C:\Users\davfe\Documents\GitHub\Cembido\ProyectoStarWars\MPlab\S2_1991255.X\functions.c
+64 text33 CODE >98:C:\Users\davfe\Documents\GitHub\Cembido\ProyectoStarWars\MPlab\S2_1991255.X\functions.c
+6B text33 CODE >90:C:\Users\davfe\Documents\GitHub\Cembido\ProyectoStarWars\MPlab\S2_1991255.X\functions.c
+7A text33 CODE >104:C:\Users\davfe\Documents\GitHub\Cembido\ProyectoStarWars\MPlab\S2_1991255.X\functions.c
+7E text33 CODE >106:C:\Users\davfe\Documents\GitHub\Cembido\ProyectoStarWars\MPlab\S2_1991255.X\functions.c
+7F text33 CODE >109:C:\Users\davfe\Documents\GitHub\Cembido\ProyectoStarWars\MPlab\S2_1991255.X\functions.c
+85 text33 CODE >110:C:\Users\davfe\Documents\GitHub\Cembido\ProyectoStarWars\MPlab\S2_1991255.X\functions.c
+89 text33 CODE >111:C:\Users\davfe\Documents\GitHub\Cembido\ProyectoStarWars\MPlab\S2_1991255.X\functions.c
+91 text33 CODE >112:C:\Users\davfe\Documents\GitHub\Cembido\ProyectoStarWars\MPlab\S2_1991255.X\functions.c
+96 text33 CODE >113:C:\Users\davfe\Documents\GitHub\Cembido\ProyectoStarWars\MPlab\S2_1991255.X\functions.c
+9C text33 CODE >114:C:\Users\davfe\Documents\GitHub\Cembido\ProyectoStarWars\MPlab\S2_1991255.X\functions.c
+A3 text33 CODE >106:C:\Users\davfe\Documents\GitHub\Cembido\ProyectoStarWars\MPlab\S2_1991255.X\functions.c
+B1 text33 CODE >119:C:\Users\davfe\Documents\GitHub\Cembido\ProyectoStarWars\MPlab\S2_1991255.X\functions.c
+3CC text32 CODE >210:C:\Users\davfe\Documents\GitHub\Cembido\ProyectoStarWars\MPlab\S2_1991255.X\mcc_generated_files/pin_manager.c
+3CC text32 CODE >215:C:\Users\davfe\Documents\GitHub\Cembido\ProyectoStarWars\MPlab\S2_1991255.X\mcc_generated_files/pin_manager.c
+3D3 text32 CODE >217:C:\Users\davfe\Documents\GitHub\Cembido\ProyectoStarWars\MPlab\S2_1991255.X\mcc_generated_files/pin_manager.c
+3D8 text32 CODE >219:C:\Users\davfe\Documents\GitHub\Cembido\ProyectoStarWars\MPlab\S2_1991255.X\mcc_generated_files/pin_manager.c
+3DF text32 CODE >220:C:\Users\davfe\Documents\GitHub\Cembido\ProyectoStarWars\MPlab\S2_1991255.X\mcc_generated_files/pin_manager.c
+3E1 text32 CODE >221:C:\Users\davfe\Documents\GitHub\Cembido\ProyectoStarWars\MPlab\S2_1991255.X\mcc_generated_files/pin_manager.c
+47A text31 CODE >263:C:\Users\davfe\Documents\GitHub\Cembido\ProyectoStarWars\MPlab\S2_1991255.X\mcc_generated_files/pin_manager.c
+47A text31 CODE >266:C:\Users\davfe\Documents\GitHub\Cembido\ProyectoStarWars\MPlab\S2_1991255.X\mcc_generated_files/pin_manager.c
+420 text30 CODE >241:C:\Users\davfe\Documents\GitHub\Cembido\ProyectoStarWars\MPlab\S2_1991255.X\mcc_generated_files/pin_manager.c
+420 text30 CODE >246:C:\Users\davfe\Documents\GitHub\Cembido\ProyectoStarWars\MPlab\S2_1991255.X\mcc_generated_files/pin_manager.c
+427 text30 CODE >248:C:\Users\davfe\Documents\GitHub\Cembido\ProyectoStarWars\MPlab\S2_1991255.X\mcc_generated_files/pin_manager.c
+42C text30 CODE >250:C:\Users\davfe\Documents\GitHub\Cembido\ProyectoStarWars\MPlab\S2_1991255.X\mcc_generated_files/pin_manager.c
+42E text30 CODE >251:C:\Users\davfe\Documents\GitHub\Cembido\ProyectoStarWars\MPlab\S2_1991255.X\mcc_generated_files/pin_manager.c
+479 text29 CODE >293:C:\Users\davfe\Documents\GitHub\Cembido\ProyectoStarWars\MPlab\S2_1991255.X\mcc_generated_files/pin_manager.c
+479 text29 CODE >296:C:\Users\davfe\Documents\GitHub\Cembido\ProyectoStarWars\MPlab\S2_1991255.X\mcc_generated_files/pin_manager.c
+411 text28 CODE >271:C:\Users\davfe\Documents\GitHub\Cembido\ProyectoStarWars\MPlab\S2_1991255.X\mcc_generated_files/pin_manager.c
+411 text28 CODE >276:C:\Users\davfe\Documents\GitHub\Cembido\ProyectoStarWars\MPlab\S2_1991255.X\mcc_generated_files/pin_manager.c
+418 text28 CODE >278:C:\Users\davfe\Documents\GitHub\Cembido\ProyectoStarWars\MPlab\S2_1991255.X\mcc_generated_files/pin_manager.c
+41D text28 CODE >280:C:\Users\davfe\Documents\GitHub\Cembido\ProyectoStarWars\MPlab\S2_1991255.X\mcc_generated_files/pin_manager.c
+41F text28 CODE >281:C:\Users\davfe\Documents\GitHub\Cembido\ProyectoStarWars\MPlab\S2_1991255.X\mcc_generated_files/pin_manager.c
+478 text27 CODE >324:C:\Users\davfe\Documents\GitHub\Cembido\ProyectoStarWars\MPlab\S2_1991255.X\mcc_generated_files/pin_manager.c
+478 text27 CODE >327:C:\Users\davfe\Documents\GitHub\Cembido\ProyectoStarWars\MPlab\S2_1991255.X\mcc_generated_files/pin_manager.c
+3B5 text26 CODE >301:C:\Users\davfe\Documents\GitHub\Cembido\ProyectoStarWars\MPlab\S2_1991255.X\mcc_generated_files/pin_manager.c
+3B5 text26 CODE >306:C:\Users\davfe\Documents\GitHub\Cembido\ProyectoStarWars\MPlab\S2_1991255.X\mcc_generated_files/pin_manager.c
+3BC text26 CODE >308:C:\Users\davfe\Documents\GitHub\Cembido\ProyectoStarWars\MPlab\S2_1991255.X\mcc_generated_files/pin_manager.c
+3C1 text26 CODE >310:C:\Users\davfe\Documents\GitHub\Cembido\ProyectoStarWars\MPlab\S2_1991255.X\mcc_generated_files/pin_manager.c
+3C9 text26 CODE >311:C:\Users\davfe\Documents\GitHub\Cembido\ProyectoStarWars\MPlab\S2_1991255.X\mcc_generated_files/pin_manager.c
+3CB text26 CODE >312:C:\Users\davfe\Documents\GitHub\Cembido\ProyectoStarWars\MPlab\S2_1991255.X\mcc_generated_files/pin_manager.c
+477 text25 CODE >354:C:\Users\davfe\Documents\GitHub\Cembido\ProyectoStarWars\MPlab\S2_1991255.X\mcc_generated_files/pin_manager.c
+477 text25 CODE >357:C:\Users\davfe\Documents\GitHub\Cembido\ProyectoStarWars\MPlab\S2_1991255.X\mcc_generated_files/pin_manager.c
+402 text24 CODE >332:C:\Users\davfe\Documents\GitHub\Cembido\ProyectoStarWars\MPlab\S2_1991255.X\mcc_generated_files/pin_manager.c
+402 text24 CODE >337:C:\Users\davfe\Documents\GitHub\Cembido\ProyectoStarWars\MPlab\S2_1991255.X\mcc_generated_files/pin_manager.c
+409 text24 CODE >339:C:\Users\davfe\Documents\GitHub\Cembido\ProyectoStarWars\MPlab\S2_1991255.X\mcc_generated_files/pin_manager.c
+40E text24 CODE >341:C:\Users\davfe\Documents\GitHub\Cembido\ProyectoStarWars\MPlab\S2_1991255.X\mcc_generated_files/pin_manager.c
+410 text24 CODE >342:C:\Users\davfe\Documents\GitHub\Cembido\ProyectoStarWars\MPlab\S2_1991255.X\mcc_generated_files/pin_manager.c
+476 text23 CODE >384:C:\Users\davfe\Documents\GitHub\Cembido\ProyectoStarWars\MPlab\S2_1991255.X\mcc_generated_files/pin_manager.c
+476 text23 CODE >387:C:\Users\davfe\Documents\GitHub\Cembido\ProyectoStarWars\MPlab\S2_1991255.X\mcc_generated_files/pin_manager.c
+3F3 text22 CODE >362:C:\Users\davfe\Documents\GitHub\Cembido\ProyectoStarWars\MPlab\S2_1991255.X\mcc_generated_files/pin_manager.c
+3F3 text22 CODE >367:C:\Users\davfe\Documents\GitHub\Cembido\ProyectoStarWars\MPlab\S2_1991255.X\mcc_generated_files/pin_manager.c
+3FA text22 CODE >369:C:\Users\davfe\Documents\GitHub\Cembido\ProyectoStarWars\MPlab\S2_1991255.X\mcc_generated_files/pin_manager.c
+3FF text22 CODE >371:C:\Users\davfe\Documents\GitHub\Cembido\ProyectoStarWars\MPlab\S2_1991255.X\mcc_generated_files/pin_manager.c
+401 text22 CODE >372:C:\Users\davfe\Documents\GitHub\Cembido\ProyectoStarWars\MPlab\S2_1991255.X\mcc_generated_files/pin_manager.c
+188 text21 CODE >173:C:\Users\davfe\Documents\GitHub\Cembido\ProyectoStarWars\MPlab\S2_1991255.X\mcc_generated_files/pin_manager.c
+188 text21 CODE >176:C:\Users\davfe\Documents\GitHub\Cembido\ProyectoStarWars\MPlab\S2_1991255.X\mcc_generated_files/pin_manager.c
+18D text21 CODE >178:C:\Users\davfe\Documents\GitHub\Cembido\ProyectoStarWars\MPlab\S2_1991255.X\mcc_generated_files/pin_manager.c
+190 text21 CODE >181:C:\Users\davfe\Documents\GitHub\Cembido\ProyectoStarWars\MPlab\S2_1991255.X\mcc_generated_files/pin_manager.c
+195 text21 CODE >183:C:\Users\davfe\Documents\GitHub\Cembido\ProyectoStarWars\MPlab\S2_1991255.X\mcc_generated_files/pin_manager.c
+198 text21 CODE >186:C:\Users\davfe\Documents\GitHub\Cembido\ProyectoStarWars\MPlab\S2_1991255.X\mcc_generated_files/pin_manager.c
+19D text21 CODE >188:C:\Users\davfe\Documents\GitHub\Cembido\ProyectoStarWars\MPlab\S2_1991255.X\mcc_generated_files/pin_manager.c
+1A0 text21 CODE >191:C:\Users\davfe\Documents\GitHub\Cembido\ProyectoStarWars\MPlab\S2_1991255.X\mcc_generated_files/pin_manager.c
+1A5 text21 CODE >193:C:\Users\davfe\Documents\GitHub\Cembido\ProyectoStarWars\MPlab\S2_1991255.X\mcc_generated_files/pin_manager.c
+1A8 text21 CODE >196:C:\Users\davfe\Documents\GitHub\Cembido\ProyectoStarWars\MPlab\S2_1991255.X\mcc_generated_files/pin_manager.c
+1AD text21 CODE >198:C:\Users\davfe\Documents\GitHub\Cembido\ProyectoStarWars\MPlab\S2_1991255.X\mcc_generated_files/pin_manager.c
+1B0 text21 CODE >201:C:\Users\davfe\Documents\GitHub\Cembido\ProyectoStarWars\MPlab\S2_1991255.X\mcc_generated_files/pin_manager.c
+1B5 text21 CODE >203:C:\Users\davfe\Documents\GitHub\Cembido\ProyectoStarWars\MPlab\S2_1991255.X\mcc_generated_files/pin_manager.c
+1B8 text21 CODE >205:C:\Users\davfe\Documents\GitHub\Cembido\ProyectoStarWars\MPlab\S2_1991255.X\mcc_generated_files/pin_manager.c
+2EB text19 CODE >74:C:\Users\davfe\Documents\GitHub\Cembido\ProyectoStarWars\MPlab\S2_1991255.X\lcd.c
+2ED text19 CODE >77:C:\Users\davfe\Documents\GitHub\Cembido\ProyectoStarWars\MPlab\S2_1991255.X\lcd.c
+2F7 text19 CODE >80:C:\Users\davfe\Documents\GitHub\Cembido\ProyectoStarWars\MPlab\S2_1991255.X\lcd.c
+2FC text19 CODE >83:C:\Users\davfe\Documents\GitHub\Cembido\ProyectoStarWars\MPlab\S2_1991255.X\lcd.c
+2FF text19 CODE >86:C:\Users\davfe\Documents\GitHub\Cembido\ProyectoStarWars\MPlab\S2_1991255.X\lcd.c
+302 text19 CODE >89:C:\Users\davfe\Documents\GitHub\Cembido\ProyectoStarWars\MPlab\S2_1991255.X\lcd.c
+307 text19 CODE >92:C:\Users\davfe\Documents\GitHub\Cembido\ProyectoStarWars\MPlab\S2_1991255.X\lcd.c
+308 text19 CODE >95:C:\Users\davfe\Documents\GitHub\Cembido\ProyectoStarWars\MPlab\S2_1991255.X\lcd.c
+309 text19 CODE >98:C:\Users\davfe\Documents\GitHub\Cembido\ProyectoStarWars\MPlab\S2_1991255.X\lcd.c
+30A text19 CODE >99:C:\Users\davfe\Documents\GitHub\Cembido\ProyectoStarWars\MPlab\S2_1991255.X\lcd.c
+2A8 text18 CODE >115:C:\Users\davfe\Documents\GitHub\Cembido\ProyectoStarWars\MPlab\S2_1991255.X\lcd.c
+2AA text18 CODE >117:C:\Users\davfe\Documents\GitHub\Cembido\ProyectoStarWars\MPlab\S2_1991255.X\lcd.c
+2AE text18 CODE >120:C:\Users\davfe\Documents\GitHub\Cembido\ProyectoStarWars\MPlab\S2_1991255.X\lcd.c
+2B4 text18 CODE >123:C:\Users\davfe\Documents\GitHub\Cembido\ProyectoStarWars\MPlab\S2_1991255.X\lcd.c
+2C0 text18 CODE >125:C:\Users\davfe\Documents\GitHub\Cembido\ProyectoStarWars\MPlab\S2_1991255.X\lcd.c
+2C4 text18 CODE >128:C:\Users\davfe\Documents\GitHub\Cembido\ProyectoStarWars\MPlab\S2_1991255.X\lcd.c
+2CA text18 CODE >129:C:\Users\davfe\Documents\GitHub\Cembido\ProyectoStarWars\MPlab\S2_1991255.X\lcd.c
+285 text17 CODE >46:C:\Users\davfe\Documents\GitHub\Cembido\ProyectoStarWars\MPlab\S2_1991255.X\lcd.c
+285 text17 CODE >49:C:\Users\davfe\Documents\GitHub\Cembido\ProyectoStarWars\MPlab\S2_1991255.X\lcd.c
+287 text17 CODE >51:C:\Users\davfe\Documents\GitHub\Cembido\ProyectoStarWars\MPlab\S2_1991255.X\lcd.c
+289 text17 CODE >54:C:\Users\davfe\Documents\GitHub\Cembido\ProyectoStarWars\MPlab\S2_1991255.X\lcd.c
+28B text17 CODE >57:C:\Users\davfe\Documents\GitHub\Cembido\ProyectoStarWars\MPlab\S2_1991255.X\lcd.c
+293 text17 CODE >60:C:\Users\davfe\Documents\GitHub\Cembido\ProyectoStarWars\MPlab\S2_1991255.X\lcd.c
+297 text17 CODE >63:C:\Users\davfe\Documents\GitHub\Cembido\ProyectoStarWars\MPlab\S2_1991255.X\lcd.c
+29B text17 CODE >66:C:\Users\davfe\Documents\GitHub\Cembido\ProyectoStarWars\MPlab\S2_1991255.X\lcd.c
+29F text17 CODE >68:C:\Users\davfe\Documents\GitHub\Cembido\ProyectoStarWars\MPlab\S2_1991255.X\lcd.c
+2A3 text17 CODE >71:C:\Users\davfe\Documents\GitHub\Cembido\ProyectoStarWars\MPlab\S2_1991255.X\lcd.c
+2A7 text17 CODE >72:C:\Users\davfe\Documents\GitHub\Cembido\ProyectoStarWars\MPlab\S2_1991255.X\lcd.c
+441 text16 CODE >58:C:\Users\davfe\Documents\GitHub\Cembido\ProyectoStarWars\MPlab\S2_1991255.X\mcc_generated_files/mcc.c
+441 text16 CODE >61:C:\Users\davfe\Documents\GitHub\Cembido\ProyectoStarWars\MPlab\S2_1991255.X\mcc_generated_files/mcc.c
+444 text16 CODE >63:C:\Users\davfe\Documents\GitHub\Cembido\ProyectoStarWars\MPlab\S2_1991255.X\mcc_generated_files/mcc.c
+445 text16 CODE >65:C:\Users\davfe\Documents\GitHub\Cembido\ProyectoStarWars\MPlab\S2_1991255.X\mcc_generated_files/mcc.c
+447 text16 CODE >66:C:\Users\davfe\Documents\GitHub\Cembido\ProyectoStarWars\MPlab\S2_1991255.X\mcc_generated_files/mcc.c
+46C text15 CODE >226:C:\Users\davfe\Documents\GitHub\Cembido\ProyectoStarWars\MPlab\S2_1991255.X\mcc_generated_files/pin_manager.c
+46C text15 CODE >227:C:\Users\davfe\Documents\GitHub\Cembido\ProyectoStarWars\MPlab\S2_1991255.X\mcc_generated_files/pin_manager.c
+471 text15 CODE >228:C:\Users\davfe\Documents\GitHub\Cembido\ProyectoStarWars\MPlab\S2_1991255.X\mcc_generated_files/pin_manager.c
+466 text14 CODE >256:C:\Users\davfe\Documents\GitHub\Cembido\ProyectoStarWars\MPlab\S2_1991255.X\mcc_generated_files/pin_manager.c
+466 text14 CODE >257:C:\Users\davfe\Documents\GitHub\Cembido\ProyectoStarWars\MPlab\S2_1991255.X\mcc_generated_files/pin_manager.c
+46B text14 CODE >258:C:\Users\davfe\Documents\GitHub\Cembido\ProyectoStarWars\MPlab\S2_1991255.X\mcc_generated_files/pin_manager.c
+460 text13 CODE >286:C:\Users\davfe\Documents\GitHub\Cembido\ProyectoStarWars\MPlab\S2_1991255.X\mcc_generated_files/pin_manager.c
+460 text13 CODE >287:C:\Users\davfe\Documents\GitHub\Cembido\ProyectoStarWars\MPlab\S2_1991255.X\mcc_generated_files/pin_manager.c
+465 text13 CODE >288:C:\Users\davfe\Documents\GitHub\Cembido\ProyectoStarWars\MPlab\S2_1991255.X\mcc_generated_files/pin_manager.c
+45A text12 CODE >317:C:\Users\davfe\Documents\GitHub\Cembido\ProyectoStarWars\MPlab\S2_1991255.X\mcc_generated_files/pin_manager.c
+45A text12 CODE >318:C:\Users\davfe\Documents\GitHub\Cembido\ProyectoStarWars\MPlab\S2_1991255.X\mcc_generated_files/pin_manager.c
+45F text12 CODE >319:C:\Users\davfe\Documents\GitHub\Cembido\ProyectoStarWars\MPlab\S2_1991255.X\mcc_generated_files/pin_manager.c
+454 text11 CODE >347:C:\Users\davfe\Documents\GitHub\Cembido\ProyectoStarWars\MPlab\S2_1991255.X\mcc_generated_files/pin_manager.c
+454 text11 CODE >348:C:\Users\davfe\Documents\GitHub\Cembido\ProyectoStarWars\MPlab\S2_1991255.X\mcc_generated_files/pin_manager.c
+459 text11 CODE >349:C:\Users\davfe\Documents\GitHub\Cembido\ProyectoStarWars\MPlab\S2_1991255.X\mcc_generated_files/pin_manager.c
+44E text10 CODE >377:C:\Users\davfe\Documents\GitHub\Cembido\ProyectoStarWars\MPlab\S2_1991255.X\mcc_generated_files/pin_manager.c
+44E text10 CODE >378:C:\Users\davfe\Documents\GitHub\Cembido\ProyectoStarWars\MPlab\S2_1991255.X\mcc_generated_files/pin_manager.c
+453 text10 CODE >379:C:\Users\davfe\Documents\GitHub\Cembido\ProyectoStarWars\MPlab\S2_1991255.X\mcc_generated_files/pin_manager.c
+B2 text9 CODE >62:C:\Users\davfe\Documents\GitHub\Cembido\ProyectoStarWars\MPlab\S2_1991255.X\mcc_generated_files/pin_manager.c
+B2 text9 CODE >67:C:\Users\davfe\Documents\GitHub\Cembido\ProyectoStarWars\MPlab\S2_1991255.X\mcc_generated_files/pin_manager.c
+B4 text9 CODE >68:C:\Users\davfe\Documents\GitHub\Cembido\ProyectoStarWars\MPlab\S2_1991255.X\mcc_generated_files/pin_manager.c
+B5 text9 CODE >69:C:\Users\davfe\Documents\GitHub\Cembido\ProyectoStarWars\MPlab\S2_1991255.X\mcc_generated_files/pin_manager.c
+B6 text9 CODE >74:C:\Users\davfe\Documents\GitHub\Cembido\ProyectoStarWars\MPlab\S2_1991255.X\mcc_generated_files/pin_manager.c
+B9 text9 CODE >75:C:\Users\davfe\Documents\GitHub\Cembido\ProyectoStarWars\MPlab\S2_1991255.X\mcc_generated_files/pin_manager.c
+BB text9 CODE >76:C:\Users\davfe\Documents\GitHub\Cembido\ProyectoStarWars\MPlab\S2_1991255.X\mcc_generated_files/pin_manager.c
+BC text9 CODE >77:C:\Users\davfe\Documents\GitHub\Cembido\ProyectoStarWars\MPlab\S2_1991255.X\mcc_generated_files/pin_manager.c
+BE text9 CODE >82:C:\Users\davfe\Documents\GitHub\Cembido\ProyectoStarWars\MPlab\S2_1991255.X\mcc_generated_files/pin_manager.c
+C1 text9 CODE >83:C:\Users\davfe\Documents\GitHub\Cembido\ProyectoStarWars\MPlab\S2_1991255.X\mcc_generated_files/pin_manager.c
+C2 text9 CODE >84:C:\Users\davfe\Documents\GitHub\Cembido\ProyectoStarWars\MPlab\S2_1991255.X\mcc_generated_files/pin_manager.c
+C3 text9 CODE >89:C:\Users\davfe\Documents\GitHub\Cembido\ProyectoStarWars\MPlab\S2_1991255.X\mcc_generated_files/pin_manager.c
+C6 text9 CODE >90:C:\Users\davfe\Documents\GitHub\Cembido\ProyectoStarWars\MPlab\S2_1991255.X\mcc_generated_files/pin_manager.c
+C7 text9 CODE >91:C:\Users\davfe\Documents\GitHub\Cembido\ProyectoStarWars\MPlab\S2_1991255.X\mcc_generated_files/pin_manager.c
+C9 text9 CODE >92:C:\Users\davfe\Documents\GitHub\Cembido\ProyectoStarWars\MPlab\S2_1991255.X\mcc_generated_files/pin_manager.c
+CA text9 CODE >93:C:\Users\davfe\Documents\GitHub\Cembido\ProyectoStarWars\MPlab\S2_1991255.X\mcc_generated_files/pin_manager.c
+CC text9 CODE >98:C:\Users\davfe\Documents\GitHub\Cembido\ProyectoStarWars\MPlab\S2_1991255.X\mcc_generated_files/pin_manager.c
+CE text9 CODE >99:C:\Users\davfe\Documents\GitHub\Cembido\ProyectoStarWars\MPlab\S2_1991255.X\mcc_generated_files/pin_manager.c
+CF text9 CODE >100:C:\Users\davfe\Documents\GitHub\Cembido\ProyectoStarWars\MPlab\S2_1991255.X\mcc_generated_files/pin_manager.c
+D0 text9 CODE >105:C:\Users\davfe\Documents\GitHub\Cembido\ProyectoStarWars\MPlab\S2_1991255.X\mcc_generated_files/pin_manager.c
+D3 text9 CODE >106:C:\Users\davfe\Documents\GitHub\Cembido\ProyectoStarWars\MPlab\S2_1991255.X\mcc_generated_files/pin_manager.c
+D5 text9 CODE >107:C:\Users\davfe\Documents\GitHub\Cembido\ProyectoStarWars\MPlab\S2_1991255.X\mcc_generated_files/pin_manager.c
+D7 text9 CODE >112:C:\Users\davfe\Documents\GitHub\Cembido\ProyectoStarWars\MPlab\S2_1991255.X\mcc_generated_files/pin_manager.c
+DA text9 CODE >113:C:\Users\davfe\Documents\GitHub\Cembido\ProyectoStarWars\MPlab\S2_1991255.X\mcc_generated_files/pin_manager.c
+DC text9 CODE >114:C:\Users\davfe\Documents\GitHub\Cembido\ProyectoStarWars\MPlab\S2_1991255.X\mcc_generated_files/pin_manager.c
+DE text9 CODE >115:C:\Users\davfe\Documents\GitHub\Cembido\ProyectoStarWars\MPlab\S2_1991255.X\mcc_generated_files/pin_manager.c
+E0 text9 CODE >122:C:\Users\davfe\Documents\GitHub\Cembido\ProyectoStarWars\MPlab\S2_1991255.X\mcc_generated_files/pin_manager.c
+E1 text9 CODE >124:C:\Users\davfe\Documents\GitHub\Cembido\ProyectoStarWars\MPlab\S2_1991255.X\mcc_generated_files/pin_manager.c
+E2 text9 CODE >126:C:\Users\davfe\Documents\GitHub\Cembido\ProyectoStarWars\MPlab\S2_1991255.X\mcc_generated_files/pin_manager.c
+E3 text9 CODE >128:C:\Users\davfe\Documents\GitHub\Cembido\ProyectoStarWars\MPlab\S2_1991255.X\mcc_generated_files/pin_manager.c
+E4 text9 CODE >130:C:\Users\davfe\Documents\GitHub\Cembido\ProyectoStarWars\MPlab\S2_1991255.X\mcc_generated_files/pin_manager.c
+E5 text9 CODE >132:C:\Users\davfe\Documents\GitHub\Cembido\ProyectoStarWars\MPlab\S2_1991255.X\mcc_generated_files/pin_manager.c
+E6 text9 CODE >134:C:\Users\davfe\Documents\GitHub\Cembido\ProyectoStarWars\MPlab\S2_1991255.X\mcc_generated_files/pin_manager.c
+E7 text9 CODE >136:C:\Users\davfe\Documents\GitHub\Cembido\ProyectoStarWars\MPlab\S2_1991255.X\mcc_generated_files/pin_manager.c
+E8 text9 CODE >138:C:\Users\davfe\Documents\GitHub\Cembido\ProyectoStarWars\MPlab\S2_1991255.X\mcc_generated_files/pin_manager.c
+E9 text9 CODE >140:C:\Users\davfe\Documents\GitHub\Cembido\ProyectoStarWars\MPlab\S2_1991255.X\mcc_generated_files/pin_manager.c
+EA text9 CODE >142:C:\Users\davfe\Documents\GitHub\Cembido\ProyectoStarWars\MPlab\S2_1991255.X\mcc_generated_files/pin_manager.c
+EB text9 CODE >144:C:\Users\davfe\Documents\GitHub\Cembido\ProyectoStarWars\MPlab\S2_1991255.X\mcc_generated_files/pin_manager.c
+EC text9 CODE >146:C:\Users\davfe\Documents\GitHub\Cembido\ProyectoStarWars\MPlab\S2_1991255.X\mcc_generated_files/pin_manager.c
+ED text9 CODE >148:C:\Users\davfe\Documents\GitHub\Cembido\ProyectoStarWars\MPlab\S2_1991255.X\mcc_generated_files/pin_manager.c
+EE text9 CODE >150:C:\Users\davfe\Documents\GitHub\Cembido\ProyectoStarWars\MPlab\S2_1991255.X\mcc_generated_files/pin_manager.c
+EF text9 CODE >152:C:\Users\davfe\Documents\GitHub\Cembido\ProyectoStarWars\MPlab\S2_1991255.X\mcc_generated_files/pin_manager.c
+F0 text9 CODE >154:C:\Users\davfe\Documents\GitHub\Cembido\ProyectoStarWars\MPlab\S2_1991255.X\mcc_generated_files/pin_manager.c
+F1 text9 CODE >156:C:\Users\davfe\Documents\GitHub\Cembido\ProyectoStarWars\MPlab\S2_1991255.X\mcc_generated_files/pin_manager.c
+F2 text9 CODE >161:C:\Users\davfe\Documents\GitHub\Cembido\ProyectoStarWars\MPlab\S2_1991255.X\mcc_generated_files/pin_manager.c
+FA text9 CODE >162:C:\Users\davfe\Documents\GitHub\Cembido\ProyectoStarWars\MPlab\S2_1991255.X\mcc_generated_files/pin_manager.c
+102 text9 CODE >163:C:\Users\davfe\Documents\GitHub\Cembido\ProyectoStarWars\MPlab\S2_1991255.X\mcc_generated_files/pin_manager.c
+10A text9 CODE >164:C:\Users\davfe\Documents\GitHub\Cembido\ProyectoStarWars\MPlab\S2_1991255.X\mcc_generated_files/pin_manager.c
+112 text9 CODE >165:C:\Users\davfe\Documents\GitHub\Cembido\ProyectoStarWars\MPlab\S2_1991255.X\mcc_generated_files/pin_manager.c
+11A text9 CODE >166:C:\Users\davfe\Documents\GitHub\Cembido\ProyectoStarWars\MPlab\S2_1991255.X\mcc_generated_files/pin_manager.c
+122 text9 CODE >169:C:\Users\davfe\Documents\GitHub\Cembido\ProyectoStarWars\MPlab\S2_1991255.X\mcc_generated_files/pin_manager.c
+123 text9 CODE >171:C:\Users\davfe\Documents\GitHub\Cembido\ProyectoStarWars\MPlab\S2_1991255.X\mcc_generated_files/pin_manager.c
+472 text8 CODE >68:C:\Users\davfe\Documents\GitHub\Cembido\ProyectoStarWars\MPlab\S2_1991255.X\mcc_generated_files/mcc.c
+472 text8 CODE >71:C:\Users\davfe\Documents\GitHub\Cembido\ProyectoStarWars\MPlab\S2_1991255.X\mcc_generated_files/mcc.c
+475 text8 CODE >72:C:\Users\davfe\Documents\GitHub\Cembido\ProyectoStarWars\MPlab\S2_1991255.X\mcc_generated_files/mcc.c
+42F text7 CODE >50:C:\Users\davfe\Documents\GitHub\Cembido\ProyectoStarWars\MPlab\S2_1991255.X\mcc_generated_files/mcc.c
+42F text7 CODE >53:C:\Users\davfe\Documents\GitHub\Cembido\ProyectoStarWars\MPlab\S2_1991255.X\mcc_generated_files/mcc.c
+432 text7 CODE >54:C:\Users\davfe\Documents\GitHub\Cembido\ProyectoStarWars\MPlab\S2_1991255.X\mcc_generated_files/mcc.c
+435 text7 CODE >55:C:\Users\davfe\Documents\GitHub\Cembido\ProyectoStarWars\MPlab\S2_1991255.X\mcc_generated_files/mcc.c
+438 text7 CODE >56:C:\Users\davfe\Documents\GitHub\Cembido\ProyectoStarWars\MPlab\S2_1991255.X\mcc_generated_files/mcc.c
+2CB text6 CODE >101:C:\Users\davfe\Documents\GitHub\Cembido\ProyectoStarWars\MPlab\S2_1991255.X\lcd.c
+2CD text6 CODE >103:C:\Users\davfe\Documents\GitHub\Cembido\ProyectoStarWars\MPlab\S2_1991255.X\lcd.c
+2D1 text6 CODE >106:C:\Users\davfe\Documents\GitHub\Cembido\ProyectoStarWars\MPlab\S2_1991255.X\lcd.c
+2D8 text6 CODE >109:C:\Users\davfe\Documents\GitHub\Cembido\ProyectoStarWars\MPlab\S2_1991255.X\lcd.c
+2E4 text6 CODE >112:C:\Users\davfe\Documents\GitHub\Cembido\ProyectoStarWars\MPlab\S2_1991255.X\lcd.c
+2EA text6 CODE >113:C:\Users\davfe\Documents\GitHub\Cembido\ProyectoStarWars\MPlab\S2_1991255.X\lcd.c
+1B9 text5 CODE >26:C:\Users\davfe\Documents\GitHub\Cembido\ProyectoStarWars\MPlab\S2_1991255.X\functions.c
+1BB text5 CODE >42:C:\Users\davfe\Documents\GitHub\Cembido\ProyectoStarWars\MPlab\S2_1991255.X\functions.c
+1BB text5 CODE >43:C:\Users\davfe\Documents\GitHub\Cembido\ProyectoStarWars\MPlab\S2_1991255.X\functions.c
+1C7 text5 CODE >45:C:\Users\davfe\Documents\GitHub\Cembido\ProyectoStarWars\MPlab\S2_1991255.X\functions.c
+1CA text5 CODE >47:C:\Users\davfe\Documents\GitHub\Cembido\ProyectoStarWars\MPlab\S2_1991255.X\functions.c
+1E7 text5 CODE >49:C:\Users\davfe\Documents\GitHub\Cembido\ProyectoStarWars\MPlab\S2_1991255.X\functions.c
+210 text4 CODE >143:C:\Users\davfe\Documents\GitHub\Cembido\ProyectoStarWars\MPlab\S2_1991255.X\lcd.c
+212 text4 CODE >146:C:\Users\davfe\Documents\GitHub\Cembido\ProyectoStarWars\MPlab\S2_1991255.X\lcd.c
+21F text4 CODE >153:C:\Users\davfe\Documents\GitHub\Cembido\ProyectoStarWars\MPlab\S2_1991255.X\lcd.c
+233 text4 CODE >156:C:\Users\davfe\Documents\GitHub\Cembido\ProyectoStarWars\MPlab\S2_1991255.X\lcd.c
+237 text4 CODE >157:C:\Users\davfe\Documents\GitHub\Cembido\ProyectoStarWars\MPlab\S2_1991255.X\lcd.c
+1E8 text3 CODE >131:C:\Users\davfe\Documents\GitHub\Cembido\ProyectoStarWars\MPlab\S2_1991255.X\lcd.c
+1E8 text3 CODE >133:C:\Users\davfe\Documents\GitHub\Cembido\ProyectoStarWars\MPlab\S2_1991255.X\lcd.c
+1EA text3 CODE >136:C:\Users\davfe\Documents\GitHub\Cembido\ProyectoStarWars\MPlab\S2_1991255.X\lcd.c
+1EB text3 CODE >139:C:\Users\davfe\Documents\GitHub\Cembido\ProyectoStarWars\MPlab\S2_1991255.X\lcd.c
+1FF text3 CODE >136:C:\Users\davfe\Documents\GitHub\Cembido\ProyectoStarWars\MPlab\S2_1991255.X\lcd.c
+20F text3 CODE >141:C:\Users\davfe\Documents\GitHub\Cembido\ProyectoStarWars\MPlab\S2_1991255.X\lcd.c
+34A text2 CODE >159:C:\Users\davfe\Documents\GitHub\Cembido\ProyectoStarWars\MPlab\S2_1991255.X\lcd.c
+34A text2 CODE >161:C:\Users\davfe\Documents\GitHub\Cembido\ProyectoStarWars\MPlab\S2_1991255.X\lcd.c
+350 text2 CODE >162:C:\Users\davfe\Documents\GitHub\Cembido\ProyectoStarWars\MPlab\S2_1991255.X\lcd.c
+358 text2 CODE >163:C:\Users\davfe\Documents\GitHub\Cembido\ProyectoStarWars\MPlab\S2_1991255.X\lcd.c
+35F text2 CODE >164:C:\Users\davfe\Documents\GitHub\Cembido\ProyectoStarWars\MPlab\S2_1991255.X\lcd.c
+367 text2 CODE >165:C:\Users\davfe\Documents\GitHub\Cembido\ProyectoStarWars\MPlab\S2_1991255.X\lcd.c
+39D text1 CODE >51:C:\Users\davfe\Documents\GitHub\Cembido\ProyectoStarWars\MPlab\S2_1991255.X\functions.c
+39D text1 CODE >64:C:\Users\davfe\Documents\GitHub\Cembido\ProyectoStarWars\MPlab\S2_1991255.X\functions.c
+3A0 text1 CODE >65:C:\Users\davfe\Documents\GitHub\Cembido\ProyectoStarWars\MPlab\S2_1991255.X\functions.c
+3A6 text1 CODE >66:C:\Users\davfe\Documents\GitHub\Cembido\ProyectoStarWars\MPlab\S2_1991255.X\functions.c
+3AA text1 CODE >67:C:\Users\davfe\Documents\GitHub\Cembido\ProyectoStarWars\MPlab\S2_1991255.X\functions.c
+3B0 text1 CODE >68:C:\Users\davfe\Documents\GitHub\Cembido\ProyectoStarWars\MPlab\S2_1991255.X\functions.c
+3B4 text1 CODE >69:C:\Users\davfe\Documents\GitHub\Cembido\ProyectoStarWars\MPlab\S2_1991255.X\functions.c
+124 maintext CODE >28:C:\Users\davfe\Documents\GitHub\Cembido\ProyectoStarWars\MPlab\S2_1991255.X\main.c
+124 maintext CODE >34:C:\Users\davfe\Documents\GitHub\Cembido\ProyectoStarWars\MPlab\S2_1991255.X\main.c
+127 maintext CODE >35:C:\Users\davfe\Documents\GitHub\Cembido\ProyectoStarWars\MPlab\S2_1991255.X\main.c
+12A maintext CODE >39:C:\Users\davfe\Documents\GitHub\Cembido\ProyectoStarWars\MPlab\S2_1991255.X\main.c
+139 maintext CODE >41:C:\Users\davfe\Documents\GitHub\Cembido\ProyectoStarWars\MPlab\S2_1991255.X\main.c
+147 maintext CODE >43:C:\Users\davfe\Documents\GitHub\Cembido\ProyectoStarWars\MPlab\S2_1991255.X\main.c
+155 maintext CODE >45:C:\Users\davfe\Documents\GitHub\Cembido\ProyectoStarWars\MPlab\S2_1991255.X\main.c
+163 maintext CODE >49:C:\Users\davfe\Documents\GitHub\Cembido\ProyectoStarWars\MPlab\S2_1991255.X\main.c
+169 maintext CODE >50:C:\Users\davfe\Documents\GitHub\Cembido\ProyectoStarWars\MPlab\S2_1991255.X\main.c
+16F maintext CODE >51:C:\Users\davfe\Documents\GitHub\Cembido\ProyectoStarWars\MPlab\S2_1991255.X\main.c
+178 maintext CODE >52:C:\Users\davfe\Documents\GitHub\Cembido\ProyectoStarWars\MPlab\S2_1991255.X\main.c
+181 maintext CODE >56:C:\Users\davfe\Documents\GitHub\Cembido\ProyectoStarWars\MPlab\S2_1991255.X\main.c
+184 maintext CODE >59:C:\Users\davfe\Documents\GitHub\Cembido\ProyectoStarWars\MPlab\S2_1991255.X\main.c
+185 maintext CODE >61:C:\Users\davfe\Documents\GitHub\Cembido\ProyectoStarWars\MPlab\S2_1991255.X\main.c
+185 maintext CODE >64:C:\Users\davfe\Documents\GitHub\Cembido\ProyectoStarWars\MPlab\S2_1991255.X\main.c
+448 inittext CODE >3820:C:\Users\davfe\AppData\Local\Temp\s217g.s
+448 inittext CODE >3821:C:\Users\davfe\AppData\Local\Temp\s217g.s
+449 inittext CODE >3822:C:\Users\davfe\AppData\Local\Temp\s217g.s
+449 inittext CODE >3823:C:\Users\davfe\AppData\Local\Temp\s217g.s
+44A inittext CODE >3824:C:\Users\davfe\AppData\Local\Temp\s217g.s
+44B inittext CODE >3825:C:\Users\davfe\AppData\Local\Temp\s217g.s
+44C inittext CODE >3826:C:\Users\davfe\AppData\Local\Temp\s217g.s
+44D inittext CODE >3827:C:\Users\davfe\AppData\Local\Temp\s217g.s
+# %SYMTAB Section
+# An enumeration of all symbols in the program.
+# The beginning of the section is indicated by %SYMTAB.
+# Each line describes a single symbol as follows:
+#    <label> <value> [-]<load-adj> <class> <space> <psect> <file-name>
+# The value and load-adj are both in unqualified hexadecimal.
+# All other numeric values are in decimal.  The load-adj is the
+# quantity one needs to add to the symbol value in order to obtain the load
+# address of the symbol.  This value may be signed. If the symbol
+# was defined in a psect then <psect> will be "-". File-name
+# is the name of the object file in which the symbol was defined.
+%SYMTAB
+_IOCAF3_DefaultInterruptHandler 8F0 0 CODE 0 text27 dist/default/production\S2_1991255.X.production.o
+___latbits 3 0 ABS 0 - dist/default/production\S2_1991255.X.production.o
+_LCDPutChar 596 0 CODE 0 text6 dist/default/production\S2_1991255.X.production.o
+__LdataBANK0 0 0 ABS 0 dataBANK0 -
+__LdataBANK1 0 0 ABS 0 dataBANK1 -
+__Hspace_0 47C 0 ABS 0 - -
+__Hspace_1 B8 0 ABS 0 - -
+__Hspace_2 0 0 ABS 0 - -
+__Hspace_3 0 0 ABS 0 - -
+__Hspace_4 10010 0 ABS 0 - -
+__HidataBANK0 0 0 ABS 0 idataBANK0 -
+__HidataBANK1 0 0 ABS 0 idataBANK1 -
+_LCD_Initialize 50A 0 CODE 0 text17 dist/default/production\S2_1991255.X.production.o
+i1LCDPutStr@i 7C 0 COMMON 1 cstackCOMMON dist/default/production\S2_1991255.X.production.o
+__Heeprom_data 0 0 EEDATA 3 eeprom_data -
+__end_of_PIN_MANAGER_IOC 372 0 CODE 0 text21 dist/default/production\S2_1991255.X.production.o
+LCDGoto@ln 2E 0 BANK0 1 cstackBANK0 dist/default/production\S2_1991255.X.production.o
+__end_of_WDT_Initialize 8EC 0 CODE 0 text8 dist/default/production\S2_1991255.X.production.o
+__Hstrings 0 0 ABS 0 strings -
+i1_LCDWriteNibble 616 0 CODE 0 text38 dist/default/production\S2_1991255.X.production.o
+_LATA 10C 0 ABS 0 - dist/default/production\S2_1991255.X.production.o
+_LATB 10D 0 ABS 0 - dist/default/production\S2_1991255.X.production.o
+_LATC 10E 0 ABS 0 - dist/default/production\S2_1991255.X.production.o
+_WPUA 20C 0 ABS 0 - dist/default/production\S2_1991255.X.production.o
+_WPUB 20D 0 ABS 0 - dist/default/production\S2_1991255.X.production.o
+_WPUC 20E 0 ABS 0 - dist/default/production\S2_1991255.X.production.o
+_WPUE 210 0 ABS 0 - dist/default/production\S2_1991255.X.production.o
+___sp 0 0 STACK 2 stack C:\Users\davfe\AppData\Local\Temp\s217g.o
+_main 248 0 CODE 0 maintext dist/default/production\S2_1991255.X.production.o
+btemp 7E 0 ABS 0 - dist/default/production\S2_1991255.X.production.o
+createCustomCharacter@Pattern 30 0 BANK0 1 cstackBANK0 dist/default/production\S2_1991255.X.production.o
+start 3A 0 CODE 0 init C:\Users\davfe\AppData\Local\Temp\s217g.o
+__size_of_main 0 0 ABS 0 - dist/default/production\S2_1991255.X.production.o
+i1_LCDPutCmd 656 0 CODE 0 text37 dist/default/production\S2_1991255.X.production.o
+i1_LCDPutStr 4BE 0 CODE 0 text34 dist/default/production\S2_1991255.X.production.o
+_OPTION_REGbits 95 0 ABS 0 - dist/default/production\S2_1991255.X.production.o
+__size_of_LCDGoto 0 0 ABS 0 - dist/default/production\S2_1991255.X.production.o
+_LCDGoto$468 2F 0 BANK0 1 cstackBANK0 dist/default/production\S2_1991255.X.production.o
+_LCDClear 694 0 CODE 0 text2 dist/default/production\S2_1991255.X.production.o
+__LidataBANK0 0 0 ABS 0 idataBANK0 -
+__LidataBANK1 0 0 ABS 0 idataBANK1 -
+__end_of_IOCAF2_DefaultInterruptHandler 8F4 0 CODE 0 text29 dist/default/production\S2_1991255.X.production.o
+__Hpowerup 0 0 CODE 0 powerup -
+__end_of_IOCAF5_DefaultInterruptHandler 8EE 0 CODE 0 text23 dist/default/production\S2_1991255.X.production.o
+__size_of_SYSTEM_Initialize 0 0 ABS 0 - dist/default/production\S2_1991255.X.production.o
+__end_of_LCDClear 6D0 0 CODE 0 text2 dist/default/production\S2_1991255.X.production.o
+__size_of_IOCAF5_SetInterruptHandler 0 0 ABS 0 - dist/default/production\S2_1991255.X.production.o
+intlevel0 0 0 ENTRY 0 functab C:\Users\davfe\AppData\Local\Temp\s217g.o
+intlevel1 0 0 ENTRY 0 functab C:\Users\davfe\AppData\Local\Temp\s217g.o
+intlevel2 0 0 ENTRY 0 functab C:\Users\davfe\AppData\Local\Temp\s217g.o
+intlevel3 0 0 ENTRY 0 functab C:\Users\davfe\AppData\Local\Temp\s217g.o
+intlevel4 0 0 ENTRY 0 functab C:\Users\davfe\AppData\Local\Temp\s217g.o
+intlevel5 0 0 ENTRY 0 functab C:\Users\davfe\AppData\Local\Temp\s217g.o
+__end_of_LCD_Initialize 550 0 CODE 0 text17 dist/default/production\S2_1991255.X.production.o
+__end_of_LCDPutChar 5D6 0 CODE 0 text6 dist/default/production\S2_1991255.X.production.o
+wtemp0 7E 0 ABS 0 - dist/default/production\S2_1991255.X.production.o
+__Hfunctab 0 0 ENTRY 0 functab -
+_PIN_MANAGER_IOC 310 0 CODE 0 text21 dist/default/production\S2_1991255.X.production.o
+__size_of_basicShoot 0 0 ABS 0 - dist/default/production\S2_1991255.X.production.o
+__Hclrtext 0 0 ABS 0 clrtext -
+__size_of_LCDWriteNibble 0 0 ABS 0 - dist/default/production\S2_1991255.X.production.o
+__size_of_IOCAF2_SetInterruptHandler 0 0 ABS 0 - dist/default/production\S2_1991255.X.production.o
+_ANSELA 18C 0 ABS 0 - dist/default/production\S2_1991255.X.production.o
+_ANSELB 18D 0 ABS 0 - dist/default/production\S2_1991255.X.production.o
+_ANSELC 18E 0 ABS 0 - dist/default/production\S2_1991255.X.production.o
+_BORCON 116 0 ABS 0 - dist/default/production\S2_1991255.X.production.o
+__size_of_IOCAF1_DefaultInterruptHandler 0 0 ABS 0 - dist/default/production\S2_1991255.X.production.o
+IOCAF3_SetInterruptHandler@InterruptHandler 27 0 BANK0 1 cstackBANK0 dist/default/production\S2_1991255.X.production.o
+__end_of_INTERRUPT_InterruptManager 3A 0 CODE 0 intentry dist/default/production\S2_1991255.X.production.o
+__size_of_IOCAF4_DefaultInterruptHandler 0 0 ABS 0 - dist/default/production\S2_1991255.X.production.o
+__end_of_IOCAF3_SetInterruptHandler 8C0 0 CODE 0 text12 dist/default/production\S2_1991255.X.production.o
+_IOCAF5_InterruptHandler 55 0 BANK0 1 nvBANK0 dist/default/production\S2_1991255.X.production.o
+__end_ofi1_LCDWriteNibble 656 0 CODE 0 text38 dist/default/production\S2_1991255.X.production.o
+_IOCAF5_SetInterruptHandler 89C 0 CODE 0 text10 dist/default/production\S2_1991255.X.production.o
+__Lmaintext 0 0 ABS 0 maintext -
+__LnvBANK0 0 0 ABS 0 nvBANK0 -
+__size_ofi1_LCDWriteNibble 0 0 ABS 0 - dist/default/production\S2_1991255.X.production.o
+__end_ofi1_LCDGoto 4BE 0 CODE 0 text36 dist/default/production\S2_1991255.X.production.o
+_INLVLA 38C 0 ABS 0 - dist/default/production\S2_1991255.X.production.o
+_INLVLB 38D 0 ABS 0 - dist/default/production\S2_1991255.X.production.o
+_INLVLC 38E 0 ABS 0 - dist/default/production\S2_1991255.X.production.o
+_INLVLE 390 0 ABS 0 - dist/default/production\S2_1991255.X.production.o
+__size_ofi1_LCDGoto 0 0 ABS 0 - dist/default/production\S2_1991255.X.production.o
+___stackhi 27EF 0 ABS 0 - C:\Users\davfe\AppData\Local\Temp\s217g.o
+___stacklo 2068 0 ABS 0 - C:\Users\davfe\AppData\Local\Temp\s217g.o
+__end_of_IOCAF0_SetInterruptHandler 8E4 0 CODE 0 text15 dist/default/production\S2_1991255.X.production.o
+__end_of_LCDGoto 470 0 CODE 0 text4 dist/default/production\S2_1991255.X.production.o
+__end_of_LCDPutCmd 596 0 CODE 0 text18 dist/default/production\S2_1991255.X.production.o
+__end_of_LCDPutStr 420 0 CODE 0 text3 dist/default/production\S2_1991255.X.production.o
+__size_of_LCDPutCmd 0 0 ABS 0 - dist/default/production\S2_1991255.X.production.o
+__size_of_LCDPutStr 0 0 ABS 0 - dist/default/production\S2_1991255.X.production.o
+_IOCAF2_SetInterruptHandler 8C0 0 CODE 0 text13 dist/default/production\S2_1991255.X.production.o
+i1_LCDGoto$468 78 0 COMMON 1 cstackCOMMON dist/default/production\S2_1991255.X.production.o
+_IOCAF4_InterruptHandler 57 0 BANK0 1 nvBANK0 dist/default/production\S2_1991255.X.production.o
+__end_of_createCustomCharacter 3D0 0 CODE 0 text5 dist/default/production\S2_1991255.X.production.o
+i1LCDPutStr@str 77 0 COMMON 1 cstackCOMMON dist/default/production\S2_1991255.X.production.o
+_PIN_MANAGER_Initialize 164 0 CODE 0 text9 dist/default/production\S2_1991255.X.production.o
+start_initialization 3E 0 CODE 0 cinit dist/default/production\S2_1991255.X.production.o
+i1_LCDGoto 470 0 CODE 0 text36 dist/default/production\S2_1991255.X.production.o
+_ODCONA 28C 0 ABS 0 - dist/default/production\S2_1991255.X.production.o
+_ODCONB 28D 0 ABS 0 - dist/default/production\S2_1991255.X.production.o
+_ODCONC 28E 0 ABS 0 - dist/default/production\S2_1991255.X.production.o
+IOCAF0_SetInterruptHandler@InterruptHandler 27 0 BANK0 1 cstackBANK0 dist/default/production\S2_1991255.X.production.o
+_OSCCON 99 0 ABS 0 - dist/default/production\S2_1991255.X.production.o
+_IOCAF2_DefaultInterruptHandler 8F2 0 CODE 0 text29 dist/default/production\S2_1991255.X.production.o
+_LCDPutCmd 550 0 CODE 0 text18 dist/default/production\S2_1991255.X.production.o
+_LCDPutStr 3D0 0 CODE 0 text3 dist/default/production\S2_1991255.X.production.o
+_IOCAF5_DefaultInterruptHandler 8EC 0 CODE 0 text23 dist/default/production\S2_1991255.X.production.o
+__size_of_PIN_MANAGER_IOC 0 0 ABS 0 - dist/default/production\S2_1991255.X.production.o
+__end_of_SYSTEM_Initialize 872 0 CODE 0 text7 dist/default/production\S2_1991255.X.production.o
+_createCustomCharacter 372 0 CODE 0 text5 dist/default/production\S2_1991255.X.production.o
+__pcstackBANK0 20 0 BANK0 1 cstackBANK0 dist/default/production\S2_1991255.X.production.o
+_IOCAF3_InterruptHandler 59 0 BANK0 1 nvBANK0 dist/default/production\S2_1991255.X.production.o
+createCustomCharacter@Location 2E 0 BANK0 1 cstackBANK0 dist/default/production\S2_1991255.X.production.o
+i1LCDPutChar@ch 76 0 COMMON 1 cstackCOMMON dist/default/production\S2_1991255.X.production.o
+_WDTCON 97 0 ABS 0 - dist/default/production\S2_1991255.X.production.o
+_idleScreen 73A 0 CODE 0 text1 dist/default/production\S2_1991255.X.production.o
+___int_sp 0 0 STACK 2 stack C:\Users\davfe\AppData\Local\Temp\s217g.o
+__Hbank0 0 0 ABS 0 bank0 -
+__Hbank1 0 0 ABS 0 bank1 -
+__Hbank2 0 0 ABS 0 bank2 -
+__Hbank3 0 0 ABS 0 bank3 -
+__Hbank4 0 0 ABS 0 bank4 -
+__Hbank5 0 0 ABS 0 bank5 -
+__Hbank6 0 0 ABS 0 bank6 -
+__Hbank7 0 0 ABS 0 bank7 -
+__Hbank8 0 0 ABS 0 bank8 -
+__Hbank9 0 0 ABS 0 bank9 -
+__Hcinit 76 0 CODE 0 cinit -
+__size_of_OSCILLATOR_Initialize 0 0 ABS 0 - dist/default/production\S2_1991255.X.production.o
+__Hsfr10 0 0 ABS 0 sfr10 -
+__Hsfr11 0 0 ABS 0 sfr11 -
+__Hsfr12 0 0 ABS 0 sfr12 -
+__Hsfr13 0 0 ABS 0 sfr13 -
+__Hsfr14 0 0 ABS 0 sfr14 -
+__Hsfr15 0 0 ABS 0 sfr15 -
+__Hsfr16 0 0 ABS 0 sfr16 -
+__Hsfr17 0 0 ABS 0 sfr17 -
+__Hsfr18 0 0 ABS 0 sfr18 -
+__Hsfr19 0 0 ABS 0 sfr19 -
+__Hsfr20 0 0 ABS 0 sfr20 -
+__Hsfr21 0 0 ABS 0 sfr21 -
+__Hsfr22 0 0 ABS 0 sfr22 -
+__Hsfr23 0 0 ABS 0 sfr23 -
+__Hsfr24 0 0 ABS 0 sfr24 -
+__Hsfr25 0 0 ABS 0 sfr25 -
+__Hsfr26 0 0 ABS 0 sfr26 -
+__Hsfr27 0 0 ABS 0 sfr27 -
+__Hsfr28 0 0 ABS 0 sfr28 -
+__Hsfr29 0 0 ABS 0 sfr29 -
+__Hsfr30 0 0 ABS 0 sfr30 -
+__Hsfr31 0 0 ABS 0 sfr31 -
+__Hstack 0 0 STACK 2 stack -
+main@Pattern1 35 0 BANK0 1 cstackBANK0 dist/default/production\S2_1991255.X.production.o
+main@Pattern2 3D 0 BANK0 1 cstackBANK0 dist/default/production\S2_1991255.X.production.o
+main@Pattern3 45 0 BANK0 1 cstackBANK0 dist/default/production\S2_1991255.X.production.o
+main@Pattern4 4D 0 BANK0 1 cstackBANK0 dist/default/production\S2_1991255.X.production.o
+__Hbank10 0 0 ABS 0 bank10 -
+__Hbank11 0 0 ABS 0 bank11 -
+__Hbank12 0 0 ABS 0 bank12 -
+__Hbank13 0 0 ABS 0 bank13 -
+__Hbank14 0 0 ABS 0 bank14 -
+__Hbank15 0 0 ABS 0 bank15 -
+__Hbank16 0 0 ABS 0 bank16 -
+__Hbank17 0 0 ABS 0 bank17 -
+__Hbank18 0 0 ABS 0 bank18 -
+__Hbank19 0 0 ABS 0 bank19 -
+__Hbank20 0 0 ABS 0 bank20 -
+__Hbank21 0 0 ABS 0 bank21 -
+__Hbank22 0 0 ABS 0 bank22 -
+__Hbank23 0 0 ABS 0 bank23 -
+__Hbank24 0 0 ABS 0 bank24 -
+__Hbank25 0 0 ABS 0 bank25 -
+__Hbank26 0 0 BANK26 1 bank26 -
+__Hbank27 0 0 BANK27 1 bank27 -
+__Hbank28 0 0 BANK28 1 bank28 -
+__Hbank29 0 0 BANK29 1 bank29 -
+__Hbank30 0 0 BANK30 1 bank30 -
+__Hbank31 0 0 BANK31 1 bank31 -
+__Hbigram 0 0 ABS 0 bigram -
+__Hmaintext 0 0 ABS 0 maintext -
+__Hcommon 0 0 ABS 0 common -
+__Hconfig 10012 0 CONFIG 4 config -
+__end_of_IOCAF1_DefaultInterruptHandler 8F6 0 CODE 0 text31 dist/default/production\S2_1991255.X.production.o
+i1_LCDPutChar 6D0 0 CODE 0 text35 dist/default/production\S2_1991255.X.production.o
+basicShoot@direction 20 0 BANK0 1 cstackBANK0 dist/default/production\S2_1991255.X.production.o
+_IOCAF2_InterruptHandler 5B 0 BANK0 1 nvBANK0 dist/default/production\S2_1991255.X.production.o
+__Lbank0 0 0 ABS 0 bank0 -
+__Lbank1 0 0 ABS 0 bank1 -
+__Lbank2 0 0 ABS 0 bank2 -
+__Lbank3 0 0 ABS 0 bank3 -
+__Lbank4 0 0 ABS 0 bank4 -
+__Lbank5 0 0 ABS 0 bank5 -
+__Lbank6 0 0 ABS 0 bank6 -
+__Lbank7 0 0 ABS 0 bank7 -
+__Lbank8 0 0 ABS 0 bank8 -
+__Lbank9 0 0 ABS 0 bank9 -
+__Lcinit 3E 0 CODE 0 cinit -
+__Lsfr10 0 0 ABS 0 sfr10 -
+__Lsfr11 0 0 ABS 0 sfr11 -
+__Lsfr12 0 0 ABS 0 sfr12 -
+__Lsfr13 0 0 ABS 0 sfr13 -
+__Lsfr14 0 0 ABS 0 sfr14 -
+__Lsfr15 0 0 ABS 0 sfr15 -
+__Lsfr16 0 0 ABS 0 sfr16 -
+__Lsfr17 0 0 ABS 0 sfr17 -
+__Lsfr18 0 0 ABS 0 sfr18 -
+__Lsfr19 0 0 ABS 0 sfr19 -
+__Lsfr20 0 0 ABS 0 sfr20 -
+__Lsfr21 0 0 ABS 0 sfr21 -
+__Lsfr22 0 0 ABS 0 sfr22 -
+__Lsfr23 0 0 ABS 0 sfr23 -
+__Lsfr24 0 0 ABS 0 sfr24 -
+__Lsfr25 0 0 ABS 0 sfr25 -
+__Lsfr26 0 0 ABS 0 sfr26 -
+__Lsfr27 0 0 ABS 0 sfr27 -
+__Lsfr28 0 0 ABS 0 sfr28 -
+__Lsfr29 0 0 ABS 0 sfr29 -
+__Lsfr30 0 0 ABS 0 sfr30 -
+__Lsfr31 0 0 ABS 0 sfr31 -
+__Lstack 0 0 STACK 2 stack -
+__end_of_IOCAF4_DefaultInterruptHandler 8F0 0 CODE 0 text25 dist/default/production\S2_1991255.X.production.o
+__size_of_LCDPutChar 0 0 ABS 0 - dist/default/production\S2_1991255.X.production.o
+init_ram 890 0 CODE 0 inittext dist/default/production\S2_1991255.X.production.o
+__Linittext 0 0 ABS 0 inittext -
+_PORTBbits D 0 ABS 0 - dist/default/production\S2_1991255.X.production.o
+_INTCONbits B 0 ABS 0 - dist/default/production\S2_1991255.X.production.o
+__Habs1 0 0 ABS 0 abs1 -
+__Hcode 0 0 ABS 0 code -
+__Hinit 3A 0 CODE 0 init -
+__Hsfr0 0 0 ABS 0 sfr0 -
+__Hsfr1 0 0 ABS 0 sfr1 -
+__Hsfr2 0 0 ABS 0 sfr2 -
+__Hsfr3 0 0 ABS 0 sfr3 -
+__Hsfr4 0 0 ABS 0 sfr4 -
+__Hsfr5 0 0 ABS 0 sfr5 -
+__Hsfr6 0 0 ABS 0 sfr6 -
+__Hsfr7 0 0 ABS 0 sfr7 -
+__Hsfr8 0 0 ABS 0 sfr8 -
+__Hsfr9 0 0 ABS 0 sfr9 -
+__Htext 0 0 ABS 0 text -
+__Labs1 0 0 ABS 0 abs1 -
+__Lcode 0 0 ABS 0 code -
+__Linit 3A 0 CODE 0 init -
+IOCAF5_SetInterruptHandler@InterruptHandler 27 0 BANK0 1 cstackBANK0 dist/default/production\S2_1991255.X.production.o
+__Lsfr0 0 0 ABS 0 sfr0 -
+__Lsfr1 0 0 ABS 0 sfr1 -
+__Lsfr2 0 0 ABS 0 sfr2 -
+__Lsfr3 0 0 ABS 0 sfr3 -
+__Lsfr4 0 0 ABS 0 sfr4 -
+__Lsfr5 0 0 ABS 0 sfr5 -
+__Lsfr6 0 0 ABS 0 sfr6 -
+__Lsfr7 0 0 ABS 0 sfr7 -
+__Lsfr8 0 0 ABS 0 sfr8 -
+__Lsfr9 0 0 ABS 0 sfr9 -
+__Ltext 0 0 ABS 0 text -
+__pstringtext1 7C4 0 STRCODE 0 stringtext1 dist/default/production\S2_1991255.X.production.o
+__pstringtext2 0 0 STRCODE 0 stringtext2 dist/default/production\S2_1991255.X.production.o
+__pnvBANK0 55 0 BANK0 1 nvBANK0 dist/default/production\S2_1991255.X.production.o
+__end_ofi1_LCDPutCmd 694 0 CODE 0 text37 dist/default/production\S2_1991255.X.production.o
+__end_ofi1_LCDPutStr 50A 0 CODE 0 text34 dist/default/production\S2_1991255.X.production.o
+__LcstackBANK0 0 0 ABS 0 cstackBANK0 -
+int$flags 7E 0 ABS 0 - dist/default/production\S2_1991255.X.production.o
+__HcstackCOMMON 0 0 ABS 0 cstackCOMMON -
+__size_of_INTERRUPT_InterruptManager 0 0 ABS 0 - dist/default/production\S2_1991255.X.production.o
+__size_of_WDT_Initialize 0 0 ABS 0 - dist/default/production\S2_1991255.X.production.o
+__S0 47C 0 ABS 0 - -
+__S1 B8 0 ABS 0 - -
+__S2 0 0 ABS 0 - -
+__size_of_IOCAF3_SetInterruptHandler 0 0 ABS 0 - dist/default/production\S2_1991255.X.production.o
+LCDGoto@pos 31 0 BANK0 1 cstackBANK0 dist/default/production\S2_1991255.X.production.o
+_IOCAF1_InterruptHandler 5D 0 BANK0 1 nvBANK0 dist/default/production\S2_1991255.X.production.o
+basicShoot@j 22 0 BANK0 1 cstackBANK0 dist/default/production\S2_1991255.X.production.o
+__end_of_idleScreen 76A 0 CODE 0 text1 dist/default/production\S2_1991255.X.production.o
+__size_ofi1_LCDPutChar 0 0 ABS 0 - dist/default/production\S2_1991255.X.production.o
+__size_of_IOCAF0_DefaultInterruptHandler 0 0 ABS 0 - dist/default/production\S2_1991255.X.production.o
+_SYSTEM_Initialize 85E 0 CODE 0 text7 dist/default/production\S2_1991255.X.production.o
+_IOCAF0_ISR 798 0 CODE 0 text32 dist/default/production\S2_1991255.X.production.o
+_IOCAF1_ISR 840 0 CODE 0 text30 dist/default/production\S2_1991255.X.production.o
+_IOCAF2_ISR 822 0 CODE 0 text28 dist/default/production\S2_1991255.X.production.o
+_IOCAF3_ISR 76A 0 CODE 0 text26 dist/default/production\S2_1991255.X.production.o
+_IOCAF4_ISR 804 0 CODE 0 text24 dist/default/production\S2_1991255.X.production.o
+_IOCAF5_ISR 7E6 0 CODE 0 text22 dist/default/production\S2_1991255.X.production.o
+__end_of_IOCAF4_SetInterruptHandler 8B4 0 CODE 0 text11 dist/default/production\S2_1991255.X.production.o
+createCustomCharacter@i 31 0 BANK0 1 cstackBANK0 dist/default/production\S2_1991255.X.production.o
+__size_of_IOCAF0_SetInterruptHandler 0 0 ABS 0 - dist/default/production\S2_1991255.X.production.o
+__size_of_IOCAF3_DefaultInterruptHandler 0 0 ABS 0 - dist/default/production\S2_1991255.X.production.o
+__HnvBANK0 0 0 ABS 0 nvBANK0 -
+__Lintentry 8 0 CODE 0 intentry -
+reset_vec 0 0 CODE 0 reset_vec C:\Users\davfe\AppData\Local\Temp\s217g.o
+__size_of_LCD_Initialize 0 0 ABS 0 - dist/default/production\S2_1991255.X.production.o
+__pdataBANK0 61 0 BANK0 1 dataBANK0 dist/default/production\S2_1991255.X.production.o
+__pdataBANK1 A0 0 BANK1 1 dataBANK1 dist/default/production\S2_1991255.X.production.o
+_IOCAF0_InterruptHandler 5F 0 BANK0 1 nvBANK0 dist/default/production\S2_1991255.X.production.o
+IOCAF2_SetInterruptHandler@InterruptHandler 27 0 BANK0 1 cstackBANK0 dist/default/production\S2_1991255.X.production.o
+__Lstringtext1 0 0 ABS 0 stringtext1 -
+__Lstringtext2 0 0 ABS 0 stringtext2 -
+_INTERRUPT_InterruptManager 8 0 CODE 0 intentry dist/default/production\S2_1991255.X.production.o
+_IOCAFbits 393 0 ABS 0 - dist/default/production\S2_1991255.X.production.o
+__end_of_IOCAF1_SetInterruptHandler 8D8 0 CODE 0 text14 dist/default/production\S2_1991255.X.production.o
+_IOCANbits 392 0 ABS 0 - dist/default/production\S2_1991255.X.production.o
+_IOCAPbits 391 0 ABS 0 - dist/default/production\S2_1991255.X.production.o
+__end_ofi1_LCDPutChar 70A 0 CODE 0 text35 dist/default/production\S2_1991255.X.production.o
+_IOCAF3_SetInterruptHandler 8B4 0 CODE 0 text12 dist/default/production\S2_1991255.X.production.o
+LCDPutStr@i 33 0 BANK0 1 cstackBANK0 dist/default/production\S2_1991255.X.production.o
+__ptext10 89C 0 CODE 0 text10 dist/default/production\S2_1991255.X.production.o
+__ptext11 8A8 0 CODE 0 text11 dist/default/production\S2_1991255.X.production.o
+__ptext12 8B4 0 CODE 0 text12 dist/default/production\S2_1991255.X.production.o
+__ptext13 8C0 0 CODE 0 text13 dist/default/production\S2_1991255.X.production.o
+__ptext14 8CC 0 CODE 0 text14 dist/default/production\S2_1991255.X.production.o
+__ptext15 8D8 0 CODE 0 text15 dist/default/production\S2_1991255.X.production.o
+__ptext16 882 0 CODE 0 text16 dist/default/production\S2_1991255.X.production.o
+__ptext17 50A 0 CODE 0 text17 dist/default/production\S2_1991255.X.production.o
+__ptext18 550 0 CODE 0 text18 dist/default/production\S2_1991255.X.production.o
+__ptext19 5D6 0 CODE 0 text19 dist/default/production\S2_1991255.X.production.o
+__ptext21 310 0 CODE 0 text21 dist/default/production\S2_1991255.X.production.o
+__ptext22 7E6 0 CODE 0 text22 dist/default/production\S2_1991255.X.production.o
+__ptext23 8EC 0 CODE 0 text23 dist/default/production\S2_1991255.X.production.o
+__ptext24 804 0 CODE 0 text24 dist/default/production\S2_1991255.X.production.o
+__ptext25 8EE 0 CODE 0 text25 dist/default/production\S2_1991255.X.production.o
+__ptext26 76A 0 CODE 0 text26 dist/default/production\S2_1991255.X.production.o
+__ptext27 8F0 0 CODE 0 text27 dist/default/production\S2_1991255.X.production.o
+__ptext28 822 0 CODE 0 text28 dist/default/production\S2_1991255.X.production.o
+__ptext29 8F2 0 CODE 0 text29 dist/default/production\S2_1991255.X.production.o
+__ptext30 840 0 CODE 0 text30 dist/default/production\S2_1991255.X.production.o
+__ptext31 8F4 0 CODE 0 text31 dist/default/production\S2_1991255.X.production.o
+__ptext32 798 0 CODE 0 text32 dist/default/production\S2_1991255.X.production.o
+__ptext33 76 0 CODE 0 text33 dist/default/production\S2_1991255.X.production.o
+__ptext34 4BE 0 CODE 0 text34 dist/default/production\S2_1991255.X.production.o
+__ptext35 6D0 0 CODE 0 text35 dist/default/production\S2_1991255.X.production.o
+__ptext36 470 0 CODE 0 text36 dist/default/production\S2_1991255.X.production.o
+__ptext37 656 0 CODE 0 text37 dist/default/production\S2_1991255.X.production.o
+__ptext38 616 0 CODE 0 text38 dist/default/production\S2_1991255.X.production.o
+__ptext39 8F6 0 CODE 0 text39 dist/default/production\S2_1991255.X.production.o
+__end_of_PIN_MANAGER_Initialize 248 0 CODE 0 text9 dist/default/production\S2_1991255.X.production.o
+_LCDWriteNibble 5D6 0 CODE 0 text19 dist/default/production\S2_1991255.X.production.o
+__Lbank10 0 0 ABS 0 bank10 -
+__Lbank11 0 0 ABS 0 bank11 -
+__Lbank12 0 0 ABS 0 bank12 -
+__Lbank13 0 0 ABS 0 bank13 -
+__Lbank14 0 0 ABS 0 bank14 -
+__Lbank15 0 0 ABS 0 bank15 -
+__Lbank16 0 0 ABS 0 bank16 -
+__Lbank17 0 0 ABS 0 bank17 -
+__Lbank18 0 0 ABS 0 bank18 -
+__Lbank19 0 0 ABS 0 bank19 -
+__Lbank20 0 0 ABS 0 bank20 -
+__Lbank21 0 0 ABS 0 bank21 -
+__Lbank22 0 0 ABS 0 bank22 -
+__Lbank23 0 0 ABS 0 bank23 -
+__Lbank24 0 0 ABS 0 bank24 -
+__Lbank25 0 0 ABS 0 bank25 -
+__Lbank26 0 0 BANK26 1 bank26 -
+__Lbank27 0 0 BANK27 1 bank27 -
+__Lbank28 0 0 BANK28 1 bank28 -
+__Lbank29 0 0 BANK29 1 bank29 -
+__Lbank30 0 0 BANK30 1 bank30 -
+__Lbank31 0 0 BANK31 1 bank31 -
+__pmaintext 248 0 CODE 0 maintext dist/default/production\S2_1991255.X.production.o
+__Lbigram 0 0 ABS 0 bigram -
+__Lcommon 0 0 ABS 0 common -
+__Lconfig 0 0 CONFIG 4 config -
+__Hinittext 0 0 ABS 0 inittext -
+_LCDGoto 420 0 CODE 0 text4 dist/default/production\S2_1991255.X.production.o
+main@F5648 61 0 BANK0 1 dataBANK0 dist/default/production\S2_1991255.X.production.o
+main@F5650 B0 0 BANK1 1 dataBANK1 dist/default/production\S2_1991255.X.production.o
+main@F5652 A8 0 BANK1 1 dataBANK1 dist/default/production\S2_1991255.X.production.o
+main@F5654 A0 0 BANK1 1 dataBANK1 dist/default/production\S2_1991255.X.production.o
+_IOCAF0_SetInterruptHandler 8D8 0 CODE 0 text15 dist/default/production\S2_1991255.X.production.o
+_IOCAF1_DefaultInterruptHandler 8F4 0 CODE 0 text31 dist/default/production\S2_1991255.X.production.o
+__end_of_IOCAF0_ISR 7C4 0 CODE 0 text32 dist/default/production\S2_1991255.X.production.o
+__end_of_IOCAF1_ISR 85E 0 CODE 0 text30 dist/default/production\S2_1991255.X.production.o
+__end_of_IOCAF2_ISR 840 0 CODE 0 text28 dist/default/production\S2_1991255.X.production.o
+__end_of_IOCAF3_ISR 798 0 CODE 0 text26 dist/default/production\S2_1991255.X.production.o
+_IOCAF4_DefaultInterruptHandler 8EE 0 CODE 0 text25 dist/default/production\S2_1991255.X.production.o
+__end_of_IOCAF4_ISR 822 0 CODE 0 text24 dist/default/production\S2_1991255.X.production.o
+__end_of_IOCAF5_ISR 804 0 CODE 0 text22 dist/default/production\S2_1991255.X.production.o
+_OSCTUNE 98 0 ABS 0 - dist/default/production\S2_1991255.X.production.o
+__Lspace_0 0 0 ABS 0 - -
+__Lspace_1 0 0 ABS 0 - -
+__Lspace_2 0 0 ABS 0 - -
+__Lspace_3 0 0 ABS 0 - -
+__Lspace_4 0 0 ABS 0 - -
+basicShoot@j_491 24 0 BANK0 1 cstackBANK0 dist/default/production\S2_1991255.X.production.o
+__HcstackBANK0 0 0 ABS 0 cstackBANK0 -
+__Lend_init 3A 0 CODE 0 end_init -
+__LcstackCOMMON 0 0 ABS 0 cstackCOMMON -
+_basicShoot 76 0 CODE 0 text33 dist/default/production\S2_1991255.X.production.o
+end_of_initialization 6E 0 CODE 0 cinit dist/default/production\S2_1991255.X.production.o
+__Hintentry 3A 0 CODE 0 intentry -
+__end_of_LCDWriteNibble 616 0 CODE 0 text19 dist/default/production\S2_1991255.X.production.o
+__size_ofi1_LCDPutCmd 0 0 ABS 0 - dist/default/production\S2_1991255.X.production.o
+__size_ofi1_LCDPutStr 0 0 ABS 0 - dist/default/production\S2_1991255.X.production.o
+__Lstrings 0 0 ABS 0 strings -
+__Hreset_vec 4 0 CODE 0 reset_vec -
+LCDPutCmd@ch 2D 0 BANK0 1 cstackBANK0 dist/default/production\S2_1991255.X.production.o
+__end_of_IOCAF0_DefaultInterruptHandler 8F8 0 CODE 0 text39 dist/default/production\S2_1991255.X.production.o
+__size_of_createCustomCharacter 0 0 ABS 0 - dist/default/production\S2_1991255.X.production.o
+__ptext1 73A 0 CODE 0 text1 dist/default/production\S2_1991255.X.production.o
+__ptext2 694 0 CODE 0 text2 dist/default/production\S2_1991255.X.production.o
+__ptext3 3D0 0 CODE 0 text3 dist/default/production\S2_1991255.X.production.o
+__ptext4 420 0 CODE 0 text4 dist/default/production\S2_1991255.X.production.o
+__ptext5 372 0 CODE 0 text5 dist/default/production\S2_1991255.X.production.o
+__ptext6 596 0 CODE 0 text6 dist/default/production\S2_1991255.X.production.o
+__ptext7 85E 0 CODE 0 text7 dist/default/production\S2_1991255.X.production.o
+__ptext8 8E4 0 CODE 0 text8 dist/default/production\S2_1991255.X.production.o
+__ptext9 164 0 CODE 0 text9 dist/default/production\S2_1991255.X.production.o
+__end_of_IOCAF3_DefaultInterruptHandler 8F2 0 CODE 0 text27 dist/default/production\S2_1991255.X.production.o
+i1LCDGoto@ln 77 0 COMMON 1 cstackCOMMON dist/default/production\S2_1991255.X.production.o
+__Lpowerup 0 0 CODE 0 powerup -
+__Leeprom_data 0 0 EEDATA 3 eeprom_data -
+__size_of_IOCAF4_SetInterruptHandler 0 0 ABS 0 - dist/default/production\S2_1991255.X.production.o
+__Lreset_vec 0 0 CODE 0 reset_vec -
+__Hstringtext1 0 0 ABS 0 stringtext1 -
+__Hstringtext2 0 0 ABS 0 stringtext2 -
+LCDPutStr@str 2E 0 BANK0 1 cstackBANK0 dist/default/production\S2_1991255.X.production.o
+_SLRCONA 30C 0 ABS 0 - dist/default/production\S2_1991255.X.production.o
+_SLRCONB 30D 0 ABS 0 - dist/default/production\S2_1991255.X.production.o
+_SLRCONC 30E 0 ABS 0 - dist/default/production\S2_1991255.X.production.o
+IOCAF4_SetInterruptHandler@InterruptHandler 27 0 BANK0 1 cstackBANK0 dist/default/production\S2_1991255.X.production.o
+__size_of_idleScreen 0 0 ABS 0 - dist/default/production\S2_1991255.X.production.o
+__end_of__initialization 6E 0 CODE 0 cinit dist/default/production\S2_1991255.X.production.o
+i1LCDWriteNibble@ch 73 0 COMMON 1 cstackCOMMON dist/default/production\S2_1991255.X.production.o
+i1LCDWriteNibble@rs 70 0 COMMON 1 cstackCOMMON dist/default/production\S2_1991255.X.production.o
+__Lfunctab 0 0 ENTRY 0 functab -
+__pidataBANK0 872 0 CODE 0 idataBANK0 dist/default/production\S2_1991255.X.production.o
+__pidataBANK1 70A 0 CODE 0 idataBANK1 dist/default/production\S2_1991255.X.production.o
+__end_of_basicShoot 164 0 CODE 0 text33 dist/default/production\S2_1991255.X.production.o
+__end_of_IOCAF5_SetInterruptHandler 8A8 0 CODE 0 text10 dist/default/production\S2_1991255.X.production.o
+__Lclrtext 0 0 ABS 0 clrtext -
+__size_of_IOCAF1_SetInterruptHandler 0 0 ABS 0 - dist/default/production\S2_1991255.X.production.o
+__size_of_IOCAF2_DefaultInterruptHandler 0 0 ABS 0 - dist/default/production\S2_1991255.X.production.o
+__pcstackCOMMON 70 0 COMMON 1 cstackCOMMON dist/default/production\S2_1991255.X.production.o
+__Hend_init 3E 0 CODE 0 end_init -
+__size_of_IOCAF5_DefaultInterruptHandler 0 0 ABS 0 - dist/default/production\S2_1991255.X.production.o
+LCDPutChar@ch 2D 0 BANK0 1 cstackBANK0 dist/default/production\S2_1991255.X.production.o
+__end_of_main 310 0 CODE 0 maintext dist/default/production\S2_1991255.X.production.o
+__end_of_IOCAF2_SetInterruptHandler 8CC 0 CODE 0 text13 dist/default/production\S2_1991255.X.production.o
+_PORTB D 0 ABS 0 - dist/default/production\S2_1991255.X.production.o
+_IOCAF4_SetInterruptHandler 8A8 0 CODE 0 text11 dist/default/production\S2_1991255.X.production.o
+_TRISA 8C 0 ABS 0 - dist/default/production\S2_1991255.X.production.o
+_TRISB 8D 0 ABS 0 - dist/default/production\S2_1991255.X.production.o
+_TRISC 8E 0 ABS 0 - dist/default/production\S2_1991255.X.production.o
+_TRISE 90 0 ABS 0 - dist/default/production\S2_1991255.X.production.o
+__Hram 0 0 ABS 0 ram -
+__Lram 0 0 ABS 0 ram -
+i1LCDGoto@pos 7A 0 COMMON 1 cstackCOMMON dist/default/production\S2_1991255.X.production.o
+__size_of_PIN_MANAGER_Initialize 0 0 ABS 0 - dist/default/production\S2_1991255.X.production.o
+_WDT_Initialize 8E4 0 CODE 0 text8 dist/default/production\S2_1991255.X.production.o
+__pintentry 8 0 CODE 0 intentry dist/default/production\S2_1991255.X.production.o
+__HdataBANK0 0 0 ABS 0 dataBANK0 -
+__HdataBANK1 0 0 ABS 0 dataBANK1 -
+__end_of_OSCILLATOR_Initialize 890 0 CODE 0 text16 dist/default/production\S2_1991255.X.production.o
+IOCAF1_SetInterruptHandler@InterruptHandler 27 0 BANK0 1 cstackBANK0 dist/default/production\S2_1991255.X.production.o
+i1LCDPutCmd@ch 76 0 COMMON 1 cstackCOMMON dist/default/production\S2_1991255.X.production.o
+__initialization 3E 0 CODE 0 cinit dist/default/production\S2_1991255.X.production.o
+_IOCAF1_SetInterruptHandler 8CC 0 CODE 0 text14 dist/default/production\S2_1991255.X.production.o
+__size_of_LCDClear 0 0 ABS 0 - dist/default/production\S2_1991255.X.production.o
+__size_of_IOCAF0_ISR 0 0 ABS 0 - dist/default/production\S2_1991255.X.production.o
+__size_of_IOCAF1_ISR 0 0 ABS 0 - dist/default/production\S2_1991255.X.production.o
+__size_of_IOCAF2_ISR 0 0 ABS 0 - dist/default/production\S2_1991255.X.production.o
+_IOCAF0_DefaultInterruptHandler 8F6 0 CODE 0 text39 dist/default/production\S2_1991255.X.production.o
+__size_of_IOCAF3_ISR 0 0 ABS 0 - dist/default/production\S2_1991255.X.production.o
+__size_of_IOCAF4_ISR 0 0 ABS 0 - dist/default/production\S2_1991255.X.production.o
+__size_of_IOCAF5_ISR 0 0 ABS 0 - dist/default/production\S2_1991255.X.production.o
+LCDWriteNibble@ch 2A 0 BANK0 1 cstackBANK0 dist/default/production\S2_1991255.X.production.o
+LCDWriteNibble@rs 27 0 BANK0 1 cstackBANK0 dist/default/production\S2_1991255.X.production.o
+_OSCILLATOR_Initialize 882 0 CODE 0 text16 dist/default/production\S2_1991255.X.production.o
+# %SPLITSTAB Section
+# This section enumerates all the psect splits performed by the assembler.
+# The beginning of the section is indicated by %SPLITSTAB.
+# Each line is a record a particular split, where the parent psect is on
+# the left and the child on the right.  Note that a child psect is always
+# split form the top of the parent psect. All splits from a given parent
+# are listed in the order in which they occurred.
+%SPLITSTAB
+# %DABS Section
+# This section contains a table of all usuage of the assember
+# directive DABS in the program. Each line has the following format:
+#   <name> <space> <address> <size>
+# If the DABS was originally labelled then that shall be <name>,
+# otherwise name will be "-".  The <space> number is in decimal.
+# <address> and <size> are in byte units as unqaulified hexadecimal
+%DABS
+- 1 7E 2
+# %SEGMENTS Section
+# This sections enumerates the segments of the program.  Each segment
+# is described on a single line as follows:
+#    <name> <space> <link address> <file address> <size> <delta>
+# Addresses and size are in unqualified hexadecimal.  The link address
+# and size are in units of delta. The file address is in units of bytes.
+# All other numeric quantities are in decimal.
+%SEGMENTS
+text22 0 3F3 7E6 89 2
+cstackCOMMON 1 70 70 E 1
+cstackBANK0 1 20 20 49 1
+stringtext1 0 3E2 7C4 11 2
+intentry 0 4 8 3DE 2
+reset_vec 0 0 0 2 2
+dataBANK1 1 A0 A0 18 1
+# %NOTES Section
+# This section contains data of all the note-psects.  The beginning of the section
+# is indicated by %NOTES. The first line indicates the name and decimal
+# byte-length of the first note-psect, e.g.
+#   $codecov_info_hdr 16
+# Each line that follows contains the byte-data of the psect in hexadecimal as a
+# space-separated list. These lines are limited to 16 bytes of data.
+%NOTES
