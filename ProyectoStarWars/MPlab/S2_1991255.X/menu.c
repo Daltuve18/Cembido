@@ -84,7 +84,7 @@ void startFight (void)
 
 {
     cleanFullMenu();
-    idleScreen(); /// cambiar por la nueva
+    printShip();
     LCDGoto(lcdOffset, 0);
     LCDPutStr("Start Fight");
     __delay_ms(2000);

@@ -15,5 +15,6 @@ Date          : 7/18/2021
 extern uint8_t ship1;
 extern uint8_t ship2;
 
+void printShip(void);
 
 

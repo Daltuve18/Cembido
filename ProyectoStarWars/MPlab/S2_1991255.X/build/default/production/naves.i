@@ -1,4 +1,4 @@
-# 1 "mcc_generated_files/pin_manager.c"
+# 1 "naves.c"
 # 1 "<built-in>" 1
 # 1 "<built-in>" 3
 # 288 "<built-in>" 3
@@ -6,10 +6,228 @@
 # 1 "<built-in>" 2
 # 1 "D:/Programas/packs/Microchip/PIC12-16F1xxx_DFP/1.2.63/xc8\\pic\\include\\language_support.h" 1 3
 # 2 "<built-in>" 2
-# 1 "mcc_generated_files/pin_manager.c" 2
-# 49 "mcc_generated_files/pin_manager.c"
-# 1 "mcc_generated_files/pin_manager.h" 1
-# 54 "mcc_generated_files/pin_manager.h"
+# 1 "naves.c" 2
+# 17 "naves.c"
+# 1 "D:\\Programas\\Microchip\\xc8\\v2.31\\pic\\include\\c99\\string.h" 1 3
+
+
+
+# 1 "D:\\Programas\\Microchip\\xc8\\v2.31\\pic\\include\\c99\\musl_xc8.h" 1 3
+# 4 "D:\\Programas\\Microchip\\xc8\\v2.31\\pic\\include\\c99\\string.h" 2 3
+
+
+
+
+
+
+# 1 "D:\\Programas\\Microchip\\xc8\\v2.31\\pic\\include\\c99\\features.h" 1 3
+# 10 "D:\\Programas\\Microchip\\xc8\\v2.31\\pic\\include\\c99\\string.h" 2 3
+# 25 "D:\\Programas\\Microchip\\xc8\\v2.31\\pic\\include\\c99\\string.h" 3
+# 1 "D:\\Programas\\Microchip\\xc8\\v2.31\\pic\\include\\c99\\bits/alltypes.h" 1 3
+# 122 "D:\\Programas\\Microchip\\xc8\\v2.31\\pic\\include\\c99\\bits/alltypes.h" 3
+typedef unsigned size_t;
+# 168 "D:\\Programas\\Microchip\\xc8\\v2.31\\pic\\include\\c99\\bits/alltypes.h" 3
+typedef __int24 int24_t;
+# 204 "D:\\Programas\\Microchip\\xc8\\v2.31\\pic\\include\\c99\\bits/alltypes.h" 3
+typedef __uint24 uint24_t;
+# 411 "D:\\Programas\\Microchip\\xc8\\v2.31\\pic\\include\\c99\\bits/alltypes.h" 3
+typedef struct __locale_struct * locale_t;
+# 25 "D:\\Programas\\Microchip\\xc8\\v2.31\\pic\\include\\c99\\string.h" 2 3
+
+
+void *memcpy (void *restrict, const void *restrict, size_t);
+void *memmove (void *, const void *, size_t);
+void *memset (void *, int, size_t);
+int memcmp (const void *, const void *, size_t);
+void *memchr (const void *, int, size_t);
+
+char *strcpy (char *restrict, const char *restrict);
+char *strncpy (char *restrict, const char *restrict, size_t);
+
+char *strcat (char *restrict, const char *restrict);
+char *strncat (char *restrict, const char *restrict, size_t);
+
+int strcmp (const char *, const char *);
+int strncmp (const char *, const char *, size_t);
+
+int strcoll (const char *, const char *);
+size_t strxfrm (char *restrict, const char *restrict, size_t);
+
+char *strchr (const char *, int);
+char *strrchr (const char *, int);
+
+size_t strcspn (const char *, const char *);
+size_t strspn (const char *, const char *);
+char *strpbrk (const char *, const char *);
+char *strstr (const char *, const char *);
+char *strtok (char *restrict, const char *restrict);
+
+size_t strlen (const char *);
+
+char *strerror (int);
+# 65 "D:\\Programas\\Microchip\\xc8\\v2.31\\pic\\include\\c99\\string.h" 3
+char *strtok_r (char *restrict, const char *restrict, char **restrict);
+int strerror_r (int, char *, size_t);
+char *stpcpy(char *restrict, const char *restrict);
+char *stpncpy(char *restrict, const char *restrict, size_t);
+size_t strnlen (const char *, size_t);
+char *strdup (const char *);
+char *strndup (const char *, size_t);
+char *strsignal(int);
+char *strerror_l (int, locale_t);
+int strcoll_l (const char *, const char *, locale_t);
+size_t strxfrm_l (char *restrict, const char *restrict, size_t, locale_t);
+
+
+
+
+void *memccpy (void *restrict, const void *restrict, int, size_t);
+# 17 "naves.c" 2
+
+# 1 "D:\\Programas\\Microchip\\xc8\\v2.31\\pic\\include\\c99\\stdio.h" 1 3
+# 24 "D:\\Programas\\Microchip\\xc8\\v2.31\\pic\\include\\c99\\stdio.h" 3
+# 1 "D:\\Programas\\Microchip\\xc8\\v2.31\\pic\\include\\c99\\bits/alltypes.h" 1 3
+
+
+
+
+
+typedef void * va_list[1];
+
+
+
+
+typedef void * __isoc_va_list[1];
+# 137 "D:\\Programas\\Microchip\\xc8\\v2.31\\pic\\include\\c99\\bits/alltypes.h" 3
+typedef long ssize_t;
+# 246 "D:\\Programas\\Microchip\\xc8\\v2.31\\pic\\include\\c99\\bits/alltypes.h" 3
+typedef long long off_t;
+# 399 "D:\\Programas\\Microchip\\xc8\\v2.31\\pic\\include\\c99\\bits/alltypes.h" 3
+typedef struct _IO_FILE FILE;
+# 24 "D:\\Programas\\Microchip\\xc8\\v2.31\\pic\\include\\c99\\stdio.h" 2 3
+# 52 "D:\\Programas\\Microchip\\xc8\\v2.31\\pic\\include\\c99\\stdio.h" 3
+typedef union _G_fpos64_t {
+ char __opaque[16];
+ double __align;
+} fpos_t;
+
+extern FILE *const stdin;
+extern FILE *const stdout;
+extern FILE *const stderr;
+
+
+
+
+
+FILE *fopen(const char *restrict, const char *restrict);
+FILE *freopen(const char *restrict, const char *restrict, FILE *restrict);
+int fclose(FILE *);
+
+int remove(const char *);
+int rename(const char *, const char *);
+
+int feof(FILE *);
+int ferror(FILE *);
+int fflush(FILE *);
+void clearerr(FILE *);
+
+int fseek(FILE *, long, int);
+long ftell(FILE *);
+void rewind(FILE *);
+
+int fgetpos(FILE *restrict, fpos_t *restrict);
+int fsetpos(FILE *, const fpos_t *);
+
+size_t fread(void *restrict, size_t, size_t, FILE *restrict);
+size_t fwrite(const void *restrict, size_t, size_t, FILE *restrict);
+
+int fgetc(FILE *);
+int getc(FILE *);
+int getchar(void);
+int ungetc(int, FILE *);
+
+int fputc(int, FILE *);
+int putc(int, FILE *);
+int putchar(int);
+
+char *fgets(char *restrict, int, FILE *restrict);
+
+char *gets(char *);
+
+
+int fputs(const char *restrict, FILE *restrict);
+int puts(const char *);
+
+#pragma printf_check(printf) const
+#pragma printf_check(vprintf) const
+#pragma printf_check(sprintf) const
+#pragma printf_check(snprintf) const
+#pragma printf_check(vsprintf) const
+#pragma printf_check(vsnprintf) const
+
+int printf(const char *restrict, ...);
+int fprintf(FILE *restrict, const char *restrict, ...);
+int sprintf(char *restrict, const char *restrict, ...);
+int snprintf(char *restrict, size_t, const char *restrict, ...);
+
+int vprintf(const char *restrict, __isoc_va_list);
+int vfprintf(FILE *restrict, const char *restrict, __isoc_va_list);
+int vsprintf(char *restrict, const char *restrict, __isoc_va_list);
+int vsnprintf(char *restrict, size_t, const char *restrict, __isoc_va_list);
+
+int scanf(const char *restrict, ...);
+int fscanf(FILE *restrict, const char *restrict, ...);
+int sscanf(const char *restrict, const char *restrict, ...);
+int vscanf(const char *restrict, __isoc_va_list);
+int vfscanf(FILE *restrict, const char *restrict, __isoc_va_list);
+int vsscanf(const char *restrict, const char *restrict, __isoc_va_list);
+
+void perror(const char *);
+
+int setvbuf(FILE *restrict, char *restrict, int, size_t);
+void setbuf(FILE *restrict, char *restrict);
+
+char *tmpnam(char *);
+FILE *tmpfile(void);
+
+
+
+
+FILE *fmemopen(void *restrict, size_t, const char *restrict);
+FILE *open_memstream(char **, size_t *);
+FILE *fdopen(int, const char *);
+FILE *popen(const char *, const char *);
+int pclose(FILE *);
+int fileno(FILE *);
+int fseeko(FILE *, off_t, int);
+off_t ftello(FILE *);
+int dprintf(int, const char *restrict, ...);
+int vdprintf(int, const char *restrict, __isoc_va_list);
+void flockfile(FILE *);
+int ftrylockfile(FILE *);
+void funlockfile(FILE *);
+int getc_unlocked(FILE *);
+int getchar_unlocked(void);
+int putc_unlocked(int, FILE *);
+int putchar_unlocked(int);
+ssize_t getdelim(char **restrict, size_t *restrict, int, FILE *restrict);
+ssize_t getline(char **restrict, size_t *restrict, FILE *restrict);
+int renameat(int, const char *, int, const char *);
+char *ctermid(char *);
+
+
+
+
+
+
+
+char *tempnam(const char *, const char *);
+# 18 "naves.c" 2
+
+# 1 "./lcd.h" 1
+# 46 "./lcd.h"
+# 1 "./mcc_generated_files/mcc.h" 1
+# 49 "./mcc_generated_files/mcc.h"
 # 1 "D:/Programas/packs/Microchip/PIC12-16F1xxx_DFP/1.2.63/xc8\\pic\\include\\xc.h" 1 3
 # 18 "D:/Programas/packs/Microchip/PIC12-16F1xxx_DFP/1.2.63/xc8\\pic\\include\\xc.h" 3
 extern const char __xc8_OPTIM_SPEED;
@@ -23,29 +241,10 @@ extern double __fpnormalize(double);
 
 
 # 1 "D:\\Programas\\Microchip\\xc8\\v2.31\\pic\\include\\c99\\stdlib.h" 1 3
-
-
-
-# 1 "D:\\Programas\\Microchip\\xc8\\v2.31\\pic\\include\\c99\\musl_xc8.h" 1 3
-# 4 "D:\\Programas\\Microchip\\xc8\\v2.31\\pic\\include\\c99\\stdlib.h" 2 3
-
-
-
-
-
-
-# 1 "D:\\Programas\\Microchip\\xc8\\v2.31\\pic\\include\\c99\\features.h" 1 3
-# 10 "D:\\Programas\\Microchip\\xc8\\v2.31\\pic\\include\\c99\\stdlib.h" 2 3
 # 21 "D:\\Programas\\Microchip\\xc8\\v2.31\\pic\\include\\c99\\stdlib.h" 3
 # 1 "D:\\Programas\\Microchip\\xc8\\v2.31\\pic\\include\\c99\\bits/alltypes.h" 1 3
 # 18 "D:\\Programas\\Microchip\\xc8\\v2.31\\pic\\include\\c99\\bits/alltypes.h" 3
 typedef long int wchar_t;
-# 122 "D:\\Programas\\Microchip\\xc8\\v2.31\\pic\\include\\c99\\bits/alltypes.h" 3
-typedef unsigned size_t;
-# 168 "D:\\Programas\\Microchip\\xc8\\v2.31\\pic\\include\\c99\\bits/alltypes.h" 3
-typedef __int24 int24_t;
-# 204 "D:\\Programas\\Microchip\\xc8\\v2.31\\pic\\include\\c99\\bits/alltypes.h" 3
-typedef __uint24 uint24_t;
 # 21 "D:\\Programas\\Microchip\\xc8\\v2.31\\pic\\include\\c99\\stdlib.h" 2 3
 
 
@@ -8921,66 +9120,65 @@ extern __bank0 unsigned char __resetbits;
 extern __bank0 __bit __powerdown;
 extern __bank0 __bit __timeout;
 # 28 "D:/Programas/packs/Microchip/PIC12-16F1xxx_DFP/1.2.63/xc8\\pic\\include\\xc.h" 2 3
-# 54 "mcc_generated_files/pin_manager.h" 2
-# 352 "mcc_generated_files/pin_manager.h"
+# 49 "./mcc_generated_files/mcc.h" 2
+
+# 1 "./mcc_generated_files/device_config.h" 1
+# 50 "./mcc_generated_files/mcc.h" 2
+
+# 1 "./mcc_generated_files/pin_manager.h" 1
+# 352 "./mcc_generated_files/pin_manager.h"
 void PIN_MANAGER_Initialize (void);
-# 364 "mcc_generated_files/pin_manager.h"
+# 364 "./mcc_generated_files/pin_manager.h"
 void PIN_MANAGER_IOC(void);
-# 377 "mcc_generated_files/pin_manager.h"
+# 377 "./mcc_generated_files/pin_manager.h"
 void IOCAF0_ISR(void);
-# 400 "mcc_generated_files/pin_manager.h"
+# 400 "./mcc_generated_files/pin_manager.h"
 void IOCAF0_SetInterruptHandler(void (* InterruptHandler)(void));
-# 424 "mcc_generated_files/pin_manager.h"
+# 424 "./mcc_generated_files/pin_manager.h"
 extern void (*IOCAF0_InterruptHandler)(void);
-# 448 "mcc_generated_files/pin_manager.h"
+# 448 "./mcc_generated_files/pin_manager.h"
 void IOCAF0_DefaultInterruptHandler(void);
-# 461 "mcc_generated_files/pin_manager.h"
+# 461 "./mcc_generated_files/pin_manager.h"
 void IOCAF1_ISR(void);
-# 484 "mcc_generated_files/pin_manager.h"
+# 484 "./mcc_generated_files/pin_manager.h"
 void IOCAF1_SetInterruptHandler(void (* InterruptHandler)(void));
-# 508 "mcc_generated_files/pin_manager.h"
+# 508 "./mcc_generated_files/pin_manager.h"
 extern void (*IOCAF1_InterruptHandler)(void);
-# 532 "mcc_generated_files/pin_manager.h"
+# 532 "./mcc_generated_files/pin_manager.h"
 void IOCAF1_DefaultInterruptHandler(void);
-# 545 "mcc_generated_files/pin_manager.h"
+# 545 "./mcc_generated_files/pin_manager.h"
 void IOCAF2_ISR(void);
-# 568 "mcc_generated_files/pin_manager.h"
+# 568 "./mcc_generated_files/pin_manager.h"
 void IOCAF2_SetInterruptHandler(void (* InterruptHandler)(void));
-# 592 "mcc_generated_files/pin_manager.h"
+# 592 "./mcc_generated_files/pin_manager.h"
 extern void (*IOCAF2_InterruptHandler)(void);
-# 616 "mcc_generated_files/pin_manager.h"
+# 616 "./mcc_generated_files/pin_manager.h"
 void IOCAF2_DefaultInterruptHandler(void);
-# 629 "mcc_generated_files/pin_manager.h"
+# 629 "./mcc_generated_files/pin_manager.h"
 void IOCAF3_ISR(void);
-# 652 "mcc_generated_files/pin_manager.h"
+# 652 "./mcc_generated_files/pin_manager.h"
 void IOCAF3_SetInterruptHandler(void (* InterruptHandler)(void));
-# 676 "mcc_generated_files/pin_manager.h"
+# 676 "./mcc_generated_files/pin_manager.h"
 extern void (*IOCAF3_InterruptHandler)(void);
-# 700 "mcc_generated_files/pin_manager.h"
+# 700 "./mcc_generated_files/pin_manager.h"
 void IOCAF3_DefaultInterruptHandler(void);
-# 713 "mcc_generated_files/pin_manager.h"
+# 713 "./mcc_generated_files/pin_manager.h"
 void IOCAF4_ISR(void);
-# 736 "mcc_generated_files/pin_manager.h"
+# 736 "./mcc_generated_files/pin_manager.h"
 void IOCAF4_SetInterruptHandler(void (* InterruptHandler)(void));
-# 760 "mcc_generated_files/pin_manager.h"
+# 760 "./mcc_generated_files/pin_manager.h"
 extern void (*IOCAF4_InterruptHandler)(void);
-# 784 "mcc_generated_files/pin_manager.h"
+# 784 "./mcc_generated_files/pin_manager.h"
 void IOCAF4_DefaultInterruptHandler(void);
-# 797 "mcc_generated_files/pin_manager.h"
+# 797 "./mcc_generated_files/pin_manager.h"
 void IOCAF5_ISR(void);
-# 820 "mcc_generated_files/pin_manager.h"
+# 820 "./mcc_generated_files/pin_manager.h"
 void IOCAF5_SetInterruptHandler(void (* InterruptHandler)(void));
-# 844 "mcc_generated_files/pin_manager.h"
+# 844 "./mcc_generated_files/pin_manager.h"
 extern void (*IOCAF5_InterruptHandler)(void);
-# 868 "mcc_generated_files/pin_manager.h"
+# 868 "./mcc_generated_files/pin_manager.h"
 void IOCAF5_DefaultInterruptHandler(void);
-# 49 "mcc_generated_files/pin_manager.c" 2
-
-# 1 "mcc_generated_files/mcc.h" 1
-# 50 "mcc_generated_files/mcc.h"
-# 1 "mcc_generated_files/device_config.h" 1
-# 50 "mcc_generated_files/mcc.h" 2
-
+# 51 "./mcc_generated_files/mcc.h" 2
 
 # 1 "D:\\Programas\\Microchip\\xc8\\v2.31\\pic\\include\\c99\\stdint.h" 1 3
 # 22 "D:\\Programas\\Microchip\\xc8\\v2.31\\pic\\include\\c99\\stdint.h" 3
@@ -9067,10 +9265,10 @@ typedef int32_t int_fast32_t;
 typedef uint16_t uint_fast16_t;
 typedef uint32_t uint_fast32_t;
 # 144 "D:\\Programas\\Microchip\\xc8\\v2.31\\pic\\include\\c99\\stdint.h" 2 3
-# 52 "mcc_generated_files/mcc.h" 2
+# 52 "./mcc_generated_files/mcc.h" 2
 
 # 1 "D:\\Programas\\Microchip\\xc8\\v2.31\\pic\\include\\c99\\stdbool.h" 1 3
-# 53 "mcc_generated_files/mcc.h" 2
+# 53 "./mcc_generated_files/mcc.h" 2
 
 # 1 "D:\\Programas\\Microchip\\xc8\\v2.31\\pic\\include\\c99\\conio.h" 1 3
 
@@ -9103,33 +9301,35 @@ extern __bit kbhit(void);
 
 extern char * cgets(char *);
 extern void cputs(const char *);
-# 54 "mcc_generated_files/mcc.h" 2
+# 54 "./mcc_generated_files/mcc.h" 2
 
-# 1 "mcc_generated_files/interrupt_manager.h" 1
-# 55 "mcc_generated_files/mcc.h" 2
-# 70 "mcc_generated_files/mcc.h"
+# 1 "./mcc_generated_files/interrupt_manager.h" 1
+# 55 "./mcc_generated_files/mcc.h" 2
+# 70 "./mcc_generated_files/mcc.h"
 void SYSTEM_Initialize(void);
-# 83 "mcc_generated_files/mcc.h"
+# 83 "./mcc_generated_files/mcc.h"
 void OSCILLATOR_Initialize(void);
-# 95 "mcc_generated_files/mcc.h"
+# 95 "./mcc_generated_files/mcc.h"
 void WDT_Initialize(void);
-# 50 "mcc_generated_files/pin_manager.c" 2
+# 46 "./lcd.h" 2
+# 120 "./lcd.h"
+  void LCD_Initialize(void);
+# 138 "./lcd.h"
+  void LCDPutChar(uint8_t ch);
+# 156 "./lcd.h"
+  void LCDPutCmd(uint8_t ch);
+# 174 "./lcd.h"
+  void LCDPutStr(const char *);
+# 192 "./lcd.h"
+  void LCDWriteNibble(uint8_t ch, uint8_t rs);
+# 214 "./lcd.h"
+  void LCDGoto(uint8_t pos, uint8_t ln);
+# 232 "./lcd.h"
+  void LCDClear(void);
+# 19 "naves.c" 2
 
-# 1 "mcc_generated_files/../functions.h" 1
-# 24 "mcc_generated_files/../functions.h"
-extern _Bool player;
-
-
-
-void createCustomCharacter (unsigned char *Pattern, const char Location);
-void idleScreen (void);
-void basicShoot (int direction);
-void disableButton(_Bool player);
-void enableButton(_Bool player);
-# 51 "mcc_generated_files/pin_manager.c" 2
-
-# 1 "mcc_generated_files/../menu.h" 1
-# 15 "mcc_generated_files/../menu.h"
+# 1 "./menu.h" 1
+# 15 "./menu.h"
 extern _Bool inGame;
 extern uint8_t mainState;
 extern uint8_t playerTurn;
@@ -9139,445 +9339,35 @@ void cleanMenu (void);
 void cleanFullMenu (void);
 void mainMenu(void);
 void startFight (void);
-# 52 "mcc_generated_files/pin_manager.c" 2
+# 20 "naves.c" 2
 
-# 1 "mcc_generated_files/../naves.h" 1
-# 15 "mcc_generated_files/../naves.h"
-extern uint8_t ship1;
-extern uint8_t ship2;
-
-void printShip(void);
-# 53 "mcc_generated_files/pin_manager.c" 2
+# 1 "./functions.h" 1
+# 24 "./functions.h"
+extern _Bool player;
 
 
 
+void createCustomCharacter (unsigned char *Pattern, const char Location);
+void idleScreen (void);
+void basicShoot (int direction);
+void disableButton(_Bool player);
+void enableButton(_Bool player);
+# 21 "naves.c" 2
 
-void (*IOCAF0_InterruptHandler)(void);
-void (*IOCAF1_InterruptHandler)(void);
-void (*IOCAF2_InterruptHandler)(void);
-void (*IOCAF3_InterruptHandler)(void);
-void (*IOCAF4_InterruptHandler)(void);
-void (*IOCAF5_InterruptHandler)(void);
+
+uint8_t ship1;
+uint8_t ship2;
+
+uint8_t corazon=4;
+uint8_t escucdo=4;
 
 
-void PIN_MANAGER_Initialize(void)
+
+void printShip()
 {
-
-
-
-    LATA = 0x00;
-    LATB = 0x00;
-    LATC = 0x00;
-
-
-
-
-    TRISE = 0x08;
-    TRISA = 0xFF;
-    TRISB = 0x00;
-    TRISC = 0xFF;
-
-
-
-
-    ANSELC = 0xFC;
-    ANSELB = 0x00;
-    ANSELA = 0x00;
-
-
-
-
-    WPUE = 0x08;
-    WPUB = 0x00;
-    WPUA = 0x3F;
-    WPUC = 0x00;
-    OPTION_REGbits.nWPUEN = 0;
-
-
-
-
-    ODCONA = 0x00;
-    ODCONB = 0x00;
-    ODCONC = 0x00;
-
-
-
-
-    SLRCONA = 0xFF;
-    SLRCONB = 0xFF;
-    SLRCONC = 0xFF;
-
-
-
-
-    INLVLA = 0xFF;
-    INLVLB = 0xFF;
-    INLVLC = 0xFF;
-    INLVLE = 0x08;
-
-
-
-
-
-
-    IOCAFbits.IOCAF0 = 0;
-
-    IOCAFbits.IOCAF1 = 0;
-
-    IOCAFbits.IOCAF2 = 0;
-
-    IOCAFbits.IOCAF3 = 0;
-
-    IOCAFbits.IOCAF4 = 0;
-
-    IOCAFbits.IOCAF5 = 0;
-
-    IOCANbits.IOCAN0 = 1;
-
-    IOCANbits.IOCAN1 = 1;
-
-    IOCANbits.IOCAN2 = 1;
-
-    IOCANbits.IOCAN3 = 1;
-
-    IOCANbits.IOCAN4 = 1;
-
-    IOCANbits.IOCAN5 = 1;
-
-    IOCAPbits.IOCAP0 = 1;
-
-    IOCAPbits.IOCAP1 = 0;
-
-    IOCAPbits.IOCAP2 = 0;
-
-    IOCAPbits.IOCAP3 = 1;
-
-    IOCAPbits.IOCAP4 = 0;
-
-    IOCAPbits.IOCAP5 = 0;
-
-
-
-
-    IOCAF0_SetInterruptHandler(IOCAF0_DefaultInterruptHandler);
-    IOCAF1_SetInterruptHandler(IOCAF1_DefaultInterruptHandler);
-    IOCAF2_SetInterruptHandler(IOCAF2_DefaultInterruptHandler);
-    IOCAF3_SetInterruptHandler(IOCAF3_DefaultInterruptHandler);
-    IOCAF4_SetInterruptHandler(IOCAF4_DefaultInterruptHandler);
-    IOCAF5_SetInterruptHandler(IOCAF5_DefaultInterruptHandler);
-
-
-    INTCONbits.IOCIE = 1;
-
-}
-
-void PIN_MANAGER_IOC(void)
-{
-
-    if(IOCAFbits.IOCAF0 == 1)
-    {
-        IOCAF0_ISR();
-    }
-
-    if(IOCAFbits.IOCAF1 == 1)
-    {
-        IOCAF1_ISR();
-    }
-
-    if(IOCAFbits.IOCAF2 == 1)
-    {
-        IOCAF2_ISR();
-    }
-
-    if(IOCAFbits.IOCAF3 == 1)
-    {
-        IOCAF3_ISR();
-    }
-
-    if(IOCAFbits.IOCAF4 == 1)
-    {
-        IOCAF4_ISR();
-    }
-
-    if(IOCAFbits.IOCAF5 == 1)
-    {
-        IOCAF5_ISR();
-    }
-}
-
-
-
-
-void IOCAF0_ISR(void) {
-
-
-
-
-    if(IOCAF0_InterruptHandler)
-    {
-        IOCAF0_InterruptHandler();
-    }
-    if (inGame){
-
-    }else{
-        switch (mainState){
-        case 0:
-        break;
-        case 1:
-            mainState = 0;
-            printMenu();
-        break;
-        default:
-            break;
-    }
-    }
-
-
-    IOCAFbits.IOCAF0 = 0;
-}
-
-
-
-
-void IOCAF0_SetInterruptHandler(void (* InterruptHandler)(void)){
-    IOCAF0_InterruptHandler = InterruptHandler;
-}
-
-
-
-
-void IOCAF0_DefaultInterruptHandler(void){
-
-
-}
-
-
-
-
-void IOCAF1_ISR(void) {
-
-
-
-
-    if(IOCAF1_InterruptHandler)
-    {
-        IOCAF1_InterruptHandler();
-    }
-
-    if (inGame){
-
-    }else{
-        switch (mainState){
-        case 0:
-            mainState = 1;
-            printMenu();
-        break;
-        case 1:
-        break;
-        default:
-            break;
-    }
-    }
-    IOCAFbits.IOCAF1 = 0;
-}
-
-
-
-
-void IOCAF1_SetInterruptHandler(void (* InterruptHandler)(void)){
-    IOCAF1_InterruptHandler = InterruptHandler;
-}
-
-
-
-
-void IOCAF1_DefaultInterruptHandler(void){
-
-
-}
-
-
-
-
-void IOCAF2_ISR(void) {
-
-
-
-
-    if(IOCAF2_InterruptHandler)
-    {
-        IOCAF2_InterruptHandler();
-    }
-    if (inGame){
-
-    }else{
-        switch (mainState){
-        case 0:
-            ship1 = 0;
-            disableButton(0);
-            enableButton(1);
-            mainState = 2;
-            printMenu();
-        break;
-        case 1:
-            ship1 = 1;
-            disableButton(0);
-            enableButton(1);
-            mainState = 2;
-            printMenu();
-        break;
-        default:
-            break;
-    }
-    }
-    IOCAFbits.IOCAF2 = 0;
-}
-
-
-
-
-void IOCAF2_SetInterruptHandler(void (* InterruptHandler)(void)){
-    IOCAF2_InterruptHandler = InterruptHandler;
-}
-
-
-
-
-void IOCAF2_DefaultInterruptHandler(void){
-
-
-}
-
-
-
-
-void IOCAF3_ISR(void) {
-
-
-
-
-    if(IOCAF3_InterruptHandler)
-    {
-        IOCAF3_InterruptHandler();
-    }
-     if (inGame){
-
-    }else{
-        switch (mainState){
-        case 3:
-            mainState = 2;
-            printMenu();
-        break;
-        default:
-            break;
-    }
-    }
-    IOCAFbits.IOCAF3 = 0;
-}
-
-
-
-
-void IOCAF3_SetInterruptHandler(void (* InterruptHandler)(void)){
-    IOCAF3_InterruptHandler = InterruptHandler;
-}
-
-
-
-
-void IOCAF3_DefaultInterruptHandler(void){
-
-
-}
-
-
-
-
-void IOCAF4_ISR(void) {
-
-
-
-
-    if(IOCAF4_InterruptHandler)
-    {
-        IOCAF4_InterruptHandler();
-    }
-     if (inGame){
-
-    }else{
-        switch (mainState){
-        case 2:
-            mainState = 3;
-            printMenu();
-        break;
-        default:
-            break;
-    }
-    }
-    IOCAFbits.IOCAF4 = 0;
-}
-
-
-
-
-void IOCAF4_SetInterruptHandler(void (* InterruptHandler)(void)){
-    IOCAF4_InterruptHandler = InterruptHandler;
-}
-
-
-
-
-void IOCAF4_DefaultInterruptHandler(void){
-
-
-}
-
-
-
-
-void IOCAF5_ISR(void) {
-
-
-
-
-    if(IOCAF5_InterruptHandler)
-    {
-        IOCAF5_InterruptHandler();
-    }
-    if (inGame){
-
-    }else{
-        switch (mainState){
-        case 2:
-            ship2 = 0;
-            disableButton(1);
-            enableButton(0);
-            startFight();
-        break;
-        case 3:
-            ship2 = 1;
-            disableButton(1);
-            enableButton(0);
-            startFight();
-        break;
-        default:
-            break;
-    }
-    }
-    IOCAFbits.IOCAF5 = 0;
-}
-
-
-
-
-void IOCAF5_SetInterruptHandler(void (* InterruptHandler)(void)){
-    IOCAF5_InterruptHandler = InterruptHandler;
-}
-
-
-
-
-void IOCAF5_DefaultInterruptHandler(void){
-
-
+    LCDClear();
+    LCDGoto(0,0);
+    LCDPutChar(ship1);
+    LCDGoto(15,0);
+    LCDPutChar(ship2);
 }

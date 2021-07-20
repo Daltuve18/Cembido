@@ -9354,6 +9354,14 @@ void disableButton(_Bool player);
 void enableButton(_Bool player);
 # 21 "menu.c" 2
 
+# 1 "./naves.h" 1
+# 15 "./naves.h"
+extern uint8_t ship1;
+extern uint8_t ship2;
+
+void printShip(void);
+# 22 "menu.c" 2
+
 uint8_t lcdOffset = 3;
 _Bool inGame = 0;
 uint8_t mainState = 0;
@@ -9418,7 +9426,7 @@ void startFight (void)
 
 {
     cleanFullMenu();
-    idleScreen();
+    printShip();
     LCDGoto(lcdOffset, 0);
     LCDPutStr("Start Fight");
     _delay((unsigned long)((2000)*(500000/4000.0)));

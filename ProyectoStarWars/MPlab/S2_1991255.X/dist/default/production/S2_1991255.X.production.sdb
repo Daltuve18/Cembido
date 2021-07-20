@@ -9,8 +9,6 @@
 [v __Umul8_16 _Umul8_16 `(ui  1 e 2 0 ]
 "29 D:\documentos\master\Cembido\ProyectoStarWars\MPlab\S2_1991255.X\functions.c
 [v _createCustomCharacter createCustomCharacter `(v  1 e 1 0 ]
-"54
-[v _idleScreen idleScreen `(v  1 e 1 0 ]
 "124
 [v _disableButton disableButton `(v  1 e 1 0 ]
 [v i1_disableButton disableButton `(v  1 e 1 0 ]
@@ -45,60 +43,62 @@
 [v _OSCILLATOR_Initialize OSCILLATOR_Initialize `(v  1 e 1 0 ]
 "68
 [v _WDT_Initialize WDT_Initialize `(v  1 e 1 0 ]
-"64 D:\documentos\master\Cembido\ProyectoStarWars\MPlab\S2_1991255.X\mcc_generated_files/pin_manager.c
+"65 D:\documentos\master\Cembido\ProyectoStarWars\MPlab\S2_1991255.X\mcc_generated_files/pin_manager.c
 [v _PIN_MANAGER_Initialize PIN_MANAGER_Initialize `(v  1 e 1 0 ]
-"175
+"176
 [v _PIN_MANAGER_IOC PIN_MANAGER_IOC `(v  1 e 1 0 ]
-"212
+"213
 [v _IOCAF0_ISR IOCAF0_ISR `(v  1 e 1 0 ]
-"243
+"244
 [v _IOCAF0_SetInterruptHandler IOCAF0_SetInterruptHandler `(v  1 e 1 0 ]
-"250
+"251
 [v _IOCAF0_DefaultInterruptHandler IOCAF0_DefaultInterruptHandler `(v  1 e 1 0 ]
-"258
+"259
 [v _IOCAF1_ISR IOCAF1_ISR `(v  1 e 1 0 ]
-"288
+"289
 [v _IOCAF1_SetInterruptHandler IOCAF1_SetInterruptHandler `(v  1 e 1 0 ]
-"295
+"296
 [v _IOCAF1_DefaultInterruptHandler IOCAF1_DefaultInterruptHandler `(v  1 e 1 0 ]
-"303
+"304
 [v _IOCAF2_ISR IOCAF2_ISR `(v  1 e 1 0 ]
-"340
+"341
 [v _IOCAF2_SetInterruptHandler IOCAF2_SetInterruptHandler `(v  1 e 1 0 ]
-"347
+"348
 [v _IOCAF2_DefaultInterruptHandler IOCAF2_DefaultInterruptHandler `(v  1 e 1 0 ]
-"355
+"356
 [v _IOCAF3_ISR IOCAF3_ISR `(v  1 e 1 0 ]
-"382
+"383
 [v _IOCAF3_SetInterruptHandler IOCAF3_SetInterruptHandler `(v  1 e 1 0 ]
-"389
+"390
 [v _IOCAF3_DefaultInterruptHandler IOCAF3_DefaultInterruptHandler `(v  1 e 1 0 ]
-"397
+"398
 [v _IOCAF4_ISR IOCAF4_ISR `(v  1 e 1 0 ]
-"424
+"425
 [v _IOCAF4_SetInterruptHandler IOCAF4_SetInterruptHandler `(v  1 e 1 0 ]
-"431
+"432
 [v _IOCAF4_DefaultInterruptHandler IOCAF4_DefaultInterruptHandler `(v  1 e 1 0 ]
-"439
+"440
 [v _IOCAF5_ISR IOCAF5_ISR `(v  1 e 1 0 ]
-"474
+"475
 [v _IOCAF5_SetInterruptHandler IOCAF5_SetInterruptHandler `(v  1 e 1 0 ]
-"481
+"482
 [v _IOCAF5_DefaultInterruptHandler IOCAF5_DefaultInterruptHandler `(v  1 e 1 0 ]
-"27 D:\documentos\master\Cembido\ProyectoStarWars\MPlab\S2_1991255.X\menu.c
+"28 D:\documentos\master\Cembido\ProyectoStarWars\MPlab\S2_1991255.X\menu.c
 [v _printMenu printMenu `(v  1 e 1 0 ]
 [v i1_printMenu printMenu `(v  1 e 1 0 ]
-"40
+"41
 [v _mainMenu mainMenu `(v  1 e 1 0 ]
 [v i1_mainMenu mainMenu `(v  1 e 1 0 ]
-"71
+"72
 [v _cleanMenu cleanMenu `(v  1 e 1 0 ]
 [v i1_cleanMenu cleanMenu `(v  1 e 1 0 ]
-"82
+"83
 [v _startFight startFight `(v  1 e 1 0 ]
-"97
+"98
 [v _cleanFullMenu cleanFullMenu `(v  1 e 1 0 ]
 [v i1_cleanFullMenu cleanFullMenu `(v  1 e 1 0 ]
+"31 D:\documentos\master\Cembido\ProyectoStarWars\MPlab\S2_1991255.X\naves.c
+[v _printShip printShip `(v  1 e 1 0 ]
 [s S207 . 1 `uc 1 IOCIF 1 0 :1:0 
 `uc 1 INTF 1 0 :1:1 
 `uc 1 TMR0IF 1 0 :1:2 
@@ -118,7 +118,7 @@
 [v _INTCONbits INTCONbits `VES221  1 e 1 @11 ]
 "491
 [v _PORTB PORTB `VEuc  1 e 1 @13 ]
-[s S431 . 1 `uc 1 RB0 1 0 :1:0 
+[s S433 . 1 `uc 1 RB0 1 0 :1:0 
 `uc 1 RB1 1 0 :1:1 
 `uc 1 RB2 1 0 :1:2 
 `uc 1 RB3 1 0 :1:3 
@@ -128,8 +128,8 @@
 `uc 1 RB7 1 0 :1:7 
 ]
 "508
-[u S440 . 1 `S431 1 . 1 0 ]
-[v _PORTBbits PORTBbits `VES440  1 e 1 @13 ]
+[u S442 . 1 `S433 1 . 1 0 ]
+[v _PORTBbits PORTBbits `VES442  1 e 1 @13 ]
 "1131
 [v _TRISA TRISA `VEuc  1 e 1 @140 ]
 "1193
@@ -239,24 +239,28 @@
 "7537
 [u S93 . 1 `S84 1 . 1 0 ]
 [v _IOCAFbits IOCAFbits `VES93  1 e 1 @915 ]
-"56 D:\documentos\master\Cembido\ProyectoStarWars\MPlab\S2_1991255.X\mcc_generated_files/pin_manager.c
+"57 D:\documentos\master\Cembido\ProyectoStarWars\MPlab\S2_1991255.X\mcc_generated_files/pin_manager.c
 [v _IOCAF0_InterruptHandler IOCAF0_InterruptHandler `*.37(v  1 e 2 0 ]
-"57
-[v _IOCAF1_InterruptHandler IOCAF1_InterruptHandler `*.37(v  1 e 2 0 ]
 "58
-[v _IOCAF2_InterruptHandler IOCAF2_InterruptHandler `*.37(v  1 e 2 0 ]
+[v _IOCAF1_InterruptHandler IOCAF1_InterruptHandler `*.37(v  1 e 2 0 ]
 "59
-[v _IOCAF3_InterruptHandler IOCAF3_InterruptHandler `*.37(v  1 e 2 0 ]
+[v _IOCAF2_InterruptHandler IOCAF2_InterruptHandler `*.37(v  1 e 2 0 ]
 "60
-[v _IOCAF4_InterruptHandler IOCAF4_InterruptHandler `*.37(v  1 e 2 0 ]
+[v _IOCAF3_InterruptHandler IOCAF3_InterruptHandler `*.37(v  1 e 2 0 ]
 "61
+[v _IOCAF4_InterruptHandler IOCAF4_InterruptHandler `*.37(v  1 e 2 0 ]
+"62
 [v _IOCAF5_InterruptHandler IOCAF5_InterruptHandler `*.37(v  1 e 2 0 ]
-"22 D:\documentos\master\Cembido\ProyectoStarWars\MPlab\S2_1991255.X\menu.c
+"23 D:\documentos\master\Cembido\ProyectoStarWars\MPlab\S2_1991255.X\menu.c
 [v _lcdOffset lcdOffset `uc  1 e 1 0 ]
-"23
-[v _inGame inGame `a  1 e 1 0 ]
 "24
+[v _inGame inGame `a  1 e 1 0 ]
+"25
 [v _mainState mainState `uc  1 e 1 0 ]
+"23 D:\documentos\master\Cembido\ProyectoStarWars\MPlab\S2_1991255.X\naves.c
+[v _ship1 ship1 `uc  1 e 1 0 ]
+"24
+[v _ship2 ship2 `uc  1 e 1 0 ]
 "29 D:\documentos\master\Cembido\ProyectoStarWars\MPlab\S2_1991255.X\main.c
 [v _main main `(v  1 e 1 0 ]
 {
@@ -278,25 +282,25 @@
 [v main@F5667 F5667 `[8]uc  1 s 8 F5667 ]
 "70
 } 0
-"27 D:\documentos\master\Cembido\ProyectoStarWars\MPlab\S2_1991255.X\menu.c
+"28 D:\documentos\master\Cembido\ProyectoStarWars\MPlab\S2_1991255.X\menu.c
 [v _printMenu printMenu `(v  1 e 1 0 ]
 {
-"38
+"39
 } 0
-"40
+"41
 [v _mainMenu mainMenu `(v  1 e 1 0 ]
 {
-"69
+"70
 } 0
-"71
+"72
 [v _cleanMenu cleanMenu `(v  1 e 1 0 ]
 {
-"79
+"80
 } 0
-"97
+"98
 [v _cleanFullMenu cleanFullMenu `(v  1 e 1 0 ]
 {
-"105
+"106
 } 0
 "131 D:\documentos\master\Cembido\ProyectoStarWars\MPlab\S2_1991255.X\lcd.c
 [v _LCDPutStr LCDPutStr `(v  1 e 1 0 ]
@@ -357,46 +361,46 @@
 {
 "72
 } 0
-"64 D:\documentos\master\Cembido\ProyectoStarWars\MPlab\S2_1991255.X\mcc_generated_files/pin_manager.c
+"65 D:\documentos\master\Cembido\ProyectoStarWars\MPlab\S2_1991255.X\mcc_generated_files/pin_manager.c
 [v _PIN_MANAGER_Initialize PIN_MANAGER_Initialize `(v  1 e 1 0 ]
 {
-"173
+"174
 } 0
-"474
+"475
 [v _IOCAF5_SetInterruptHandler IOCAF5_SetInterruptHandler `(v  1 e 1 0 ]
 {
 [v IOCAF5_SetInterruptHandler@InterruptHandler InterruptHandler `*.37(v  1 p 2 6 ]
-"476
+"477
 } 0
-"424
+"425
 [v _IOCAF4_SetInterruptHandler IOCAF4_SetInterruptHandler `(v  1 e 1 0 ]
 {
 [v IOCAF4_SetInterruptHandler@InterruptHandler InterruptHandler `*.37(v  1 p 2 6 ]
-"426
+"427
 } 0
-"382
+"383
 [v _IOCAF3_SetInterruptHandler IOCAF3_SetInterruptHandler `(v  1 e 1 0 ]
 {
 [v IOCAF3_SetInterruptHandler@InterruptHandler InterruptHandler `*.37(v  1 p 2 6 ]
-"384
+"385
 } 0
-"340
+"341
 [v _IOCAF2_SetInterruptHandler IOCAF2_SetInterruptHandler `(v  1 e 1 0 ]
 {
 [v IOCAF2_SetInterruptHandler@InterruptHandler InterruptHandler `*.37(v  1 p 2 6 ]
-"342
+"343
 } 0
-"288
+"289
 [v _IOCAF1_SetInterruptHandler IOCAF1_SetInterruptHandler `(v  1 e 1 0 ]
 {
 [v IOCAF1_SetInterruptHandler@InterruptHandler InterruptHandler `*.37(v  1 p 2 6 ]
-"290
+"291
 } 0
-"243
+"244
 [v _IOCAF0_SetInterruptHandler IOCAF0_SetInterruptHandler `(v  1 e 1 0 ]
 {
 [v IOCAF0_SetInterruptHandler@InterruptHandler InterruptHandler `*.37(v  1 p 2 6 ]
-"245
+"246
 } 0
 "58 D:\documentos\master\Cembido\ProyectoStarWars\MPlab\S2_1991255.X\mcc_generated_files/mcc.c
 [v _OSCILLATOR_Initialize OSCILLATOR_Initialize `(v  1 e 1 0 ]
@@ -432,60 +436,60 @@
 {
 "66
 } 0
-"175 D:\documentos\master\Cembido\ProyectoStarWars\MPlab\S2_1991255.X\mcc_generated_files/pin_manager.c
+"176 D:\documentos\master\Cembido\ProyectoStarWars\MPlab\S2_1991255.X\mcc_generated_files/pin_manager.c
 [v _PIN_MANAGER_IOC PIN_MANAGER_IOC `(v  1 e 1 0 ]
 {
-"207
+"208
 } 0
-"439
+"440
 [v _IOCAF5_ISR IOCAF5_ISR `(v  1 e 1 0 ]
 {
-"469
+"470
 } 0
-"82 D:\documentos\master\Cembido\ProyectoStarWars\MPlab\S2_1991255.X\menu.c
+"83 D:\documentos\master\Cembido\ProyectoStarWars\MPlab\S2_1991255.X\menu.c
 [v _startFight startFight `(v  1 e 1 0 ]
 {
-"95
+"96
 } 0
-"54 D:\documentos\master\Cembido\ProyectoStarWars\MPlab\S2_1991255.X\functions.c
-[v _idleScreen idleScreen `(v  1 e 1 0 ]
+"31 D:\documentos\master\Cembido\ProyectoStarWars\MPlab\S2_1991255.X\naves.c
+[v _printShip printShip `(v  1 e 1 0 ]
 {
-"72
+"38
 } 0
 "159 D:\documentos\master\Cembido\ProyectoStarWars\MPlab\S2_1991255.X\lcd.c
 [v _LCDClear LCDClear `(v  1 e 1 0 ]
 {
 "165
 } 0
-"481 D:\documentos\master\Cembido\ProyectoStarWars\MPlab\S2_1991255.X\mcc_generated_files/pin_manager.c
+"482 D:\documentos\master\Cembido\ProyectoStarWars\MPlab\S2_1991255.X\mcc_generated_files/pin_manager.c
 [v _IOCAF5_DefaultInterruptHandler IOCAF5_DefaultInterruptHandler `(v  1 e 1 0 ]
 {
-"484
+"485
 } 0
-"397
+"398
 [v _IOCAF4_ISR IOCAF4_ISR `(v  1 e 1 0 ]
 {
-"419
+"420
 } 0
-"431
+"432
 [v _IOCAF4_DefaultInterruptHandler IOCAF4_DefaultInterruptHandler `(v  1 e 1 0 ]
 {
-"434
+"435
 } 0
-"355
+"356
 [v _IOCAF3_ISR IOCAF3_ISR `(v  1 e 1 0 ]
 {
-"377
+"378
 } 0
-"389
+"390
 [v _IOCAF3_DefaultInterruptHandler IOCAF3_DefaultInterruptHandler `(v  1 e 1 0 ]
 {
-"392
+"393
 } 0
-"303
+"304
 [v _IOCAF2_ISR IOCAF2_ISR `(v  1 e 1 0 ]
 {
-"335
+"336
 } 0
 "124 D:\documentos\master\Cembido\ProyectoStarWars\MPlab\S2_1991255.X\functions.c
 [v i1_disableButton disableButton `(v  1 e 1 0 ]
@@ -505,45 +509,45 @@
 [v enableButton@player player `a  1 a 1 0 ]
 "192
 } 0
-"347 D:\documentos\master\Cembido\ProyectoStarWars\MPlab\S2_1991255.X\mcc_generated_files/pin_manager.c
+"348 D:\documentos\master\Cembido\ProyectoStarWars\MPlab\S2_1991255.X\mcc_generated_files/pin_manager.c
 [v _IOCAF2_DefaultInterruptHandler IOCAF2_DefaultInterruptHandler `(v  1 e 1 0 ]
 {
-"350
+"351
 } 0
-"258
+"259
 [v _IOCAF1_ISR IOCAF1_ISR `(v  1 e 1 0 ]
 {
-"283
+"284
 } 0
-"295
+"296
 [v _IOCAF1_DefaultInterruptHandler IOCAF1_DefaultInterruptHandler `(v  1 e 1 0 ]
 {
-"298
+"299
 } 0
-"212
+"213
 [v _IOCAF0_ISR IOCAF0_ISR `(v  1 e 1 0 ]
 {
-"238
+"239
 } 0
-"27 D:\documentos\master\Cembido\ProyectoStarWars\MPlab\S2_1991255.X\menu.c
+"28 D:\documentos\master\Cembido\ProyectoStarWars\MPlab\S2_1991255.X\menu.c
 [v i1_printMenu printMenu `(v  1 e 1 0 ]
 {
-"38
+"39
 } 0
-"40
+"41
 [v i1_mainMenu mainMenu `(v  1 e 1 0 ]
 {
-"69
+"70
 } 0
-"71
+"72
 [v i1_cleanMenu cleanMenu `(v  1 e 1 0 ]
 {
-"79
+"80
 } 0
-"97
+"98
 [v i1_cleanFullMenu cleanFullMenu `(v  1 e 1 0 ]
 {
-"105
+"106
 } 0
 "131 D:\documentos\master\Cembido\ProyectoStarWars\MPlab\S2_1991255.X\lcd.c
 [v i1_LCDPutStr LCDPutStr `(v  1 e 1 0 ]
@@ -592,8 +596,8 @@
 [v i1LCDWriteNibble@ch ch `uc  1 a 1 3 ]
 "99
 } 0
-"250 D:\documentos\master\Cembido\ProyectoStarWars\MPlab\S2_1991255.X\mcc_generated_files/pin_manager.c
+"251 D:\documentos\master\Cembido\ProyectoStarWars\MPlab\S2_1991255.X\mcc_generated_files/pin_manager.c
 [v _IOCAF0_DefaultInterruptHandler IOCAF0_DefaultInterruptHandler `(v  1 e 1 0 ]
 {
-"253
+"254
 } 0

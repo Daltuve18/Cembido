@@ -23,4 +23,25 @@ Date          : 7/18/2021
 uint8_t ship1;
 uint8_t ship2;
 
-// Funcion para pintar ambas naves con sus corazones y escudos
+uint8_t corazon=4;
+uint8_t escucdo=4;
+
+
+
+void printShip()
+{
+    LCDClear();
+    LCDGoto(0,0);
+    LCDPutChar(ship1);
+    if (ship2 == 1){
+        LCDGoto(15,0);
+        //LCDPutChar(Poner numero de nave volteada);
+    }else {
+        LCDGoto(15,0);
+        LCDPutChar(ship2);   
+    }
+      
+}
+
+
+
