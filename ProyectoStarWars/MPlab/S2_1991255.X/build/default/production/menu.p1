@@ -1,23 +1,19 @@
 Version 4.0 HI-TECH Software Intermediate Code
-"156 ./lcd.h
-[; ;./lcd.h: 156:   void LCDPutCmd(uint8_t ch);
-[v _LCDPutCmd `(v ~T0 @X0 0 ef1`uc ]
-"138
-[; ;./lcd.h: 138:   void LCDPutChar(uint8_t ch);
-[v _LCDPutChar `(v ~T0 @X0 0 ef1`uc ]
-"232
-[; ;./lcd.h: 232:   void LCDClear(void);
-[v _LCDClear `(v ~T0 @X0 0 ef ]
-"214
+"20 ./menu.h
+[; ;./menu.h: 20: void cleanMenu (void);
+[v _cleanMenu `(v ~T0 @X0 0 ef ]
+"214 ./lcd.h
 [; ;./lcd.h: 214:   void LCDGoto(uint8_t pos, uint8_t ln);
 [v _LCDGoto `(v ~T0 @X0 0 ef2`uc`uc ]
-[v F5685 `(v ~T0 @X0 1 tf1`ul ]
-"92 D:/Programas/packs/Microchip/PIC12-16F1xxx_DFP/1.2.63/xc8\pic\include\pic.h
-[v __delay `JF5685 ~T0 @X0 0 e ]
-[p i __delay ]
-"174 ./lcd.h
+"174
 [; ;./lcd.h: 174:   void LCDPutStr(const char *);
 [v _LCDPutStr `(v ~T0 @X0 0 ef1`*Cuc ]
+"21 ./menu.h
+[; ;./menu.h: 21: void cleanFullMenu (void);
+[v _cleanFullMenu `(v ~T0 @X0 0 ef ]
+"22
+[; ;./menu.h: 22: void mainMenu(void);
+[v _mainMenu `(v ~T0 @X0 0 ef ]
 "54 D:/Programas/packs/Microchip/PIC12-16F1xxx_DFP/1.2.63/xc8\pic\include\proc\pic16lf1718.h
 [; ;D:/Programas/packs/Microchip/PIC12-16F1xxx_DFP/1.2.63/xc8\pic\include\proc\pic16lf1718.h: 54: __asm("INDF0 equ 00h");
 [; <" INDF0 equ 00h ;# ">
@@ -876,182 +872,190 @@ Version 4.0 HI-TECH Software Intermediate Code
 "15211
 [; ;D:/Programas/packs/Microchip/PIC12-16F1xxx_DFP/1.2.63/xc8\pic\include\proc\pic16lf1718.h: 15211: __asm("TOSH equ 0FEFh");
 [; <" TOSH equ 0FEFh ;# ">
-"26 functions.c
-[; ;functions.c: 26: void createCustomCharacter (unsigned char *Pattern, const char Location)
-[v _createCustomCharacter `(v ~T0 @X0 1 ef2`*uc`Cuc ]
-"40
-[; ;functions.c: 40:     {
-{
-[e :U _createCustomCharacter ]
+"21 menu.c
+[; ;menu.c: 21: uint8_t lcdOffset = 3;
+[v _lcdOffset `uc ~T0 @X0 1 e ]
+[i _lcdOffset
+-> -> 3 `i `uc
+]
+"22
+[; ;menu.c: 22: _Bool inGame = 0;
+[v _inGame `a ~T0 @X0 1 e ]
+[i _inGame
+-> -> 0 `i `a
+]
+"23
+[; ;menu.c: 23: uint8_t mainState = 1;
+[v _mainState `uc ~T0 @X0 1 e ]
+[i _mainState
+-> -> 1 `i `uc
+]
+"24
+[; ;menu.c: 24: uint8_t playerTurn = 0;
+[v _playerTurn `uc ~T0 @X0 1 e ]
+[i _playerTurn
+-> -> 0 `i `uc
+]
 "26
-[; ;functions.c: 26: void createCustomCharacter (unsigned char *Pattern, const char Location)
-[v _Pattern `*uc ~T0 @X0 1 r1 ]
-[v _Location `Cuc ~T0 @X0 1 r2 ]
-"40
-[; ;functions.c: 40:     {
-[f ]
-"42
-[; ;functions.c: 42:     int i=0;
-[v _i `i ~T0 @X0 1 a ]
-[e = _i -> 0 `i ]
-"43
-[; ;functions.c: 43:     LCDPutCmd (0x40+(Location*8));
-[e ( _LCDPutCmd (1 -> + -> 64 `i * -> _Location `i -> 8 `i `uc ]
-"45
-[; ;functions.c: 45:     for (i=0; i<8; i++)
+[; ;menu.c: 26: void printMenu (void)
+[v _printMenu `(v ~T0 @X0 1 ef ]
+"28
+[; ;menu.c: 28: {
 {
-[e = _i -> 0 `i ]
-[e $ < _i -> 8 `i 738  ]
+[e :U _printMenu ]
+[f ]
+"29
+[; ;menu.c: 29:     if(inGame){
+[e $ ! != -> _inGame `i -> 0 `i 738  ]
+{
+"30
+[; ;menu.c: 30:         cleanMenu();
+[e ( _cleanMenu ..  ]
+"31
+[; ;menu.c: 31:         LCDGoto(0, 0);
+[e ( _LCDGoto (2 , -> -> 0 `i `uc -> -> 0 `i `uc ]
+"32
+[; ;menu.c: 32:         LCDPutStr("   Menu   ");
+[e ( _LCDPutStr (1 :s 1C ]
+"33
+[; ;menu.c: 33:     }else {
+}
 [e $U 739  ]
 [e :U 738 ]
-"47
-[; ;functions.c: 47:         LCDPutChar (Pattern [ i ] );
-[e ( _LCDPutChar (1 *U + _Pattern * -> _i `x -> -> # *U _Pattern `i `x ]
-[e ++ _i -> 1 `i ]
-[e $ < _i -> 8 `i 738  ]
-[e :U 739 ]
+{
+"34
+[; ;menu.c: 34:         cleanFullMenu();
+[e ( _cleanFullMenu ..  ]
+"35
+[; ;menu.c: 35:         mainMenu();
+[e ( _mainMenu ..  ]
+"36
+[; ;menu.c: 36:     }
 }
-"49
-[; ;functions.c: 49:     }
+[e :U 739 ]
+"37
+[; ;menu.c: 37: }
 [e :UE 737 ]
 }
-"51
-[; ;functions.c: 51: void idleScreen (void)
-[v _idleScreen `(v ~T0 @X0 1 ef ]
-"63
-[; ;functions.c: 63:     {
+"39
+[; ;menu.c: 39: void mainMenu(void){
+[v _mainMenu `(v ~T0 @X0 1 ef ]
 {
-[e :U _idleScreen ]
+[e :U _mainMenu ]
 [f ]
-"64
-[; ;functions.c: 64:         LCDClear();
-[e ( _LCDClear ..  ]
-"65
-[; ;functions.c: 65:         LCDGoto(0,0);
-[e ( _LCDGoto (2 , -> -> 0 `i `uc -> -> 0 `i `uc ]
-"66
-[; ;functions.c: 66:         LCDPutChar(1);
-[e ( _LCDPutChar (1 -> -> 1 `i `uc ]
-"67
-[; ;functions.c: 67:         LCDGoto(15,0);
-[e ( _LCDGoto (2 , -> -> 15 `i `uc -> -> 0 `i `uc ]
-"68
-[; ;functions.c: 68:         LCDPutChar(0);
-[e ( _LCDPutChar (1 -> -> 0 `i `uc ]
-"69
-[; ;functions.c: 69:     }
-[e :UE 741 ]
-}
-"71
-[; ;functions.c: 71: void basicShoot(int direction)
-[v _basicShoot `(v ~T0 @X0 1 ef1`i ]
-"84
-[; ;functions.c: 84:     {
+"40
+[; ;menu.c: 40:     switch (mainState){
+[e $U 742  ]
 {
-[e :U _basicShoot ]
-"71
-[; ;functions.c: 71: void basicShoot(int direction)
-[v _direction `i ~T0 @X0 1 r1 ]
-"84
-[; ;functions.c: 84:     {
-[f ]
-"86
-[; ;functions.c: 86:         if (direction == 0)
-[e $ ! == _direction -> 0 `i 743  ]
-"87
-[; ;functions.c: 87:         {
-{
-"88
-[; ;functions.c: 88:             int j = 1;
-[v _j `i ~T0 @X0 1 a ]
-[e = _j -> 1 `i ]
-"90
-[; ;functions.c: 90:             while(j<=14)
-[e $U 744  ]
-[e :U 745 ]
-"92
-[; ;functions.c: 92:             {
-{
-"93
-[; ;functions.c: 93:                 LCDGoto(j,0);
-[e ( _LCDGoto (2 , -> _j `uc -> -> 0 `i `uc ]
-"94
-[; ;functions.c: 94:                 LCDPutChar(2);
-[e ( _LCDPutChar (1 -> -> 2 `i `uc ]
-"95
-[; ;functions.c: 95:                 _delay((unsigned long)((200)*(500000/4000.0)));
-[e ( __delay (1 -> * -> -> 200 `i `d / -> -> 500000 `l `d .4000.0 `ul ]
-"96
-[; ;functions.c: 96:                 j++;
-[e ++ _j -> 1 `i ]
-"97
-[; ;functions.c: 97:                 LCDGoto(j-1,0);
-[e ( _LCDGoto (2 , -> - _j -> 1 `i `uc -> -> 0 `i `uc ]
-"98
-[; ;functions.c: 98:                 LCDPutStr(" ");
-[e ( _LCDPutStr (1 :s 1C ]
-"99
-[; ;functions.c: 99:             };
-}
-[e :U 744 ]
-"90
-[; ;functions.c: 90:             while(j<=14)
-[e $ <= _j -> 14 `i 745  ]
-[e :U 746 ]
-"100
-[; ;functions.c: 100:         }
-}
-[e $U 747  ]
-"102
-[; ;functions.c: 102:         else
+"41
+[; ;menu.c: 41:         case 0:
 [e :U 743 ]
-"103
-[; ;functions.c: 103:         {
-{
-"104
-[; ;functions.c: 104:             int j=14;
-[v _j `i ~T0 @X0 1 a ]
-[e = _j -> 14 `i ]
-"106
-[; ;functions.c: 106:             while(j>=1)
-[e $U 748  ]
-[e :U 749 ]
-"108
-[; ;functions.c: 108:             {
-{
-"109
-[; ;functions.c: 109:                 LCDGoto(j,0);
-[e ( _LCDGoto (2 , -> _j `uc -> -> 0 `i `uc ]
-"110
-[; ;functions.c: 110:                 LCDPutChar(2);
-[e ( _LCDPutChar (1 -> -> 2 `i `uc ]
-"111
-[; ;functions.c: 111:                 _delay((unsigned long)((200)*(500000/4000.0)));
-[e ( __delay (1 -> * -> -> 200 `i `d / -> -> 500000 `l `d .4000.0 `ul ]
-"112
-[; ;functions.c: 112:                 j--;
-[e -- _j -> 1 `i ]
-"113
-[; ;functions.c: 113:                 LCDGoto(j+1,0);
-[e ( _LCDGoto (2 , -> + _j -> 1 `i `uc -> -> 0 `i `uc ]
-"114
-[; ;functions.c: 114:                 LCDPutStr(" ");
+"42
+[; ;menu.c: 42:             LCDGoto(0, 0);
+[e ( _LCDGoto (2 , -> -> 0 `i `uc -> -> 0 `i `uc ]
+"43
+[; ;menu.c: 43:             LCDPutStr("Select ship#1");
 [e ( _LCDPutStr (1 :s 2C ]
-"115
-[; ;functions.c: 115:             };
+"44
+[; ;menu.c: 44:             LCDGoto(0, 1);
+[e ( _LCDGoto (2 , -> -> 0 `i `uc -> -> 1 `i `uc ]
+"45
+[; ;menu.c: 45:             LCDPutStr("> Tie Fighter");
+[e ( _LCDPutStr (1 :s 3C ]
+"46
+[; ;menu.c: 46:         break;
+[e $U 741  ]
+"47
+[; ;menu.c: 47:         case 1:
+[e :U 744 ]
+"48
+[; ;menu.c: 48:           LCDGoto(0, 0);
+[e ( _LCDGoto (2 , -> -> 0 `i `uc -> -> 0 `i `uc ]
+"49
+[; ;menu.c: 49:             LCDPutStr("  Tie Fighter");
+[e ( _LCDPutStr (1 :s 4C ]
+"50
+[; ;menu.c: 50:             LCDGoto(0, 1);
+[e ( _LCDGoto (2 , -> -> 0 `i `uc -> -> 1 `i `uc ]
+"51
+[; ;menu.c: 51:             LCDPutStr("> X wing");
+[e ( _LCDPutStr (1 :s 5C ]
+"52
+[; ;menu.c: 52:         break;
+[e $U 741  ]
+"53
+[; ;menu.c: 53:         default:
+[e :U 745 ]
+"54
+[; ;menu.c: 54:             break;
+[e $U 741  ]
+"55
+[; ;menu.c: 55:     }
 }
-[e :U 748 ]
-"106
-[; ;functions.c: 106:             while(j>=1)
-[e $ >= _j -> 1 `i 749  ]
-[e :U 750 ]
-"116
-[; ;functions.c: 116:         }
+[e $U 741  ]
+[e :U 742 ]
+[e [\ -> _mainState `i , $ -> 0 `i 743
+ , $ -> 1 `i 744
+ 745 ]
+[e :U 741 ]
+"56
+[; ;menu.c: 56: }
+[e :UE 740 ]
 }
-[e :U 747 ]
-"119
-[; ;functions.c: 119:     }
-[e :UE 742 ]
+"58
+[; ;menu.c: 58: void cleanMenu (void)
+[v _cleanMenu `(v ~T0 @X0 1 ef ]
+"60
+[; ;menu.c: 60: {
+{
+[e :U _cleanMenu ]
+[f ]
+"61
+[; ;menu.c: 61:     LCDGoto(lcdOffset, 0);
+[e ( _LCDGoto (2 , _lcdOffset -> -> 0 `i `uc ]
+"62
+[; ;menu.c: 62:     LCDPutStr("          ");
+[e ( _LCDPutStr (1 :s 6C ]
+"63
+[; ;menu.c: 63:     LCDGoto(lcdOffset, 1);
+[e ( _LCDGoto (2 , _lcdOffset -> -> 1 `i `uc ]
+"64
+[; ;menu.c: 64:     LCDPutStr("          ");
+[e ( _LCDPutStr (1 :s 7C ]
+"66
+[; ;menu.c: 66: }
+[e :UE 746 ]
 }
-[a 1C 32 0 ]
-[a 2C 32 0 ]
+"68
+[; ;menu.c: 68: void cleanFullMenu (void)
+[v _cleanFullMenu `(v ~T0 @X0 1 ef ]
+"70
+[; ;menu.c: 70: {
+{
+[e :U _cleanFullMenu ]
+[f ]
+"71
+[; ;menu.c: 71:     LCDGoto(0, 0);
+[e ( _LCDGoto (2 , -> -> 0 `i `uc -> -> 0 `i `uc ]
+"72
+[; ;menu.c: 72:     LCDPutStr("                ");
+[e ( _LCDPutStr (1 :s 8C ]
+"73
+[; ;menu.c: 73:     LCDGoto(0, 1);
+[e ( _LCDGoto (2 , -> -> 0 `i `uc -> -> 1 `i `uc ]
+"74
+[; ;menu.c: 74:     LCDPutStr("                ");
+[e ( _LCDPutStr (1 :s 9C ]
+"76
+[; ;menu.c: 76: }
+[e :UE 747 ]
+}
+[a 3C 62 32 84 105 101 32 70 105 103 104 116 101 114 0 ]
+[a 4C 32 32 84 105 101 32 70 105 103 104 116 101 114 0 ]
+[a 5C 62 32 88 32 119 105 110 103 0 ]
+[a 2C 83 101 108 101 99 116 32 115 104 105 112 35 49 0 ]
+[a 1C 32 32 32 77 101 110 117 32 32 32 0 ]
+[a 8C 32 32 32 32 32 32 32 32 32 32 32 32 32 32 32 32 0 ]
+[a 9C 32 32 32 32 32 32 32 32 32 32 32 32 32 32 32 32 0 ]
+[a 6C 32 32 32 32 32 32 32 32 32 32 0 ]
+[a 7C 32 32 32 32 32 32 32 32 32 32 0 ]

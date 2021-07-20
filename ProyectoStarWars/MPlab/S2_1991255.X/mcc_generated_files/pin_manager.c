@@ -49,6 +49,8 @@
 #include "pin_manager.h"
 #include "mcc.h"
 #include "../functions.h"
+#include "../menu.h"
+
 
 
 void (*IOCAF0_InterruptHandler)(void);
@@ -216,7 +218,22 @@ void IOCAF0_ISR(void) {
     {
         IOCAF0_InterruptHandler();
     }
-    basicShoot(0);
+    if (inGame){
+    
+    }else{
+        switch (mainState){
+        case 0:
+        break;
+        case 1:
+            mainState  = 0;
+            printMenu();
+        break;
+        default:
+            break;
+    }
+    }
+    
+    
     IOCAFbits.IOCAF0 = 0;
 }
 
@@ -246,6 +263,21 @@ void IOCAF1_ISR(void) {
     if(IOCAF1_InterruptHandler)
     {
         IOCAF1_InterruptHandler();
+    }
+    
+    if (inGame){
+    
+    }else{
+        switch (mainState){
+        case 0:
+            mainState  = 1;
+            printMenu();
+        break;
+        case 1:
+        break;
+        default:
+            break;
+    }
     }
     IOCAFbits.IOCAF1 = 0;
 }
@@ -307,7 +339,6 @@ void IOCAF3_ISR(void) {
     {
         IOCAF3_InterruptHandler();
     }
-    basicShoot(1);
     IOCAFbits.IOCAF3 = 0;
 }
 

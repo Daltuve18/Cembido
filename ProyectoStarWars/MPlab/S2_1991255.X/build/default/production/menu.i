@@ -1,4 +1,4 @@
-# 1 "lcd.c"
+# 1 "menu.c"
 # 1 "<built-in>" 1
 # 1 "<built-in>" 3
 # 288 "<built-in>" 3
@@ -6,8 +6,228 @@
 # 1 "<built-in>" 2
 # 1 "D:/Programas/packs/Microchip/PIC12-16F1xxx_DFP/1.2.63/xc8\\pic\\include\\language_support.h" 1 3
 # 2 "<built-in>" 2
-# 1 "lcd.c" 2
-# 43 "lcd.c"
+# 1 "menu.c" 2
+# 17 "menu.c"
+# 1 "D:\\Programas\\Microchip\\xc8\\v2.31\\pic\\include\\c99\\string.h" 1 3
+
+
+
+# 1 "D:\\Programas\\Microchip\\xc8\\v2.31\\pic\\include\\c99\\musl_xc8.h" 1 3
+# 4 "D:\\Programas\\Microchip\\xc8\\v2.31\\pic\\include\\c99\\string.h" 2 3
+
+
+
+
+
+
+# 1 "D:\\Programas\\Microchip\\xc8\\v2.31\\pic\\include\\c99\\features.h" 1 3
+# 10 "D:\\Programas\\Microchip\\xc8\\v2.31\\pic\\include\\c99\\string.h" 2 3
+# 25 "D:\\Programas\\Microchip\\xc8\\v2.31\\pic\\include\\c99\\string.h" 3
+# 1 "D:\\Programas\\Microchip\\xc8\\v2.31\\pic\\include\\c99\\bits/alltypes.h" 1 3
+# 122 "D:\\Programas\\Microchip\\xc8\\v2.31\\pic\\include\\c99\\bits/alltypes.h" 3
+typedef unsigned size_t;
+# 168 "D:\\Programas\\Microchip\\xc8\\v2.31\\pic\\include\\c99\\bits/alltypes.h" 3
+typedef __int24 int24_t;
+# 204 "D:\\Programas\\Microchip\\xc8\\v2.31\\pic\\include\\c99\\bits/alltypes.h" 3
+typedef __uint24 uint24_t;
+# 411 "D:\\Programas\\Microchip\\xc8\\v2.31\\pic\\include\\c99\\bits/alltypes.h" 3
+typedef struct __locale_struct * locale_t;
+# 25 "D:\\Programas\\Microchip\\xc8\\v2.31\\pic\\include\\c99\\string.h" 2 3
+
+
+void *memcpy (void *restrict, const void *restrict, size_t);
+void *memmove (void *, const void *, size_t);
+void *memset (void *, int, size_t);
+int memcmp (const void *, const void *, size_t);
+void *memchr (const void *, int, size_t);
+
+char *strcpy (char *restrict, const char *restrict);
+char *strncpy (char *restrict, const char *restrict, size_t);
+
+char *strcat (char *restrict, const char *restrict);
+char *strncat (char *restrict, const char *restrict, size_t);
+
+int strcmp (const char *, const char *);
+int strncmp (const char *, const char *, size_t);
+
+int strcoll (const char *, const char *);
+size_t strxfrm (char *restrict, const char *restrict, size_t);
+
+char *strchr (const char *, int);
+char *strrchr (const char *, int);
+
+size_t strcspn (const char *, const char *);
+size_t strspn (const char *, const char *);
+char *strpbrk (const char *, const char *);
+char *strstr (const char *, const char *);
+char *strtok (char *restrict, const char *restrict);
+
+size_t strlen (const char *);
+
+char *strerror (int);
+# 65 "D:\\Programas\\Microchip\\xc8\\v2.31\\pic\\include\\c99\\string.h" 3
+char *strtok_r (char *restrict, const char *restrict, char **restrict);
+int strerror_r (int, char *, size_t);
+char *stpcpy(char *restrict, const char *restrict);
+char *stpncpy(char *restrict, const char *restrict, size_t);
+size_t strnlen (const char *, size_t);
+char *strdup (const char *);
+char *strndup (const char *, size_t);
+char *strsignal(int);
+char *strerror_l (int, locale_t);
+int strcoll_l (const char *, const char *, locale_t);
+size_t strxfrm_l (char *restrict, const char *restrict, size_t, locale_t);
+
+
+
+
+void *memccpy (void *restrict, const void *restrict, int, size_t);
+# 17 "menu.c" 2
+
+# 1 "D:\\Programas\\Microchip\\xc8\\v2.31\\pic\\include\\c99\\stdio.h" 1 3
+# 24 "D:\\Programas\\Microchip\\xc8\\v2.31\\pic\\include\\c99\\stdio.h" 3
+# 1 "D:\\Programas\\Microchip\\xc8\\v2.31\\pic\\include\\c99\\bits/alltypes.h" 1 3
+
+
+
+
+
+typedef void * va_list[1];
+
+
+
+
+typedef void * __isoc_va_list[1];
+# 137 "D:\\Programas\\Microchip\\xc8\\v2.31\\pic\\include\\c99\\bits/alltypes.h" 3
+typedef long ssize_t;
+# 246 "D:\\Programas\\Microchip\\xc8\\v2.31\\pic\\include\\c99\\bits/alltypes.h" 3
+typedef long long off_t;
+# 399 "D:\\Programas\\Microchip\\xc8\\v2.31\\pic\\include\\c99\\bits/alltypes.h" 3
+typedef struct _IO_FILE FILE;
+# 24 "D:\\Programas\\Microchip\\xc8\\v2.31\\pic\\include\\c99\\stdio.h" 2 3
+# 52 "D:\\Programas\\Microchip\\xc8\\v2.31\\pic\\include\\c99\\stdio.h" 3
+typedef union _G_fpos64_t {
+ char __opaque[16];
+ double __align;
+} fpos_t;
+
+extern FILE *const stdin;
+extern FILE *const stdout;
+extern FILE *const stderr;
+
+
+
+
+
+FILE *fopen(const char *restrict, const char *restrict);
+FILE *freopen(const char *restrict, const char *restrict, FILE *restrict);
+int fclose(FILE *);
+
+int remove(const char *);
+int rename(const char *, const char *);
+
+int feof(FILE *);
+int ferror(FILE *);
+int fflush(FILE *);
+void clearerr(FILE *);
+
+int fseek(FILE *, long, int);
+long ftell(FILE *);
+void rewind(FILE *);
+
+int fgetpos(FILE *restrict, fpos_t *restrict);
+int fsetpos(FILE *, const fpos_t *);
+
+size_t fread(void *restrict, size_t, size_t, FILE *restrict);
+size_t fwrite(const void *restrict, size_t, size_t, FILE *restrict);
+
+int fgetc(FILE *);
+int getc(FILE *);
+int getchar(void);
+int ungetc(int, FILE *);
+
+int fputc(int, FILE *);
+int putc(int, FILE *);
+int putchar(int);
+
+char *fgets(char *restrict, int, FILE *restrict);
+
+char *gets(char *);
+
+
+int fputs(const char *restrict, FILE *restrict);
+int puts(const char *);
+
+#pragma printf_check(printf) const
+#pragma printf_check(vprintf) const
+#pragma printf_check(sprintf) const
+#pragma printf_check(snprintf) const
+#pragma printf_check(vsprintf) const
+#pragma printf_check(vsnprintf) const
+
+int printf(const char *restrict, ...);
+int fprintf(FILE *restrict, const char *restrict, ...);
+int sprintf(char *restrict, const char *restrict, ...);
+int snprintf(char *restrict, size_t, const char *restrict, ...);
+
+int vprintf(const char *restrict, __isoc_va_list);
+int vfprintf(FILE *restrict, const char *restrict, __isoc_va_list);
+int vsprintf(char *restrict, const char *restrict, __isoc_va_list);
+int vsnprintf(char *restrict, size_t, const char *restrict, __isoc_va_list);
+
+int scanf(const char *restrict, ...);
+int fscanf(FILE *restrict, const char *restrict, ...);
+int sscanf(const char *restrict, const char *restrict, ...);
+int vscanf(const char *restrict, __isoc_va_list);
+int vfscanf(FILE *restrict, const char *restrict, __isoc_va_list);
+int vsscanf(const char *restrict, const char *restrict, __isoc_va_list);
+
+void perror(const char *);
+
+int setvbuf(FILE *restrict, char *restrict, int, size_t);
+void setbuf(FILE *restrict, char *restrict);
+
+char *tmpnam(char *);
+FILE *tmpfile(void);
+
+
+
+
+FILE *fmemopen(void *restrict, size_t, const char *restrict);
+FILE *open_memstream(char **, size_t *);
+FILE *fdopen(int, const char *);
+FILE *popen(const char *, const char *);
+int pclose(FILE *);
+int fileno(FILE *);
+int fseeko(FILE *, off_t, int);
+off_t ftello(FILE *);
+int dprintf(int, const char *restrict, ...);
+int vdprintf(int, const char *restrict, __isoc_va_list);
+void flockfile(FILE *);
+int ftrylockfile(FILE *);
+void funlockfile(FILE *);
+int getc_unlocked(FILE *);
+int getchar_unlocked(void);
+int putc_unlocked(int, FILE *);
+int putchar_unlocked(int);
+ssize_t getdelim(char **restrict, size_t *restrict, int, FILE *restrict);
+ssize_t getline(char **restrict, size_t *restrict, FILE *restrict);
+int renameat(int, const char *, int, const char *);
+char *ctermid(char *);
+
+
+
+
+
+
+
+char *tempnam(const char *, const char *);
+# 18 "menu.c" 2
+
+# 1 "./lcd.h" 1
+# 46 "./lcd.h"
+# 1 "./mcc_generated_files/mcc.h" 1
+# 49 "./mcc_generated_files/mcc.h"
 # 1 "D:/Programas/packs/Microchip/PIC12-16F1xxx_DFP/1.2.63/xc8\\pic\\include\\xc.h" 1 3
 # 18 "D:/Programas/packs/Microchip/PIC12-16F1xxx_DFP/1.2.63/xc8\\pic\\include\\xc.h" 3
 extern const char __xc8_OPTIM_SPEED;
@@ -21,29 +241,10 @@ extern double __fpnormalize(double);
 
 
 # 1 "D:\\Programas\\Microchip\\xc8\\v2.31\\pic\\include\\c99\\stdlib.h" 1 3
-
-
-
-# 1 "D:\\Programas\\Microchip\\xc8\\v2.31\\pic\\include\\c99\\musl_xc8.h" 1 3
-# 4 "D:\\Programas\\Microchip\\xc8\\v2.31\\pic\\include\\c99\\stdlib.h" 2 3
-
-
-
-
-
-
-# 1 "D:\\Programas\\Microchip\\xc8\\v2.31\\pic\\include\\c99\\features.h" 1 3
-# 10 "D:\\Programas\\Microchip\\xc8\\v2.31\\pic\\include\\c99\\stdlib.h" 2 3
 # 21 "D:\\Programas\\Microchip\\xc8\\v2.31\\pic\\include\\c99\\stdlib.h" 3
 # 1 "D:\\Programas\\Microchip\\xc8\\v2.31\\pic\\include\\c99\\bits/alltypes.h" 1 3
 # 18 "D:\\Programas\\Microchip\\xc8\\v2.31\\pic\\include\\c99\\bits/alltypes.h" 3
 typedef long int wchar_t;
-# 122 "D:\\Programas\\Microchip\\xc8\\v2.31\\pic\\include\\c99\\bits/alltypes.h" 3
-typedef unsigned size_t;
-# 168 "D:\\Programas\\Microchip\\xc8\\v2.31\\pic\\include\\c99\\bits/alltypes.h" 3
-typedef __int24 int24_t;
-# 204 "D:\\Programas\\Microchip\\xc8\\v2.31\\pic\\include\\c99\\bits/alltypes.h" 3
-typedef __uint24 uint24_t;
 # 21 "D:\\Programas\\Microchip\\xc8\\v2.31\\pic\\include\\c99\\stdlib.h" 2 3
 
 
@@ -8919,12 +9120,8 @@ extern __bank0 unsigned char __resetbits;
 extern __bank0 __bit __powerdown;
 extern __bank0 __bit __timeout;
 # 28 "D:/Programas/packs/Microchip/PIC12-16F1xxx_DFP/1.2.63/xc8\\pic\\include\\xc.h" 2 3
-# 43 "lcd.c" 2
+# 49 "./mcc_generated_files/mcc.h" 2
 
-# 1 "./lcd.h" 1
-# 46 "./lcd.h"
-# 1 "./mcc_generated_files/mcc.h" 1
-# 50 "./mcc_generated_files/mcc.h"
 # 1 "./mcc_generated_files/device_config.h" 1
 # 50 "./mcc_generated_files/mcc.h" 2
 
@@ -9129,126 +9326,73 @@ void WDT_Initialize(void);
   void LCDGoto(uint8_t pos, uint8_t ln);
 # 232 "./lcd.h"
   void LCDClear(void);
-# 44 "lcd.c" 2
+# 19 "menu.c" 2
 
+# 1 "./menu.h" 1
+# 15 "./menu.h"
+extern _Bool inGame;
+extern uint8_t mainState;
+extern uint8_t playerTurn;
 
-void LCD_Initialize()
+void printMenu (void);
+void cleanMenu (void);
+void cleanFullMenu (void);
+void mainMenu(void);
+# 20 "menu.c" 2
+
+uint8_t lcdOffset = 3;
+_Bool inGame = 0;
+uint8_t mainState = 1;
+uint8_t playerTurn = 0;
+
+void printMenu (void)
+
 {
-
-  PORTB = 0;
-
-  TRISB = 0x00;
-
-
-  PORTBbits.RB7 = 1;
-
-
-  _delay((unsigned long)((15)*(500000/4000.0)));
-
-
-  LCDPutCmd(0x32);
-
-
-  LCDPutCmd(0x28);
-
-
-  LCDPutCmd(0x0C);
-
-  LCDPutCmd(0x01);
-
-
-  LCDPutCmd(0x06);
+    if(inGame){
+        cleanMenu();
+        LCDGoto(0, 0);
+        LCDPutStr("   Menu   ");
+    }else {
+        cleanFullMenu();
+        mainMenu();
+    }
 }
 
-void LCDWriteNibble(uint8_t ch, uint8_t rs)
-{
-
-  ch = (ch >> 4);
-
-
-  ch = (ch & 0x0F);
-
-
-  PORTB = (PORTB & 0xF0);
-
-
-  PORTB = (PORTB | ch);
-
-
-  PORTBbits.RB5 = rs;
-
-
-  PORTBbits.RB6 = 0;
-
-
-  PORTBbits.RB4 = 1;
-
-
-  PORTBbits.RB4 = 0;
+void mainMenu(void){
+    switch (mainState){
+        case 0:
+            LCDGoto(0, 0);
+            LCDPutStr("Select ship#1");
+            LCDGoto(0, 1);
+            LCDPutStr("> Tie Fighter");
+        break;
+        case 1:
+          LCDGoto(0, 0);
+            LCDPutStr("  Tie Fighter");
+            LCDGoto(0, 1);
+            LCDPutStr("> X wing");
+        break;
+        default:
+            break;
+    }
 }
 
-void LCDPutChar(uint8_t ch)
+void cleanMenu (void)
+
 {
-  _delay((unsigned long)((5)*(500000/4000.0)));
+    LCDGoto(lcdOffset, 0);
+    LCDPutStr("          ");
+    LCDGoto(lcdOffset, 1);
+    LCDPutStr("          ");
 
-
-  LCDWriteNibble(ch, 1);
-
-
-  ch = (uint8_t)(ch << 4);
-
-
-  LCDWriteNibble(ch, 1);
 }
 
-void LCDPutCmd(uint8_t ch)
+void cleanFullMenu (void)
+
 {
-  _delay((unsigned long)((5)*(500000/4000.0)));
+    LCDGoto(0, 0);
+    LCDPutStr("                ");
+    LCDGoto(0, 1);
+    LCDPutStr("                ");
 
-
-  LCDWriteNibble(ch, 0);
-
-
-  ch = (uint8_t)(ch << 4);
-
-  _delay((unsigned long)((1)*(500000/4000.0)));
-
-
-  LCDWriteNibble(ch, 0);
-}
-
-void LCDPutStr(const char *str)
-{
-  uint8_t i = 0;
-
-
-  while (str[i])
-  {
-
-    LCDPutChar(str[i++]);
-  }
-}
-
-void LCDGoto(uint8_t pos, uint8_t ln)
-{
-
-  if ((ln > (2 - 1)) || (pos > (16 - 1)))
-  {
-
-    return;
-  }
-
-
-  LCDPutCmd((ln == 1) ? (0xC0 | pos) : (0x80 | pos));
-
-
-  _delay((unsigned long)((5)*(500000/4000.0)));
-}
-
-void LCDClear(void)
-{
-  LCDGoto(0, 0);
-  LCDPutStr("                ");
-  LCDGoto(0, 1);
-  LCDPutStr("                ");
 }

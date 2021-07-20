@@ -20,6 +20,7 @@ Date          : 7/18/2021
 
 #include <stdio.h> 
 #include "lcd.h"
+#include "menu.h"
 
 /* Local libraries */
 
@@ -52,8 +53,9 @@ void main()
     createCustomCharacter(Pattern4,3);
 
     //LCD PRINTING
-
-    idleScreen();
+    
+    //idleScreen();
+    printMenu();
     
     // Enable the Global Interrupts
     INTERRUPT_GlobalInterruptEnable();
