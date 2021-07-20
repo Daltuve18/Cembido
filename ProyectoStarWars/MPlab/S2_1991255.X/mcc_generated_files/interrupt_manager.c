@@ -54,7 +54,7 @@ void __interrupt() INTERRUPT_InterruptManager (void)
     // interrupt handler
     if(INTCONbits.IOCIE == 1 && INTCONbits.IOCIF == 1)
     {
-        __delay_ms(80);
+        __delay_ms(80); //Debouncing delay
         PIN_MANAGER_IOC();
         
         INTCONbits.IOCIF = 0;

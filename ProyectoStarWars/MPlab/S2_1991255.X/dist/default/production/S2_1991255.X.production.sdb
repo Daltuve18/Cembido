@@ -3,13 +3,17 @@
 [d edition pro ]
 [d chip 16LF1718 ]
 [d frameptr 6 ]
-"10 D:\Programas\Microchip\xc8\v2.31\pic\sources\c99\common\sprcadd.c
+"10 C:\Program Files\Microchip\xc8\v2.31\pic\sources\c99\common\sprcadd.c
 [v ___fladd __fladd `(d  1 e 4 0 ]
-"4 D:\Programas\Microchip\xc8\v2.31\pic\sources\c99\common\Umul8_16.c
+"4 C:\Program Files\Microchip\xc8\v2.31\pic\sources\c99\common\Umul8_16.c
 [v __Umul8_16 _Umul8_16 `(ui  1 e 2 0 ]
-"26 D:\documentos\master\Cembido\ProyectoStarWars\MPlab\S2_1991255.X\functions.c
+"29 C:\Users\davfe\Documents\GitHub\Cembido\ProyectoStarWars\MPlab\S2_1991255.X\functions.c
 [v _createCustomCharacter createCustomCharacter `(v  1 e 1 0 ]
-"46 D:\documentos\master\Cembido\ProyectoStarWars\MPlab\S2_1991255.X\lcd.c
+"124
+[v _disableButton disableButton `(v  1 e 1 0 ]
+"159
+[v _enableButton enableButton `(v  1 e 1 0 ]
+"46 C:\Users\davfe\Documents\GitHub\Cembido\ProyectoStarWars\MPlab\S2_1991255.X\lcd.c
 [v _LCD_Initialize LCD_Initialize `(v  1 e 1 0 ]
 "74
 [v _LCDWriteNibble LCDWriteNibble `(v  1 e 1 0 ]
@@ -28,17 +32,17 @@
 [v i1_LCDGoto LCDGoto `(v  1 e 1 0 ]
 "159
 [v _LCDClear LCDClear `(v  1 e 1 0 ]
-"29 D:\documentos\master\Cembido\ProyectoStarWars\MPlab\S2_1991255.X\main.c
+"29 C:\Users\davfe\Documents\GitHub\Cembido\ProyectoStarWars\MPlab\S2_1991255.X\main.c
 [v _main main `(v  1 e 1 0 ]
-"52 D:\documentos\master\Cembido\ProyectoStarWars\MPlab\S2_1991255.X\mcc_generated_files/interrupt_manager.c
+"52 C:\Users\davfe\Documents\GitHub\Cembido\ProyectoStarWars\MPlab\S2_1991255.X\mcc_generated_files/interrupt_manager.c
 [v _INTERRUPT_InterruptManager INTERRUPT_InterruptManager `II(v  1 e 1 0 ]
-"50 D:\documentos\master\Cembido\ProyectoStarWars\MPlab\S2_1991255.X\mcc_generated_files/mcc.c
+"50 C:\Users\davfe\Documents\GitHub\Cembido\ProyectoStarWars\MPlab\S2_1991255.X\mcc_generated_files/mcc.c
 [v _SYSTEM_Initialize SYSTEM_Initialize `(v  1 e 1 0 ]
 "58
 [v _OSCILLATOR_Initialize OSCILLATOR_Initialize `(v  1 e 1 0 ]
 "68
 [v _WDT_Initialize WDT_Initialize `(v  1 e 1 0 ]
-"64 D:\documentos\master\Cembido\ProyectoStarWars\MPlab\S2_1991255.X\mcc_generated_files/pin_manager.c
+"64 C:\Users\davfe\Documents\GitHub\Cembido\ProyectoStarWars\MPlab\S2_1991255.X\mcc_generated_files/pin_manager.c
 [v _PIN_MANAGER_Initialize PIN_MANAGER_Initialize `(v  1 e 1 0 ]
 "175
 [v _PIN_MANAGER_IOC PIN_MANAGER_IOC `(v  1 e 1 0 ]
@@ -78,7 +82,7 @@
 [v _IOCAF5_SetInterruptHandler IOCAF5_SetInterruptHandler `(v  1 e 1 0 ]
 "415
 [v _IOCAF5_DefaultInterruptHandler IOCAF5_DefaultInterruptHandler `(v  1 e 1 0 ]
-"26 D:\documentos\master\Cembido\ProyectoStarWars\MPlab\S2_1991255.X\menu.c
+"26 C:\Users\davfe\Documents\GitHub\Cembido\ProyectoStarWars\MPlab\S2_1991255.X\menu.c
 [v _printMenu printMenu `(v  1 e 1 0 ]
 [v i1_printMenu printMenu `(v  1 e 1 0 ]
 "39
@@ -99,7 +103,7 @@
 `uc 1 PEIE 1 0 :1:6 
 `uc 1 GIE 1 0 :1:7 
 ]
-"374 D:/Programas/packs/Microchip/PIC12-16F1xxx_DFP/1.2.63/xc8\pic\include\proc\pic16lf1718.h
+"374 C:/Program Files/Microchip/MPLABX/v5.45/packs/Microchip/PIC12-16F1xxx_DFP/1.2.63/xc8\pic\include\proc\pic16lf1718.h
 [s S216 . 1 `uc 1 . 1 0 :2:0 
 `uc 1 T0IF 1 0 :1:2 
 `uc 1 . 1 0 :2:3 
@@ -230,7 +234,7 @@
 "7537
 [u S93 . 1 `S84 1 . 1 0 ]
 [v _IOCAFbits IOCAFbits `VES93  1 e 1 @915 ]
-"56 D:\documentos\master\Cembido\ProyectoStarWars\MPlab\S2_1991255.X\mcc_generated_files/pin_manager.c
+"56 C:\Users\davfe\Documents\GitHub\Cembido\ProyectoStarWars\MPlab\S2_1991255.X\mcc_generated_files/pin_manager.c
 [v _IOCAF0_InterruptHandler IOCAF0_InterruptHandler `*.37(v  1 e 2 0 ]
 "57
 [v _IOCAF1_InterruptHandler IOCAF1_InterruptHandler `*.37(v  1 e 2 0 ]
@@ -242,13 +246,13 @@
 [v _IOCAF4_InterruptHandler IOCAF4_InterruptHandler `*.37(v  1 e 2 0 ]
 "61
 [v _IOCAF5_InterruptHandler IOCAF5_InterruptHandler `*.37(v  1 e 2 0 ]
-"21 D:\documentos\master\Cembido\ProyectoStarWars\MPlab\S2_1991255.X\menu.c
+"21 C:\Users\davfe\Documents\GitHub\Cembido\ProyectoStarWars\MPlab\S2_1991255.X\menu.c
 [v _lcdOffset lcdOffset `uc  1 e 1 0 ]
 "22
 [v _inGame inGame `a  1 e 1 0 ]
 "23
 [v _mainState mainState `uc  1 e 1 0 ]
-"29 D:\documentos\master\Cembido\ProyectoStarWars\MPlab\S2_1991255.X\main.c
+"29 C:\Users\davfe\Documents\GitHub\Cembido\ProyectoStarWars\MPlab\S2_1991255.X\main.c
 [v _main main `(v  1 e 1 0 ]
 {
 "46
@@ -260,16 +264,16 @@
 "40
 [v main@Pattern1 Pattern1 `[8]uc  1 a 8 0 ]
 "36
-[v main@F5655 F5655 `[8]uc  1 s 8 F5655 ]
+[v main@F5660 F5660 `[8]uc  1 s 8 F5660 ]
 "40
-[v main@F5657 F5657 `[8]uc  1 s 8 F5657 ]
+[v main@F5662 F5662 `[8]uc  1 s 8 F5662 ]
 "42
-[v main@F5659 F5659 `[8]uc  1 s 8 F5659 ]
+[v main@F5664 F5664 `[8]uc  1 s 8 F5664 ]
 "44
-[v main@F5661 F5661 `[8]uc  1 s 8 F5661 ]
-"67
+[v main@F5666 F5666 `[8]uc  1 s 8 F5666 ]
+"71
 } 0
-"26 D:\documentos\master\Cembido\ProyectoStarWars\MPlab\S2_1991255.X\menu.c
+"26 C:\Users\davfe\Documents\GitHub\Cembido\ProyectoStarWars\MPlab\S2_1991255.X\menu.c
 [v _printMenu printMenu `(v  1 e 1 0 ]
 {
 "37
@@ -289,7 +293,7 @@
 {
 "76
 } 0
-"131 D:\documentos\master\Cembido\ProyectoStarWars\MPlab\S2_1991255.X\lcd.c
+"131 C:\Users\davfe\Documents\GitHub\Cembido\ProyectoStarWars\MPlab\S2_1991255.X\lcd.c
 [v _LCDPutStr LCDPutStr `(v  1 e 1 0 ]
 {
 "133
@@ -308,19 +312,37 @@
 [v LCDGoto@pos pos `uc  1 a 1 14 ]
 "157
 } 0
-"26 D:\documentos\master\Cembido\ProyectoStarWars\MPlab\S2_1991255.X\functions.c
+"159 C:\Users\davfe\Documents\GitHub\Cembido\ProyectoStarWars\MPlab\S2_1991255.X\functions.c
+[v _enableButton enableButton `(v  1 e 1 0 ]
+{
+[v enableButton@player player `a  1 a 1 wreg ]
+[v enableButton@player player `a  1 a 1 wreg ]
+"171
+[v enableButton@player player `a  1 a 1 4 ]
+"192
+} 0
+"124
+[v _disableButton disableButton `(v  1 e 1 0 ]
+{
+[v disableButton@player player `a  1 a 1 wreg ]
+[v disableButton@player player `a  1 a 1 wreg ]
+"136
+[v disableButton@player player `a  1 a 1 4 ]
+"157
+} 0
+"29
 [v _createCustomCharacter createCustomCharacter `(v  1 e 1 0 ]
 {
 [v createCustomCharacter@Pattern Pattern `*.4uc  1 a 1 wreg ]
-"42
+"45
 [v createCustomCharacter@i i `i  1 a 2 14 ]
-"26
+"29
 [v createCustomCharacter@Pattern Pattern `*.4uc  1 a 1 wreg ]
 [v createCustomCharacter@Location Location `DCuc  1 p 1 11 ]
 [v createCustomCharacter@Pattern Pattern `*.4uc  1 a 1 13 ]
-"49
+"52
 } 0
-"101 D:\documentos\master\Cembido\ProyectoStarWars\MPlab\S2_1991255.X\lcd.c
+"101 C:\Users\davfe\Documents\GitHub\Cembido\ProyectoStarWars\MPlab\S2_1991255.X\lcd.c
 [v _LCDPutChar LCDPutChar `(v  1 e 1 0 ]
 {
 [v LCDPutChar@ch ch `uc  1 a 1 wreg ]
@@ -329,7 +351,7 @@
 [v LCDPutChar@ch ch `uc  1 a 1 10 ]
 "113
 } 0
-"50 D:\documentos\master\Cembido\ProyectoStarWars\MPlab\S2_1991255.X\mcc_generated_files/mcc.c
+"50 C:\Users\davfe\Documents\GitHub\Cembido\ProyectoStarWars\MPlab\S2_1991255.X\mcc_generated_files/mcc.c
 [v _SYSTEM_Initialize SYSTEM_Initialize `(v  1 e 1 0 ]
 {
 "56
@@ -339,7 +361,7 @@
 {
 "72
 } 0
-"64 D:\documentos\master\Cembido\ProyectoStarWars\MPlab\S2_1991255.X\mcc_generated_files/pin_manager.c
+"64 C:\Users\davfe\Documents\GitHub\Cembido\ProyectoStarWars\MPlab\S2_1991255.X\mcc_generated_files/pin_manager.c
 [v _PIN_MANAGER_Initialize PIN_MANAGER_Initialize `(v  1 e 1 0 ]
 {
 "173
@@ -380,12 +402,12 @@
 [v IOCAF0_SetInterruptHandler@InterruptHandler InterruptHandler `*.37(v  1 p 2 4 ]
 "245
 } 0
-"58 D:\documentos\master\Cembido\ProyectoStarWars\MPlab\S2_1991255.X\mcc_generated_files/mcc.c
+"58 C:\Users\davfe\Documents\GitHub\Cembido\ProyectoStarWars\MPlab\S2_1991255.X\mcc_generated_files/mcc.c
 [v _OSCILLATOR_Initialize OSCILLATOR_Initialize `(v  1 e 1 0 ]
 {
 "66
 } 0
-"46 D:\documentos\master\Cembido\ProyectoStarWars\MPlab\S2_1991255.X\lcd.c
+"46 C:\Users\davfe\Documents\GitHub\Cembido\ProyectoStarWars\MPlab\S2_1991255.X\lcd.c
 [v _LCD_Initialize LCD_Initialize `(v  1 e 1 0 ]
 {
 "72
@@ -409,12 +431,12 @@
 [v LCDWriteNibble@ch ch `uc  1 a 1 7 ]
 "99
 } 0
-"52 D:\documentos\master\Cembido\ProyectoStarWars\MPlab\S2_1991255.X\mcc_generated_files/interrupt_manager.c
+"52 C:\Users\davfe\Documents\GitHub\Cembido\ProyectoStarWars\MPlab\S2_1991255.X\mcc_generated_files/interrupt_manager.c
 [v _INTERRUPT_InterruptManager INTERRUPT_InterruptManager `II(v  1 e 1 0 ]
 {
 "66
 } 0
-"175 D:\documentos\master\Cembido\ProyectoStarWars\MPlab\S2_1991255.X\mcc_generated_files/pin_manager.c
+"175 C:\Users\davfe\Documents\GitHub\Cembido\ProyectoStarWars\MPlab\S2_1991255.X\mcc_generated_files/pin_manager.c
 [v _PIN_MANAGER_IOC PIN_MANAGER_IOC `(v  1 e 1 0 ]
 {
 "207
@@ -474,7 +496,7 @@
 {
 "238
 } 0
-"26 D:\documentos\master\Cembido\ProyectoStarWars\MPlab\S2_1991255.X\menu.c
+"26 C:\Users\davfe\Documents\GitHub\Cembido\ProyectoStarWars\MPlab\S2_1991255.X\menu.c
 [v i1_printMenu printMenu `(v  1 e 1 0 ]
 {
 "37
@@ -494,7 +516,7 @@
 {
 "76
 } 0
-"131 D:\documentos\master\Cembido\ProyectoStarWars\MPlab\S2_1991255.X\lcd.c
+"131 C:\Users\davfe\Documents\GitHub\Cembido\ProyectoStarWars\MPlab\S2_1991255.X\lcd.c
 [v i1_LCDPutStr LCDPutStr `(v  1 e 1 0 ]
 {
 "133
@@ -541,7 +563,7 @@
 [v i1LCDWriteNibble@ch ch `uc  1 a 1 3 ]
 "99
 } 0
-"250 D:\documentos\master\Cembido\ProyectoStarWars\MPlab\S2_1991255.X\mcc_generated_files/pin_manager.c
+"250 C:\Users\davfe\Documents\GitHub\Cembido\ProyectoStarWars\MPlab\S2_1991255.X\mcc_generated_files/pin_manager.c
 [v _IOCAF0_DefaultInterruptHandler IOCAF0_DefaultInterruptHandler `(v  1 e 1 0 ]
 {
 "253
