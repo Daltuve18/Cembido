@@ -9359,7 +9359,7 @@ void printMenu (void)
     if(inGame){
         cleanMenu();
         LCDGoto(lcdOffset, 0);
-        LCDPutStr("   Menu    ");
+        LCDPutStr("   Menu   ");
     }else {
         cleanFullMenu();
         mainMenu();
@@ -9401,9 +9401,9 @@ void cleanMenu (void)
 
 {
     LCDGoto(lcdOffset, 0);
-    LCDPutStr("          ");
+    LCDPutStr("           ");
     LCDGoto(lcdOffset, 1);
-    LCDPutStr("          ");
+    LCDPutStr("           ");
 
 }
 

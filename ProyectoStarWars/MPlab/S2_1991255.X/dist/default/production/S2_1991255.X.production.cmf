@@ -11,7 +11,7 @@
 # All addresses and the length are given in unqualified hexadecimal
 # in delta units.  Any other numeric values are decimal.
 %PSECTS
-$C:\Users\leonardo\AppData\Local\Temp\s6sk.o
+$C:\Users\leonardo\AppData\Local\Temp\si5k.o
 reset_vec CODE 0 0 0 2 2
 end_init CODE 0 1B 1B 2 2
 config CONFIG 4 8007 8007 2 2
@@ -25,16 +25,16 @@ text5 CODE 0 385 385 28 2
 text6 CODE 0 3AD 3AD 28 2
 text7 CODE 0 251 251 2F 2
 text8 CODE 0 490 490 20 2
-text9 CODE 0 68D 68D A 2
-text10 CODE 0 6D1 6D1 4 2
+text9 CODE 0 68C 68C A 2
+text10 CODE 0 6D0 6D0 4 2
 text11 CODE 0 14A 14A 72 2
-text12 CODE 0 6AD 6AD 6 2
-text13 CODE 0 6B3 6B3 6 2
-text14 CODE 0 6B9 6B9 6 2
-text15 CODE 0 6BF 6BF 6 2
-text16 CODE 0 6C5 6C5 6 2
-text17 CODE 0 6CB 6CB 6 2
-text18 CODE 0 6A0 6A0 7 2
+text12 CODE 0 6AC 6AC 6 2
+text13 CODE 0 6B2 6B2 6 2
+text14 CODE 0 6B8 6B8 6 2
+text15 CODE 0 6BE 6BE 6 2
+text16 CODE 0 6C4 6C4 6 2
+text17 CODE 0 6CA 6CA 6 2
+text18 CODE 0 69F 69F 7 2
 text19 CODE 0 44A 44A 23 2
 text20 CODE 0 46D 46D 23 2
 text21 CODE 0 4B0 4B0 20 2
@@ -43,15 +43,15 @@ text24 CODE 0 35B 35B 2A 2
 text25 CODE 0 3D5 3D5 28 2
 text26 CODE 0 5F5 5F5 16 2
 text27 CODE 0 5C1 5C1 1A 2
-text28 CODE 0 6D5 6D5 1 2
+text28 CODE 0 6D4 6D4 1 2
 text29 CODE 0 2DA 2DA 2B 2
-text30 CODE 0 6D6 6D6 1 2
+text30 CODE 0 6D5 6D5 1 2
 text31 CODE 0 305 305 2B 2
-text32 CODE 0 6D7 6D7 1 2
+text32 CODE 0 6D6 6D6 1 2
 text33 CODE 0 280 280 2E 2
-text34 CODE 0 6D8 6D8 1 2
+text34 CODE 0 6D7 6D7 1 2
 text35 CODE 0 2AE 2AE 2C 2
-text36 CODE 0 6D9 6D9 1 2
+text36 CODE 0 6D8 6D8 1 2
 text37 CODE 0 330 330 2B 2
 text38 CODE 0 56A 56A 1E 2
 text39 CODE 0 C9 C9 81 2
@@ -62,21 +62,21 @@ text43 CODE 0 588 588 1D 2
 text44 CODE 0 3FD 3FD 27 2
 text45 CODE 0 50F 50F 1F 2
 text46 CODE 0 4D0 4D0 20 2
-text47 CODE 0 6DA 6DA 1 2
+text47 CODE 0 6D9 6D9 1 2
 nvBANK0 BANK0 1 47 47 C 1
 maintext CODE 0 1BC 1BC 64 2
 cstackCOMMON COMMON 1 70 70 E 1
 cstackBANK0 BANK0 1 20 20 16 1
 cstackBANK1 BANK1 1 A0 A0 20 1
-inittext CODE 0 6A7 6A7 6 2
+inittext CODE 0 6A6 6A6 6 2
 stringtext1 STRCODE 0 61C 61C 11 2
 stringtext2 STRCODE 0 63D 63D E 2
 stringtext3 STRCODE 0 64B 64B E 2
 stringtext4 STRCODE 0 659 659 E 2
 stringtext5 STRCODE 0 667 667 E 2
 stringtext6 STRCODE 0 675 675 C 2
-stringtext7 STRCODE 0 681 681 C 2
-stringtext8 STRCODE 0 697 697 9 2
+stringtext7 STRCODE 0 681 681 B 2
+stringtext8 STRCODE 0 696 696 9 2
 intentry CODE 0 4 4 17 2
 bssBANK0 BANK0 1 53 53 3 1
 idataBANK0 CODE 0 60B 60B 11 2
@@ -127,9 +127,9 @@ BANK7 3A0-3EF 1
 BANK8 420-46F 1
 BANK9 4A0-4EF 1
 CONST 2-3 2
-CONST 6DB-3FFF 2
+CONST 6DA-3FFF 2
 ENTRY 2-3 2
-ENTRY 6DB-3FFF 2
+ENTRY 6DA-3FFF 2
 IDLOC 8000-8003 2
 SFR10 500-51F 1
 SFR11 580-59F 1
@@ -155,7 +155,7 @@ SFR30 F00-F6F 1
 SFR31 F80-FEF 1
 STACK 2080-27EF 1
 CODE 2-3 2
-CODE 6DB-3FFF 2
+CODE 6DA-3FFF 2
 SFR0 0-1F 1
 SFR1 80-9F 1
 SFR2 100-11F 1
@@ -184,9 +184,9 @@ BANK24 C20-C6F 1
 BANK25 CA0-CBF 1
 BIGRAM 2000-27EF 1
 STRCODE 2-3 2
-STRCODE 6DB-3FFF 2
+STRCODE 6DA-3FFF 2
 STRING 2-3 2
-STRING 6DB-3FFF 2
+STRING 6DA-3FFF 2
 # %LINETAB Section
 # This section enumerates the file/line to address mappings.
 # The beginning of the section is indicated by %LINETAB.
@@ -201,43 +201,43 @@ STRING 6DB-3FFF 2
 # All other numeric values are in decimal.
 %LINETAB
 $dist/default/production\S2_1991255.X.production.o
-1D cinit CODE >4524:C:\Users\leonardo\AppData\Local\Temp\s6sk.s
-1D cinit CODE >4527:C:\Users\leonardo\AppData\Local\Temp\s6sk.s
-1D cinit CODE >4589:C:\Users\leonardo\AppData\Local\Temp\s6sk.s
-1E cinit CODE >4590:C:\Users\leonardo\AppData\Local\Temp\s6sk.s
-1F cinit CODE >4591:C:\Users\leonardo\AppData\Local\Temp\s6sk.s
-20 cinit CODE >4592:C:\Users\leonardo\AppData\Local\Temp\s6sk.s
-21 cinit CODE >4593:C:\Users\leonardo\AppData\Local\Temp\s6sk.s
-22 cinit CODE >4594:C:\Users\leonardo\AppData\Local\Temp\s6sk.s
-23 cinit CODE >4595:C:\Users\leonardo\AppData\Local\Temp\s6sk.s
-24 cinit CODE >4596:C:\Users\leonardo\AppData\Local\Temp\s6sk.s
-25 cinit CODE >4597:C:\Users\leonardo\AppData\Local\Temp\s6sk.s
-26 cinit CODE >4598:C:\Users\leonardo\AppData\Local\Temp\s6sk.s
-29 cinit CODE >4602:C:\Users\leonardo\AppData\Local\Temp\s6sk.s
-2A cinit CODE >4603:C:\Users\leonardo\AppData\Local\Temp\s6sk.s
-2B cinit CODE >4604:C:\Users\leonardo\AppData\Local\Temp\s6sk.s
-2C cinit CODE >4605:C:\Users\leonardo\AppData\Local\Temp\s6sk.s
-2D cinit CODE >4606:C:\Users\leonardo\AppData\Local\Temp\s6sk.s
-2E cinit CODE >4607:C:\Users\leonardo\AppData\Local\Temp\s6sk.s
-2F cinit CODE >4608:C:\Users\leonardo\AppData\Local\Temp\s6sk.s
-30 cinit CODE >4609:C:\Users\leonardo\AppData\Local\Temp\s6sk.s
-31 cinit CODE >4610:C:\Users\leonardo\AppData\Local\Temp\s6sk.s
-32 cinit CODE >4611:C:\Users\leonardo\AppData\Local\Temp\s6sk.s
-35 cinit CODE >4616:C:\Users\leonardo\AppData\Local\Temp\s6sk.s
-36 cinit CODE >4617:C:\Users\leonardo\AppData\Local\Temp\s6sk.s
-37 cinit CODE >4618:C:\Users\leonardo\AppData\Local\Temp\s6sk.s
-38 cinit CODE >4624:C:\Users\leonardo\AppData\Local\Temp\s6sk.s
-38 cinit CODE >4626:C:\Users\leonardo\AppData\Local\Temp\s6sk.s
-39 cinit CODE >4627:C:\Users\leonardo\AppData\Local\Temp\s6sk.s
-3A cinit CODE >4628:C:\Users\leonardo\AppData\Local\Temp\s6sk.s
+1D cinit CODE >4523:C:\Users\leonardo\AppData\Local\Temp\si5k.s
+1D cinit CODE >4526:C:\Users\leonardo\AppData\Local\Temp\si5k.s
+1D cinit CODE >4588:C:\Users\leonardo\AppData\Local\Temp\si5k.s
+1E cinit CODE >4589:C:\Users\leonardo\AppData\Local\Temp\si5k.s
+1F cinit CODE >4590:C:\Users\leonardo\AppData\Local\Temp\si5k.s
+20 cinit CODE >4591:C:\Users\leonardo\AppData\Local\Temp\si5k.s
+21 cinit CODE >4592:C:\Users\leonardo\AppData\Local\Temp\si5k.s
+22 cinit CODE >4593:C:\Users\leonardo\AppData\Local\Temp\si5k.s
+23 cinit CODE >4594:C:\Users\leonardo\AppData\Local\Temp\si5k.s
+24 cinit CODE >4595:C:\Users\leonardo\AppData\Local\Temp\si5k.s
+25 cinit CODE >4596:C:\Users\leonardo\AppData\Local\Temp\si5k.s
+26 cinit CODE >4597:C:\Users\leonardo\AppData\Local\Temp\si5k.s
+29 cinit CODE >4601:C:\Users\leonardo\AppData\Local\Temp\si5k.s
+2A cinit CODE >4602:C:\Users\leonardo\AppData\Local\Temp\si5k.s
+2B cinit CODE >4603:C:\Users\leonardo\AppData\Local\Temp\si5k.s
+2C cinit CODE >4604:C:\Users\leonardo\AppData\Local\Temp\si5k.s
+2D cinit CODE >4605:C:\Users\leonardo\AppData\Local\Temp\si5k.s
+2E cinit CODE >4606:C:\Users\leonardo\AppData\Local\Temp\si5k.s
+2F cinit CODE >4607:C:\Users\leonardo\AppData\Local\Temp\si5k.s
+30 cinit CODE >4608:C:\Users\leonardo\AppData\Local\Temp\si5k.s
+31 cinit CODE >4609:C:\Users\leonardo\AppData\Local\Temp\si5k.s
+32 cinit CODE >4610:C:\Users\leonardo\AppData\Local\Temp\si5k.s
+35 cinit CODE >4615:C:\Users\leonardo\AppData\Local\Temp\si5k.s
+36 cinit CODE >4616:C:\Users\leonardo\AppData\Local\Temp\si5k.s
+37 cinit CODE >4617:C:\Users\leonardo\AppData\Local\Temp\si5k.s
+38 cinit CODE >4623:C:\Users\leonardo\AppData\Local\Temp\si5k.s
+38 cinit CODE >4625:C:\Users\leonardo\AppData\Local\Temp\si5k.s
+39 cinit CODE >4626:C:\Users\leonardo\AppData\Local\Temp\si5k.s
+3A cinit CODE >4627:C:\Users\leonardo\AppData\Local\Temp\si5k.s
 4 intentry CODE >52:D:\documentos\master\Cembido\ProyectoStarWars\MPlab\S2_1991255.X\mcc_generated_files/interrupt_manager.c
 6 intentry CODE >55:D:\documentos\master\Cembido\ProyectoStarWars\MPlab\S2_1991255.X\mcc_generated_files/interrupt_manager.c
 E intentry CODE >57:D:\documentos\master\Cembido\ProyectoStarWars\MPlab\S2_1991255.X\mcc_generated_files/interrupt_manager.c
 15 intentry CODE >58:D:\documentos\master\Cembido\ProyectoStarWars\MPlab\S2_1991255.X\mcc_generated_files/interrupt_manager.c
 18 intentry CODE >60:D:\documentos\master\Cembido\ProyectoStarWars\MPlab\S2_1991255.X\mcc_generated_files/interrupt_manager.c
 19 intentry CODE >66:D:\documentos\master\Cembido\ProyectoStarWars\MPlab\S2_1991255.X\mcc_generated_files/interrupt_manager.c
-6DA text47 CODE >250:D:\documentos\master\Cembido\ProyectoStarWars\MPlab\S2_1991255.X\mcc_generated_files/pin_manager.c
-6DA text47 CODE >253:D:\documentos\master\Cembido\ProyectoStarWars\MPlab\S2_1991255.X\mcc_generated_files/pin_manager.c
+6D9 text47 CODE >250:D:\documentos\master\Cembido\ProyectoStarWars\MPlab\S2_1991255.X\mcc_generated_files/pin_manager.c
+6D9 text47 CODE >253:D:\documentos\master\Cembido\ProyectoStarWars\MPlab\S2_1991255.X\mcc_generated_files/pin_manager.c
 4D0 text46 CODE >74:D:\documentos\master\Cembido\ProyectoStarWars\MPlab\S2_1991255.X\lcd.c
 4D1 text46 CODE >77:D:\documentos\master\Cembido\ProyectoStarWars\MPlab\S2_1991255.X\lcd.c
 4DB text46 CODE >80:D:\documentos\master\Cembido\ProyectoStarWars\MPlab\S2_1991255.X\lcd.c
@@ -328,8 +328,8 @@ FE text39 CODE >55:D:\documentos\master\Cembido\ProyectoStarWars\MPlab\S2_199125
 358 text37 CODE >234:D:\documentos\master\Cembido\ProyectoStarWars\MPlab\S2_1991255.X\mcc_generated_files/pin_manager.c
 358 text37 CODE >237:D:\documentos\master\Cembido\ProyectoStarWars\MPlab\S2_1991255.X\mcc_generated_files/pin_manager.c
 35A text37 CODE >238:D:\documentos\master\Cembido\ProyectoStarWars\MPlab\S2_1991255.X\mcc_generated_files/pin_manager.c
-6D9 text36 CODE >295:D:\documentos\master\Cembido\ProyectoStarWars\MPlab\S2_1991255.X\mcc_generated_files/pin_manager.c
-6D9 text36 CODE >298:D:\documentos\master\Cembido\ProyectoStarWars\MPlab\S2_1991255.X\mcc_generated_files/pin_manager.c
+6D8 text36 CODE >295:D:\documentos\master\Cembido\ProyectoStarWars\MPlab\S2_1991255.X\mcc_generated_files/pin_manager.c
+6D8 text36 CODE >298:D:\documentos\master\Cembido\ProyectoStarWars\MPlab\S2_1991255.X\mcc_generated_files/pin_manager.c
 2AE text35 CODE >258:D:\documentos\master\Cembido\ProyectoStarWars\MPlab\S2_1991255.X\mcc_generated_files/pin_manager.c
 2AE text35 CODE >263:D:\documentos\master\Cembido\ProyectoStarWars\MPlab\S2_1991255.X\mcc_generated_files/pin_manager.c
 2B5 text35 CODE >265:D:\documentos\master\Cembido\ProyectoStarWars\MPlab\S2_1991255.X\mcc_generated_files/pin_manager.c
@@ -342,8 +342,8 @@ FE text39 CODE >55:D:\documentos\master\Cembido\ProyectoStarWars\MPlab\S2_199125
 2D7 text35 CODE >281:D:\documentos\master\Cembido\ProyectoStarWars\MPlab\S2_1991255.X\mcc_generated_files/pin_manager.c
 2D7 text35 CODE >282:D:\documentos\master\Cembido\ProyectoStarWars\MPlab\S2_1991255.X\mcc_generated_files/pin_manager.c
 2D9 text35 CODE >283:D:\documentos\master\Cembido\ProyectoStarWars\MPlab\S2_1991255.X\mcc_generated_files/pin_manager.c
-6D8 text34 CODE >343:D:\documentos\master\Cembido\ProyectoStarWars\MPlab\S2_1991255.X\mcc_generated_files/pin_manager.c
-6D8 text34 CODE >346:D:\documentos\master\Cembido\ProyectoStarWars\MPlab\S2_1991255.X\mcc_generated_files/pin_manager.c
+6D7 text34 CODE >343:D:\documentos\master\Cembido\ProyectoStarWars\MPlab\S2_1991255.X\mcc_generated_files/pin_manager.c
+6D7 text34 CODE >346:D:\documentos\master\Cembido\ProyectoStarWars\MPlab\S2_1991255.X\mcc_generated_files/pin_manager.c
 280 text33 CODE >303:D:\documentos\master\Cembido\ProyectoStarWars\MPlab\S2_1991255.X\mcc_generated_files/pin_manager.c
 280 text33 CODE >308:D:\documentos\master\Cembido\ProyectoStarWars\MPlab\S2_1991255.X\mcc_generated_files/pin_manager.c
 287 text33 CODE >310:D:\documentos\master\Cembido\ProyectoStarWars\MPlab\S2_1991255.X\mcc_generated_files/pin_manager.c
@@ -355,8 +355,8 @@ FE text39 CODE >55:D:\documentos\master\Cembido\ProyectoStarWars\MPlab\S2_199125
 2AB text33 CODE >329:D:\documentos\master\Cembido\ProyectoStarWars\MPlab\S2_1991255.X\mcc_generated_files/pin_manager.c
 2AB text33 CODE >330:D:\documentos\master\Cembido\ProyectoStarWars\MPlab\S2_1991255.X\mcc_generated_files/pin_manager.c
 2AD text33 CODE >331:D:\documentos\master\Cembido\ProyectoStarWars\MPlab\S2_1991255.X\mcc_generated_files/pin_manager.c
-6D7 text32 CODE >385:D:\documentos\master\Cembido\ProyectoStarWars\MPlab\S2_1991255.X\mcc_generated_files/pin_manager.c
-6D7 text32 CODE >388:D:\documentos\master\Cembido\ProyectoStarWars\MPlab\S2_1991255.X\mcc_generated_files/pin_manager.c
+6D6 text32 CODE >385:D:\documentos\master\Cembido\ProyectoStarWars\MPlab\S2_1991255.X\mcc_generated_files/pin_manager.c
+6D6 text32 CODE >388:D:\documentos\master\Cembido\ProyectoStarWars\MPlab\S2_1991255.X\mcc_generated_files/pin_manager.c
 305 text31 CODE >351:D:\documentos\master\Cembido\ProyectoStarWars\MPlab\S2_1991255.X\mcc_generated_files/pin_manager.c
 305 text31 CODE >356:D:\documentos\master\Cembido\ProyectoStarWars\MPlab\S2_1991255.X\mcc_generated_files/pin_manager.c
 30C text31 CODE >358:D:\documentos\master\Cembido\ProyectoStarWars\MPlab\S2_1991255.X\mcc_generated_files/pin_manager.c
@@ -368,8 +368,8 @@ FE text39 CODE >55:D:\documentos\master\Cembido\ProyectoStarWars\MPlab\S2_199125
 32D text31 CODE >371:D:\documentos\master\Cembido\ProyectoStarWars\MPlab\S2_1991255.X\mcc_generated_files/pin_manager.c
 32D text31 CODE >372:D:\documentos\master\Cembido\ProyectoStarWars\MPlab\S2_1991255.X\mcc_generated_files/pin_manager.c
 32F text31 CODE >373:D:\documentos\master\Cembido\ProyectoStarWars\MPlab\S2_1991255.X\mcc_generated_files/pin_manager.c
-6D6 text30 CODE >427:D:\documentos\master\Cembido\ProyectoStarWars\MPlab\S2_1991255.X\mcc_generated_files/pin_manager.c
-6D6 text30 CODE >430:D:\documentos\master\Cembido\ProyectoStarWars\MPlab\S2_1991255.X\mcc_generated_files/pin_manager.c
+6D5 text30 CODE >427:D:\documentos\master\Cembido\ProyectoStarWars\MPlab\S2_1991255.X\mcc_generated_files/pin_manager.c
+6D5 text30 CODE >430:D:\documentos\master\Cembido\ProyectoStarWars\MPlab\S2_1991255.X\mcc_generated_files/pin_manager.c
 2DA text29 CODE >393:D:\documentos\master\Cembido\ProyectoStarWars\MPlab\S2_1991255.X\mcc_generated_files/pin_manager.c
 2DA text29 CODE >398:D:\documentos\master\Cembido\ProyectoStarWars\MPlab\S2_1991255.X\mcc_generated_files/pin_manager.c
 2E1 text29 CODE >400:D:\documentos\master\Cembido\ProyectoStarWars\MPlab\S2_1991255.X\mcc_generated_files/pin_manager.c
@@ -381,8 +381,8 @@ FE text39 CODE >55:D:\documentos\master\Cembido\ProyectoStarWars\MPlab\S2_199125
 302 text29 CODE >413:D:\documentos\master\Cembido\ProyectoStarWars\MPlab\S2_1991255.X\mcc_generated_files/pin_manager.c
 302 text29 CODE >414:D:\documentos\master\Cembido\ProyectoStarWars\MPlab\S2_1991255.X\mcc_generated_files/pin_manager.c
 304 text29 CODE >415:D:\documentos\master\Cembido\ProyectoStarWars\MPlab\S2_1991255.X\mcc_generated_files/pin_manager.c
-6D5 text28 CODE >473:D:\documentos\master\Cembido\ProyectoStarWars\MPlab\S2_1991255.X\mcc_generated_files/pin_manager.c
-6D5 text28 CODE >476:D:\documentos\master\Cembido\ProyectoStarWars\MPlab\S2_1991255.X\mcc_generated_files/pin_manager.c
+6D4 text28 CODE >473:D:\documentos\master\Cembido\ProyectoStarWars\MPlab\S2_1991255.X\mcc_generated_files/pin_manager.c
+6D4 text28 CODE >476:D:\documentos\master\Cembido\ProyectoStarWars\MPlab\S2_1991255.X\mcc_generated_files/pin_manager.c
 5C1 text27 CODE >159:D:\documentos\master\Cembido\ProyectoStarWars\MPlab\S2_1991255.X\lcd.c
 5C1 text27 CODE >161:D:\documentos\master\Cembido\ProyectoStarWars\MPlab\S2_1991255.X\lcd.c
 5C6 text27 CODE >162:D:\documentos\master\Cembido\ProyectoStarWars\MPlab\S2_1991255.X\lcd.c
@@ -458,29 +458,29 @@ FE text39 CODE >55:D:\documentos\master\Cembido\ProyectoStarWars\MPlab\S2_199125
 464 text19 CODE >68:D:\documentos\master\Cembido\ProyectoStarWars\MPlab\S2_1991255.X\lcd.c
 468 text19 CODE >71:D:\documentos\master\Cembido\ProyectoStarWars\MPlab\S2_1991255.X\lcd.c
 46C text19 CODE >72:D:\documentos\master\Cembido\ProyectoStarWars\MPlab\S2_1991255.X\lcd.c
-6A0 text18 CODE >58:D:\documentos\master\Cembido\ProyectoStarWars\MPlab\S2_1991255.X\mcc_generated_files/mcc.c
-6A0 text18 CODE >61:D:\documentos\master\Cembido\ProyectoStarWars\MPlab\S2_1991255.X\mcc_generated_files/mcc.c
-6A3 text18 CODE >63:D:\documentos\master\Cembido\ProyectoStarWars\MPlab\S2_1991255.X\mcc_generated_files/mcc.c
-6A4 text18 CODE >65:D:\documentos\master\Cembido\ProyectoStarWars\MPlab\S2_1991255.X\mcc_generated_files/mcc.c
-6A6 text18 CODE >66:D:\documentos\master\Cembido\ProyectoStarWars\MPlab\S2_1991255.X\mcc_generated_files/mcc.c
-6CB text17 CODE >243:D:\documentos\master\Cembido\ProyectoStarWars\MPlab\S2_1991255.X\mcc_generated_files/pin_manager.c
-6CB text17 CODE >244:D:\documentos\master\Cembido\ProyectoStarWars\MPlab\S2_1991255.X\mcc_generated_files/pin_manager.c
-6D0 text17 CODE >245:D:\documentos\master\Cembido\ProyectoStarWars\MPlab\S2_1991255.X\mcc_generated_files/pin_manager.c
-6C5 text16 CODE >288:D:\documentos\master\Cembido\ProyectoStarWars\MPlab\S2_1991255.X\mcc_generated_files/pin_manager.c
-6C5 text16 CODE >289:D:\documentos\master\Cembido\ProyectoStarWars\MPlab\S2_1991255.X\mcc_generated_files/pin_manager.c
-6CA text16 CODE >290:D:\documentos\master\Cembido\ProyectoStarWars\MPlab\S2_1991255.X\mcc_generated_files/pin_manager.c
-6BF text15 CODE >336:D:\documentos\master\Cembido\ProyectoStarWars\MPlab\S2_1991255.X\mcc_generated_files/pin_manager.c
-6BF text15 CODE >337:D:\documentos\master\Cembido\ProyectoStarWars\MPlab\S2_1991255.X\mcc_generated_files/pin_manager.c
-6C4 text15 CODE >338:D:\documentos\master\Cembido\ProyectoStarWars\MPlab\S2_1991255.X\mcc_generated_files/pin_manager.c
-6B9 text14 CODE >378:D:\documentos\master\Cembido\ProyectoStarWars\MPlab\S2_1991255.X\mcc_generated_files/pin_manager.c
-6B9 text14 CODE >379:D:\documentos\master\Cembido\ProyectoStarWars\MPlab\S2_1991255.X\mcc_generated_files/pin_manager.c
-6BE text14 CODE >380:D:\documentos\master\Cembido\ProyectoStarWars\MPlab\S2_1991255.X\mcc_generated_files/pin_manager.c
-6B3 text13 CODE >420:D:\documentos\master\Cembido\ProyectoStarWars\MPlab\S2_1991255.X\mcc_generated_files/pin_manager.c
-6B3 text13 CODE >421:D:\documentos\master\Cembido\ProyectoStarWars\MPlab\S2_1991255.X\mcc_generated_files/pin_manager.c
-6B8 text13 CODE >422:D:\documentos\master\Cembido\ProyectoStarWars\MPlab\S2_1991255.X\mcc_generated_files/pin_manager.c
-6AD text12 CODE >466:D:\documentos\master\Cembido\ProyectoStarWars\MPlab\S2_1991255.X\mcc_generated_files/pin_manager.c
-6AD text12 CODE >467:D:\documentos\master\Cembido\ProyectoStarWars\MPlab\S2_1991255.X\mcc_generated_files/pin_manager.c
-6B2 text12 CODE >468:D:\documentos\master\Cembido\ProyectoStarWars\MPlab\S2_1991255.X\mcc_generated_files/pin_manager.c
+69F text18 CODE >58:D:\documentos\master\Cembido\ProyectoStarWars\MPlab\S2_1991255.X\mcc_generated_files/mcc.c
+69F text18 CODE >61:D:\documentos\master\Cembido\ProyectoStarWars\MPlab\S2_1991255.X\mcc_generated_files/mcc.c
+6A2 text18 CODE >63:D:\documentos\master\Cembido\ProyectoStarWars\MPlab\S2_1991255.X\mcc_generated_files/mcc.c
+6A3 text18 CODE >65:D:\documentos\master\Cembido\ProyectoStarWars\MPlab\S2_1991255.X\mcc_generated_files/mcc.c
+6A5 text18 CODE >66:D:\documentos\master\Cembido\ProyectoStarWars\MPlab\S2_1991255.X\mcc_generated_files/mcc.c
+6CA text17 CODE >243:D:\documentos\master\Cembido\ProyectoStarWars\MPlab\S2_1991255.X\mcc_generated_files/pin_manager.c
+6CA text17 CODE >244:D:\documentos\master\Cembido\ProyectoStarWars\MPlab\S2_1991255.X\mcc_generated_files/pin_manager.c
+6CF text17 CODE >245:D:\documentos\master\Cembido\ProyectoStarWars\MPlab\S2_1991255.X\mcc_generated_files/pin_manager.c
+6C4 text16 CODE >288:D:\documentos\master\Cembido\ProyectoStarWars\MPlab\S2_1991255.X\mcc_generated_files/pin_manager.c
+6C4 text16 CODE >289:D:\documentos\master\Cembido\ProyectoStarWars\MPlab\S2_1991255.X\mcc_generated_files/pin_manager.c
+6C9 text16 CODE >290:D:\documentos\master\Cembido\ProyectoStarWars\MPlab\S2_1991255.X\mcc_generated_files/pin_manager.c
+6BE text15 CODE >336:D:\documentos\master\Cembido\ProyectoStarWars\MPlab\S2_1991255.X\mcc_generated_files/pin_manager.c
+6BE text15 CODE >337:D:\documentos\master\Cembido\ProyectoStarWars\MPlab\S2_1991255.X\mcc_generated_files/pin_manager.c
+6C3 text15 CODE >338:D:\documentos\master\Cembido\ProyectoStarWars\MPlab\S2_1991255.X\mcc_generated_files/pin_manager.c
+6B8 text14 CODE >378:D:\documentos\master\Cembido\ProyectoStarWars\MPlab\S2_1991255.X\mcc_generated_files/pin_manager.c
+6B8 text14 CODE >379:D:\documentos\master\Cembido\ProyectoStarWars\MPlab\S2_1991255.X\mcc_generated_files/pin_manager.c
+6BD text14 CODE >380:D:\documentos\master\Cembido\ProyectoStarWars\MPlab\S2_1991255.X\mcc_generated_files/pin_manager.c
+6B2 text13 CODE >420:D:\documentos\master\Cembido\ProyectoStarWars\MPlab\S2_1991255.X\mcc_generated_files/pin_manager.c
+6B2 text13 CODE >421:D:\documentos\master\Cembido\ProyectoStarWars\MPlab\S2_1991255.X\mcc_generated_files/pin_manager.c
+6B7 text13 CODE >422:D:\documentos\master\Cembido\ProyectoStarWars\MPlab\S2_1991255.X\mcc_generated_files/pin_manager.c
+6AC text12 CODE >466:D:\documentos\master\Cembido\ProyectoStarWars\MPlab\S2_1991255.X\mcc_generated_files/pin_manager.c
+6AC text12 CODE >467:D:\documentos\master\Cembido\ProyectoStarWars\MPlab\S2_1991255.X\mcc_generated_files/pin_manager.c
+6B1 text12 CODE >468:D:\documentos\master\Cembido\ProyectoStarWars\MPlab\S2_1991255.X\mcc_generated_files/pin_manager.c
 14A text11 CODE >64:D:\documentos\master\Cembido\ProyectoStarWars\MPlab\S2_1991255.X\mcc_generated_files/pin_manager.c
 14A text11 CODE >69:D:\documentos\master\Cembido\ProyectoStarWars\MPlab\S2_1991255.X\mcc_generated_files/pin_manager.c
 14C text11 CODE >70:D:\documentos\master\Cembido\ProyectoStarWars\MPlab\S2_1991255.X\mcc_generated_files/pin_manager.c
@@ -533,14 +533,14 @@ FE text39 CODE >55:D:\documentos\master\Cembido\ProyectoStarWars\MPlab\S2_199125
 1B2 text11 CODE >168:D:\documentos\master\Cembido\ProyectoStarWars\MPlab\S2_1991255.X\mcc_generated_files/pin_manager.c
 1BA text11 CODE >171:D:\documentos\master\Cembido\ProyectoStarWars\MPlab\S2_1991255.X\mcc_generated_files/pin_manager.c
 1BB text11 CODE >173:D:\documentos\master\Cembido\ProyectoStarWars\MPlab\S2_1991255.X\mcc_generated_files/pin_manager.c
-6D1 text10 CODE >68:D:\documentos\master\Cembido\ProyectoStarWars\MPlab\S2_1991255.X\mcc_generated_files/mcc.c
-6D1 text10 CODE >71:D:\documentos\master\Cembido\ProyectoStarWars\MPlab\S2_1991255.X\mcc_generated_files/mcc.c
-6D4 text10 CODE >72:D:\documentos\master\Cembido\ProyectoStarWars\MPlab\S2_1991255.X\mcc_generated_files/mcc.c
-68D text9 CODE >50:D:\documentos\master\Cembido\ProyectoStarWars\MPlab\S2_1991255.X\mcc_generated_files/mcc.c
-68D text9 CODE >53:D:\documentos\master\Cembido\ProyectoStarWars\MPlab\S2_1991255.X\mcc_generated_files/mcc.c
-690 text9 CODE >54:D:\documentos\master\Cembido\ProyectoStarWars\MPlab\S2_1991255.X\mcc_generated_files/mcc.c
-693 text9 CODE >55:D:\documentos\master\Cembido\ProyectoStarWars\MPlab\S2_1991255.X\mcc_generated_files/mcc.c
-696 text9 CODE >56:D:\documentos\master\Cembido\ProyectoStarWars\MPlab\S2_1991255.X\mcc_generated_files/mcc.c
+6D0 text10 CODE >68:D:\documentos\master\Cembido\ProyectoStarWars\MPlab\S2_1991255.X\mcc_generated_files/mcc.c
+6D0 text10 CODE >71:D:\documentos\master\Cembido\ProyectoStarWars\MPlab\S2_1991255.X\mcc_generated_files/mcc.c
+6D3 text10 CODE >72:D:\documentos\master\Cembido\ProyectoStarWars\MPlab\S2_1991255.X\mcc_generated_files/mcc.c
+68C text9 CODE >50:D:\documentos\master\Cembido\ProyectoStarWars\MPlab\S2_1991255.X\mcc_generated_files/mcc.c
+68C text9 CODE >53:D:\documentos\master\Cembido\ProyectoStarWars\MPlab\S2_1991255.X\mcc_generated_files/mcc.c
+68F text9 CODE >54:D:\documentos\master\Cembido\ProyectoStarWars\MPlab\S2_1991255.X\mcc_generated_files/mcc.c
+692 text9 CODE >55:D:\documentos\master\Cembido\ProyectoStarWars\MPlab\S2_1991255.X\mcc_generated_files/mcc.c
+695 text9 CODE >56:D:\documentos\master\Cembido\ProyectoStarWars\MPlab\S2_1991255.X\mcc_generated_files/mcc.c
 490 text8 CODE >101:D:\documentos\master\Cembido\ProyectoStarWars\MPlab\S2_1991255.X\lcd.c
 492 text8 CODE >103:D:\documentos\master\Cembido\ProyectoStarWars\MPlab\S2_1991255.X\lcd.c
 496 text8 CODE >106:D:\documentos\master\Cembido\ProyectoStarWars\MPlab\S2_1991255.X\lcd.c
@@ -624,14 +624,14 @@ C8 text2 CODE >69:D:\documentos\master\Cembido\ProyectoStarWars\MPlab\S2_1991255
 21C maintext CODE >61:D:\documentos\master\Cembido\ProyectoStarWars\MPlab\S2_1991255.X\main.c
 21D maintext CODE >63:D:\documentos\master\Cembido\ProyectoStarWars\MPlab\S2_1991255.X\main.c
 21D maintext CODE >66:D:\documentos\master\Cembido\ProyectoStarWars\MPlab\S2_1991255.X\main.c
-6A7 inittext CODE >4578:C:\Users\leonardo\AppData\Local\Temp\s6sk.s
-6A7 inittext CODE >4579:C:\Users\leonardo\AppData\Local\Temp\s6sk.s
-6A8 inittext CODE >4580:C:\Users\leonardo\AppData\Local\Temp\s6sk.s
-6A8 inittext CODE >4581:C:\Users\leonardo\AppData\Local\Temp\s6sk.s
-6A9 inittext CODE >4582:C:\Users\leonardo\AppData\Local\Temp\s6sk.s
-6AA inittext CODE >4583:C:\Users\leonardo\AppData\Local\Temp\s6sk.s
-6AB inittext CODE >4584:C:\Users\leonardo\AppData\Local\Temp\s6sk.s
-6AC inittext CODE >4585:C:\Users\leonardo\AppData\Local\Temp\s6sk.s
+6A6 inittext CODE >4577:C:\Users\leonardo\AppData\Local\Temp\si5k.s
+6A6 inittext CODE >4578:C:\Users\leonardo\AppData\Local\Temp\si5k.s
+6A7 inittext CODE >4579:C:\Users\leonardo\AppData\Local\Temp\si5k.s
+6A7 inittext CODE >4580:C:\Users\leonardo\AppData\Local\Temp\si5k.s
+6A8 inittext CODE >4581:C:\Users\leonardo\AppData\Local\Temp\si5k.s
+6A9 inittext CODE >4582:C:\Users\leonardo\AppData\Local\Temp\si5k.s
+6AA inittext CODE >4583:C:\Users\leonardo\AppData\Local\Temp\si5k.s
+6AB inittext CODE >4584:C:\Users\leonardo\AppData\Local\Temp\si5k.s
 # %SYMTAB Section
 # An enumeration of all symbols in the program.
 # The beginning of the section is indicated by %SYMTAB.
@@ -644,12 +644,12 @@ C8 text2 CODE >69:D:\documentos\master\Cembido\ProyectoStarWars\MPlab\S2_1991255
 # was defined in a psect then <psect> will be "-". File-name
 # is the name of the object file in which the symbol was defined.
 %SYMTAB
-_IOCAF3_DefaultInterruptHandler DAE 0 CODE 0 text32 dist/default/production\S2_1991255.X.production.o
+_IOCAF3_DefaultInterruptHandler DAC 0 CODE 0 text32 dist/default/production\S2_1991255.X.production.o
 ___latbits 3 0 ABS 0 - dist/default/production\S2_1991255.X.production.o
 _LCDPutChar 920 0 CODE 0 text8 dist/default/production\S2_1991255.X.production.o
 __LdataBANK0 0 0 ABS 0 dataBANK0 -
 __LdataBANK1 0 0 ABS 0 dataBANK1 -
-__Hspace_0 6DB 0 ABS 0 - -
+__Hspace_0 6DA 0 ABS 0 - -
 __Hspace_1 D0 0 ABS 0 - -
 __Hspace_2 0 0 ABS 0 - -
 __Hspace_3 0 0 ABS 0 - -
@@ -663,7 +663,7 @@ _lcdOffset 46 0 BANK0 1 dataBANK0 dist/default/production\S2_1991255.X.productio
 __Heeprom_data 0 0 EEDATA 3 eeprom_data -
 __end_of_PIN_MANAGER_IOC 4A2 0 CODE 0 text23 dist/default/production\S2_1991255.X.production.o
 LCDGoto@ln 2D 0 BANK0 1 cstackBANK0 dist/default/production\S2_1991255.X.production.o
-__end_of_WDT_Initialize DAA 0 CODE 0 text10 dist/default/production\S2_1991255.X.production.o
+__end_of_WDT_Initialize DA8 0 CODE 0 text10 dist/default/production\S2_1991255.X.production.o
 __Hstrings 0 0 ABS 0 strings -
 i1_LCDWriteNibble 9A0 0 CODE 0 text46 dist/default/production\S2_1991255.X.production.o
 _LATA 10C 0 ABS 0 - dist/default/production\S2_1991255.X.production.o
@@ -673,11 +673,11 @@ _WPUA 20C 0 ABS 0 - dist/default/production\S2_1991255.X.production.o
 _WPUB 20D 0 ABS 0 - dist/default/production\S2_1991255.X.production.o
 _WPUC 20E 0 ABS 0 - dist/default/production\S2_1991255.X.production.o
 _WPUE 210 0 ABS 0 - dist/default/production\S2_1991255.X.production.o
-___sp 0 0 STACK 2 stack C:\Users\leonardo\AppData\Local\Temp\s6sk.o
+___sp 0 0 STACK 2 stack C:\Users\leonardo\AppData\Local\Temp\si5k.o
 _main 378 0 CODE 0 maintext dist/default/production\S2_1991255.X.production.o
 btemp 7E 0 ABS 0 - dist/default/production\S2_1991255.X.production.o
 createCustomCharacter@Pattern 2F 0 BANK0 1 cstackBANK0 dist/default/production\S2_1991255.X.production.o
-start 36 0 CODE 0 init C:\Users\leonardo\AppData\Local\Temp\s6sk.o
+start 36 0 CODE 0 init C:\Users\leonardo\AppData\Local\Temp\si5k.o
 __size_of_main 0 0 ABS 0 - dist/default/production\S2_1991255.X.production.o
 i1_LCDPutCmd A1E 0 CODE 0 text45 dist/default/production\S2_1991255.X.production.o
 i1_LCDPutStr 848 0 CODE 0 text42 dist/default/production\S2_1991255.X.production.o
@@ -687,19 +687,19 @@ _LCDGoto$473 2E 0 BANK0 1 cstackBANK0 dist/default/production\S2_1991255.X.produ
 _LCDClear B82 0 CODE 0 text27 dist/default/production\S2_1991255.X.production.o
 __LidataBANK0 0 0 ABS 0 idataBANK0 -
 __LidataBANK1 0 0 ABS 0 idataBANK1 -
-__end_of_IOCAF2_DefaultInterruptHandler DB2 0 CODE 0 text34 dist/default/production\S2_1991255.X.production.o
+__end_of_IOCAF2_DefaultInterruptHandler DB0 0 CODE 0 text34 dist/default/production\S2_1991255.X.production.o
 __Hpowerup 0 0 CODE 0 powerup -
-__end_of_IOCAF5_DefaultInterruptHandler DAC 0 CODE 0 text28 dist/default/production\S2_1991255.X.production.o
+__end_of_IOCAF5_DefaultInterruptHandler DAA 0 CODE 0 text28 dist/default/production\S2_1991255.X.production.o
 __size_ofi1_cleanMenu 0 0 ABS 0 - dist/default/production\S2_1991255.X.production.o
 __size_of_SYSTEM_Initialize 0 0 ABS 0 - dist/default/production\S2_1991255.X.production.o
 __end_of_LCDClear BB6 0 CODE 0 text27 dist/default/production\S2_1991255.X.production.o
 __size_of_IOCAF5_SetInterruptHandler 0 0 ABS 0 - dist/default/production\S2_1991255.X.production.o
-intlevel0 0 0 ENTRY 0 functab C:\Users\leonardo\AppData\Local\Temp\s6sk.o
-intlevel1 0 0 ENTRY 0 functab C:\Users\leonardo\AppData\Local\Temp\s6sk.o
-intlevel2 0 0 ENTRY 0 functab C:\Users\leonardo\AppData\Local\Temp\s6sk.o
-intlevel3 0 0 ENTRY 0 functab C:\Users\leonardo\AppData\Local\Temp\s6sk.o
-intlevel4 0 0 ENTRY 0 functab C:\Users\leonardo\AppData\Local\Temp\s6sk.o
-intlevel5 0 0 ENTRY 0 functab C:\Users\leonardo\AppData\Local\Temp\s6sk.o
+intlevel0 0 0 ENTRY 0 functab C:\Users\leonardo\AppData\Local\Temp\si5k.o
+intlevel1 0 0 ENTRY 0 functab C:\Users\leonardo\AppData\Local\Temp\si5k.o
+intlevel2 0 0 ENTRY 0 functab C:\Users\leonardo\AppData\Local\Temp\si5k.o
+intlevel3 0 0 ENTRY 0 functab C:\Users\leonardo\AppData\Local\Temp\si5k.o
+intlevel4 0 0 ENTRY 0 functab C:\Users\leonardo\AppData\Local\Temp\si5k.o
+intlevel5 0 0 ENTRY 0 functab C:\Users\leonardo\AppData\Local\Temp\si5k.o
 __end_of_LCD_Initialize 8DA 0 CODE 0 text19 dist/default/production\S2_1991255.X.production.o
 __end_of_LCDPutChar 960 0 CODE 0 text8 dist/default/production\S2_1991255.X.production.o
 wtemp0 7E 0 ABS 0 - dist/default/production\S2_1991255.X.production.o
@@ -717,11 +717,11 @@ IOCAF3_SetInterruptHandler@InterruptHandler 26 0 BANK0 1 cstackBANK0 dist/defaul
 __end_of_INTERRUPT_InterruptManager 36 0 CODE 0 intentry dist/default/production\S2_1991255.X.production.o
 __end_ofi1_cleanFullMenu BEA 0 CODE 0 text41 dist/default/production\S2_1991255.X.production.o
 __size_of_IOCAF4_DefaultInterruptHandler 0 0 ABS 0 - dist/default/production\S2_1991255.X.production.o
-__end_of_IOCAF3_SetInterruptHandler D7E 0 CODE 0 text14 dist/default/production\S2_1991255.X.production.o
+__end_of_IOCAF3_SetInterruptHandler D7C 0 CODE 0 text14 dist/default/production\S2_1991255.X.production.o
 i1_printMenu AD4 0 CODE 0 text38 dist/default/production\S2_1991255.X.production.o
 _IOCAF5_InterruptHandler 47 0 BANK0 1 nvBANK0 dist/default/production\S2_1991255.X.production.o
 __end_ofi1_LCDWriteNibble 9E0 0 CODE 0 text46 dist/default/production\S2_1991255.X.production.o
-_IOCAF5_SetInterruptHandler D5A 0 CODE 0 text12 dist/default/production\S2_1991255.X.production.o
+_IOCAF5_SetInterruptHandler D58 0 CODE 0 text12 dist/default/production\S2_1991255.X.production.o
 __Lmaintext 0 0 ABS 0 maintext -
 __LnvBANK0 0 0 ABS 0 nvBANK0 -
 __size_ofi1_LCDWriteNibble 0 0 ABS 0 - dist/default/production\S2_1991255.X.production.o
@@ -731,15 +731,15 @@ _INLVLB 38D 0 ABS 0 - dist/default/production\S2_1991255.X.production.o
 _INLVLC 38E 0 ABS 0 - dist/default/production\S2_1991255.X.production.o
 _INLVLE 390 0 ABS 0 - dist/default/production\S2_1991255.X.production.o
 __size_ofi1_LCDGoto 0 0 ABS 0 - dist/default/production\S2_1991255.X.production.o
-___stackhi 27EF 0 ABS 0 - C:\Users\leonardo\AppData\Local\Temp\s6sk.o
-___stacklo 2080 0 ABS 0 - C:\Users\leonardo\AppData\Local\Temp\s6sk.o
-__end_of_IOCAF0_SetInterruptHandler DA2 0 CODE 0 text17 dist/default/production\S2_1991255.X.production.o
+___stackhi 27EF 0 ABS 0 - C:\Users\leonardo\AppData\Local\Temp\si5k.o
+___stacklo 2080 0 ABS 0 - C:\Users\leonardo\AppData\Local\Temp\si5k.o
+__end_of_IOCAF0_SetInterruptHandler DA0 0 CODE 0 text17 dist/default/production\S2_1991255.X.production.o
 __end_of_LCDGoto 7AA 0 CODE 0 text6 dist/default/production\S2_1991255.X.production.o
 __end_of_LCDPutCmd 920 0 CODE 0 text20 dist/default/production\S2_1991255.X.production.o
 __end_of_LCDPutStr 75A 0 CODE 0 text5 dist/default/production\S2_1991255.X.production.o
 __size_of_LCDPutCmd 0 0 ABS 0 - dist/default/production\S2_1991255.X.production.o
 __size_of_LCDPutStr 0 0 ABS 0 - dist/default/production\S2_1991255.X.production.o
-_IOCAF2_SetInterruptHandler D7E 0 CODE 0 text15 dist/default/production\S2_1991255.X.production.o
+_IOCAF2_SetInterruptHandler D7C 0 CODE 0 text15 dist/default/production\S2_1991255.X.production.o
 i1_LCDGoto$473 78 0 COMMON 1 cstackCOMMON dist/default/production\S2_1991255.X.production.o
 _IOCAF4_InterruptHandler 49 0 BANK0 1 nvBANK0 dist/default/production\S2_1991255.X.production.o
 __end_of_createCustomCharacter 500 0 CODE 0 text7 dist/default/production\S2_1991255.X.production.o
@@ -753,13 +753,13 @@ _ODCONC 28E 0 ABS 0 - dist/default/production\S2_1991255.X.production.o
 IOCAF0_SetInterruptHandler@InterruptHandler 26 0 BANK0 1 cstackBANK0 dist/default/production\S2_1991255.X.production.o
 _OSCCON 99 0 ABS 0 - dist/default/production\S2_1991255.X.production.o
 __size_of_startFight 0 0 ABS 0 - dist/default/production\S2_1991255.X.production.o
-_IOCAF2_DefaultInterruptHandler DB0 0 CODE 0 text34 dist/default/production\S2_1991255.X.production.o
+_IOCAF2_DefaultInterruptHandler DAE 0 CODE 0 text34 dist/default/production\S2_1991255.X.production.o
 i1_cleanFullMenu BB6 0 CODE 0 text41 dist/default/production\S2_1991255.X.production.o
 _LCDPutCmd 8DA 0 CODE 0 text20 dist/default/production\S2_1991255.X.production.o
 _LCDPutStr 70A 0 CODE 0 text5 dist/default/production\S2_1991255.X.production.o
-_IOCAF5_DefaultInterruptHandler DAA 0 CODE 0 text28 dist/default/production\S2_1991255.X.production.o
+_IOCAF5_DefaultInterruptHandler DA8 0 CODE 0 text28 dist/default/production\S2_1991255.X.production.o
 __size_of_PIN_MANAGER_IOC 0 0 ABS 0 - dist/default/production\S2_1991255.X.production.o
-__end_of_SYSTEM_Initialize D2E 0 CODE 0 text9 dist/default/production\S2_1991255.X.production.o
+__end_of_SYSTEM_Initialize D2C 0 CODE 0 text9 dist/default/production\S2_1991255.X.production.o
 _createCustomCharacter 4A2 0 CODE 0 text7 dist/default/production\S2_1991255.X.production.o
 __pcstackBANK0 20 0 BANK0 1 cstackBANK0 dist/default/production\S2_1991255.X.production.o
 __pcstackBANK1 A0 0 BANK1 1 cstackBANK1 dist/default/production\S2_1991255.X.production.o
@@ -770,7 +770,7 @@ createCustomCharacter@Location 2D 0 BANK0 1 cstackBANK0 dist/default/production\
 i1LCDPutChar@ch 76 0 COMMON 1 cstackCOMMON dist/default/production\S2_1991255.X.production.o
 _WDTCON 97 0 ABS 0 - dist/default/production\S2_1991255.X.production.o
 _idleScreen BEA 0 CODE 0 text26 dist/default/production\S2_1991255.X.production.o
-___int_sp 0 0 STACK 2 stack C:\Users\leonardo\AppData\Local\Temp\s6sk.o
+___int_sp 0 0 STACK 2 stack C:\Users\leonardo\AppData\Local\Temp\si5k.o
 __Hbank0 0 0 ABS 0 bank0 -
 __Hbank1 0 0 ABS 0 bank1 -
 __Hbank2 0 0 ABS 0 bank2 -
@@ -838,7 +838,7 @@ _mainState 54 0 BANK0 1 bssBANK0 dist/default/production\S2_1991255.X.production
 __Hcommon 0 0 ABS 0 common -
 __Hconfig 10012 0 CONFIG 4 config -
 __end_of_printMenu A1E 0 CODE 0 text1 dist/default/production\S2_1991255.X.production.o
-__end_of_IOCAF1_DefaultInterruptHandler DB4 0 CODE 0 text36 dist/default/production\S2_1991255.X.production.o
+__end_of_IOCAF1_DefaultInterruptHandler DB2 0 CODE 0 text36 dist/default/production\S2_1991255.X.production.o
 i1_LCDPutChar B10 0 CODE 0 text43 dist/default/production\S2_1991255.X.production.o
 _IOCAF2_InterruptHandler 4D 0 BANK0 1 nvBANK0 dist/default/production\S2_1991255.X.production.o
 __size_of_printMenu 0 0 ABS 0 - dist/default/production\S2_1991255.X.production.o
@@ -876,9 +876,9 @@ __Lsfr29 0 0 ABS 0 sfr29 -
 __Lsfr30 0 0 ABS 0 sfr30 -
 __Lsfr31 0 0 ABS 0 sfr31 -
 __Lstack 0 0 STACK 2 stack -
-__end_of_IOCAF4_DefaultInterruptHandler DAE 0 CODE 0 text30 dist/default/production\S2_1991255.X.production.o
+__end_of_IOCAF4_DefaultInterruptHandler DAC 0 CODE 0 text30 dist/default/production\S2_1991255.X.production.o
 __size_of_LCDPutChar 0 0 ABS 0 - dist/default/production\S2_1991255.X.production.o
-init_ram D4E 0 CODE 0 inittext dist/default/production\S2_1991255.X.production.o
+init_ram D4C 0 CODE 0 inittext dist/default/production\S2_1991255.X.production.o
 i1_cleanMenu B4A 0 CODE 0 text40 dist/default/production\S2_1991255.X.production.o
 __Linittext 0 0 ABS 0 inittext -
 _PORTBbits D 0 ABS 0 - dist/default/production\S2_1991255.X.production.o
@@ -919,7 +919,7 @@ __pstringtext4 CB2 0 STRCODE 0 stringtext4 dist/default/production\S2_1991255.X.
 __pstringtext5 CCE 0 STRCODE 0 stringtext5 dist/default/production\S2_1991255.X.production.o
 __pstringtext6 CEA 0 STRCODE 0 stringtext6 dist/default/production\S2_1991255.X.production.o
 __pstringtext7 D02 0 STRCODE 0 stringtext7 dist/default/production\S2_1991255.X.production.o
-__pstringtext8 D2E 0 STRCODE 0 stringtext8 dist/default/production\S2_1991255.X.production.o
+__pstringtext8 D2C 0 STRCODE 0 stringtext8 dist/default/production\S2_1991255.X.production.o
 __pstringtext9 0 0 STRCODE 0 stringtext9 dist/default/production\S2_1991255.X.production.o
 __pnvBANK0 47 0 BANK0 1 nvBANK0 dist/default/production\S2_1991255.X.production.o
 __end_ofi1_LCDPutCmd A5C 0 CODE 0 text45 dist/default/production\S2_1991255.X.production.o
@@ -930,7 +930,7 @@ int$flags 7E 0 ABS 0 - dist/default/production\S2_1991255.X.production.o
 __HcstackCOMMON 0 0 ABS 0 cstackCOMMON -
 __size_of_INTERRUPT_InterruptManager 0 0 ABS 0 - dist/default/production\S2_1991255.X.production.o
 __size_of_WDT_Initialize 0 0 ABS 0 - dist/default/production\S2_1991255.X.production.o
-__S0 6DB 0 ABS 0 - -
+__S0 6DA 0 ABS 0 - -
 __S1 D0 0 ABS 0 - -
 __S2 0 0 ABS 0 - -
 _printMenu 9E0 0 CODE 0 text1 dist/default/production\S2_1991255.X.production.o
@@ -942,20 +942,20 @@ __size_ofi1_cleanFullMenu 0 0 ABS 0 - dist/default/production\S2_1991255.X.produ
 __end_of_idleScreen C16 0 CODE 0 text26 dist/default/production\S2_1991255.X.production.o
 __size_ofi1_LCDPutChar 0 0 ABS 0 - dist/default/production\S2_1991255.X.production.o
 __size_of_IOCAF0_DefaultInterruptHandler 0 0 ABS 0 - dist/default/production\S2_1991255.X.production.o
-_SYSTEM_Initialize D1A 0 CODE 0 text9 dist/default/production\S2_1991255.X.production.o
+_SYSTEM_Initialize D18 0 CODE 0 text9 dist/default/production\S2_1991255.X.production.o
 _IOCAF0_ISR 660 0 CODE 0 text37 dist/default/production\S2_1991255.X.production.o
 _IOCAF1_ISR 55C 0 CODE 0 text35 dist/default/production\S2_1991255.X.production.o
 _IOCAF2_ISR 500 0 CODE 0 text33 dist/default/production\S2_1991255.X.production.o
 _IOCAF3_ISR 60A 0 CODE 0 text31 dist/default/production\S2_1991255.X.production.o
 _IOCAF4_ISR 5B4 0 CODE 0 text29 dist/default/production\S2_1991255.X.production.o
 _IOCAF5_ISR 6B6 0 CODE 0 text24 dist/default/production\S2_1991255.X.production.o
-__end_of_IOCAF4_SetInterruptHandler D72 0 CODE 0 text13 dist/default/production\S2_1991255.X.production.o
+__end_of_IOCAF4_SetInterruptHandler D70 0 CODE 0 text13 dist/default/production\S2_1991255.X.production.o
 createCustomCharacter@i 30 0 BANK0 1 cstackBANK0 dist/default/production\S2_1991255.X.production.o
 __size_of_IOCAF0_SetInterruptHandler 0 0 ABS 0 - dist/default/production\S2_1991255.X.production.o
 __size_of_IOCAF3_DefaultInterruptHandler 0 0 ABS 0 - dist/default/production\S2_1991255.X.production.o
 __HnvBANK0 0 0 ABS 0 nvBANK0 -
 __Lintentry 8 0 CODE 0 intentry -
-reset_vec 0 0 CODE 0 reset_vec C:\Users\leonardo\AppData\Local\Temp\s6sk.o
+reset_vec 0 0 CODE 0 reset_vec C:\Users\leonardo\AppData\Local\Temp\si5k.o
 _inGame 55 0 BANK0 1 bssBANK0 dist/default/production\S2_1991255.X.production.o
 __size_of_LCD_Initialize 0 0 ABS 0 - dist/default/production\S2_1991255.X.production.o
 __pdataBANK0 36 0 BANK0 1 dataBANK0 dist/default/production\S2_1991255.X.production.o
@@ -975,21 +975,21 @@ __Lstringtext8 0 0 ABS 0 stringtext8 -
 __Lstringtext9 0 0 ABS 0 stringtext9 -
 _INTERRUPT_InterruptManager 8 0 CODE 0 intentry dist/default/production\S2_1991255.X.production.o
 _IOCAFbits 393 0 ABS 0 - dist/default/production\S2_1991255.X.production.o
-__end_of_IOCAF1_SetInterruptHandler D96 0 CODE 0 text16 dist/default/production\S2_1991255.X.production.o
+__end_of_IOCAF1_SetInterruptHandler D94 0 CODE 0 text16 dist/default/production\S2_1991255.X.production.o
 _IOCANbits 392 0 ABS 0 - dist/default/production\S2_1991255.X.production.o
 _IOCAPbits 391 0 ABS 0 - dist/default/production\S2_1991255.X.production.o
 __end_ofi1_LCDPutChar B4A 0 CODE 0 text43 dist/default/production\S2_1991255.X.production.o
-_IOCAF3_SetInterruptHandler D72 0 CODE 0 text14 dist/default/production\S2_1991255.X.production.o
+_IOCAF3_SetInterruptHandler D70 0 CODE 0 text14 dist/default/production\S2_1991255.X.production.o
 LCDPutStr@i 32 0 BANK0 1 cstackBANK0 dist/default/production\S2_1991255.X.production.o
-__ptext10 DA2 0 CODE 0 text10 dist/default/production\S2_1991255.X.production.o
+__ptext10 DA0 0 CODE 0 text10 dist/default/production\S2_1991255.X.production.o
 __ptext11 294 0 CODE 0 text11 dist/default/production\S2_1991255.X.production.o
-__ptext12 D5A 0 CODE 0 text12 dist/default/production\S2_1991255.X.production.o
-__ptext13 D66 0 CODE 0 text13 dist/default/production\S2_1991255.X.production.o
-__ptext14 D72 0 CODE 0 text14 dist/default/production\S2_1991255.X.production.o
-__ptext15 D7E 0 CODE 0 text15 dist/default/production\S2_1991255.X.production.o
-__ptext16 D8A 0 CODE 0 text16 dist/default/production\S2_1991255.X.production.o
-__ptext17 D96 0 CODE 0 text17 dist/default/production\S2_1991255.X.production.o
-__ptext18 D40 0 CODE 0 text18 dist/default/production\S2_1991255.X.production.o
+__ptext12 D58 0 CODE 0 text12 dist/default/production\S2_1991255.X.production.o
+__ptext13 D64 0 CODE 0 text13 dist/default/production\S2_1991255.X.production.o
+__ptext14 D70 0 CODE 0 text14 dist/default/production\S2_1991255.X.production.o
+__ptext15 D7C 0 CODE 0 text15 dist/default/production\S2_1991255.X.production.o
+__ptext16 D88 0 CODE 0 text16 dist/default/production\S2_1991255.X.production.o
+__ptext17 D94 0 CODE 0 text17 dist/default/production\S2_1991255.X.production.o
+__ptext18 D3E 0 CODE 0 text18 dist/default/production\S2_1991255.X.production.o
 __ptext19 894 0 CODE 0 text19 dist/default/production\S2_1991255.X.production.o
 __ptext20 8DA 0 CODE 0 text20 dist/default/production\S2_1991255.X.production.o
 __ptext21 960 0 CODE 0 text21 dist/default/production\S2_1991255.X.production.o
@@ -998,15 +998,15 @@ __ptext24 6B6 0 CODE 0 text24 dist/default/production\S2_1991255.X.production.o
 __ptext25 7AA 0 CODE 0 text25 dist/default/production\S2_1991255.X.production.o
 __ptext26 BEA 0 CODE 0 text26 dist/default/production\S2_1991255.X.production.o
 __ptext27 B82 0 CODE 0 text27 dist/default/production\S2_1991255.X.production.o
-__ptext28 DAA 0 CODE 0 text28 dist/default/production\S2_1991255.X.production.o
+__ptext28 DA8 0 CODE 0 text28 dist/default/production\S2_1991255.X.production.o
 __ptext29 5B4 0 CODE 0 text29 dist/default/production\S2_1991255.X.production.o
-__ptext30 DAC 0 CODE 0 text30 dist/default/production\S2_1991255.X.production.o
+__ptext30 DAA 0 CODE 0 text30 dist/default/production\S2_1991255.X.production.o
 __ptext31 60A 0 CODE 0 text31 dist/default/production\S2_1991255.X.production.o
-__ptext32 DAE 0 CODE 0 text32 dist/default/production\S2_1991255.X.production.o
+__ptext32 DAC 0 CODE 0 text32 dist/default/production\S2_1991255.X.production.o
 __ptext33 500 0 CODE 0 text33 dist/default/production\S2_1991255.X.production.o
-__ptext34 DB0 0 CODE 0 text34 dist/default/production\S2_1991255.X.production.o
+__ptext34 DAE 0 CODE 0 text34 dist/default/production\S2_1991255.X.production.o
 __ptext35 55C 0 CODE 0 text35 dist/default/production\S2_1991255.X.production.o
-__ptext36 DB2 0 CODE 0 text36 dist/default/production\S2_1991255.X.production.o
+__ptext36 DB0 0 CODE 0 text36 dist/default/production\S2_1991255.X.production.o
 __ptext37 660 0 CODE 0 text37 dist/default/production\S2_1991255.X.production.o
 __ptext38 AD4 0 CODE 0 text38 dist/default/production\S2_1991255.X.production.o
 __ptext39 192 0 CODE 0 text39 dist/default/production\S2_1991255.X.production.o
@@ -1017,7 +1017,7 @@ __ptext43 B10 0 CODE 0 text43 dist/default/production\S2_1991255.X.production.o
 __ptext44 7FA 0 CODE 0 text44 dist/default/production\S2_1991255.X.production.o
 __ptext45 A1E 0 CODE 0 text45 dist/default/production\S2_1991255.X.production.o
 __ptext46 9A0 0 CODE 0 text46 dist/default/production\S2_1991255.X.production.o
-__ptext47 DB4 0 CODE 0 text47 dist/default/production\S2_1991255.X.production.o
+__ptext47 DB2 0 CODE 0 text47 dist/default/production\S2_1991255.X.production.o
 __end_of_PIN_MANAGER_Initialize 378 0 CODE 0 text11 dist/default/production\S2_1991255.X.production.o
 _LCDWriteNibble 960 0 CODE 0 text21 dist/default/production\S2_1991255.X.production.o
 __Lbank10 0 0 ABS 0 bank10 -
@@ -1053,16 +1053,16 @@ main@F5656 3E 0 BANK0 1 dataBANK0 dist/default/production\S2_1991255.X.productio
 main@F5658 36 0 BANK0 1 dataBANK0 dist/default/production\S2_1991255.X.production.o
 main@F5660 C8 0 BANK1 1 dataBANK1 dist/default/production\S2_1991255.X.production.o
 main@F5662 C0 0 BANK1 1 dataBANK1 dist/default/production\S2_1991255.X.production.o
-_IOCAF0_SetInterruptHandler D96 0 CODE 0 text17 dist/default/production\S2_1991255.X.production.o
+_IOCAF0_SetInterruptHandler D94 0 CODE 0 text17 dist/default/production\S2_1991255.X.production.o
 __end_of_cleanFullMenu AD4 0 CODE 0 text4 dist/default/production\S2_1991255.X.production.o
-_IOCAF1_DefaultInterruptHandler DB2 0 CODE 0 text36 dist/default/production\S2_1991255.X.production.o
+_IOCAF1_DefaultInterruptHandler DB0 0 CODE 0 text36 dist/default/production\S2_1991255.X.production.o
 __end_of_cleanMenu A98 0 CODE 0 text3 dist/default/production\S2_1991255.X.production.o
 __size_of_cleanMenu 0 0 ABS 0 - dist/default/production\S2_1991255.X.production.o
 __end_of_IOCAF0_ISR 6B6 0 CODE 0 text37 dist/default/production\S2_1991255.X.production.o
 __end_of_IOCAF1_ISR 5B4 0 CODE 0 text35 dist/default/production\S2_1991255.X.production.o
 __end_of_IOCAF2_ISR 55C 0 CODE 0 text33 dist/default/production\S2_1991255.X.production.o
 __end_of_IOCAF3_ISR 660 0 CODE 0 text31 dist/default/production\S2_1991255.X.production.o
-_IOCAF4_DefaultInterruptHandler DAC 0 CODE 0 text30 dist/default/production\S2_1991255.X.production.o
+_IOCAF4_DefaultInterruptHandler DAA 0 CODE 0 text30 dist/default/production\S2_1991255.X.production.o
 __end_of_IOCAF4_ISR 60A 0 CODE 0 text29 dist/default/production\S2_1991255.X.production.o
 __end_of_IOCAF5_ISR 70A 0 CODE 0 text24 dist/default/production\S2_1991255.X.production.o
 _OSCTUNE 98 0 ABS 0 - dist/default/production\S2_1991255.X.production.o
@@ -1085,7 +1085,7 @@ __Lstrings 0 0 ABS 0 strings -
 __Hreset_vec 4 0 CODE 0 reset_vec -
 LCDPutCmd@ch 2C 0 BANK0 1 cstackBANK0 dist/default/production\S2_1991255.X.production.o
 __HbssBANK0 0 0 ABS 0 bssBANK0 -
-__end_of_IOCAF0_DefaultInterruptHandler DB6 0 CODE 0 text47 dist/default/production\S2_1991255.X.production.o
+__end_of_IOCAF0_DefaultInterruptHandler DB4 0 CODE 0 text47 dist/default/production\S2_1991255.X.production.o
 __size_of_createCustomCharacter 0 0 ABS 0 - dist/default/production\S2_1991255.X.production.o
 __ptext1 9E0 0 CODE 0 text1 dist/default/production\S2_1991255.X.production.o
 __ptext2 78 0 CODE 0 text2 dist/default/production\S2_1991255.X.production.o
@@ -1095,8 +1095,8 @@ __ptext5 70A 0 CODE 0 text5 dist/default/production\S2_1991255.X.production.o
 __ptext6 75A 0 CODE 0 text6 dist/default/production\S2_1991255.X.production.o
 __ptext7 4A2 0 CODE 0 text7 dist/default/production\S2_1991255.X.production.o
 __ptext8 920 0 CODE 0 text8 dist/default/production\S2_1991255.X.production.o
-__ptext9 D1A 0 CODE 0 text9 dist/default/production\S2_1991255.X.production.o
-__end_of_IOCAF3_DefaultInterruptHandler DB0 0 CODE 0 text32 dist/default/production\S2_1991255.X.production.o
+__ptext9 D18 0 CODE 0 text9 dist/default/production\S2_1991255.X.production.o
+__end_of_IOCAF3_DefaultInterruptHandler DAE 0 CODE 0 text32 dist/default/production\S2_1991255.X.production.o
 i1LCDGoto@ln 77 0 COMMON 1 cstackCOMMON dist/default/production\S2_1991255.X.production.o
 __Lpowerup 0 0 CODE 0 powerup -
 __size_of_mainMenu 0 0 ABS 0 - dist/default/production\S2_1991255.X.production.o
@@ -1126,7 +1126,7 @@ __Lfunctab 0 0 ENTRY 0 functab -
 __end_ofi1_cleanMenu B82 0 CODE 0 text40 dist/default/production\S2_1991255.X.production.o
 __pidataBANK0 C16 0 CODE 0 idataBANK0 dist/default/production\S2_1991255.X.production.o
 __pidataBANK1 C5A 0 CODE 0 idataBANK1 dist/default/production\S2_1991255.X.production.o
-__end_of_IOCAF5_SetInterruptHandler D66 0 CODE 0 text12 dist/default/production\S2_1991255.X.production.o
+__end_of_IOCAF5_SetInterruptHandler D64 0 CODE 0 text12 dist/default/production\S2_1991255.X.production.o
 __Lclrtext 0 0 ABS 0 clrtext -
 __size_of_IOCAF1_SetInterruptHandler 0 0 ABS 0 - dist/default/production\S2_1991255.X.production.o
 __size_of_IOCAF2_DefaultInterruptHandler 0 0 ABS 0 - dist/default/production\S2_1991255.X.production.o
@@ -1137,9 +1137,9 @@ __size_of_IOCAF5_DefaultInterruptHandler 0 0 ABS 0 - dist/default/production\S2_
 __size_ofi1_printMenu 0 0 ABS 0 - dist/default/production\S2_1991255.X.production.o
 LCDPutChar@ch 2C 0 BANK0 1 cstackBANK0 dist/default/production\S2_1991255.X.production.o
 __end_of_main 440 0 CODE 0 maintext dist/default/production\S2_1991255.X.production.o
-__end_of_IOCAF2_SetInterruptHandler D8A 0 CODE 0 text15 dist/default/production\S2_1991255.X.production.o
+__end_of_IOCAF2_SetInterruptHandler D88 0 CODE 0 text15 dist/default/production\S2_1991255.X.production.o
 _PORTB D 0 ABS 0 - dist/default/production\S2_1991255.X.production.o
-_IOCAF4_SetInterruptHandler D66 0 CODE 0 text13 dist/default/production\S2_1991255.X.production.o
+_IOCAF4_SetInterruptHandler D64 0 CODE 0 text13 dist/default/production\S2_1991255.X.production.o
 _TRISA 8C 0 ABS 0 - dist/default/production\S2_1991255.X.production.o
 _TRISB 8D 0 ABS 0 - dist/default/production\S2_1991255.X.production.o
 _TRISC 8E 0 ABS 0 - dist/default/production\S2_1991255.X.production.o
@@ -1149,28 +1149,28 @@ __Hram 0 0 ABS 0 ram -
 __Lram 0 0 ABS 0 ram -
 i1LCDGoto@pos 7A 0 COMMON 1 cstackCOMMON dist/default/production\S2_1991255.X.production.o
 __size_of_PIN_MANAGER_Initialize 0 0 ABS 0 - dist/default/production\S2_1991255.X.production.o
-_WDT_Initialize DA2 0 CODE 0 text10 dist/default/production\S2_1991255.X.production.o
+_WDT_Initialize DA0 0 CODE 0 text10 dist/default/production\S2_1991255.X.production.o
 __pintentry 8 0 CODE 0 intentry dist/default/production\S2_1991255.X.production.o
 __HdataBANK0 0 0 ABS 0 dataBANK0 -
 __HdataBANK1 0 0 ABS 0 dataBANK1 -
-__end_of_OSCILLATOR_Initialize D4E 0 CODE 0 text18 dist/default/production\S2_1991255.X.production.o
+__end_of_OSCILLATOR_Initialize D4C 0 CODE 0 text18 dist/default/production\S2_1991255.X.production.o
 __end_of_mainMenu 192 0 CODE 0 text2 dist/default/production\S2_1991255.X.production.o
 IOCAF1_SetInterruptHandler@InterruptHandler 26 0 BANK0 1 cstackBANK0 dist/default/production\S2_1991255.X.production.o
 i1LCDPutCmd@ch 76 0 COMMON 1 cstackCOMMON dist/default/production\S2_1991255.X.production.o
 __initialization 3A 0 CODE 0 cinit dist/default/production\S2_1991255.X.production.o
 __pbssBANK0 53 0 BANK0 1 bssBANK0 dist/default/production\S2_1991255.X.production.o
-_IOCAF1_SetInterruptHandler D8A 0 CODE 0 text16 dist/default/production\S2_1991255.X.production.o
+_IOCAF1_SetInterruptHandler D88 0 CODE 0 text16 dist/default/production\S2_1991255.X.production.o
 __size_of_LCDClear 0 0 ABS 0 - dist/default/production\S2_1991255.X.production.o
 __size_of_IOCAF0_ISR 0 0 ABS 0 - dist/default/production\S2_1991255.X.production.o
 __size_of_IOCAF1_ISR 0 0 ABS 0 - dist/default/production\S2_1991255.X.production.o
 __size_of_IOCAF2_ISR 0 0 ABS 0 - dist/default/production\S2_1991255.X.production.o
-_IOCAF0_DefaultInterruptHandler DB4 0 CODE 0 text47 dist/default/production\S2_1991255.X.production.o
+_IOCAF0_DefaultInterruptHandler DB2 0 CODE 0 text47 dist/default/production\S2_1991255.X.production.o
 __size_of_IOCAF3_ISR 0 0 ABS 0 - dist/default/production\S2_1991255.X.production.o
 __size_of_IOCAF4_ISR 0 0 ABS 0 - dist/default/production\S2_1991255.X.production.o
 __size_of_IOCAF5_ISR 0 0 ABS 0 - dist/default/production\S2_1991255.X.production.o
 LCDWriteNibble@ch 29 0 BANK0 1 cstackBANK0 dist/default/production\S2_1991255.X.production.o
 LCDWriteNibble@rs 26 0 BANK0 1 cstackBANK0 dist/default/production\S2_1991255.X.production.o
-_OSCILLATOR_Initialize D40 0 CODE 0 text18 dist/default/production\S2_1991255.X.production.o
+_OSCILLATOR_Initialize D3E 0 CODE 0 text18 dist/default/production\S2_1991255.X.production.o
 # %SPLITSTAB Section
 # This section enumerates all the psect splits performed by the assembler.
 # The beginning of the section is indicated by %SPLITSTAB.
@@ -1196,14 +1196,14 @@ _OSCILLATOR_Initialize D40 0 CODE 0 text18 dist/default/production\S2_1991255.X.
 # and size are in units of delta. The file address is in units of bytes.
 # All other numeric quantities are in decimal.
 %SEGMENTS
-text9 0 68D D1A A 2
-text18 0 6A0 D40 3B 2
+text9 0 68C D18 A 2
+text18 0 69F D3E 3B 2
 cstackCOMMON 1 70 70 E 1
 cstackBANK0 1 20 20 36 1
 cstackBANK1 1 A0 A0 30 1
 stringtext1 0 61C C38 11 2
-stringtext2 0 63D C7A 50 2
-stringtext8 0 697 D2E 9 2
+stringtext2 0 63D C7A 4F 2
+stringtext8 0 696 D2C 9 2
 intentry 0 4 8 618 2
 reset_vec 0 0 0 2 2
 idataBANK1 0 62D C5A 10 2

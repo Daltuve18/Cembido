@@ -922,7 +922,7 @@ Version 4.0 HI-TECH Software Intermediate Code
 [; ;menu.c: 32:         LCDGoto(lcdOffset, 0);
 [e ( _LCDGoto (2 , _lcdOffset -> -> 0 `i `uc ]
 "33
-[; ;menu.c: 33:         LCDPutStr("   Menu    ");
+[; ;menu.c: 33:         LCDPutStr("   Menu   ");
 [e ( _LCDPutStr (1 :s 1C ]
 "34
 [; ;menu.c: 34:     }else {
@@ -1059,13 +1059,13 @@ Version 4.0 HI-TECH Software Intermediate Code
 [; ;menu.c: 74:     LCDGoto(lcdOffset, 0);
 [e ( _LCDGoto (2 , _lcdOffset -> -> 0 `i `uc ]
 "75
-[; ;menu.c: 75:     LCDPutStr("          ");
+[; ;menu.c: 75:     LCDPutStr("           ");
 [e ( _LCDPutStr (1 :s 10C ]
 "76
 [; ;menu.c: 76:     LCDGoto(lcdOffset, 1);
 [e ( _LCDGoto (2 , _lcdOffset -> -> 1 `i `uc ]
 "77
-[; ;menu.c: 77:     LCDPutStr("          ");
+[; ;menu.c: 77:     LCDPutStr("           ");
 [e ( _LCDPutStr (1 :s 11C ]
 "79
 [; ;menu.c: 79: }
@@ -1140,8 +1140,8 @@ Version 4.0 HI-TECH Software Intermediate Code
 [a 9C 62 32 88 32 119 105 110 103 0 ]
 [a 6C 83 101 108 101 99 116 32 115 104 105 112 35 50 0 ]
 [a 2C 83 101 108 101 99 116 32 115 104 105 112 35 49 0 ]
-[a 1C 32 32 32 77 101 110 117 32 32 32 32 0 ]
+[a 1C 32 32 32 77 101 110 117 32 32 32 0 ]
 [a 13C 32 32 32 32 32 32 32 32 32 32 32 32 32 32 32 32 0 ]
 [a 14C 32 32 32 32 32 32 32 32 32 32 32 32 32 32 32 32 0 ]
-[a 10C 32 32 32 32 32 32 32 32 32 32 0 ]
-[a 11C 32 32 32 32 32 32 32 32 32 32 0 ]
+[a 10C 32 32 32 32 32 32 32 32 32 32 32 0 ]
+[a 11C 32 32 32 32 32 32 32 32 32 32 32 0 ]
