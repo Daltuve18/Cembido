@@ -309,6 +309,24 @@ void IOCAF2_ISR(void) {
     {
         IOCAF2_InterruptHandler();
     }
+    if (inGame){
+    
+    }else{
+        switch (mainState){
+        case 0:
+            //seleciono tie
+            mainState  = 2;
+            printMenu();
+        break;
+        case 1:
+            //seleciono x wing
+            mainState  = 2;
+            printMenu();
+        break;
+        default:
+            break;
+    }
+    }
     IOCAFbits.IOCAF2 = 0;
 }
 
@@ -338,6 +356,18 @@ void IOCAF3_ISR(void) {
     if(IOCAF3_InterruptHandler)
     {
         IOCAF3_InterruptHandler();
+    }
+     if (inGame){
+    
+    }else{
+        switch (mainState){
+        case 3:
+            mainState  = 2;
+            printMenu();
+        break;
+        default:
+            break;
+    }
     }
     IOCAFbits.IOCAF3 = 0;
 }
@@ -369,6 +399,18 @@ void IOCAF4_ISR(void) {
     {
         IOCAF4_InterruptHandler();
     }
+     if (inGame){
+    
+    }else{
+        switch (mainState){
+        case 2:
+            mainState  = 3;
+            printMenu();
+        break;
+        default:
+            break;
+    }
+    }
     IOCAFbits.IOCAF4 = 0;
 }
 
@@ -398,6 +440,22 @@ void IOCAF5_ISR(void) {
     if(IOCAF5_InterruptHandler)
     {
         IOCAF5_InterruptHandler();
+    }
+    if (inGame){
+    
+    }else{
+        switch (mainState){
+        case 2:
+            //seleciono tie
+            startFight();
+        break;
+        case 3:
+            //seleciono x wing
+            startFight();
+        break;
+        default:
+            break;
+    }
     }
     IOCAFbits.IOCAF5 = 0;
 }

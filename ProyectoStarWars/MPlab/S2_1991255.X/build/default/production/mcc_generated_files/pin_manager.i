@@ -9138,6 +9138,7 @@ void printMenu (void);
 void cleanMenu (void);
 void cleanFullMenu (void);
 void mainMenu(void);
+void startFight (void);
 # 52 "mcc_generated_files/pin_manager.c" 2
 
 
@@ -9399,6 +9400,24 @@ void IOCAF2_ISR(void) {
     {
         IOCAF2_InterruptHandler();
     }
+    if (inGame){
+
+    }else{
+        switch (mainState){
+        case 0:
+
+            mainState = 2;
+            printMenu();
+        break;
+        case 1:
+
+            mainState = 2;
+            printMenu();
+        break;
+        default:
+            break;
+    }
+    }
     IOCAFbits.IOCAF2 = 0;
 }
 
@@ -9428,6 +9447,18 @@ void IOCAF3_ISR(void) {
     if(IOCAF3_InterruptHandler)
     {
         IOCAF3_InterruptHandler();
+    }
+     if (inGame){
+
+    }else{
+        switch (mainState){
+        case 3:
+            mainState = 2;
+            printMenu();
+        break;
+        default:
+            break;
+    }
     }
     IOCAFbits.IOCAF3 = 0;
 }
@@ -9459,6 +9490,18 @@ void IOCAF4_ISR(void) {
     {
         IOCAF4_InterruptHandler();
     }
+     if (inGame){
+
+    }else{
+        switch (mainState){
+        case 2:
+            mainState = 3;
+            printMenu();
+        break;
+        default:
+            break;
+    }
+    }
     IOCAFbits.IOCAF4 = 0;
 }
 
@@ -9488,6 +9531,22 @@ void IOCAF5_ISR(void) {
     if(IOCAF5_InterruptHandler)
     {
         IOCAF5_InterruptHandler();
+    }
+    if (inGame){
+
+    }else{
+        switch (mainState){
+        case 2:
+
+            startFight();
+        break;
+        case 3:
+
+            startFight();
+        break;
+        default:
+            break;
+    }
     }
     IOCAFbits.IOCAF5 = 0;
 }
