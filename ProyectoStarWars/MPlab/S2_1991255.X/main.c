@@ -59,6 +59,9 @@ void main()
     
     // Enable the Global Interrupts
     INTERRUPT_GlobalInterruptEnable();
+    // desable player 2 buttons
+    
+    disableButton(true);
     
     while (1)
     {

@@ -315,11 +315,15 @@ void IOCAF2_ISR(void) {
         switch (mainState){
         case 0:
             //seleciono tie
+            disableButton(false);
+            enableButton(true);
             mainState  = 2;
             printMenu();
         break;
         case 1:
             //seleciono x wing
+            disableButton(false);
+            enableButton(true);
             mainState  = 2;
             printMenu();
         break;
@@ -447,10 +451,14 @@ void IOCAF5_ISR(void) {
         switch (mainState){
         case 2:
             //seleciono tie
+            disableButton(true);
+            enableButton(false);
             startFight();
         break;
         case 3:
             //seleciono x wing
+            disableButton(true);
+            enableButton(false);
             startFight();
         break;
         default:
