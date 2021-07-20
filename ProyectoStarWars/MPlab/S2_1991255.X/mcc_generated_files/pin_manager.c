@@ -50,6 +50,7 @@
 #include "mcc.h"
 #include "../functions.h"
 #include "../menu.h"
+#include "../naves.h"
 
 
 
@@ -314,14 +315,14 @@ void IOCAF2_ISR(void) {
     }else{
         switch (mainState){
         case 0:
-            //seleciono tie
+            ship1 = 0;
             disableButton(false);
             enableButton(true);
             mainState  = 2;
             printMenu();
         break;
         case 1:
-            //seleciono x wing
+            ship1 = 1;
             disableButton(false);
             enableButton(true);
             mainState  = 2;
@@ -450,13 +451,13 @@ void IOCAF5_ISR(void) {
     }else{
         switch (mainState){
         case 2:
-            //seleciono tie
+            ship2 = 0;
             disableButton(true);
             enableButton(false);
             startFight();
         break;
         case 3:
-            //seleciono x wing
+            ship2 = 1;
             disableButton(true);
             enableButton(false);
             startFight();

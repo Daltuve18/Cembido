@@ -19,6 +19,7 @@ Date          : 7/18/2021
 #include "lcd.h"
 #include "menu.h"
 #include "functions.h"
+#include "naves.h"
 uint8_t lcdOffset = 3;
 bool inGame = false;
 uint8_t mainState = 0;
@@ -83,7 +84,7 @@ void startFight (void)
 
 {
     cleanFullMenu();
-    idleScreen();
+    idleScreen(); /// cambiar por la nueva
     LCDGoto(lcdOffset, 0);
     LCDPutStr("Start Fight");
     __delay_ms(2000);
