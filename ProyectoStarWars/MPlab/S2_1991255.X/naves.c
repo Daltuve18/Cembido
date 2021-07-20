@@ -13,19 +13,23 @@ Date          : 7/18/2021
 
 ***/
 
+/*Standard Libraries */
 
 #include <string.h>
 #include <stdio.h>
 #include "lcd.h"
+
+/*Local Libraries*/
+
 #include "menu.h"
 #include "functions.h"
+#include "psudoRandom.h"
 
 uint8_t ship1;
 uint8_t ship2;
 
 uint8_t corazon=4;
 uint8_t escucdo=4;
-
 
 
 void printShip()
@@ -35,12 +39,11 @@ void printShip()
     LCDPutChar(ship1);
     if (ship2 == 1){
         LCDGoto(15,0);
-        //LCDPutChar(Poner numero de nave volteada);
+        LCDPutChar(4);
     }else {
         LCDGoto(15,0);
         LCDPutChar(ship2);   
-    }
-      
+    }   
 }
 
 

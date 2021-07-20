@@ -13,13 +13,17 @@ Date          : 7/18/2021
 
 ***/
 
-
+/*Standard Libraries*/
 #include <string.h>
 #include <stdio.h>
 #include "lcd.h"
+
+/*Local Libraries*/
 #include "menu.h"
 #include "functions.h"
 #include "naves.h"
+
+/*Variable initialization*/
 uint8_t lcdOffset = 3;
 bool inGame = false;
 uint8_t mainState = 0;
@@ -27,6 +31,14 @@ uint8_t playerTurn = 0;
 
 void printMenu (void)
 
+/***
+    Prints the mine screen menu
+
+    Arguments: 
+
+    Return values: None
+
+***/
 {
     if(inGame){
         cleanMenu();
@@ -38,7 +50,16 @@ void printMenu (void)
     }
 }
 
-void mainMenu(void){
+void mainMenu(void)
+    /***
+     Main menu state machine
+
+    Arguments: 
+
+    Return values: None
+
+    ***/
+    {
     switch (mainState){
         case 0:
             LCDGoto(0, 0);
@@ -66,41 +87,62 @@ void mainMenu(void){
         break;
         default:
             break;
+        }
     }
-}
 
 void cleanMenu (void)
+    /***
+    Clean up the main menu
 
-{
-    LCDGoto(lcdOffset, 0);
-    LCDPutStr("           ");
-    LCDGoto(lcdOffset, 1);
-    LCDPutStr("           ");
-    
-}
+    Arguments: 
+
+    Return values: None
+
+    ***/
+
+    {
+        LCDGoto(lcdOffset, 0);
+        LCDPutStr("           ");
+        LCDGoto(lcdOffset, 1);
+        LCDPutStr("           ");   
+    }
 
 
 void startFight (void)
 
-{
-    cleanFullMenu();
-    printShip();
-    LCDGoto(lcdOffset, 0);
-    LCDPutStr("Start Fight");
-    __delay_ms(2000);
-    mainState  = 0;
-    inGame = true;
-    printMenu();
-    
-    
-}
+    /***
+     Starts the game routine once the ships have been chosen
+
+        Arguments: 
+
+        Return values: None
+
+    ***/
+
+    {
+        cleanFullMenu();
+        printShip();
+        LCDGoto(lcdOffset, 0);
+        LCDPutStr("Start Fight");
+        __delay_ms(2000);
+        mainState  = 0;
+        inGame = true;
+        printMenu();
+
+    }
 
 void cleanFullMenu (void)
+    /***
+     Full screen clean
 
-{
-    LCDGoto(0, 0);
-    LCDPutStr("                ");
-    LCDGoto(0, 1);
-    LCDPutStr("                ");
-    
-}
+        Arguments: 
+
+        Return values: None
+
+    ***/
+    {
+        LCDGoto(0, 0);
+        LCDPutStr("                ");
+        LCDGoto(0, 1);
+        LCDPutStr("                ");   
+    }

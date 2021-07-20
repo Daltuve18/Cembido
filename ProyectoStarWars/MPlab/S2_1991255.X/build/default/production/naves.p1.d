@@ -6,4 +6,5 @@ mcc_generated_files/device_config.h  \
 mcc_generated_files/pin_manager.h  \
 mcc_generated_files/interrupt_manager.h  \
 menu.h  \
-functions.h 
+functions.h  \
+psudoRandom.h 

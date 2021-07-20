@@ -1,0 +1,65 @@
+Version 4.0 HI-TECH Software Intermediate Code
+"18 pseudoRandom.c
+[; ;pseudoRandom.c: 18: double taylorSine(double x)
+[v _taylorSine `(d ~T0 @X0 1 ef1`d ]
+"30
+[; ;pseudoRandom.c: 30: {
+{
+[e :U _taylorSine ]
+"18
+[; ;pseudoRandom.c: 18: double taylorSine(double x)
+[v _x `d ~T0 @X0 1 r1 ]
+"30
+[; ;pseudoRandom.c: 30: {
+[f ]
+"31
+[; ;pseudoRandom.c: 31:     unsigned N=20;
+[v _N `ui ~T0 @X0 1 a ]
+[e = _N -> -> 20 `i `ui ]
+"32
+[; ;pseudoRandom.c: 32:     unsigned k=1;
+[v _k `ui ~T0 @X0 1 a ]
+[e = _k -> -> 1 `i `ui ]
+"33
+[; ;pseudoRandom.c: 33:     double sinx = 0;
+[v _sinx `d ~T0 @X0 1 a ]
+[e = _sinx -> -> 0 `i `d ]
+"34
+[; ;pseudoRandom.c: 34:     double term;
+[v _term `d ~T0 @X0 1 a ]
+"35
+[; ;pseudoRandom.c: 35:     term = x;
+[e = _term _x ]
+"36
+[; ;pseudoRandom.c: 36:     while (k < N) {
+[e $U 4  ]
+[e :U 5 ]
+{
+"37
+[; ;pseudoRandom.c: 37:         sinx += term;
+[e =+ _sinx _term ]
+"38
+[; ;pseudoRandom.c: 38:         k = k + 2;
+[e = _k + _k -> -> 2 `i `ui ]
+"39
+[; ;pseudoRandom.c: 39:         term *= -(x * x) / ( (k-1) * k);
+[e =* _term / -U * _x _x -> * - _k -> -> 1 `i `ui _k `d ]
+"40
+[; ;pseudoRandom.c: 40:     }
+}
+[e :U 4 ]
+"36
+[; ;pseudoRandom.c: 36:     while (k < N) {
+[e $ < _k _N 5  ]
+[e :U 6 ]
+"41
+[; ;pseudoRandom.c: 41:     sinx*=sinx;
+[e =* _sinx _sinx ]
+"42
+[; ;pseudoRandom.c: 42:     return sinx;
+[e ) _sinx ]
+[e $UE 3  ]
+"43
+[; ;pseudoRandom.c: 43: }
+[e :UE 3 ]
+}
