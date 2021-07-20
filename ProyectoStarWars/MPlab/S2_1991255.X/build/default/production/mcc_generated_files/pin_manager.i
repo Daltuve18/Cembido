@@ -9146,10 +9146,16 @@ void startFight (void);
 extern uint8_t ship1;
 extern uint8_t ship2;
 
+extern uint8_t health1;
+extern uint8_t health2;
+
 extern uint8_t shield1;
 extern uint8_t shield2;
 
+
 void printShip(void);
+void printHeart(void);
+void printShield(void);
 # 53 "mcc_generated_files/pin_manager.c" 2
 
 

@@ -8,6 +8,12 @@ Version 4.0 HI-TECH Software Intermediate Code
 "138
 [; ;./lcd.h: 138:   void LCDPutChar(uint8_t ch);
 [v _LCDPutChar `(v ~T0 @X0 0 ef1`uc ]
+"174
+[; ;./lcd.h: 174:   void LCDPutStr(const char *);
+[v _LCDPutStr `(v ~T0 @X0 0 ef1`*Cuc ]
+"28 ./functions.h
+[; ;./functions.h: 28: void createCustomCharacter (unsigned char *Pattern, const char Location);
+[v _createCustomCharacter `(v ~T0 @X0 0 ef2`*uc`Cuc ]
 "54 C:/Program Files/Microchip/MPLABX/v5.45/packs/Microchip/PIC12-16F1xxx_DFP/1.2.63/xc8\pic\include\proc\pic16lf1718.h
 [; ;C:/Program Files/Microchip/MPLABX/v5.45/packs/Microchip/PIC12-16F1xxx_DFP/1.2.63/xc8\pic\include\proc\pic16lf1718.h: 54: __asm("INDF0 equ 00h");
 [; <" INDF0 equ 00h ;# ">
@@ -873,61 +879,705 @@ Version 4.0 HI-TECH Software Intermediate Code
 [; ;naves.c: 29: uint8_t ship2;
 [v _ship2 `uc ~T0 @X0 1 e ]
 "31
-[; ;naves.c: 31: uint8_t corazon=4;
-[v _corazon `uc ~T0 @X0 1 e ]
-[i _corazon
+[; ;naves.c: 31: uint8_t health1=4;
+[v _health1 `uc ~T0 @X0 1 e ]
+[i _health1
 -> -> 4 `i `uc
 ]
 "32
-[; ;naves.c: 32: uint8_t escucdo=4;
-[v _escucdo `uc ~T0 @X0 1 e ]
-[i _escucdo
+[; ;naves.c: 32: uint8_t health2=4;
+[v _health2 `uc ~T0 @X0 1 e ]
+[i _health2
+-> -> 4 `i `uc
+]
+"34
+[; ;naves.c: 34: uint8_t shield1=4;
+[v _shield1 `uc ~T0 @X0 1 e ]
+[i _shield1
 -> -> 4 `i `uc
 ]
 "35
-[; ;naves.c: 35: void printShip()
+[; ;naves.c: 35: uint8_t shield2=4;
+[v _shield2 `uc ~T0 @X0 1 e ]
+[i _shield2
+-> -> 4 `i `uc
+]
+"38
+[; ;naves.c: 38: void printShip()
 [v _printShip `(v ~T0 @X0 1 ef ]
-"36
-[; ;naves.c: 36: {
+"39
+[; ;naves.c: 39: {
 {
 [e :U _printShip ]
 [f ]
-"37
-[; ;naves.c: 37:     LCDClear();
-[e ( _LCDClear ..  ]
-"38
-[; ;naves.c: 38:     LCDGoto(0,0);
-[e ( _LCDGoto (2 , -> -> 0 `i `uc -> -> 0 `i `uc ]
-"39
-[; ;naves.c: 39:     LCDPutChar(ship1);
-[e ( _LCDPutChar (1 _ship1 ]
 "40
-[; ;naves.c: 40:     if (ship2 == 1){
-[e $ ! == -> _ship2 `i -> 1 `i 738  ]
-{
+[; ;naves.c: 40:     LCDClear();
+[e ( _LCDClear ..  ]
 "41
-[; ;naves.c: 41:         LCDGoto(15,0);
-[e ( _LCDGoto (2 , -> -> 15 `i `uc -> -> 0 `i `uc ]
+[; ;naves.c: 41:     LCDGoto(0,0);
+[e ( _LCDGoto (2 , -> -> 0 `i `uc -> -> 0 `i `uc ]
 "42
-[; ;naves.c: 42:         LCDPutChar(4);
-[e ( _LCDPutChar (1 -> -> 4 `i `uc ]
+[; ;naves.c: 42:     LCDPutChar(ship1);
+[e ( _LCDPutChar (1 _ship1 ]
 "43
-[; ;naves.c: 43:     }else {
-}
-[e $U 739  ]
-[e :U 738 ]
+[; ;naves.c: 43:     if (ship2 == 1){
+[e $ ! == -> _ship2 `i -> 1 `i 738  ]
 {
 "44
 [; ;naves.c: 44:         LCDGoto(15,0);
 [e ( _LCDGoto (2 , -> -> 15 `i `uc -> -> 0 `i `uc ]
 "45
-[; ;naves.c: 45:         LCDPutChar(ship2);
-[e ( _LCDPutChar (1 _ship2 ]
+[; ;naves.c: 45:         LCDPutChar(4);
+[e ( _LCDPutChar (1 -> -> 4 `i `uc ]
 "46
-[; ;naves.c: 46:     }
+[; ;naves.c: 46:     }else {
+}
+[e $U 739  ]
+[e :U 738 ]
+{
+"47
+[; ;naves.c: 47:         LCDGoto(15,0);
+[e ( _LCDGoto (2 , -> -> 15 `i `uc -> -> 0 `i `uc ]
+"48
+[; ;naves.c: 48:         LCDPutChar(ship2);
+[e ( _LCDPutChar (1 _ship2 ]
+"49
+[; ;naves.c: 49:     }
 }
 [e :U 739 ]
-"47
-[; ;naves.c: 47: }
+"50
+[; ;naves.c: 50: }
 [e :UE 737 ]
 }
+"53
+[; ;naves.c: 53: void printHeart(void)
+[v _printHeart `(v ~T0 @X0 1 ef ]
+"55
+[; ;naves.c: 55:     {
+{
+[e :U _printHeart ]
+[f ]
+"56
+[; ;naves.c: 56:         switch (health1){
+[e $U 742  ]
+{
+"57
+[; ;naves.c: 57:             case 0:
+[e :U 743 ]
+"58
+[; ;naves.c: 58:                 LCDGoto(0, 1);
+[e ( _LCDGoto (2 , -> -> 0 `i `uc -> -> 1 `i `uc ]
+"59
+[; ;naves.c: 59:                 LCDPutStr(" ");
+[e ( _LCDPutStr (1 :s 1C ]
+"60
+[; ;naves.c: 60:             break;
+[e $U 741  ]
+"61
+[; ;naves.c: 61:             case 1:
+[e :U 744 ]
+"62
+[; ;naves.c: 62:                 LCDGoto(0, 1);
+[e ( _LCDGoto (2 , -> -> 0 `i `uc -> -> 1 `i `uc ]
+"63
+[; ;naves.c: 63:                 LCDPutStr(" ");
+[e ( _LCDPutStr (1 :s 2C ]
+[v F5837 `uc ~T0 @X0 -> 8 `i s ]
+[i F5837
+:U ..
+"64
+[; ;naves.c: 64:                 unsigned char heart11 [ ] = {0x00,0x0A,0x15,0x11,0x11,0x0A,0x04,0x00};
+-> -> 0 `i `uc
+-> -> 10 `i `uc
+-> -> 21 `i `uc
+-> -> 17 `i `uc
+-> -> 17 `i `uc
+-> -> 10 `i `uc
+-> -> 4 `i `uc
+-> -> 0 `i `uc
+..
+]
+[v _heart11 `uc ~T0 @X0 -> 8 `i a ]
+[e = _heart11 F5837 ]
+"65
+[; ;naves.c: 65:                 createCustomCharacter(heart11,5);
+[e ( _createCustomCharacter (2 , &U _heart11 -> -> 5 `i `uc ]
+"66
+[; ;naves.c: 66:                 LCDGoto(0, 1);
+[e ( _LCDGoto (2 , -> -> 0 `i `uc -> -> 1 `i `uc ]
+"67
+[; ;naves.c: 67:                 LCDPutChar(5);
+[e ( _LCDPutChar (1 -> -> 5 `i `uc ]
+"68
+[; ;naves.c: 68:             break;
+[e $U 741  ]
+"69
+[; ;naves.c: 69:             case 2:
+[e :U 745 ]
+"70
+[; ;naves.c: 70:                 LCDGoto(0, 1);
+[e ( _LCDGoto (2 , -> -> 0 `i `uc -> -> 1 `i `uc ]
+"71
+[; ;naves.c: 71:                 LCDPutStr(" ");
+[e ( _LCDPutStr (1 :s 3C ]
+[v F5839 `uc ~T0 @X0 -> 8 `i s ]
+[i F5839
+:U ..
+"72
+[; ;naves.c: 72:                 unsigned char heart12 [ ] = {0x00,0x0A,0x1D,0x19,0x19,0x0A,0x04,0x00};
+-> -> 0 `i `uc
+-> -> 10 `i `uc
+-> -> 29 `i `uc
+-> -> 25 `i `uc
+-> -> 25 `i `uc
+-> -> 10 `i `uc
+-> -> 4 `i `uc
+-> -> 0 `i `uc
+..
+]
+[v _heart12 `uc ~T0 @X0 -> 8 `i a ]
+[e = _heart12 F5839 ]
+"73
+[; ;naves.c: 73:                 createCustomCharacter(heart12,5);
+[e ( _createCustomCharacter (2 , &U _heart12 -> -> 5 `i `uc ]
+"74
+[; ;naves.c: 74:                 LCDGoto(0, 1);
+[e ( _LCDGoto (2 , -> -> 0 `i `uc -> -> 1 `i `uc ]
+"75
+[; ;naves.c: 75:                 LCDPutChar(5);
+[e ( _LCDPutChar (1 -> -> 5 `i `uc ]
+"76
+[; ;naves.c: 76:             break;
+[e $U 741  ]
+"77
+[; ;naves.c: 77:             case 3:
+[e :U 746 ]
+"78
+[; ;naves.c: 78:                 LCDGoto(0, 1);
+[e ( _LCDGoto (2 , -> -> 0 `i `uc -> -> 1 `i `uc ]
+"79
+[; ;naves.c: 79:                 LCDPutStr(" ");
+[e ( _LCDPutStr (1 :s 4C ]
+[v F5841 `uc ~T0 @X0 -> 8 `i s ]
+[i F5841
+:U ..
+"80
+[; ;naves.c: 80:                 unsigned char heart13 [ ] = {0x00,0x0A,0x1D,0x1D,0x1D,0x0E,0x04,0x00};
+-> -> 0 `i `uc
+-> -> 10 `i `uc
+-> -> 29 `i `uc
+-> -> 29 `i `uc
+-> -> 29 `i `uc
+-> -> 14 `i `uc
+-> -> 4 `i `uc
+-> -> 0 `i `uc
+..
+]
+[v _heart13 `uc ~T0 @X0 -> 8 `i a ]
+[e = _heart13 F5841 ]
+"81
+[; ;naves.c: 81:                 createCustomCharacter(heart13,5);
+[e ( _createCustomCharacter (2 , &U _heart13 -> -> 5 `i `uc ]
+"82
+[; ;naves.c: 82:                 LCDGoto(0, 1);
+[e ( _LCDGoto (2 , -> -> 0 `i `uc -> -> 1 `i `uc ]
+"83
+[; ;naves.c: 83:                 LCDPutChar(5);
+[e ( _LCDPutChar (1 -> -> 5 `i `uc ]
+"84
+[; ;naves.c: 84:             break;
+[e $U 741  ]
+"85
+[; ;naves.c: 85:                 case 4:
+[e :U 747 ]
+"86
+[; ;naves.c: 86:                 LCDGoto(0, 1);
+[e ( _LCDGoto (2 , -> -> 0 `i `uc -> -> 1 `i `uc ]
+"87
+[; ;naves.c: 87:                 LCDPutStr(" ");
+[e ( _LCDPutStr (1 :s 5C ]
+"88
+[; ;naves.c: 88:                 LCDGoto(0, 1);
+[e ( _LCDGoto (2 , -> -> 0 `i `uc -> -> 1 `i `uc ]
+"89
+[; ;naves.c: 89:                 LCDPutChar(3);
+[e ( _LCDPutChar (1 -> -> 3 `i `uc ]
+"90
+[; ;naves.c: 90:             break;
+[e $U 741  ]
+"91
+[; ;naves.c: 91:             default:
+[e :U 748 ]
+"92
+[; ;naves.c: 92:                 break;
+[e $U 741  ]
+"93
+[; ;naves.c: 93:             }
+}
+[e $U 741  ]
+[e :U 742 ]
+[e [\ -> _health1 `i , $ -> 0 `i 743
+ , $ -> 1 `i 744
+ , $ -> 2 `i 745
+ , $ -> 3 `i 746
+ , $ -> 4 `i 747
+ 748 ]
+[e :U 741 ]
+"95
+[; ;naves.c: 95:         switch (health2)
+[e $U 750  ]
+"96
+[; ;naves.c: 96:         {
+{
+"97
+[; ;naves.c: 97:             case 0:
+[e :U 751 ]
+"98
+[; ;naves.c: 98:                 LCDGoto(15, 1);
+[e ( _LCDGoto (2 , -> -> 15 `i `uc -> -> 1 `i `uc ]
+"99
+[; ;naves.c: 99:                 LCDPutStr(" ");
+[e ( _LCDPutStr (1 :s 6C ]
+"100
+[; ;naves.c: 100:             break;
+[e $U 749  ]
+"101
+[; ;naves.c: 101:             case 1:
+[e :U 752 ]
+"102
+[; ;naves.c: 102:                 LCDGoto(15, 1);
+[e ( _LCDGoto (2 , -> -> 15 `i `uc -> -> 1 `i `uc ]
+"103
+[; ;naves.c: 103:                 LCDPutStr(" ");
+[e ( _LCDPutStr (1 :s 7C ]
+[v F5843 `uc ~T0 @X0 -> 8 `i s ]
+[i F5843
+:U ..
+"104
+[; ;naves.c: 104:                 unsigned char heart21 [ ] = {0x00,0x0A,0x15,0x11,0x11,0x0A,0x04,0x00};
+-> -> 0 `i `uc
+-> -> 10 `i `uc
+-> -> 21 `i `uc
+-> -> 17 `i `uc
+-> -> 17 `i `uc
+-> -> 10 `i `uc
+-> -> 4 `i `uc
+-> -> 0 `i `uc
+..
+]
+[v _heart21 `uc ~T0 @X0 -> 8 `i a ]
+[e = _heart21 F5843 ]
+"105
+[; ;naves.c: 105:                 createCustomCharacter(heart21,6);
+[e ( _createCustomCharacter (2 , &U _heart21 -> -> 6 `i `uc ]
+"106
+[; ;naves.c: 106:                 LCDGoto(15, 1);
+[e ( _LCDGoto (2 , -> -> 15 `i `uc -> -> 1 `i `uc ]
+"107
+[; ;naves.c: 107:                 LCDPutChar(5);
+[e ( _LCDPutChar (1 -> -> 5 `i `uc ]
+"108
+[; ;naves.c: 108:             break;
+[e $U 749  ]
+"109
+[; ;naves.c: 109:             case 2:
+[e :U 753 ]
+"110
+[; ;naves.c: 110:                 LCDGoto(15, 1);
+[e ( _LCDGoto (2 , -> -> 15 `i `uc -> -> 1 `i `uc ]
+"111
+[; ;naves.c: 111:                 LCDPutStr(" ");
+[e ( _LCDPutStr (1 :s 8C ]
+[v F5845 `uc ~T0 @X0 -> 8 `i s ]
+[i F5845
+:U ..
+"112
+[; ;naves.c: 112:                 unsigned char heart22 [ ] = {0x00,0x0A,0x1D,0x19,0x19,0x0A,0x04,0x00};
+-> -> 0 `i `uc
+-> -> 10 `i `uc
+-> -> 29 `i `uc
+-> -> 25 `i `uc
+-> -> 25 `i `uc
+-> -> 10 `i `uc
+-> -> 4 `i `uc
+-> -> 0 `i `uc
+..
+]
+[v _heart22 `uc ~T0 @X0 -> 8 `i a ]
+[e = _heart22 F5845 ]
+"113
+[; ;naves.c: 113:                 createCustomCharacter(heart22,6);
+[e ( _createCustomCharacter (2 , &U _heart22 -> -> 6 `i `uc ]
+"114
+[; ;naves.c: 114:                 LCDGoto(15, 1);
+[e ( _LCDGoto (2 , -> -> 15 `i `uc -> -> 1 `i `uc ]
+"115
+[; ;naves.c: 115:                 LCDPutChar(6);
+[e ( _LCDPutChar (1 -> -> 6 `i `uc ]
+"116
+[; ;naves.c: 116:             break;
+[e $U 749  ]
+"117
+[; ;naves.c: 117:             case 3:
+[e :U 754 ]
+"118
+[; ;naves.c: 118:                 LCDGoto(15, 1);
+[e ( _LCDGoto (2 , -> -> 15 `i `uc -> -> 1 `i `uc ]
+"119
+[; ;naves.c: 119:                 LCDPutStr(" ");
+[e ( _LCDPutStr (1 :s 9C ]
+[v F5847 `uc ~T0 @X0 -> 8 `i s ]
+[i F5847
+:U ..
+"120
+[; ;naves.c: 120:                 unsigned char heart23 [ ] = {0x00,0x0A,0x1D,0x1D,0x1D,0x0E,0x04,0x00};
+-> -> 0 `i `uc
+-> -> 10 `i `uc
+-> -> 29 `i `uc
+-> -> 29 `i `uc
+-> -> 29 `i `uc
+-> -> 14 `i `uc
+-> -> 4 `i `uc
+-> -> 0 `i `uc
+..
+]
+[v _heart23 `uc ~T0 @X0 -> 8 `i a ]
+[e = _heart23 F5847 ]
+"121
+[; ;naves.c: 121:                 createCustomCharacter(heart23,6);
+[e ( _createCustomCharacter (2 , &U _heart23 -> -> 6 `i `uc ]
+"122
+[; ;naves.c: 122:                 LCDGoto(15, 1);
+[e ( _LCDGoto (2 , -> -> 15 `i `uc -> -> 1 `i `uc ]
+"123
+[; ;naves.c: 123:                 LCDPutChar(6);
+[e ( _LCDPutChar (1 -> -> 6 `i `uc ]
+"124
+[; ;naves.c: 124:             break;
+[e $U 749  ]
+"125
+[; ;naves.c: 125:                 case 4:
+[e :U 755 ]
+"126
+[; ;naves.c: 126:                 LCDGoto(15, 1);
+[e ( _LCDGoto (2 , -> -> 15 `i `uc -> -> 1 `i `uc ]
+"127
+[; ;naves.c: 127:                 LCDPutStr(" ");
+[e ( _LCDPutStr (1 :s 10C ]
+"128
+[; ;naves.c: 128:                 LCDGoto(15, 1);
+[e ( _LCDGoto (2 , -> -> 15 `i `uc -> -> 1 `i `uc ]
+"129
+[; ;naves.c: 129:                 LCDPutChar(3);
+[e ( _LCDPutChar (1 -> -> 3 `i `uc ]
+"130
+[; ;naves.c: 130:             break;
+[e $U 749  ]
+"131
+[; ;naves.c: 131:             default:
+[e :U 756 ]
+"132
+[; ;naves.c: 132:                 break;
+[e $U 749  ]
+"133
+[; ;naves.c: 133:             }
+}
+[e $U 749  ]
+[e :U 750 ]
+[e [\ -> _health2 `i , $ -> 0 `i 751
+ , $ -> 1 `i 752
+ , $ -> 2 `i 753
+ , $ -> 3 `i 754
+ , $ -> 4 `i 755
+ 756 ]
+[e :U 749 ]
+"135
+[; ;naves.c: 135:     }
+[e :UE 740 ]
+}
+"137
+[; ;naves.c: 137: void printShield(void)
+[v _printShield `(v ~T0 @X0 1 ef ]
+"139
+[; ;naves.c: 139:     {
+{
+[e :U _printShield ]
+[f ]
+"140
+[; ;naves.c: 140:         switch (shield1){
+[e $U 759  ]
+{
+"141
+[; ;naves.c: 141:             case 0:
+[e :U 760 ]
+"142
+[; ;naves.c: 142:                 LCDGoto(1, 1);
+[e ( _LCDGoto (2 , -> -> 1 `i `uc -> -> 1 `i `uc ]
+"143
+[; ;naves.c: 143:                 LCDPutStr(" ");
+[e ( _LCDPutStr (1 :s 11C ]
+"144
+[; ;naves.c: 144:             break;
+[e $U 758  ]
+"145
+[; ;naves.c: 145:             case 1:
+[e :U 761 ]
+"146
+[; ;naves.c: 146:                 LCDGoto(1, 1);
+[e ( _LCDGoto (2 , -> -> 1 `i `uc -> -> 1 `i `uc ]
+"147
+[; ;naves.c: 147:                 LCDPutStr(" ");
+[e ( _LCDPutStr (1 :s 12C ]
+[v F5850 `uc ~T0 @X0 -> 8 `i s ]
+[i F5850
+:U ..
+"148
+[; ;naves.c: 148:                 unsigned char shield11 [ ] = {0x00,0x1F,0x11,0x11,0x11,0x0A,0x04,0x00};
+-> -> 0 `i `uc
+-> -> 31 `i `uc
+-> -> 17 `i `uc
+-> -> 17 `i `uc
+-> -> 17 `i `uc
+-> -> 10 `i `uc
+-> -> 4 `i `uc
+-> -> 0 `i `uc
+..
+]
+[v _shield11 `uc ~T0 @X0 -> 8 `i a ]
+[e = _shield11 F5850 ]
+"149
+[; ;naves.c: 149:                 createCustomCharacter(shield11,5);
+[e ( _createCustomCharacter (2 , &U _shield11 -> -> 5 `i `uc ]
+"150
+[; ;naves.c: 150:                 LCDGoto(0, 1);
+[e ( _LCDGoto (2 , -> -> 0 `i `uc -> -> 1 `i `uc ]
+"151
+[; ;naves.c: 151:                 LCDPutChar(5);
+[e ( _LCDPutChar (1 -> -> 5 `i `uc ]
+"152
+[; ;naves.c: 152:             break;
+[e $U 758  ]
+"153
+[; ;naves.c: 153:             case 2:
+[e :U 762 ]
+"154
+[; ;naves.c: 154:                 LCDGoto(1, 1);
+[e ( _LCDGoto (2 , -> -> 1 `i `uc -> -> 1 `i `uc ]
+"155
+[; ;naves.c: 155:                 LCDPutStr(" ");
+[e ( _LCDPutStr (1 :s 13C ]
+[v F5852 `uc ~T0 @X0 -> 8 `i s ]
+[i F5852
+:U ..
+"156
+[; ;naves.c: 156:                 unsigned char shield12 [ ] = {0x00,0x1F,0x11,0x11,0x1F,0x0E,0x04,0x00};
+-> -> 0 `i `uc
+-> -> 31 `i `uc
+-> -> 17 `i `uc
+-> -> 17 `i `uc
+-> -> 31 `i `uc
+-> -> 14 `i `uc
+-> -> 4 `i `uc
+-> -> 0 `i `uc
+..
+]
+[v _shield12 `uc ~T0 @X0 -> 8 `i a ]
+[e = _shield12 F5852 ]
+"157
+[; ;naves.c: 157:                 createCustomCharacter(shield12,5);
+[e ( _createCustomCharacter (2 , &U _shield12 -> -> 5 `i `uc ]
+"158
+[; ;naves.c: 158:                 LCDGoto(0, 1);
+[e ( _LCDGoto (2 , -> -> 0 `i `uc -> -> 1 `i `uc ]
+"159
+[; ;naves.c: 159:                 LCDPutChar(5);
+[e ( _LCDPutChar (1 -> -> 5 `i `uc ]
+"160
+[; ;naves.c: 160:             break;
+[e $U 758  ]
+"161
+[; ;naves.c: 161:                 case 3:
+[e :U 763 ]
+"162
+[; ;naves.c: 162:                 LCDGoto(1, 1);
+[e ( _LCDGoto (2 , -> -> 1 `i `uc -> -> 1 `i `uc ]
+"163
+[; ;naves.c: 163:                 LCDPutStr(" ");
+[e ( _LCDPutStr (1 :s 14C ]
+"164
+[; ;naves.c: 164:                 LCDGoto(1, 1);
+[e ( _LCDGoto (2 , -> -> 1 `i `uc -> -> 1 `i `uc ]
+"165
+[; ;naves.c: 165:                 LCDPutChar(8);
+[e ( _LCDPutChar (1 -> -> 8 `i `uc ]
+"166
+[; ;naves.c: 166:             break;
+[e $U 758  ]
+"167
+[; ;naves.c: 167:             default:
+[e :U 764 ]
+"168
+[; ;naves.c: 168:                 break;
+[e $U 758  ]
+"169
+[; ;naves.c: 169:             }
+}
+[e $U 758  ]
+[e :U 759 ]
+[e [\ -> _shield1 `i , $ -> 0 `i 760
+ , $ -> 1 `i 761
+ , $ -> 2 `i 762
+ , $ -> 3 `i 763
+ 764 ]
+[e :U 758 ]
+"171
+[; ;naves.c: 171:         switch (shield2)
+[e $U 766  ]
+"172
+[; ;naves.c: 172:         {
+{
+"173
+[; ;naves.c: 173:             case 0:
+[e :U 767 ]
+"174
+[; ;naves.c: 174:                 LCDGoto(14, 1);
+[e ( _LCDGoto (2 , -> -> 14 `i `uc -> -> 1 `i `uc ]
+"175
+[; ;naves.c: 175:                 LCDPutStr(" ");
+[e ( _LCDPutStr (1 :s 15C ]
+"176
+[; ;naves.c: 176:             break;
+[e $U 765  ]
+"177
+[; ;naves.c: 177:             case 1:
+[e :U 768 ]
+"178
+[; ;naves.c: 178:                 LCDGoto(14, 1);
+[e ( _LCDGoto (2 , -> -> 14 `i `uc -> -> 1 `i `uc ]
+"179
+[; ;naves.c: 179:                 LCDPutStr(" ");
+[e ( _LCDPutStr (1 :s 16C ]
+[v F5854 `uc ~T0 @X0 -> 8 `i s ]
+[i F5854
+:U ..
+"180
+[; ;naves.c: 180:                 unsigned char shield21 [ ] = {0x00,0x1F,0x11,0x11,0x11,0x0A,0x04,0x00};
+-> -> 0 `i `uc
+-> -> 31 `i `uc
+-> -> 17 `i `uc
+-> -> 17 `i `uc
+-> -> 17 `i `uc
+-> -> 10 `i `uc
+-> -> 4 `i `uc
+-> -> 0 `i `uc
+..
+]
+[v _shield21 `uc ~T0 @X0 -> 8 `i a ]
+[e = _shield21 F5854 ]
+"181
+[; ;naves.c: 181:                 createCustomCharacter(shield21,6);
+[e ( _createCustomCharacter (2 , &U _shield21 -> -> 6 `i `uc ]
+"182
+[; ;naves.c: 182:                 LCDGoto(14, 1);
+[e ( _LCDGoto (2 , -> -> 14 `i `uc -> -> 1 `i `uc ]
+"183
+[; ;naves.c: 183:                 LCDPutChar(5);
+[e ( _LCDPutChar (1 -> -> 5 `i `uc ]
+"184
+[; ;naves.c: 184:             break;
+[e $U 765  ]
+"185
+[; ;naves.c: 185:             case 2:
+[e :U 769 ]
+"186
+[; ;naves.c: 186:                 LCDGoto(14, 1);
+[e ( _LCDGoto (2 , -> -> 14 `i `uc -> -> 1 `i `uc ]
+"187
+[; ;naves.c: 187:                 LCDPutStr(" ");
+[e ( _LCDPutStr (1 :s 17C ]
+[v F5856 `uc ~T0 @X0 -> 8 `i s ]
+[i F5856
+:U ..
+"188
+[; ;naves.c: 188:                 unsigned char shield22 [ ] = {0x00,0x1F,0x11,0x11,0x1F,0x0E,0x04,0x00};
+-> -> 0 `i `uc
+-> -> 31 `i `uc
+-> -> 17 `i `uc
+-> -> 17 `i `uc
+-> -> 31 `i `uc
+-> -> 14 `i `uc
+-> -> 4 `i `uc
+-> -> 0 `i `uc
+..
+]
+[v _shield22 `uc ~T0 @X0 -> 8 `i a ]
+[e = _shield22 F5856 ]
+"189
+[; ;naves.c: 189:                 createCustomCharacter(shield22,6);
+[e ( _createCustomCharacter (2 , &U _shield22 -> -> 6 `i `uc ]
+"190
+[; ;naves.c: 190:                 LCDGoto(14, 1);
+[e ( _LCDGoto (2 , -> -> 14 `i `uc -> -> 1 `i `uc ]
+"191
+[; ;naves.c: 191:                 LCDPutChar(6);
+[e ( _LCDPutChar (1 -> -> 6 `i `uc ]
+"192
+[; ;naves.c: 192:             break;
+[e $U 765  ]
+"193
+[; ;naves.c: 193:                 case 3:
+[e :U 770 ]
+"194
+[; ;naves.c: 194:                 LCDGoto(14, 1);
+[e ( _LCDGoto (2 , -> -> 14 `i `uc -> -> 1 `i `uc ]
+"195
+[; ;naves.c: 195:                 LCDPutStr(" ");
+[e ( _LCDPutStr (1 :s 18C ]
+"196
+[; ;naves.c: 196:                 LCDGoto(14, 1);
+[e ( _LCDGoto (2 , -> -> 14 `i `uc -> -> 1 `i `uc ]
+"197
+[; ;naves.c: 197:                 LCDPutChar(8);
+[e ( _LCDPutChar (1 -> -> 8 `i `uc ]
+"198
+[; ;naves.c: 198:             break;
+[e $U 765  ]
+"199
+[; ;naves.c: 199:             default:
+[e :U 771 ]
+"200
+[; ;naves.c: 200:                 break;
+[e $U 765  ]
+"201
+[; ;naves.c: 201:             }
+}
+[e $U 765  ]
+[e :U 766 ]
+[e [\ -> _shield2 `i , $ -> 0 `i 767
+ , $ -> 1 `i 768
+ , $ -> 2 `i 769
+ , $ -> 3 `i 770
+ 771 ]
+[e :U 765 ]
+"203
+[; ;naves.c: 203:     }
+[e :UE 757 ]
+}
+[a 1C 32 0 ]
+[a 2C 32 0 ]
+[a 3C 32 0 ]
+[a 4C 32 0 ]
+[a 5C 32 0 ]
+[a 6C 32 0 ]
+[a 7C 32 0 ]
+[a 8C 32 0 ]
+[a 9C 32 0 ]
+[a 10C 32 0 ]
+[a 11C 32 0 ]
+[a 12C 32 0 ]
+[a 13C 32 0 ]
+[a 14C 32 0 ]
+[a 15C 32 0 ]
+[a 16C 32 0 ]
+[a 17C 32 0 ]
+[a 18C 32 0 ]

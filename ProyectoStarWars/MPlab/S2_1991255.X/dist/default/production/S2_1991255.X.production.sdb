@@ -107,7 +107,7 @@
 "134
 [v _cleanFullMenu cleanFullMenu `(v  1 e 1 0 ]
 [v i1_cleanFullMenu cleanFullMenu `(v  1 e 1 0 ]
-"35 C:\Users\davfe\Documents\GitHub\Cembido\ProyectoStarWars\MPlab\S2_1991255.X\naves.c
+"38 C:\Users\davfe\Documents\GitHub\Cembido\ProyectoStarWars\MPlab\S2_1991255.X\naves.c
 [v _printShip printShip `(v  1 e 1 0 ]
 [s S207 . 1 `uc 1 IOCIF 1 0 :1:0 
 `uc 1 INTF 1 0 :1:1 
@@ -274,6 +274,8 @@
 "29 C:\Users\davfe\Documents\GitHub\Cembido\ProyectoStarWars\MPlab\S2_1991255.X\main.c
 [v _main main `(v  1 e 1 0 ]
 {
+"50
+[v main@Pattern8 Pattern8 `[8]uc  1 a 8 40 ]
 "48
 [v main@Pattern5 Pattern5 `[8]uc  1 a 8 32 ]
 "46
@@ -294,7 +296,9 @@
 [v main@F5667 F5667 `[8]uc  1 s 8 F5667 ]
 "46
 [v main@F5669 F5669 `[8]uc  1 s 8 F5669 ]
-"73
+"48
+[v main@F5671 F5671 `[8]uc  1 s 8 F5671 ]
+"75
 } 0
 "32 C:\Users\davfe\Documents\GitHub\Cembido\ProyectoStarWars\MPlab\S2_1991255.X\menu.c
 [v _printMenu printMenu `(v  1 e 1 0 ]
@@ -347,13 +351,11 @@
 "29
 [v _createCustomCharacter createCustomCharacter `(v  1 e 1 0 ]
 {
-[v createCustomCharacter@Pattern Pattern `*.4uc  1 a 1 wreg ]
 "45
-[v createCustomCharacter@i i `i  1 a 2 16 ]
+[v createCustomCharacter@i i `i  1 a 2 17 ]
 "29
-[v createCustomCharacter@Pattern Pattern `*.4uc  1 a 1 wreg ]
-[v createCustomCharacter@Location Location `DCuc  1 p 1 13 ]
-[v createCustomCharacter@Pattern Pattern `*.4uc  1 a 1 15 ]
+[v createCustomCharacter@Pattern Pattern `*.39uc  1 p 2 13 ]
+[v createCustomCharacter@Location Location `DCuc  1 p 1 15 ]
 "52
 } 0
 "101 C:\Users\davfe\Documents\GitHub\Cembido\ProyectoStarWars\MPlab\S2_1991255.X\lcd.c
@@ -465,10 +467,10 @@
 {
 "132
 } 0
-"35 C:\Users\davfe\Documents\GitHub\Cembido\ProyectoStarWars\MPlab\S2_1991255.X\naves.c
+"38 C:\Users\davfe\Documents\GitHub\Cembido\ProyectoStarWars\MPlab\S2_1991255.X\naves.c
 [v _printShip printShip `(v  1 e 1 0 ]
 {
-"47
+"50
 } 0
 "159 C:\Users\davfe\Documents\GitHub\Cembido\ProyectoStarWars\MPlab\S2_1991255.X\lcd.c
 [v _LCDClear LCDClear `(v  1 e 1 0 ]

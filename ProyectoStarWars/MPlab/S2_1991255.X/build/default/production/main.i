@@ -9322,6 +9322,8 @@ void main()
 
     unsigned char Pattern5 [ ] = {0x0E,0x02,0x07,0x1F,0x07,0x02,0x0E,0x00};
 
+    unsigned char Pattern8 [ ] = {0x00,0x1F,0x1F,0x1F,0x1F,0x0E,0x04,0x00};
+
 
 
     createCustomCharacter(Pattern1,1);
@@ -9329,7 +9331,7 @@ void main()
     createCustomCharacter(Pattern3,2);
     createCustomCharacter(Pattern4,3);
     createCustomCharacter(Pattern5,4);
-
+    createCustomCharacter(Pattern8,7);
 
 
 
