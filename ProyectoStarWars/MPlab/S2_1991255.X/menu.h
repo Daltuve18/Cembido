@@ -20,4 +20,5 @@ void printMenu (void);
 void cleanMenu (void);
 void cleanFullMenu (void);
 void mainMenu(void);
+void startFight (void);
 

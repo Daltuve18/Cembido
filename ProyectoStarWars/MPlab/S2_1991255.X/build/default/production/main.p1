@@ -900,8 +900,8 @@ Version 4.0 HI-TECH Software Intermediate Code
 "36
 [; ;main.c: 36:     LCD_Initialize();
 [e ( _LCD_Initialize ..  ]
-[v F5655 `uc ~T0 @X0 -> 8 `i s ]
-[i F5655
+[v F5656 `uc ~T0 @X0 -> 8 `i s ]
+[i F5656
 :U ..
 "40
 [; ;main.c: 40:     unsigned char Pattern1 [ ] = {0x18,0x10,0x1F,0x1F,0x1F,0x10,0x18,0x00};
@@ -916,9 +916,9 @@ Version 4.0 HI-TECH Software Intermediate Code
 ..
 ]
 [v _Pattern1 `uc ~T0 @X0 -> 8 `i a ]
-[e = _Pattern1 F5655 ]
-[v F5657 `uc ~T0 @X0 -> 8 `i s ]
-[i F5657
+[e = _Pattern1 F5656 ]
+[v F5658 `uc ~T0 @X0 -> 8 `i s ]
+[i F5658
 :U ..
 "42
 [; ;main.c: 42:     unsigned char Pattern2 [ ] = {0x00,0x0A,0x11,0x15,0x15,0x11,0x0A,0x00};
@@ -933,9 +933,9 @@ Version 4.0 HI-TECH Software Intermediate Code
 ..
 ]
 [v _Pattern2 `uc ~T0 @X0 -> 8 `i a ]
-[e = _Pattern2 F5657 ]
-[v F5659 `uc ~T0 @X0 -> 8 `i s ]
-[i F5659
+[e = _Pattern2 F5658 ]
+[v F5660 `uc ~T0 @X0 -> 8 `i s ]
+[i F5660
 :U ..
 "44
 [; ;main.c: 44:     unsigned char Pattern3 [ ] = {0x00,0x00,0x0E,0x1F,0x0E,0x00,0x00,0x00} ;
@@ -950,9 +950,9 @@ Version 4.0 HI-TECH Software Intermediate Code
 ..
 ]
 [v _Pattern3 `uc ~T0 @X0 -> 8 `i a ]
-[e = _Pattern3 F5659 ]
-[v F5661 `uc ~T0 @X0 -> 8 `i s ]
-[i F5661
+[e = _Pattern3 F5660 ]
+[v F5662 `uc ~T0 @X0 -> 8 `i s ]
+[i F5662
 :U ..
 "46
 [; ;main.c: 46:     unsigned char Pattern4 [ ] = {0x00,0x00,0x0A,0x1F,0x1F,0x0E,0x04,0x00} ;
@@ -967,7 +967,7 @@ Version 4.0 HI-TECH Software Intermediate Code
 ..
 ]
 [v _Pattern4 `uc ~T0 @X0 -> 8 `i a ]
-[e = _Pattern4 F5661 ]
+[e = _Pattern4 F5662 ]
 "50
 [; ;main.c: 50:     createCustomCharacter(Pattern1,1);
 [e ( _createCustomCharacter (2 , &U _Pattern1 -> -> 1 `i `uc ]

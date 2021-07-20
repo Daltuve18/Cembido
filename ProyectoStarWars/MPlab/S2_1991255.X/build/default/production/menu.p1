@@ -14,6 +14,13 @@ Version 4.0 HI-TECH Software Intermediate Code
 "22
 [; ;./menu.h: 22: void mainMenu(void);
 [v _mainMenu `(v ~T0 @X0 0 ef ]
+"23 ./functions.h
+[; ;./functions.h: 23: void idleScreen (void);
+[v _idleScreen `(v ~T0 @X0 0 ef ]
+[v F5685 `(v ~T0 @X0 1 tf1`ul ]
+"92 D:/Programas/packs/Microchip/PIC12-16F1xxx_DFP/1.2.63/xc8\pic\include\pic.h
+[v __delay `JF5685 ~T0 @X0 0 e ]
+[p i __delay ]
 "54 D:/Programas/packs/Microchip/PIC12-16F1xxx_DFP/1.2.63/xc8\pic\include\proc\pic16lf1718.h
 [; ;D:/Programas/packs/Microchip/PIC12-16F1xxx_DFP/1.2.63/xc8\pic\include\proc\pic16lf1718.h: 54: __asm("INDF0 equ 00h");
 [; <" INDF0 equ 00h ;# ">
@@ -872,190 +879,269 @@ Version 4.0 HI-TECH Software Intermediate Code
 "15211
 [; ;D:/Programas/packs/Microchip/PIC12-16F1xxx_DFP/1.2.63/xc8\pic\include\proc\pic16lf1718.h: 15211: __asm("TOSH equ 0FEFh");
 [; <" TOSH equ 0FEFh ;# ">
-"21 menu.c
-[; ;menu.c: 21: uint8_t lcdOffset = 3;
+"22 menu.c
+[; ;menu.c: 22: uint8_t lcdOffset = 3;
 [v _lcdOffset `uc ~T0 @X0 1 e ]
 [i _lcdOffset
 -> -> 3 `i `uc
 ]
-"22
-[; ;menu.c: 22: _Bool inGame = 0;
+"23
+[; ;menu.c: 23: _Bool inGame = 0;
 [v _inGame `a ~T0 @X0 1 e ]
 [i _inGame
 -> -> 0 `i `a
 ]
-"23
-[; ;menu.c: 23: uint8_t mainState = 1;
+"24
+[; ;menu.c: 24: uint8_t mainState = 0;
 [v _mainState `uc ~T0 @X0 1 e ]
 [i _mainState
--> -> 1 `i `uc
+-> -> 0 `i `uc
 ]
-"24
-[; ;menu.c: 24: uint8_t playerTurn = 0;
+"25
+[; ;menu.c: 25: uint8_t playerTurn = 0;
 [v _playerTurn `uc ~T0 @X0 1 e ]
 [i _playerTurn
 -> -> 0 `i `uc
 ]
-"26
-[; ;menu.c: 26: void printMenu (void)
+"27
+[; ;menu.c: 27: void printMenu (void)
 [v _printMenu `(v ~T0 @X0 1 ef ]
-"28
-[; ;menu.c: 28: {
+"29
+[; ;menu.c: 29: {
 {
 [e :U _printMenu ]
 [f ]
-"29
-[; ;menu.c: 29:     if(inGame){
+"30
+[; ;menu.c: 30:     if(inGame){
 [e $ ! != -> _inGame `i -> 0 `i 738  ]
 {
-"30
-[; ;menu.c: 30:         cleanMenu();
-[e ( _cleanMenu ..  ]
 "31
-[; ;menu.c: 31:         LCDGoto(0, 0);
-[e ( _LCDGoto (2 , -> -> 0 `i `uc -> -> 0 `i `uc ]
+[; ;menu.c: 31:         cleanMenu();
+[e ( _cleanMenu ..  ]
 "32
-[; ;menu.c: 32:         LCDPutStr("   Menu   ");
-[e ( _LCDPutStr (1 :s 1C ]
+[; ;menu.c: 32:         LCDGoto(lcdOffset, 0);
+[e ( _LCDGoto (2 , _lcdOffset -> -> 0 `i `uc ]
 "33
-[; ;menu.c: 33:     }else {
+[; ;menu.c: 33:         LCDPutStr("   Menu    ");
+[e ( _LCDPutStr (1 :s 1C ]
+"34
+[; ;menu.c: 34:     }else {
 }
 [e $U 739  ]
 [e :U 738 ]
 {
-"34
-[; ;menu.c: 34:         cleanFullMenu();
-[e ( _cleanFullMenu ..  ]
 "35
-[; ;menu.c: 35:         mainMenu();
-[e ( _mainMenu ..  ]
+[; ;menu.c: 35:         cleanFullMenu();
+[e ( _cleanFullMenu ..  ]
 "36
-[; ;menu.c: 36:     }
+[; ;menu.c: 36:         mainMenu();
+[e ( _mainMenu ..  ]
+"37
+[; ;menu.c: 37:     }
 }
 [e :U 739 ]
-"37
-[; ;menu.c: 37: }
+"38
+[; ;menu.c: 38: }
 [e :UE 737 ]
 }
-"39
-[; ;menu.c: 39: void mainMenu(void){
+"40
+[; ;menu.c: 40: void mainMenu(void){
 [v _mainMenu `(v ~T0 @X0 1 ef ]
 {
 [e :U _mainMenu ]
 [f ]
-"40
-[; ;menu.c: 40:     switch (mainState){
+"41
+[; ;menu.c: 41:     switch (mainState){
 [e $U 742  ]
 {
-"41
-[; ;menu.c: 41:         case 0:
-[e :U 743 ]
 "42
-[; ;menu.c: 42:             LCDGoto(0, 0);
-[e ( _LCDGoto (2 , -> -> 0 `i `uc -> -> 0 `i `uc ]
+[; ;menu.c: 42:         case 0:
+[e :U 743 ]
 "43
-[; ;menu.c: 43:             LCDPutStr("Select ship#1");
-[e ( _LCDPutStr (1 :s 2C ]
-"44
-[; ;menu.c: 44:             LCDGoto(0, 1);
-[e ( _LCDGoto (2 , -> -> 0 `i `uc -> -> 1 `i `uc ]
-"45
-[; ;menu.c: 45:             LCDPutStr("> Tie Fighter");
-[e ( _LCDPutStr (1 :s 3C ]
-"46
-[; ;menu.c: 46:         break;
-[e $U 741  ]
-"47
-[; ;menu.c: 47:         case 1:
-[e :U 744 ]
-"48
-[; ;menu.c: 48:           LCDGoto(0, 0);
+[; ;menu.c: 43:             LCDGoto(0, 0);
 [e ( _LCDGoto (2 , -> -> 0 `i `uc -> -> 0 `i `uc ]
-"49
-[; ;menu.c: 49:             LCDPutStr("  Tie Fighter");
-[e ( _LCDPutStr (1 :s 4C ]
-"50
-[; ;menu.c: 50:             LCDGoto(0, 1);
+"44
+[; ;menu.c: 44:             LCDPutStr("Select ship#1");
+[e ( _LCDPutStr (1 :s 2C ]
+"45
+[; ;menu.c: 45:             LCDGoto(0, 1);
 [e ( _LCDGoto (2 , -> -> 0 `i `uc -> -> 1 `i `uc ]
+"46
+[; ;menu.c: 46:             LCDPutStr("> Tie Fighter");
+[e ( _LCDPutStr (1 :s 3C ]
+"47
+[; ;menu.c: 47:         break;
+[e $U 741  ]
+"48
+[; ;menu.c: 48:         case 1:
+[e :U 744 ]
+"49
+[; ;menu.c: 49:             LCDGoto(0, 0);
+[e ( _LCDGoto (2 , -> -> 0 `i `uc -> -> 0 `i `uc ]
+"50
+[; ;menu.c: 50:             LCDPutStr("  Tie Fighter");
+[e ( _LCDPutStr (1 :s 4C ]
 "51
-[; ;menu.c: 51:             LCDPutStr("> X wing");
-[e ( _LCDPutStr (1 :s 5C ]
+[; ;menu.c: 51:             LCDGoto(0, 1);
+[e ( _LCDGoto (2 , -> -> 0 `i `uc -> -> 1 `i `uc ]
 "52
-[; ;menu.c: 52:         break;
-[e $U 741  ]
+[; ;menu.c: 52:             LCDPutStr("> X wing");
+[e ( _LCDPutStr (1 :s 5C ]
 "53
-[; ;menu.c: 53:         default:
-[e :U 745 ]
-"54
-[; ;menu.c: 54:             break;
+[; ;menu.c: 53:         break;
 [e $U 741  ]
+"54
+[; ;menu.c: 54:         case 2:
+[e :U 745 ]
 "55
-[; ;menu.c: 55:     }
+[; ;menu.c: 55:             LCDGoto(0, 0);
+[e ( _LCDGoto (2 , -> -> 0 `i `uc -> -> 0 `i `uc ]
+"56
+[; ;menu.c: 56:             LCDPutStr("Select ship#2");
+[e ( _LCDPutStr (1 :s 6C ]
+"57
+[; ;menu.c: 57:             LCDGoto(0, 1);
+[e ( _LCDGoto (2 , -> -> 0 `i `uc -> -> 1 `i `uc ]
+"58
+[; ;menu.c: 58:             LCDPutStr("> Tie Fighter");
+[e ( _LCDPutStr (1 :s 7C ]
+"59
+[; ;menu.c: 59:         break;
+[e $U 741  ]
+"60
+[; ;menu.c: 60:         case 3:
+[e :U 746 ]
+"61
+[; ;menu.c: 61:             LCDGoto(0, 0);
+[e ( _LCDGoto (2 , -> -> 0 `i `uc -> -> 0 `i `uc ]
+"62
+[; ;menu.c: 62:             LCDPutStr("  Tie Fighter");
+[e ( _LCDPutStr (1 :s 8C ]
+"63
+[; ;menu.c: 63:             LCDGoto(0, 1);
+[e ( _LCDGoto (2 , -> -> 0 `i `uc -> -> 1 `i `uc ]
+"64
+[; ;menu.c: 64:             LCDPutStr("> X wing");
+[e ( _LCDPutStr (1 :s 9C ]
+"65
+[; ;menu.c: 65:         break;
+[e $U 741  ]
+"66
+[; ;menu.c: 66:         default:
+[e :U 747 ]
+"67
+[; ;menu.c: 67:             break;
+[e $U 741  ]
+"68
+[; ;menu.c: 68:     }
 }
 [e $U 741  ]
 [e :U 742 ]
 [e [\ -> _mainState `i , $ -> 0 `i 743
  , $ -> 1 `i 744
- 745 ]
+ , $ -> 2 `i 745
+ , $ -> 3 `i 746
+ 747 ]
 [e :U 741 ]
-"56
-[; ;menu.c: 56: }
+"69
+[; ;menu.c: 69: }
 [e :UE 740 ]
 }
-"58
-[; ;menu.c: 58: void cleanMenu (void)
+"71
+[; ;menu.c: 71: void cleanMenu (void)
 [v _cleanMenu `(v ~T0 @X0 1 ef ]
-"60
-[; ;menu.c: 60: {
+"73
+[; ;menu.c: 73: {
 {
 [e :U _cleanMenu ]
 [f ]
-"61
-[; ;menu.c: 61:     LCDGoto(lcdOffset, 0);
+"74
+[; ;menu.c: 74:     LCDGoto(lcdOffset, 0);
 [e ( _LCDGoto (2 , _lcdOffset -> -> 0 `i `uc ]
-"62
-[; ;menu.c: 62:     LCDPutStr("          ");
-[e ( _LCDPutStr (1 :s 6C ]
-"63
-[; ;menu.c: 63:     LCDGoto(lcdOffset, 1);
+"75
+[; ;menu.c: 75:     LCDPutStr("          ");
+[e ( _LCDPutStr (1 :s 10C ]
+"76
+[; ;menu.c: 76:     LCDGoto(lcdOffset, 1);
 [e ( _LCDGoto (2 , _lcdOffset -> -> 1 `i `uc ]
-"64
-[; ;menu.c: 64:     LCDPutStr("          ");
-[e ( _LCDPutStr (1 :s 7C ]
-"66
-[; ;menu.c: 66: }
-[e :UE 746 ]
+"77
+[; ;menu.c: 77:     LCDPutStr("          ");
+[e ( _LCDPutStr (1 :s 11C ]
+"79
+[; ;menu.c: 79: }
+[e :UE 748 ]
 }
-"68
-[; ;menu.c: 68: void cleanFullMenu (void)
+"82
+[; ;menu.c: 82: void startFight (void)
+[v _startFight `(v ~T0 @X0 1 ef ]
+"84
+[; ;menu.c: 84: {
+{
+[e :U _startFight ]
+[f ]
+"85
+[; ;menu.c: 85:     cleanFullMenu();
+[e ( _cleanFullMenu ..  ]
+"86
+[; ;menu.c: 86:     idleScreen();
+[e ( _idleScreen ..  ]
+"87
+[; ;menu.c: 87:     LCDGoto(lcdOffset, 0);
+[e ( _LCDGoto (2 , _lcdOffset -> -> 0 `i `uc ]
+"88
+[; ;menu.c: 88:     LCDPutStr("Start Fight");
+[e ( _LCDPutStr (1 :s 12C ]
+"89
+[; ;menu.c: 89:     _delay((unsigned long)((2000)*(500000/4000.0)));
+[e ( __delay (1 -> * -> -> 2000 `i `d / -> -> 500000 `l `d .4000.0 `ul ]
+"90
+[; ;menu.c: 90:     mainState = 0;
+[e = _mainState -> -> 0 `i `uc ]
+"91
+[; ;menu.c: 91:     inGame = 1;
+[e = _inGame -> -> 1 `i `a ]
+"92
+[; ;menu.c: 92:     printMenu();
+[e ( _printMenu ..  ]
+"95
+[; ;menu.c: 95: }
+[e :UE 749 ]
+}
+"97
+[; ;menu.c: 97: void cleanFullMenu (void)
 [v _cleanFullMenu `(v ~T0 @X0 1 ef ]
-"70
-[; ;menu.c: 70: {
+"99
+[; ;menu.c: 99: {
 {
 [e :U _cleanFullMenu ]
 [f ]
-"71
-[; ;menu.c: 71:     LCDGoto(0, 0);
+"100
+[; ;menu.c: 100:     LCDGoto(0, 0);
 [e ( _LCDGoto (2 , -> -> 0 `i `uc -> -> 0 `i `uc ]
-"72
-[; ;menu.c: 72:     LCDPutStr("                ");
-[e ( _LCDPutStr (1 :s 8C ]
-"73
-[; ;menu.c: 73:     LCDGoto(0, 1);
+"101
+[; ;menu.c: 101:     LCDPutStr("                ");
+[e ( _LCDPutStr (1 :s 13C ]
+"102
+[; ;menu.c: 102:     LCDGoto(0, 1);
 [e ( _LCDGoto (2 , -> -> 0 `i `uc -> -> 1 `i `uc ]
-"74
-[; ;menu.c: 74:     LCDPutStr("                ");
-[e ( _LCDPutStr (1 :s 9C ]
-"76
-[; ;menu.c: 76: }
-[e :UE 747 ]
+"103
+[; ;menu.c: 103:     LCDPutStr("                ");
+[e ( _LCDPutStr (1 :s 14C ]
+"105
+[; ;menu.c: 105: }
+[e :UE 750 ]
 }
+[a 12C 83 116 97 114 116 32 70 105 103 104 116 0 ]
 [a 3C 62 32 84 105 101 32 70 105 103 104 116 101 114 0 ]
+[a 7C 62 32 84 105 101 32 70 105 103 104 116 101 114 0 ]
 [a 4C 32 32 84 105 101 32 70 105 103 104 116 101 114 0 ]
+[a 8C 32 32 84 105 101 32 70 105 103 104 116 101 114 0 ]
 [a 5C 62 32 88 32 119 105 110 103 0 ]
+[a 9C 62 32 88 32 119 105 110 103 0 ]
+[a 6C 83 101 108 101 99 116 32 115 104 105 112 35 50 0 ]
 [a 2C 83 101 108 101 99 116 32 115 104 105 112 35 49 0 ]
-[a 1C 32 32 32 77 101 110 117 32 32 32 0 ]
-[a 8C 32 32 32 32 32 32 32 32 32 32 32 32 32 32 32 32 0 ]
-[a 9C 32 32 32 32 32 32 32 32 32 32 32 32 32 32 32 32 0 ]
-[a 6C 32 32 32 32 32 32 32 32 32 32 0 ]
-[a 7C 32 32 32 32 32 32 32 32 32 32 0 ]
+[a 1C 32 32 32 77 101 110 117 32 32 32 32 0 ]
+[a 13C 32 32 32 32 32 32 32 32 32 32 32 32 32 32 32 32 0 ]
+[a 14C 32 32 32 32 32 32 32 32 32 32 32 32 32 32 32 32 0 ]
+[a 10C 32 32 32 32 32 32 32 32 32 32 0 ]
+[a 11C 32 32 32 32 32 32 32 32 32 32 0 ]
