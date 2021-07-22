@@ -982,8 +982,8 @@ Version 4.0 HI-TECH Software Intermediate Code
 "63
 [; ;naves.c: 63:                 LCDPutStr(" ");
 [e ( _LCDPutStr (1 :s 2C ]
-[v F5837 `uc ~T0 @X0 -> 8 `i s ]
-[i F5837
+[v F5851 `uc ~T0 @X0 -> 8 `i s ]
+[i F5851
 :U ..
 "64
 [; ;naves.c: 64:                 unsigned char heart11 [ ] = {0x00,0x0A,0x15,0x11,0x11,0x0A,0x04,0x00};
@@ -998,7 +998,7 @@ Version 4.0 HI-TECH Software Intermediate Code
 ..
 ]
 [v _heart11 `uc ~T0 @X0 -> 8 `i a ]
-[e = _heart11 F5837 ]
+[e = _heart11 F5851 ]
 "65
 [; ;naves.c: 65:                 createCustomCharacter(heart11,5);
 [e ( _createCustomCharacter (2 , &U _heart11 -> -> 5 `i `uc ]
@@ -1020,8 +1020,8 @@ Version 4.0 HI-TECH Software Intermediate Code
 "71
 [; ;naves.c: 71:                 LCDPutStr(" ");
 [e ( _LCDPutStr (1 :s 3C ]
-[v F5839 `uc ~T0 @X0 -> 8 `i s ]
-[i F5839
+[v F5853 `uc ~T0 @X0 -> 8 `i s ]
+[i F5853
 :U ..
 "72
 [; ;naves.c: 72:                 unsigned char heart12 [ ] = {0x00,0x0A,0x1D,0x19,0x19,0x0A,0x04,0x00};
@@ -1036,7 +1036,7 @@ Version 4.0 HI-TECH Software Intermediate Code
 ..
 ]
 [v _heart12 `uc ~T0 @X0 -> 8 `i a ]
-[e = _heart12 F5839 ]
+[e = _heart12 F5853 ]
 "73
 [; ;naves.c: 73:                 createCustomCharacter(heart12,5);
 [e ( _createCustomCharacter (2 , &U _heart12 -> -> 5 `i `uc ]
@@ -1058,8 +1058,8 @@ Version 4.0 HI-TECH Software Intermediate Code
 "79
 [; ;naves.c: 79:                 LCDPutStr(" ");
 [e ( _LCDPutStr (1 :s 4C ]
-[v F5841 `uc ~T0 @X0 -> 8 `i s ]
-[i F5841
+[v F5855 `uc ~T0 @X0 -> 8 `i s ]
+[i F5855
 :U ..
 "80
 [; ;naves.c: 80:                 unsigned char heart13 [ ] = {0x00,0x0A,0x1D,0x1D,0x1D,0x0E,0x04,0x00};
@@ -1074,7 +1074,7 @@ Version 4.0 HI-TECH Software Intermediate Code
 ..
 ]
 [v _heart13 `uc ~T0 @X0 -> 8 `i a ]
-[e = _heart13 F5841 ]
+[e = _heart13 F5855 ]
 "81
 [; ;naves.c: 81:                 createCustomCharacter(heart13,5);
 [e ( _createCustomCharacter (2 , &U _heart13 -> -> 5 `i `uc ]
@@ -1150,8 +1150,8 @@ Version 4.0 HI-TECH Software Intermediate Code
 "103
 [; ;naves.c: 103:                 LCDPutStr(" ");
 [e ( _LCDPutStr (1 :s 7C ]
-[v F5843 `uc ~T0 @X0 -> 8 `i s ]
-[i F5843
+[v F5857 `uc ~T0 @X0 -> 8 `i s ]
+[i F5857
 :U ..
 "104
 [; ;naves.c: 104:                 unsigned char heart21 [ ] = {0x00,0x0A,0x15,0x11,0x11,0x0A,0x04,0x00};
@@ -1166,7 +1166,7 @@ Version 4.0 HI-TECH Software Intermediate Code
 ..
 ]
 [v _heart21 `uc ~T0 @X0 -> 8 `i a ]
-[e = _heart21 F5843 ]
+[e = _heart21 F5857 ]
 "105
 [; ;naves.c: 105:                 createCustomCharacter(heart21,6);
 [e ( _createCustomCharacter (2 , &U _heart21 -> -> 6 `i `uc ]
@@ -1188,8 +1188,8 @@ Version 4.0 HI-TECH Software Intermediate Code
 "111
 [; ;naves.c: 111:                 LCDPutStr(" ");
 [e ( _LCDPutStr (1 :s 8C ]
-[v F5845 `uc ~T0 @X0 -> 8 `i s ]
-[i F5845
+[v F5859 `uc ~T0 @X0 -> 8 `i s ]
+[i F5859
 :U ..
 "112
 [; ;naves.c: 112:                 unsigned char heart22 [ ] = {0x00,0x0A,0x1D,0x19,0x19,0x0A,0x04,0x00};
@@ -1204,7 +1204,7 @@ Version 4.0 HI-TECH Software Intermediate Code
 ..
 ]
 [v _heart22 `uc ~T0 @X0 -> 8 `i a ]
-[e = _heart22 F5845 ]
+[e = _heart22 F5859 ]
 "113
 [; ;naves.c: 113:                 createCustomCharacter(heart22,6);
 [e ( _createCustomCharacter (2 , &U _heart22 -> -> 6 `i `uc ]
@@ -1226,8 +1226,8 @@ Version 4.0 HI-TECH Software Intermediate Code
 "119
 [; ;naves.c: 119:                 LCDPutStr(" ");
 [e ( _LCDPutStr (1 :s 9C ]
-[v F5847 `uc ~T0 @X0 -> 8 `i s ]
-[i F5847
+[v F5861 `uc ~T0 @X0 -> 8 `i s ]
+[i F5861
 :U ..
 "120
 [; ;naves.c: 120:                 unsigned char heart23 [ ] = {0x00,0x0A,0x1D,0x1D,0x1D,0x0E,0x04,0x00};
@@ -1242,7 +1242,7 @@ Version 4.0 HI-TECH Software Intermediate Code
 ..
 ]
 [v _heart23 `uc ~T0 @X0 -> 8 `i a ]
-[e = _heart23 F5847 ]
+[e = _heart23 F5861 ]
 "121
 [; ;naves.c: 121:                 createCustomCharacter(heart23,6);
 [e ( _createCustomCharacter (2 , &U _heart23 -> -> 6 `i `uc ]
@@ -1328,8 +1328,8 @@ Version 4.0 HI-TECH Software Intermediate Code
 "147
 [; ;naves.c: 147:                 LCDPutStr(" ");
 [e ( _LCDPutStr (1 :s 12C ]
-[v F5850 `uc ~T0 @X0 -> 8 `i s ]
-[i F5850
+[v F5864 `uc ~T0 @X0 -> 8 `i s ]
+[i F5864
 :U ..
 "148
 [; ;naves.c: 148:                 unsigned char shield11 [ ] = {0x00,0x1F,0x11,0x11,0x11,0x0A,0x04,0x00};
@@ -1344,7 +1344,7 @@ Version 4.0 HI-TECH Software Intermediate Code
 ..
 ]
 [v _shield11 `uc ~T0 @X0 -> 8 `i a ]
-[e = _shield11 F5850 ]
+[e = _shield11 F5864 ]
 "149
 [; ;naves.c: 149:                 createCustomCharacter(shield11,5);
 [e ( _createCustomCharacter (2 , &U _shield11 -> -> 5 `i `uc ]
@@ -1366,8 +1366,8 @@ Version 4.0 HI-TECH Software Intermediate Code
 "155
 [; ;naves.c: 155:                 LCDPutStr(" ");
 [e ( _LCDPutStr (1 :s 13C ]
-[v F5852 `uc ~T0 @X0 -> 8 `i s ]
-[i F5852
+[v F5866 `uc ~T0 @X0 -> 8 `i s ]
+[i F5866
 :U ..
 "156
 [; ;naves.c: 156:                 unsigned char shield12 [ ] = {0x00,0x1F,0x11,0x11,0x1F,0x0E,0x04,0x00};
@@ -1382,7 +1382,7 @@ Version 4.0 HI-TECH Software Intermediate Code
 ..
 ]
 [v _shield12 `uc ~T0 @X0 -> 8 `i a ]
-[e = _shield12 F5852 ]
+[e = _shield12 F5866 ]
 "157
 [; ;naves.c: 157:                 createCustomCharacter(shield12,5);
 [e ( _createCustomCharacter (2 , &U _shield12 -> -> 5 `i `uc ]
@@ -1457,8 +1457,8 @@ Version 4.0 HI-TECH Software Intermediate Code
 "179
 [; ;naves.c: 179:                 LCDPutStr(" ");
 [e ( _LCDPutStr (1 :s 16C ]
-[v F5854 `uc ~T0 @X0 -> 8 `i s ]
-[i F5854
+[v F5868 `uc ~T0 @X0 -> 8 `i s ]
+[i F5868
 :U ..
 "180
 [; ;naves.c: 180:                 unsigned char shield21 [ ] = {0x00,0x1F,0x11,0x11,0x11,0x0A,0x04,0x00};
@@ -1473,7 +1473,7 @@ Version 4.0 HI-TECH Software Intermediate Code
 ..
 ]
 [v _shield21 `uc ~T0 @X0 -> 8 `i a ]
-[e = _shield21 F5854 ]
+[e = _shield21 F5868 ]
 "181
 [; ;naves.c: 181:                 createCustomCharacter(shield21,6);
 [e ( _createCustomCharacter (2 , &U _shield21 -> -> 6 `i `uc ]
@@ -1495,8 +1495,8 @@ Version 4.0 HI-TECH Software Intermediate Code
 "187
 [; ;naves.c: 187:                 LCDPutStr(" ");
 [e ( _LCDPutStr (1 :s 17C ]
-[v F5856 `uc ~T0 @X0 -> 8 `i s ]
-[i F5856
+[v F5870 `uc ~T0 @X0 -> 8 `i s ]
+[i F5870
 :U ..
 "188
 [; ;naves.c: 188:                 unsigned char shield22 [ ] = {0x00,0x1F,0x11,0x11,0x1F,0x0E,0x04,0x00};
@@ -1511,7 +1511,7 @@ Version 4.0 HI-TECH Software Intermediate Code
 ..
 ]
 [v _shield22 `uc ~T0 @X0 -> 8 `i a ]
-[e = _shield22 F5856 ]
+[e = _shield22 F5870 ]
 "189
 [; ;naves.c: 189:                 createCustomCharacter(shield22,6);
 [e ( _createCustomCharacter (2 , &U _shield22 -> -> 6 `i `uc ]

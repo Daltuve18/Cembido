@@ -12,6 +12,7 @@ Date          : 7/18/2021
 -----------------------------------------------------------------------------
 
 ***/
+extern double counter;
 
-double taylorSine(double x);
+bool taylorSine(void);
 

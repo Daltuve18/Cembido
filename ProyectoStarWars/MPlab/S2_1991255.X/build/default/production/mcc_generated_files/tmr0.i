@@ -1,4 +1,4 @@
-# 1 "lcd.c"
+# 1 "mcc_generated_files/tmr0.c"
 # 1 "<built-in>" 1
 # 1 "<built-in>" 3
 # 288 "<built-in>" 3
@@ -6,8 +6,8 @@
 # 1 "<built-in>" 2
 # 1 "C:/Program Files/Microchip/MPLABX/v5.45/packs/Microchip/PIC12-16F1xxx_DFP/1.2.63/xc8\\pic\\include\\language_support.h" 1 3
 # 2 "<built-in>" 2
-# 1 "lcd.c" 2
-# 43 "lcd.c"
+# 1 "mcc_generated_files/tmr0.c" 2
+# 51 "mcc_generated_files/tmr0.c"
 # 1 "C:/Program Files/Microchip/MPLABX/v5.45/packs/Microchip/PIC12-16F1xxx_DFP/1.2.63/xc8\\pic\\include\\xc.h" 1 3
 # 18 "C:/Program Files/Microchip/MPLABX/v5.45/packs/Microchip/PIC12-16F1xxx_DFP/1.2.63/xc8\\pic\\include\\xc.h" 3
 extern const char __xc8_OPTIM_SPEED;
@@ -8919,70 +8919,10 @@ extern __bank0 unsigned char __resetbits;
 extern __bank0 __bit __powerdown;
 extern __bank0 __bit __timeout;
 # 28 "C:/Program Files/Microchip/MPLABX/v5.45/packs/Microchip/PIC12-16F1xxx_DFP/1.2.63/xc8\\pic\\include\\xc.h" 2 3
-# 43 "lcd.c" 2
+# 51 "mcc_generated_files/tmr0.c" 2
 
-# 1 "./lcd.h" 1
-# 46 "./lcd.h"
-# 1 "./mcc_generated_files/mcc.h" 1
-# 50 "./mcc_generated_files/mcc.h"
-# 1 "./mcc_generated_files/device_config.h" 1
-# 50 "./mcc_generated_files/mcc.h" 2
-
-# 1 "./mcc_generated_files/pin_manager.h" 1
-# 352 "./mcc_generated_files/pin_manager.h"
-void PIN_MANAGER_Initialize (void);
-# 364 "./mcc_generated_files/pin_manager.h"
-void PIN_MANAGER_IOC(void);
-# 377 "./mcc_generated_files/pin_manager.h"
-void IOCAF0_ISR(void);
-# 400 "./mcc_generated_files/pin_manager.h"
-void IOCAF0_SetInterruptHandler(void (* InterruptHandler)(void));
-# 424 "./mcc_generated_files/pin_manager.h"
-extern void (*IOCAF0_InterruptHandler)(void);
-# 448 "./mcc_generated_files/pin_manager.h"
-void IOCAF0_DefaultInterruptHandler(void);
-# 461 "./mcc_generated_files/pin_manager.h"
-void IOCAF1_ISR(void);
-# 484 "./mcc_generated_files/pin_manager.h"
-void IOCAF1_SetInterruptHandler(void (* InterruptHandler)(void));
-# 508 "./mcc_generated_files/pin_manager.h"
-extern void (*IOCAF1_InterruptHandler)(void);
-# 532 "./mcc_generated_files/pin_manager.h"
-void IOCAF1_DefaultInterruptHandler(void);
-# 545 "./mcc_generated_files/pin_manager.h"
-void IOCAF2_ISR(void);
-# 568 "./mcc_generated_files/pin_manager.h"
-void IOCAF2_SetInterruptHandler(void (* InterruptHandler)(void));
-# 592 "./mcc_generated_files/pin_manager.h"
-extern void (*IOCAF2_InterruptHandler)(void);
-# 616 "./mcc_generated_files/pin_manager.h"
-void IOCAF2_DefaultInterruptHandler(void);
-# 629 "./mcc_generated_files/pin_manager.h"
-void IOCAF3_ISR(void);
-# 652 "./mcc_generated_files/pin_manager.h"
-void IOCAF3_SetInterruptHandler(void (* InterruptHandler)(void));
-# 676 "./mcc_generated_files/pin_manager.h"
-extern void (*IOCAF3_InterruptHandler)(void);
-# 700 "./mcc_generated_files/pin_manager.h"
-void IOCAF3_DefaultInterruptHandler(void);
-# 713 "./mcc_generated_files/pin_manager.h"
-void IOCAF4_ISR(void);
-# 736 "./mcc_generated_files/pin_manager.h"
-void IOCAF4_SetInterruptHandler(void (* InterruptHandler)(void));
-# 760 "./mcc_generated_files/pin_manager.h"
-extern void (*IOCAF4_InterruptHandler)(void);
-# 784 "./mcc_generated_files/pin_manager.h"
-void IOCAF4_DefaultInterruptHandler(void);
-# 797 "./mcc_generated_files/pin_manager.h"
-void IOCAF5_ISR(void);
-# 820 "./mcc_generated_files/pin_manager.h"
-void IOCAF5_SetInterruptHandler(void (* InterruptHandler)(void));
-# 844 "./mcc_generated_files/pin_manager.h"
-extern void (*IOCAF5_InterruptHandler)(void);
-# 868 "./mcc_generated_files/pin_manager.h"
-void IOCAF5_DefaultInterruptHandler(void);
-# 51 "./mcc_generated_files/mcc.h" 2
-
+# 1 "mcc_generated_files/tmr0.h" 1
+# 54 "mcc_generated_files/tmr0.h"
 # 1 "C:\\Program Files\\Microchip\\xc8\\v2.31\\pic\\include\\c99\\stdint.h" 1 3
 # 22 "C:\\Program Files\\Microchip\\xc8\\v2.31\\pic\\include\\c99\\stdint.h" 3
 # 1 "C:\\Program Files\\Microchip\\xc8\\v2.31\\pic\\include\\c99\\bits/alltypes.h" 1 3
@@ -9068,208 +9008,132 @@ typedef int32_t int_fast32_t;
 typedef uint16_t uint_fast16_t;
 typedef uint32_t uint_fast32_t;
 # 144 "C:\\Program Files\\Microchip\\xc8\\v2.31\\pic\\include\\c99\\stdint.h" 2 3
-# 52 "./mcc_generated_files/mcc.h" 2
+# 54 "mcc_generated_files/tmr0.h" 2
 
 # 1 "C:\\Program Files\\Microchip\\xc8\\v2.31\\pic\\include\\c99\\stdbool.h" 1 3
-# 53 "./mcc_generated_files/mcc.h" 2
-
-# 1 "C:\\Program Files\\Microchip\\xc8\\v2.31\\pic\\include\\c99\\conio.h" 1 3
-
-
-
-
-
-
-
-# 1 "C:\\Program Files\\Microchip\\xc8\\v2.31\\pic\\include\\c99\\errno.h" 1 3
-# 12 "C:\\Program Files\\Microchip\\xc8\\v2.31\\pic\\include\\c99\\errno.h" 3
-extern int errno;
-# 8 "C:\\Program Files\\Microchip\\xc8\\v2.31\\pic\\include\\c99\\conio.h" 2 3
-
-# 1 "C:/Program Files/Microchip/MPLABX/v5.45/packs/Microchip/PIC12-16F1xxx_DFP/1.2.63/xc8\\pic\\include\\__null.h" 1 3
-# 9 "C:\\Program Files\\Microchip\\xc8\\v2.31\\pic\\include\\c99\\conio.h" 2 3
-
-
-
-extern void init_uart(void);
-
-extern char getch(void);
-extern char getche(void);
-extern void putch(char);
-extern void ungetch(char);
-
-extern __bit kbhit(void);
-
-
-
-extern char * cgets(char *);
-extern void cputs(const char *);
-# 54 "./mcc_generated_files/mcc.h" 2
-
-# 1 "./mcc_generated_files/interrupt_manager.h" 1
-# 55 "./mcc_generated_files/mcc.h" 2
-
-# 1 "./mcc_generated_files/tmr0.h" 1
-# 104 "./mcc_generated_files/tmr0.h"
+# 55 "mcc_generated_files/tmr0.h" 2
+# 104 "mcc_generated_files/tmr0.h"
 void TMR0_Initialize(void);
-# 135 "./mcc_generated_files/tmr0.h"
+# 135 "mcc_generated_files/tmr0.h"
 uint8_t TMR0_ReadTimer(void);
-# 174 "./mcc_generated_files/tmr0.h"
+# 174 "mcc_generated_files/tmr0.h"
 void TMR0_WriteTimer(uint8_t timerVal);
-# 210 "./mcc_generated_files/tmr0.h"
+# 210 "mcc_generated_files/tmr0.h"
 void TMR0_Reload(void);
-# 225 "./mcc_generated_files/tmr0.h"
+# 225 "mcc_generated_files/tmr0.h"
 void TMR0_ISR(void);
-# 243 "./mcc_generated_files/tmr0.h"
+# 243 "mcc_generated_files/tmr0.h"
 void TMR0_CallBack(void);
-# 261 "./mcc_generated_files/tmr0.h"
+# 261 "mcc_generated_files/tmr0.h"
  void TMR0_SetInterruptHandler(void (* InterruptHandler)(void));
-# 279 "./mcc_generated_files/tmr0.h"
+# 279 "mcc_generated_files/tmr0.h"
 extern void (*TMR0_InterruptHandler)(void);
-# 297 "./mcc_generated_files/tmr0.h"
+# 297 "mcc_generated_files/tmr0.h"
 void TMR0_DefaultInterruptHandler(void);
-# 56 "./mcc_generated_files/mcc.h" 2
-# 71 "./mcc_generated_files/mcc.h"
-void SYSTEM_Initialize(void);
-# 84 "./mcc_generated_files/mcc.h"
-void OSCILLATOR_Initialize(void);
-# 96 "./mcc_generated_files/mcc.h"
-void WDT_Initialize(void);
-# 46 "./lcd.h" 2
-# 120 "./lcd.h"
-  void LCD_Initialize(void);
-# 138 "./lcd.h"
-  void LCDPutChar(uint8_t ch);
-# 156 "./lcd.h"
-  void LCDPutCmd(uint8_t ch);
-# 174 "./lcd.h"
-  void LCDPutStr(const char *);
-# 192 "./lcd.h"
-  void LCDWriteNibble(uint8_t ch, uint8_t rs);
-# 214 "./lcd.h"
-  void LCDGoto(uint8_t pos, uint8_t ln);
-# 232 "./lcd.h"
-  void LCDClear(void);
-# 44 "lcd.c" 2
+# 52 "mcc_generated_files/tmr0.c" 2
+
+# 1 "mcc_generated_files/../psudoRandom.h" 1
+# 15 "mcc_generated_files/../psudoRandom.h"
+extern double counter;
+
+_Bool taylorSine(void);
+# 53 "mcc_generated_files/tmr0.c" 2
 
 
-void LCD_Initialize()
+
+
+
+
+volatile uint8_t timer0ReloadVal;
+void (*TMR0_InterruptHandler)(void);
+
+
+
+
+void TMR0_Initialize(void)
 {
 
-  PORTB = 0;
-
-  TRISB = 0x00;
 
 
-  PORTBbits.RB7 = 1;
+    OPTION_REG = (uint8_t)((OPTION_REG & 0xC0) | (0xD7 & 0x3F));
 
 
-  _delay((unsigned long)((15)*(500000/4000.0)));
+    TMR0 = 0xFE;
 
 
-  LCDPutCmd(0x32);
+    timer0ReloadVal= 254;
 
 
-  LCDPutCmd(0x28);
+    INTCONbits.TMR0IF = 0;
 
 
-  LCDPutCmd(0x0C);
-
-  LCDPutCmd(0x01);
+    INTCONbits.TMR0IE = 1;
 
 
-  LCDPutCmd(0x06);
+    TMR0_SetInterruptHandler(TMR0_DefaultInterruptHandler);
 }
 
-void LCDWriteNibble(uint8_t ch, uint8_t rs)
+uint8_t TMR0_ReadTimer(void)
 {
+    uint8_t readVal;
 
-  ch = (ch >> 4);
+    readVal = TMR0;
 
-
-  ch = (ch & 0x0F);
-
-
-  PORTB = (PORTB & 0xF0);
-
-
-  PORTB = (PORTB | ch);
-
-
-  PORTBbits.RB5 = rs;
-
-
-  PORTBbits.RB6 = 0;
-
-
-  PORTBbits.RB4 = 1;
-
-
-  PORTBbits.RB4 = 0;
+    return readVal;
 }
 
-void LCDPutChar(uint8_t ch)
+void TMR0_WriteTimer(uint8_t timerVal)
 {
-  _delay((unsigned long)((5)*(500000/4000.0)));
 
-
-  LCDWriteNibble(ch, 1);
-
-
-  ch = (uint8_t)(ch << 4);
-
-
-  LCDWriteNibble(ch, 1);
+    TMR0 = timerVal;
 }
 
-void LCDPutCmd(uint8_t ch)
+void TMR0_Reload(void)
 {
-  _delay((unsigned long)((5)*(500000/4000.0)));
 
-
-  LCDWriteNibble(ch, 0);
-
-
-  ch = (uint8_t)(ch << 4);
-
-  _delay((unsigned long)((1)*(500000/4000.0)));
-
-
-  LCDWriteNibble(ch, 0);
+    TMR0 = timer0ReloadVal;
 }
 
-void LCDPutStr(const char *str)
+void TMR0_ISR(void)
 {
-  uint8_t i = 0;
+    static volatile uint16_t CountCallBack = 0;
 
 
-  while (str[i])
-  {
+    INTCONbits.TMR0IF = 0;
 
-    LCDPutChar(str[i++]);
-  }
+    TMR0 = timer0ReloadVal;
+
+
+    if (++CountCallBack >= 25)
+    {
+
+        TMR0_CallBack();
+
+
+        CountCallBack = 0;
+    }
+
+
 }
 
-void LCDGoto(uint8_t pos, uint8_t ln)
+void TMR0_CallBack(void)
 {
-
-  if ((ln > (2 - 1)) || (pos > (16 - 1)))
-  {
-
-    return;
-  }
-
-
-  LCDPutCmd((ln == 1) ? (0xC0 | pos) : (0x80 | pos));
-
-
-  _delay((unsigned long)((5)*(500000/4000.0)));
+    counter+=0.1;
+    if (counter == 5)
+    {
+        counter=0;
+    }
+    if(TMR0_InterruptHandler)
+    {
+        TMR0_InterruptHandler();
+    }
 }
 
-void LCDClear(void)
-{
-  LCDGoto(0, 0);
-  LCDPutStr("                ");
-  LCDGoto(0, 1);
-  LCDPutStr("                ");
+void TMR0_SetInterruptHandler(void (* InterruptHandler)(void)){
+    TMR0_InterruptHandler = InterruptHandler;
+}
+
+void TMR0_DefaultInterruptHandler(void){
+
+
 }

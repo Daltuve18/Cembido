@@ -9106,11 +9106,33 @@ extern __bit kbhit(void);
 extern char * cgets(char *);
 extern void cputs(const char *);
 # 54 "mcc_generated_files/mcc.h" 2
-# 70 "mcc_generated_files/mcc.h"
+
+
+# 1 "mcc_generated_files/tmr0.h" 1
+# 104 "mcc_generated_files/tmr0.h"
+void TMR0_Initialize(void);
+# 135 "mcc_generated_files/tmr0.h"
+uint8_t TMR0_ReadTimer(void);
+# 174 "mcc_generated_files/tmr0.h"
+void TMR0_WriteTimer(uint8_t timerVal);
+# 210 "mcc_generated_files/tmr0.h"
+void TMR0_Reload(void);
+# 225 "mcc_generated_files/tmr0.h"
+void TMR0_ISR(void);
+# 243 "mcc_generated_files/tmr0.h"
+void TMR0_CallBack(void);
+# 261 "mcc_generated_files/tmr0.h"
+ void TMR0_SetInterruptHandler(void (* InterruptHandler)(void));
+# 279 "mcc_generated_files/tmr0.h"
+extern void (*TMR0_InterruptHandler)(void);
+# 297 "mcc_generated_files/tmr0.h"
+void TMR0_DefaultInterruptHandler(void);
+# 56 "mcc_generated_files/mcc.h" 2
+# 71 "mcc_generated_files/mcc.h"
 void SYSTEM_Initialize(void);
-# 83 "mcc_generated_files/mcc.h"
+# 84 "mcc_generated_files/mcc.h"
 void OSCILLATOR_Initialize(void);
-# 95 "mcc_generated_files/mcc.h"
+# 96 "mcc_generated_files/mcc.h"
 void WDT_Initialize(void);
 # 50 "mcc_generated_files/interrupt_manager.c" 2
 
@@ -9118,7 +9140,11 @@ void WDT_Initialize(void);
 void __attribute__((picinterrupt(("")))) INTERRUPT_InterruptManager (void)
 {
 
-    if(INTCONbits.IOCIE == 1 && INTCONbits.IOCIF == 1)
+    if(INTCONbits.TMR0IE == 1 && INTCONbits.TMR0IF == 1)
+    {
+        TMR0_ISR();
+    }
+    else if(INTCONbits.IOCIE == 1 && INTCONbits.IOCIF == 1)
     {
         _delay((unsigned long)((80)*(500000/4000.0)));
         PIN_MANAGER_IOC();
