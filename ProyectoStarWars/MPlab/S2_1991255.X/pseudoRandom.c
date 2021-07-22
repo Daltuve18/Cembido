@@ -45,7 +45,7 @@ bool taylorSine(void)
             }
         sinx*=sinx;
 
-        if(sinx>0.5)
+        if(sinx>0.25)
             {
              hit = true;
             }

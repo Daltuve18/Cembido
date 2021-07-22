@@ -131,7 +131,7 @@ void TMR0_ISR(void)
 void TMR0_CallBack(void)
 {
     counter+=0.1;
-    if (counter == 5)
+    if (counter == 5.0)
     {
         counter=0;
     }
