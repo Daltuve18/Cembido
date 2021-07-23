@@ -18,6 +18,7 @@ Date          : 7/18/2021
 #include <string.h>
 #include <stdio.h>
 #include "lcd.h"
+#include "naves.h"
 
 /*Local Libraries*/
 
@@ -28,12 +29,104 @@ Date          : 7/18/2021
 uint8_t ship1;
 uint8_t ship2;
 
-uint8_t health1=4;
-uint8_t health2=4;
+int health1=4;
+int health2=4;
 
-uint8_t shield1=4;
-uint8_t shield2=4;
+int shield1=3;
+int shield2=3;
 
+bool attack(bool isSpecial, bool player){
+    if (!player){
+        basicShoot(0);
+        if (taylorSine()){
+            if (isSpecial){
+                if (shield2 == 0){
+                    health2 = health2-2;
+                }else{
+                    shield2 = shield2-2;
+                }
+                if (shield2 < 0){
+                    shield2=0;
+                    health2 = health2-1;
+                }
+                if (health2 < 0){
+                    health2 = 0;
+                }
+            }else{
+                if (shield2 == 0){
+                    health2 = health2-1;
+                }else{
+                    shield2 = shield2-1;
+                }
+            }
+            printHeart();
+            printShield();
+            return true;
+        } else{
+            return false;
+        }
+    }else{
+        basicShoot(1);
+        if (taylorSine()){
+            if (isSpecial){
+                if (shield1 == 0){
+                    health1 = health1-2;
+                }else{
+                    shield1 = shield1-2;
+                }
+                if (shield1 < 0){
+                    shield1=0;
+                    health1 = health1-1;
+                }
+                if (health1 < 0){
+                    health1 = 0;
+                }
+            }else{
+                if (shield1 == 0){
+                    health1 = health1-1;
+                }else{
+                    shield1 = shield1-1;
+                }
+            }
+            printHeart();
+            printShield();
+            return true;
+        } else{
+            return false;
+        }
+        
+    }
+}
+
+void fix(bool player){
+    if(!player){
+        if (health1<4){
+            health1=health1+1;
+            
+        }
+    }else{
+        if (health2<4){
+            health2=health2+1;
+            
+        }
+    }
+    printHeart();
+}
+
+void fixShield(bool player){
+    if(!player){
+        if (shield1<4){
+            shield1=shield1+1;
+            
+        }
+    }else{
+        if (shield2<4){
+            shield2=shield2+1;
+            
+        }
+    }
+    printShield();
+}
 
 void printShip()
 {
@@ -50,6 +143,7 @@ void printShip()
 }
 
 
+
 void printHeart(void)
 
     {
@@ -62,29 +156,31 @@ void printHeart(void)
                 LCDGoto(0, 1);
                 LCDPutStr(" ");
                 unsigned char heart11 [ ] = {0x00,0x0A,0x15,0x11,0x11,0x0A,0x04,0x00};
-                createCustomCharacter(heart11,5);
+                createCustomCharacter(heart11,3);
                 LCDGoto(0, 1);
-                LCDPutChar(5);
+                LCDPutChar(3);
             break;
             case 2:
                 LCDGoto(0, 1);
                 LCDPutStr(" ");
                 unsigned char heart12 [ ] = {0x00,0x0A,0x1D,0x19,0x19,0x0A,0x04,0x00};
-                createCustomCharacter(heart12,5);
+                createCustomCharacter(heart12,3);
                 LCDGoto(0, 1);
-                LCDPutChar(5);
+                LCDPutChar(3);
             break;
             case 3:
                 LCDGoto(0, 1);
                 LCDPutStr(" ");
                 unsigned char heart13 [ ] = {0x00,0x0A,0x1D,0x1D,0x1D,0x0E,0x04,0x00};
-                createCustomCharacter(heart13,5);
+                createCustomCharacter(heart13,3);
                 LCDGoto(0, 1);
-                LCDPutChar(5);
+                LCDPutChar(3);
             break;
                 case 4:
                 LCDGoto(0, 1);
                 LCDPutStr(" ");
+                unsigned char heart14 [ ] = {0x00,0x00,0x0A,0x1F,0x1F,0x0E,0x04,0x00};
+                createCustomCharacter(heart14,3);
                 LCDGoto(0, 1);
                 LCDPutChar(3);
             break;
@@ -102,7 +198,7 @@ void printHeart(void)
                 LCDGoto(15, 1);
                 LCDPutStr(" ");
                 unsigned char heart21 [ ] = {0x00,0x0A,0x15,0x11,0x11,0x0A,0x04,0x00};
-                createCustomCharacter(heart21,6);
+                createCustomCharacter(heart21,5);
                 LCDGoto(15, 1);
                 LCDPutChar(5);
             break;
@@ -110,21 +206,23 @@ void printHeart(void)
                 LCDGoto(15, 1);
                 LCDPutStr(" ");
                 unsigned char heart22 [ ] = {0x00,0x0A,0x1D,0x19,0x19,0x0A,0x04,0x00};
-                createCustomCharacter(heart22,6);
+                createCustomCharacter(heart22,5);
                 LCDGoto(15, 1);
-                LCDPutChar(6);
+                LCDPutChar(5);
             break;
             case 3:
                 LCDGoto(15, 1);
                 LCDPutStr(" ");
                 unsigned char heart23 [ ] = {0x00,0x0A,0x1D,0x1D,0x1D,0x0E,0x04,0x00};
-                createCustomCharacter(heart23,6);
+                createCustomCharacter(heart23,5);
                 LCDGoto(15, 1);
-                LCDPutChar(6);
+                LCDPutChar(5);
             break;
                 case 4:
                 LCDGoto(15, 1);
                 LCDPutStr(" ");
+                unsigned char heart24 [ ] = {0x00,0x00,0x0A,0x1F,0x1F,0x0E,0x04,0x00};
+                createCustomCharacter(heart24,3);
                 LCDGoto(15, 1);
                 LCDPutChar(3);
             break;
@@ -146,23 +244,25 @@ void printShield(void)
                 LCDGoto(1, 1);
                 LCDPutStr(" ");
                 unsigned char shield11 [ ] = {0x00,0x1F,0x11,0x11,0x11,0x0A,0x04,0x00};
-                createCustomCharacter(shield11,5);
-                LCDGoto(0, 1);
-                LCDPutChar(5);
+                createCustomCharacter(shield11,6);
+                LCDGoto(1, 1);
+                LCDPutChar(6);
             break;
             case 2:
                 LCDGoto(1, 1);
                 LCDPutStr(" ");
                 unsigned char shield12 [ ] = {0x00,0x1F,0x11,0x11,0x1F,0x0E,0x04,0x00};
-                createCustomCharacter(shield12,5);
-                LCDGoto(0, 1);
-                LCDPutChar(5);
+                createCustomCharacter(shield12,6);
+                LCDGoto(1, 1);
+                LCDPutChar(6);
             break;
                 case 3:
                 LCDGoto(1, 1);
                 LCDPutStr(" ");
+                unsigned char shield13 [ ] = {0x00,0x1F,0x1F,0x1F,0x1F,0x0E,0x04,0x00};
+                createCustomCharacter(shield13,6);
                 LCDGoto(1, 1);
-                LCDPutChar(8);
+                LCDPutChar(6);
             break;
             default:
                 break;
@@ -178,26 +278,27 @@ void printShield(void)
                 LCDGoto(14, 1);
                 LCDPutStr(" ");
                 unsigned char shield21 [ ] = {0x00,0x1F,0x11,0x11,0x11,0x0A,0x04,0x00};
-                createCustomCharacter(shield21,6);
+                createCustomCharacter(shield21,7);
                 LCDGoto(14, 1);
-                LCDPutChar(5);
+                LCDPutChar(7);
             break;
             case 2:
                 LCDGoto(14, 1);
                 LCDPutStr(" ");
                 unsigned char shield22 [ ] = {0x00,0x1F,0x11,0x11,0x1F,0x0E,0x04,0x00};
-                createCustomCharacter(shield22,6);
+                createCustomCharacter(shield22,7);
                 LCDGoto(14, 1);
-                LCDPutChar(6);
+                LCDPutChar(7);
             break;
                 case 3:
                 LCDGoto(14, 1);
                 LCDPutStr(" ");
+                unsigned char shield23 [ ] = {0x00,0x1F,0x1F,0x1F,0x1F,0x0E,0x04,0x00};
+                createCustomCharacter(shield23,7);
                 LCDGoto(14, 1);
-                LCDPutChar(8);
+                LCDPutChar(7);
             break;
             default:
                 break;
             }
-
     }

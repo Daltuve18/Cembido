@@ -15,10 +15,21 @@ Date          : 7/18/2021
 extern bool inGame;
 extern uint8_t mainState;
 extern uint8_t playerTurn;
+extern int special1CD;
+extern int fix1CD;
+extern int shield1CD;
+extern int special2CD;
+extern int fix2CD;
+extern int shield2CD;
 
 void printMenu (void);
 void cleanMenu (void);
 void cleanFullMenu (void);
 void mainMenu(void);
+void winScreen(int player);
+void failScreen();
 void startFight (void);
+void cooldownScreen();
+void nextTurn(bool player);
+void welcomeScreen();
 

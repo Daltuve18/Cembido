@@ -220,11 +220,24 @@ void IOCAF0_ISR(void) {
         IOCAF0_InterruptHandler();
     }
     if (inGame){
-    
+    switch (mainState){
+        case 1:
+            mainState  = 0;
+            printMenu();
+        break;
+        case 2:
+            mainState  = 1;
+            printMenu();
+        break;
+        case 3:
+            mainState  = 2;
+            printMenu();
+        break;
+        default:
+            break;
+    }
     }else{
         switch (mainState){
-        case 0:
-        break;
         case 1:
             mainState  = 0;
             printMenu();
@@ -267,14 +280,27 @@ void IOCAF1_ISR(void) {
     }
     
     if (inGame){
-    
-    }else{
-        switch (mainState){
+    switch (mainState){
         case 0:
             mainState  = 1;
             printMenu();
         break;
         case 1:
+            mainState  = 2;
+            printMenu();
+        break;
+        case 2:
+            mainState  = 3;
+            printMenu();
+        break;
+        default:
+            break;
+    }
+    }else{
+        switch (mainState){
+        case 0:
+            mainState  = 1;
+            printMenu();
         break;
         default:
             break;
@@ -311,21 +337,82 @@ void IOCAF2_ISR(void) {
         IOCAF2_InterruptHandler();
     }
     if (inGame){
-    
+        bool hit;
+        switch (mainState){
+        case 0: // atacar
+            cleanMenu();
+            hit=attack(false,0);
+            if(!hit){
+                failScreen();
+                nextTurn(0);
+                printMenu();
+                break;
+            }
+            if(health2 == 0){
+                winScreen(0);
+                break;
+            }
+            nextTurn(0);
+            printMenu();
+        break;
+        case 1: // especial
+            if (special1CD == 0){
+                cleanMenu();
+                hit=attack(true,0);
+                if(!hit){
+                    failScreen();
+                    nextTurn(0);
+                    printMenu();
+                    break;
+                }
+                if(health2 == 0){
+                    winScreen(0);
+                    break;
+                }
+                special1CD=4;
+                nextTurn(0);
+            }else{
+                cooldownScreen();
+            }
+            printMenu();
+        break;
+        case 2: // reparar
+            if (fix1CD == 0){
+                fix(0);
+                fix1CD=3;
+                nextTurn(0);
+            }else{
+                cooldownScreen();
+            }
+            printMenu();
+        break;
+        case 3: // escudo
+            if (shield1CD ==0){
+                fixShield(0);
+                shield1CD=3;
+                nextTurn(0);
+            }else{
+                cooldownScreen();
+            }
+            printMenu();
+        break;
+        default:
+            break;
+        }
     }else{
         switch (mainState){
         case 0:
             ship1 = 0;
+            mainState  = 2;
             disableButton(false);
             enableButton(true);
-            mainState  = 2;
             printMenu();
         break;
         case 1:
             ship1 = 1;
+            mainState  = 2;
             disableButton(false);
             enableButton(true);
-            mainState  = 2;
             printMenu();
         break;
         default:
@@ -363,7 +450,22 @@ void IOCAF3_ISR(void) {
         IOCAF3_InterruptHandler();
     }
      if (inGame){
-    
+        switch (mainState){
+            case 5:
+                mainState  = 4;
+                printMenu();
+            break;
+            case 6:
+                mainState  = 5;
+                printMenu();
+            break;
+            case 7:
+                mainState  = 6;
+                printMenu();
+            break;
+            default:
+                break;
+        }
     }else{
         switch (mainState){
         case 3:
@@ -405,7 +507,22 @@ void IOCAF4_ISR(void) {
         IOCAF4_InterruptHandler();
     }
      if (inGame){
-    
+        switch (mainState){
+            case 4:
+                mainState  = 5;
+                printMenu();
+            break;
+            case 5:
+                mainState  = 6;
+                printMenu();
+            break;
+            case 6:
+                mainState  = 7;
+                printMenu();
+            break;
+            default:
+                break;
+        }
     }else{
         switch (mainState){
         case 2:
@@ -447,7 +564,68 @@ void IOCAF5_ISR(void) {
         IOCAF5_InterruptHandler();
     }
     if (inGame){
-    
+        bool hit;
+        switch (mainState){
+        case 4: // atacar
+            cleanMenu();
+            hit=attack(false,1);
+            if(!hit){
+                failScreen();
+                nextTurn(1);
+                printMenu();
+                break;
+            }
+            if(health1 == 0){
+                winScreen(1);
+                break;
+            }
+            nextTurn(1);
+            printMenu();
+        break;
+        case 5: // especial
+            if (special2CD == 0){
+                cleanMenu();
+                hit=attack(true,1);
+                if(!hit){
+                    failScreen();
+                    nextTurn(1);
+                    printMenu();
+                    break;
+                }
+                if(health1 == 0){
+                    winScreen(1);
+                    break;
+                }
+                special2CD=4;
+                nextTurn(1);
+            }else{
+                cooldownScreen();
+            }
+            printMenu();
+        break;
+        case 6: // reparar
+            if (fix2CD == 0){
+                fix(1);
+                fix2CD=3;
+                nextTurn(1);
+            }else{
+                cooldownScreen();
+            }
+            printMenu();
+        break;
+        case 7: // escudo
+            if (shield2CD ==0){
+                fixShield(1);
+                shield2CD=3;
+                nextTurn(1);
+            }else{
+                cooldownScreen();
+            }
+            printMenu();
+        break;
+        default:
+            break;
+    }
     }else{
         switch (mainState){
         case 2:

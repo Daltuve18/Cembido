@@ -32,7 +32,7 @@ bool taylorSine(void)
     ***/
     {   
         bool hit;
-        unsigned N=20; 
+        unsigned N=12; 
         unsigned k=1; 
         double sinx = 0; 
         double term; 
@@ -44,8 +44,8 @@ bool taylorSine(void)
                 term *= -(counter * counter) / ( (k-1) * k); 
             }
         sinx*=sinx;
-
-        if(sinx>0.25)
+        
+        if(sinx>0.15)
             {
              hit = true;
             }

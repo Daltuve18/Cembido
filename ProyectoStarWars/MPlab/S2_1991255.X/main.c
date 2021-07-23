@@ -60,6 +60,7 @@ void main()
     //LCD PRINTING
 
     //idleScreen();
+    welcomeScreen();
     printMenu();
     
     // Enable the Global Interrupts
