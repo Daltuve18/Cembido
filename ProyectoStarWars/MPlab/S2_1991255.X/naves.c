@@ -222,9 +222,9 @@ void printHeart(void)
                 LCDGoto(15, 1);
                 LCDPutStr(" ");
                 unsigned char heart24 [ ] = {0x00,0x00,0x0A,0x1F,0x1F,0x0E,0x04,0x00};
-                createCustomCharacter(heart24,3);
+                createCustomCharacter(heart24,5);
                 LCDGoto(15, 1);
-                LCDPutChar(3);
+                LCDPutChar(5);
             break;
             default:
                 break;

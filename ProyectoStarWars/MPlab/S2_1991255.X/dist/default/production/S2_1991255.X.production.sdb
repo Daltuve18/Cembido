@@ -3,16 +3,16 @@
 [d edition pro ]
 [d chip 16LF1718 ]
 [d frameptr 6 ]
-"1 D:\Programas\Microchip\xc8\v2.31\pic\sources\c99\common\abs.c
+"1 C:\Program Files\Microchip\xc8\v2.31\pic\sources\c99\common\abs.c
 [v _abs abs `(i  1 e 2 0 ]
 [v i1_abs abs `(i  1 e 2 0 ]
-"7 D:\Programas\Microchip\xc8\v2.31\pic\sources\c99\common\aodiv.c
+"7 C:\Program Files\Microchip\xc8\v2.31\pic\sources\c99\common\aodiv.c
 [v ___aodiv __aodiv `(o  1 e 8 0 ]
 [v i1___aodiv __aodiv `(o  1 e 8 0 ]
-"7 D:\Programas\Microchip\xc8\v2.31\pic\sources\c99\common\aomod.c
+"7 C:\Program Files\Microchip\xc8\v2.31\pic\sources\c99\common\aomod.c
 [v ___aomod __aomod `(o  1 e 8 0 ]
 [v i1___aomod __aomod `(o  1 e 8 0 ]
-"72 D:\Programas\Microchip\xc8\v2.31\pic\sources\c99\common\doprnt.c
+"72 C:\Program Files\Microchip\xc8\v2.31\pic\sources\c99\common\doprnt.c
 [v _pad pad `(i  1 s 2 pad ]
 [v i1_pad pad `(i  1 s 2 i1_pad ]
 "287
@@ -24,38 +24,38 @@
 "1390
 [v _vfprintf vfprintf `(i  1 e 2 0 ]
 [v i1_vfprintf vfprintf `(i  1 e 2 0 ]
-"4 D:\Programas\Microchip\xc8\v2.31\pic\sources\c99\common\flge.c
+"4 C:\Program Files\Microchip\xc8\v2.31\pic\sources\c99\common\flge.c
 [v ___flge __flge `(b  1 e 0 0 ]
-"15 D:\Programas\Microchip\xc8\v2.31\pic\sources\c99\common\flneg.c
+"15 C:\Program Files\Microchip\xc8\v2.31\pic\sources\c99\common\flneg.c
 [v ___flneg __flneg `(d  1 e 4 0 ]
-"8 D:\Programas\Microchip\xc8\v2.31\pic\sources\c99\common\nf_fputc.c
+"8 C:\Program Files\Microchip\xc8\v2.31\pic\sources\c99\common\nf_fputc.c
 [v _fputc fputc `(i  1 e 2 0 ]
 [v i1_fputc fputc `(i  1 e 2 0 ]
-"8 D:\Programas\Microchip\xc8\v2.31\pic\sources\c99\common\nf_fputs.c
+"8 C:\Program Files\Microchip\xc8\v2.31\pic\sources\c99\common\nf_fputs.c
 [v _fputs fputs `(i  1 e 2 0 ]
 [v i1_fputs fputs `(i  1 e 2 0 ]
-"9 D:\Programas\Microchip\xc8\v2.31\pic\sources\c99\common\nf_sprintf.c
+"9 C:\Program Files\Microchip\xc8\v2.31\pic\sources\c99\common\nf_sprintf.c
 [v _sprintf sprintf `(i  1 e 2 0 ]
 [v i1_sprintf sprintf `(i  1 e 2 0 ]
-"7 D:\Programas\Microchip\xc8\v2.31\pic\sources\c99\common\putch.c
+"7 C:\Program Files\Microchip\xc8\v2.31\pic\sources\c99\common\putch.c
 [v _putch putch `(v  1 e 1 0 ]
 [v i1_putch putch `(v  1 e 1 0 ]
-"10 D:\Programas\Microchip\xc8\v2.31\pic\sources\c99\common\sprcadd.c
+"10 C:\Program Files\Microchip\xc8\v2.31\pic\sources\c99\common\sprcadd.c
 [v ___fladd __fladd `(d  1 e 4 0 ]
-"8 D:\Programas\Microchip\xc8\v2.31\pic\sources\c99\common\sprcdiv.c
+"8 C:\Program Files\Microchip\xc8\v2.31\pic\sources\c99\common\sprcdiv.c
 [v ___fldiv __fldiv `(d  1 e 4 0 ]
-"8 D:\Programas\Microchip\xc8\v2.31\pic\sources\c99\common\sprcmul.c
+"8 C:\Program Files\Microchip\xc8\v2.31\pic\sources\c99\common\sprcmul.c
 [v ___flmul __flmul `(d  1 e 4 0 ]
-"5 D:\Programas\Microchip\xc8\v2.31\pic\sources\c99\common\strlen.c
+"5 C:\Program Files\Microchip\xc8\v2.31\pic\sources\c99\common\strlen.c
 [v _strlen strlen `(ui  1 e 2 0 ]
 [v i1_strlen strlen `(ui  1 e 2 0 ]
-"15 D:\Programas\Microchip\xc8\v2.31\pic\sources\c99\common\Umul16.c
+"15 C:\Program Files\Microchip\xc8\v2.31\pic\sources\c99\common\Umul16.c
 [v ___wmul __wmul `(ui  1 e 2 0 ]
-"4 D:\Programas\Microchip\xc8\v2.31\pic\sources\c99\common\Umul8_16.c
+"4 C:\Program Files\Microchip\xc8\v2.31\pic\sources\c99\common\Umul8_16.c
 [v __Umul8_16 _Umul8_16 `(ui  1 e 2 0 ]
-"10 D:\Programas\Microchip\xc8\v2.31\pic\sources\c99\common\xxtofl.c
+"10 C:\Program Files\Microchip\xc8\v2.31\pic\sources\c99\common\xxtofl.c
 [v ___xxtofl __xxtofl `(d  1 e 4 0 ]
-"29 D:\documentos\master\Cembido\ProyectoStarWars\MPlab\S2_1991255.X\functions.c
+"29 C:\Users\davfe\Documents\GitHub\Cembido\ProyectoStarWars\MPlab\S2_1991255.X\functions.c
 [v _createCustomCharacter createCustomCharacter `(v  1 e 1 0 ]
 [v i1_createCustomCharacter createCustomCharacter `(v  1 e 1 0 ]
 "74
@@ -65,7 +65,7 @@
 [v i1_disableButton disableButton `(v  1 e 1 0 ]
 "159
 [v _enableButton enableButton `(v  1 e 1 0 ]
-"46 D:\documentos\master\Cembido\ProyectoStarWars\MPlab\S2_1991255.X\lcd.c
+"46 C:\Users\davfe\Documents\GitHub\Cembido\ProyectoStarWars\MPlab\S2_1991255.X\lcd.c
 [v _LCD_Initialize LCD_Initialize `(v  1 e 1 0 ]
 "74
 [v _LCDWriteNibble LCDWriteNibble `(v  1 e 1 0 ]
@@ -84,17 +84,17 @@
 [v i1_LCDGoto LCDGoto `(v  1 e 1 0 ]
 "159
 [v _LCDClear LCDClear `(v  1 e 1 0 ]
-"29 D:\documentos\master\Cembido\ProyectoStarWars\MPlab\S2_1991255.X\main.c
+"29 C:\Users\davfe\Documents\GitHub\Cembido\ProyectoStarWars\MPlab\S2_1991255.X\main.c
 [v _main main `(v  1 e 1 0 ]
-"52 D:\documentos\master\Cembido\ProyectoStarWars\MPlab\S2_1991255.X\mcc_generated_files/interrupt_manager.c
+"52 C:\Users\davfe\Documents\GitHub\Cembido\ProyectoStarWars\MPlab\S2_1991255.X\mcc_generated_files/interrupt_manager.c
 [v _INTERRUPT_InterruptManager INTERRUPT_InterruptManager `II(v  1 e 1 0 ]
-"50 D:\documentos\master\Cembido\ProyectoStarWars\MPlab\S2_1991255.X\mcc_generated_files/mcc.c
+"50 C:\Users\davfe\Documents\GitHub\Cembido\ProyectoStarWars\MPlab\S2_1991255.X\mcc_generated_files/mcc.c
 [v _SYSTEM_Initialize SYSTEM_Initialize `(v  1 e 1 0 ]
 "59
 [v _OSCILLATOR_Initialize OSCILLATOR_Initialize `(v  1 e 1 0 ]
 "69
 [v _WDT_Initialize WDT_Initialize `(v  1 e 1 0 ]
-"65 D:\documentos\master\Cembido\ProyectoStarWars\MPlab\S2_1991255.X\mcc_generated_files/pin_manager.c
+"65 C:\Users\davfe\Documents\GitHub\Cembido\ProyectoStarWars\MPlab\S2_1991255.X\mcc_generated_files/pin_manager.c
 [v _PIN_MANAGER_Initialize PIN_MANAGER_Initialize `(v  1 e 1 0 ]
 "176
 [v _PIN_MANAGER_IOC PIN_MANAGER_IOC `(v  1 e 1 0 ]
@@ -134,7 +134,7 @@
 [v _IOCAF5_SetInterruptHandler IOCAF5_SetInterruptHandler `(v  1 e 1 0 ]
 "660
 [v _IOCAF5_DefaultInterruptHandler IOCAF5_DefaultInterruptHandler `(v  1 e 1 0 ]
-"65 D:\documentos\master\Cembido\ProyectoStarWars\MPlab\S2_1991255.X\mcc_generated_files/tmr0.c
+"65 C:\Users\davfe\Documents\GitHub\Cembido\ProyectoStarWars\MPlab\S2_1991255.X\mcc_generated_files/tmr0.c
 [v _TMR0_Initialize TMR0_Initialize `(v  1 e 1 0 ]
 "109
 [v _TMR0_ISR TMR0_ISR `(v  1 e 1 0 ]
@@ -144,7 +144,7 @@
 [v _TMR0_SetInterruptHandler TMR0_SetInterruptHandler `(v  1 e 1 0 ]
 "148
 [v _TMR0_DefaultInterruptHandler TMR0_DefaultInterruptHandler `(v  1 e 1 0 ]
-"39 D:\documentos\master\Cembido\ProyectoStarWars\MPlab\S2_1991255.X\menu.c
+"39 C:\Users\davfe\Documents\GitHub\Cembido\ProyectoStarWars\MPlab\S2_1991255.X\menu.c
 [v _printMenu printMenu `(v  1 e 1 0 ]
 [v i1_printMenu printMenu `(v  1 e 1 0 ]
 "120
@@ -157,19 +157,19 @@
 [v _nextTurn nextTurn `(v  1 e 1 0 ]
 "208
 [v _winScreen winScreen `(v  1 e 1 0 ]
-"240
+"242
 [v _welcomeScreen welcomeScreen `(v  1 e 1 0 ]
 [v i1_welcomeScreen welcomeScreen `(v  1 e 1 0 ]
-"250
+"253
 [v _failScreen failScreen `(v  1 e 1 0 ]
-"257
+"260
 [v _cooldownScreen cooldownScreen `(v  1 e 1 0 ]
-"266
+"269
 [v _startFight startFight `(v  1 e 1 0 ]
-"291
+"293
 [v _cleanFullMenu cleanFullMenu `(v  1 e 1 0 ]
 [v i1_cleanFullMenu cleanFullMenu `(v  1 e 1 0 ]
-"38 D:\documentos\master\Cembido\ProyectoStarWars\MPlab\S2_1991255.X\naves.c
+"38 C:\Users\davfe\Documents\GitHub\Cembido\ProyectoStarWars\MPlab\S2_1991255.X\naves.c
 [v _attack attack `(a  1 e 1 0 ]
 "101
 [v _fix fix `(v  1 e 1 0 ]
@@ -181,7 +181,7 @@
 [v _printHeart printHeart `(v  1 e 1 0 ]
 "235
 [v _printShield printShield `(v  1 e 1 0 ]
-"21 D:\documentos\master\Cembido\ProyectoStarWars\MPlab\S2_1991255.X\pseudoRandom.c
+"21 C:\Users\davfe\Documents\GitHub\Cembido\ProyectoStarWars\MPlab\S2_1991255.X\pseudoRandom.c
 [v _taylorSine taylorSine `(a  1 e 1 0 ]
 [s S207 . 1 `uc 1 IOCIF 1 0 :1:0 
 `uc 1 INTF 1 0 :1:1 
@@ -192,7 +192,7 @@
 `uc 1 PEIE 1 0 :1:6 
 `uc 1 GIE 1 0 :1:7 
 ]
-"374 D:/Programas/packs/Microchip/PIC12-16F1xxx_DFP/1.2.63/xc8\pic\include\proc\pic16lf1718.h
+"374 C:/Program Files/Microchip/MPLABX/v5.45/packs/Microchip/PIC12-16F1xxx_DFP/1.2.63/xc8\pic\include\proc\pic16lf1718.h
 [s S216 . 1 `uc 1 . 1 0 :2:0 
 `uc 1 T0IF 1 0 :1:2 
 `uc 1 . 1 0 :2:3 
@@ -327,7 +327,7 @@
 "7537
 [u S93 . 1 `S84 1 . 1 0 ]
 [v _IOCAFbits IOCAFbits `VES93  1 e 1 @915 ]
-"55 D:\Programas\Microchip\xc8\v2.31\pic\sources\c99\common\doprnt.c
+"55 C:\Program Files\Microchip\xc8\v2.31\pic\sources\c99\common\doprnt.c
 [v _flags flags `i  1 s 2 flags ]
 [v _prec prec `i  1 s 2 prec ]
 [v _width width `i  1 s 2 width ]
@@ -335,7 +335,7 @@
 [v _dbuf dbuf `[32]uc  1 s 32 dbuf ]
 "69
 [v _nout nout `i  1 s 2 nout ]
-"57 D:\documentos\master\Cembido\ProyectoStarWars\MPlab\S2_1991255.X\mcc_generated_files/pin_manager.c
+"57 C:\Users\davfe\Documents\GitHub\Cembido\ProyectoStarWars\MPlab\S2_1991255.X\mcc_generated_files/pin_manager.c
 [v _IOCAF0_InterruptHandler IOCAF0_InterruptHandler `*.37(v  1 e 2 0 ]
 "58
 [v _IOCAF1_InterruptHandler IOCAF1_InterruptHandler `*.37(v  1 e 2 0 ]
@@ -347,11 +347,11 @@
 [v _IOCAF4_InterruptHandler IOCAF4_InterruptHandler `*.37(v  1 e 2 0 ]
 "62
 [v _IOCAF5_InterruptHandler IOCAF5_InterruptHandler `*.37(v  1 e 2 0 ]
-"59 D:\documentos\master\Cembido\ProyectoStarWars\MPlab\S2_1991255.X\mcc_generated_files/tmr0.c
+"59 C:\Users\davfe\Documents\GitHub\Cembido\ProyectoStarWars\MPlab\S2_1991255.X\mcc_generated_files/tmr0.c
 [v _timer0ReloadVal timer0ReloadVal `VEuc  1 e 1 0 ]
 "60
 [v _TMR0_InterruptHandler TMR0_InterruptHandler `*.37(v  1 e 2 0 ]
-"27 D:\documentos\master\Cembido\ProyectoStarWars\MPlab\S2_1991255.X\menu.c
+"27 C:\Users\davfe\Documents\GitHub\Cembido\ProyectoStarWars\MPlab\S2_1991255.X\menu.c
 [v _lcdOffset lcdOffset `uc  1 e 1 0 ]
 "28
 [v _inGame inGame `a  1 e 1 0 ]
@@ -371,7 +371,7 @@
 [v _shield2CD shield2CD `i  1 e 2 0 ]
 "37
 [v _s s `[15]uc  1 e 15 0 ]
-"29 D:\documentos\master\Cembido\ProyectoStarWars\MPlab\S2_1991255.X\naves.c
+"29 C:\Users\davfe\Documents\GitHub\Cembido\ProyectoStarWars\MPlab\S2_1991255.X\naves.c
 [v _ship1 ship1 `uc  1 e 1 0 ]
 "30
 [v _ship2 ship2 `uc  1 e 1 0 ]
@@ -383,9 +383,9 @@
 [v _shield1 shield1 `i  1 e 2 0 ]
 "36
 [v _shield2 shield2 `i  1 e 2 0 ]
-"19 D:\documentos\master\Cembido\ProyectoStarWars\MPlab\S2_1991255.X\pseudoRandom.c
+"19 C:\Users\davfe\Documents\GitHub\Cembido\ProyectoStarWars\MPlab\S2_1991255.X\pseudoRandom.c
 [v _counter counter `d  1 e 4 0 ]
-"29 D:\documentos\master\Cembido\ProyectoStarWars\MPlab\S2_1991255.X\main.c
+"29 C:\Users\davfe\Documents\GitHub\Cembido\ProyectoStarWars\MPlab\S2_1991255.X\main.c
 [v _main main `(v  1 e 1 0 ]
 {
 "50
@@ -414,69 +414,69 @@
 [v main@F5698 F5698 `[8]uc  1 s 8 F5698 ]
 "76
 } 0
-"240 D:\documentos\master\Cembido\ProyectoStarWars\MPlab\S2_1991255.X\menu.c
+"242 C:\Users\davfe\Documents\GitHub\Cembido\ProyectoStarWars\MPlab\S2_1991255.X\menu.c
 [v _welcomeScreen welcomeScreen `(v  1 e 1 0 ]
 {
-"247
+"250
 } 0
 "39
 [v _printMenu printMenu `(v  1 e 1 0 ]
 {
 "118
 } 0
-"9 D:\Programas\Microchip\xc8\v2.31\pic\sources\c99\common\nf_sprintf.c
+"9 C:\Program Files\Microchip\xc8\v2.31\pic\sources\c99\common\nf_sprintf.c
 [v _sprintf sprintf `(i  1 e 2 0 ]
 {
 [v sprintf@s s `*.5uc  1 a 1 wreg ]
-[s S1176 _IO_FILE 5 `*.5uc 1 buffer 1 0 `i 1 count 2 1 `i 1 limit 2 3 ]
+[s S1177 _IO_FILE 5 `*.5uc 1 buffer 1 0 `i 1 count 2 1 `i 1 limit 2 3 ]
 "13
-[v sprintf@f f `S1176  1 a 5 28 ]
+[v sprintf@f f `S1177  1 a 5 27 ]
 "12
-[v sprintf@ap ap `[1]*.5v  1 a 1 26 ]
+[v sprintf@ap ap `[1]*.5v  1 a 1 25 ]
 "9
 [v sprintf@s s `*.5uc  1 a 1 wreg ]
-[v sprintf@fmt fmt `*.25DCuc  1 p 2 20 ]
+[v sprintf@fmt fmt `*.25DCuc  1 p 2 19 ]
 "15
-[v sprintf@s s `*.5uc  1 a 1 27 ]
+[v sprintf@s s `*.5uc  1 a 1 26 ]
 "23
 } 0
-"1390 D:\Programas\Microchip\xc8\v2.31\pic\sources\c99\common\doprnt.c
+"1390 C:\Program Files\Microchip\xc8\v2.31\pic\sources\c99\common\doprnt.c
 [v _vfprintf vfprintf `(i  1 e 2 0 ]
 {
-[s S1202 _IO_FILE 0 ]
-[v vfprintf@fp fp `*.5S1202  1 a 1 wreg ]
+[s S1203 _IO_FILE 0 ]
+[v vfprintf@fp fp `*.5S1203  1 a 1 wreg ]
 "1393
-[v vfprintf@cfmt cfmt `*.25uc  1 a 2 18 ]
+[v vfprintf@cfmt cfmt `*.25uc  1 a 2 17 ]
 "1390
-[v vfprintf@fp fp `*.5S1202  1 a 1 wreg ]
-[v vfprintf@fmt fmt `*.25DCuc  1 p 2 14 ]
-[v vfprintf@ap ap `*.5*.5v  1 p 1 16 ]
+[v vfprintf@fp fp `*.5S1203  1 a 1 wreg ]
+[v vfprintf@fmt fmt `*.25DCuc  1 p 2 42 ]
+[v vfprintf@ap ap `*.5*.5v  1 p 1 44 ]
 "1395
 "1390
-[v vfprintf@fp fp `*.5S1202  1 a 1 17 ]
+[v vfprintf@fp fp `*.5S1203  1 a 1 16 ]
 "1404
 } 0
 "692
 [v _vfpfcnvrt vfpfcnvrt `(i  1 s 2 vfpfcnvrt ]
 {
-[s S1202 _IO_FILE 0 ]
-[v vfpfcnvrt@fp fp `*.5S1202  1 a 1 wreg ]
+[s S1203 _IO_FILE 0 ]
+[v vfpfcnvrt@fp fp `*.5S1203  1 a 1 wreg ]
 "696
 [v vfpfcnvrt@ll ll `o  1 a 8 5 ]
 "692
-[v vfpfcnvrt@fp fp `*.5S1202  1 a 1 wreg ]
+[v vfpfcnvrt@fp fp `*.5S1203  1 a 1 wreg ]
 [v vfpfcnvrt@fmt fmt `*.5*.25uc  1 p 1 40 ]
 [v vfpfcnvrt@ap ap `*.5*.5v  1 p 1 41 ]
 "702
 "692
-[v vfpfcnvrt@fp fp `*.5S1202  1 a 1 13 ]
+[v vfpfcnvrt@fp fp `*.5S1203  1 a 1 13 ]
 "1387
 } 0
 "287
 [v _dtoa dtoa `(i  1 s 2 dtoa ]
 {
-[s S1202 _IO_FILE 0 ]
-[v dtoa@fp fp `*.5S1202  1 a 1 wreg ]
+[s S1203 _IO_FILE 0 ]
+[v dtoa@fp fp `*.5S1203  1 a 1 wreg ]
 "290
 [v dtoa@n n `o  1 a 8 30 ]
 "289
@@ -485,31 +485,31 @@
 [v dtoa@w w `i  1 a 2 26 ]
 [v dtoa@p p `i  1 a 2 24 ]
 "287
-[v dtoa@fp fp `*.5S1202  1 a 1 wreg ]
+[v dtoa@fp fp `*.5S1203  1 a 1 wreg ]
 [v dtoa@d d `o  1 p 8 10 ]
 "293
 "287
-[v dtoa@fp fp `*.5S1202  1 a 1 21 ]
+[v dtoa@fp fp `*.5S1203  1 a 1 21 ]
 "328
 } 0
 "72
 [v _pad pad `(i  1 s 2 pad ]
 {
-[s S1202 _IO_FILE 0 ]
-[v pad@fp fp `*.5S1202  1 a 1 wreg ]
+[s S1203 _IO_FILE 0 ]
+[v pad@fp fp `*.5S1203  1 a 1 wreg ]
 "74
 [v pad@w w `i  1 a 2 2 ]
 [v pad@i i `i  1 a 2 0 ]
 "72
-[v pad@fp fp `*.5S1202  1 a 1 wreg ]
+[v pad@fp fp `*.5S1203  1 a 1 wreg ]
 [v pad@buf buf `*.7uc  1 p 1 37 ]
 [v pad@p p `i  1 p 2 38 ]
 "77
 "72
-[v pad@fp fp `*.5S1202  1 a 1 4 ]
+[v pad@fp fp `*.5S1203  1 a 1 4 ]
 "95
 } 0
-"5 D:\Programas\Microchip\xc8\v2.31\pic\sources\c99\common\strlen.c
+"5 C:\Program Files\Microchip\xc8\v2.31\pic\sources\c99\common\strlen.c
 [v _strlen strlen `(ui  1 e 2 0 ]
 {
 [v strlen@s s `*.7DCuc  1 a 1 wreg ]
@@ -521,7 +521,7 @@
 [v strlen@s s `*.7DCuc  1 a 1 25 ]
 "12
 } 0
-"8 D:\Programas\Microchip\xc8\v2.31\pic\sources\c99\common\nf_fputs.c
+"8 C:\Program Files\Microchip\xc8\v2.31\pic\sources\c99\common\nf_fputs.c
 [v _fputs fputs `(i  1 e 2 0 ]
 {
 [v fputs@s s `*.7DCuc  1 a 1 wreg ]
@@ -531,32 +531,32 @@
 [v fputs@c c `uc  1 a 1 33 ]
 "8
 [v fputs@s s `*.7DCuc  1 a 1 wreg ]
-[s S1176 _IO_FILE 5 `*.5uc 1 buffer 1 0 `i 1 count 2 1 `i 1 limit 2 3 ]
-[v fputs@fp fp `*.5S1176  1 p 1 29 ]
+[s S1177 _IO_FILE 5 `*.5uc 1 buffer 1 0 `i 1 count 2 1 `i 1 limit 2 3 ]
+[v fputs@fp fp `*.5S1177  1 p 1 29 ]
 "13
 [v fputs@s s `*.7DCuc  1 a 1 34 ]
 "19
 } 0
-"8 D:\Programas\Microchip\xc8\v2.31\pic\sources\c99\common\nf_fputc.c
+"8 C:\Program Files\Microchip\xc8\v2.31\pic\sources\c99\common\nf_fputc.c
 [v _fputc fputc `(i  1 e 2 0 ]
 {
 [v fputc@c c `i  1 p 2 21 ]
-[s S1176 _IO_FILE 5 `*.5uc 1 buffer 1 0 `i 1 count 2 1 `i 1 limit 2 3 ]
-[v fputc@fp fp `*.5S1176  1 p 1 23 ]
+[s S1177 _IO_FILE 5 `*.5uc 1 buffer 1 0 `i 1 count 2 1 `i 1 limit 2 3 ]
+[v fputc@fp fp `*.5S1177  1 p 1 23 ]
 "24
 } 0
-"7 D:\Programas\Microchip\xc8\v2.31\pic\sources\c99\common\putch.c
+"7 C:\Program Files\Microchip\xc8\v2.31\pic\sources\c99\common\putch.c
 [v _putch putch `(v  1 e 1 0 ]
 {
 "9
 } 0
-"1 D:\Programas\Microchip\xc8\v2.31\pic\sources\c99\common\abs.c
+"1 C:\Program Files\Microchip\xc8\v2.31\pic\sources\c99\common\abs.c
 [v _abs abs `(i  1 e 2 0 ]
 {
 [v abs@a a `i  1 p 2 40 ]
 "4
 } 0
-"7 D:\Programas\Microchip\xc8\v2.31\pic\sources\c99\common\aomod.c
+"7 C:\Program Files\Microchip\xc8\v2.31\pic\sources\c99\common\aomod.c
 [v ___aomod __aomod `(o  1 e 8 0 ]
 {
 "12
@@ -567,7 +567,7 @@
 [v ___aomod@dividend dividend `o  1 p 8 29 ]
 "36
 } 0
-"7 D:\Programas\Microchip\xc8\v2.31\pic\sources\c99\common\aodiv.c
+"7 C:\Program Files\Microchip\xc8\v2.31\pic\sources\c99\common\aodiv.c
 [v ___aodiv __aodiv `(o  1 e 8 0 ]
 {
 "12
@@ -580,7 +580,7 @@
 [v ___aodiv@dividend dividend `o  1 p 8 29 ]
 "43
 } 0
-"120 D:\documentos\master\Cembido\ProyectoStarWars\MPlab\S2_1991255.X\menu.c
+"120 C:\Users\davfe\Documents\GitHub\Cembido\ProyectoStarWars\MPlab\S2_1991255.X\menu.c
 [v _mainMenu mainMenu `(v  1 e 1 0 ]
 {
 "158
@@ -590,12 +590,12 @@
 {
 "175
 } 0
-"291
+"293
 [v _cleanFullMenu cleanFullMenu `(v  1 e 1 0 ]
 {
-"305
+"307
 } 0
-"131 D:\documentos\master\Cembido\ProyectoStarWars\MPlab\S2_1991255.X\lcd.c
+"131 C:\Users\davfe\Documents\GitHub\Cembido\ProyectoStarWars\MPlab\S2_1991255.X\lcd.c
 [v _LCDPutStr LCDPutStr `(v  1 e 1 0 ]
 {
 "133
@@ -614,7 +614,7 @@
 [v LCDGoto@pos pos `uc  1 a 1 31 ]
 "157
 } 0
-"124 D:\documentos\master\Cembido\ProyectoStarWars\MPlab\S2_1991255.X\functions.c
+"124 C:\Users\davfe\Documents\GitHub\Cembido\ProyectoStarWars\MPlab\S2_1991255.X\functions.c
 [v _disableButton disableButton `(v  1 e 1 0 ]
 {
 [v disableButton@player player `a  1 a 1 wreg ]
@@ -633,7 +633,7 @@
 [v createCustomCharacter@Location Location `DCuc  1 p 1 30 ]
 "52
 } 0
-"101 D:\documentos\master\Cembido\ProyectoStarWars\MPlab\S2_1991255.X\lcd.c
+"101 C:\Users\davfe\Documents\GitHub\Cembido\ProyectoStarWars\MPlab\S2_1991255.X\lcd.c
 [v _LCDPutChar LCDPutChar `(v  1 e 1 0 ]
 {
 [v LCDPutChar@ch ch `uc  1 a 1 wreg ]
@@ -642,7 +642,7 @@
 [v LCDPutChar@ch ch `uc  1 a 1 27 ]
 "113
 } 0
-"50 D:\documentos\master\Cembido\ProyectoStarWars\MPlab\S2_1991255.X\mcc_generated_files/mcc.c
+"50 C:\Users\davfe\Documents\GitHub\Cembido\ProyectoStarWars\MPlab\S2_1991255.X\mcc_generated_files/mcc.c
 [v _SYSTEM_Initialize SYSTEM_Initialize `(v  1 e 1 0 ]
 {
 "57
@@ -652,7 +652,7 @@
 {
 "73
 } 0
-"65 D:\documentos\master\Cembido\ProyectoStarWars\MPlab\S2_1991255.X\mcc_generated_files/tmr0.c
+"65 C:\Users\davfe\Documents\GitHub\Cembido\ProyectoStarWars\MPlab\S2_1991255.X\mcc_generated_files/tmr0.c
 [v _TMR0_Initialize TMR0_Initialize `(v  1 e 1 0 ]
 {
 "86
@@ -663,7 +663,7 @@
 [v TMR0_SetInterruptHandler@InterruptHandler InterruptHandler `*.37(v  1 p 2 21 ]
 "146
 } 0
-"65 D:\documentos\master\Cembido\ProyectoStarWars\MPlab\S2_1991255.X\mcc_generated_files/pin_manager.c
+"65 C:\Users\davfe\Documents\GitHub\Cembido\ProyectoStarWars\MPlab\S2_1991255.X\mcc_generated_files/pin_manager.c
 [v _PIN_MANAGER_Initialize PIN_MANAGER_Initialize `(v  1 e 1 0 ]
 {
 "174
@@ -704,12 +704,12 @@
 [v IOCAF0_SetInterruptHandler@InterruptHandler InterruptHandler `*.37(v  1 p 2 21 ]
 "259
 } 0
-"59 D:\documentos\master\Cembido\ProyectoStarWars\MPlab\S2_1991255.X\mcc_generated_files/mcc.c
+"59 C:\Users\davfe\Documents\GitHub\Cembido\ProyectoStarWars\MPlab\S2_1991255.X\mcc_generated_files/mcc.c
 [v _OSCILLATOR_Initialize OSCILLATOR_Initialize `(v  1 e 1 0 ]
 {
 "67
 } 0
-"46 D:\documentos\master\Cembido\ProyectoStarWars\MPlab\S2_1991255.X\lcd.c
+"46 C:\Users\davfe\Documents\GitHub\Cembido\ProyectoStarWars\MPlab\S2_1991255.X\lcd.c
 [v _LCD_Initialize LCD_Initialize `(v  1 e 1 0 ]
 {
 "72
@@ -733,12 +733,12 @@
 [v LCDWriteNibble@ch ch `uc  1 a 1 24 ]
 "99
 } 0
-"52 D:\documentos\master\Cembido\ProyectoStarWars\MPlab\S2_1991255.X\mcc_generated_files/interrupt_manager.c
+"52 C:\Users\davfe\Documents\GitHub\Cembido\ProyectoStarWars\MPlab\S2_1991255.X\mcc_generated_files/interrupt_manager.c
 [v _INTERRUPT_InterruptManager INTERRUPT_InterruptManager `II(v  1 e 1 0 ]
 {
 "70
 } 0
-"109 D:\documentos\master\Cembido\ProyectoStarWars\MPlab\S2_1991255.X\mcc_generated_files/tmr0.c
+"109 C:\Users\davfe\Documents\GitHub\Cembido\ProyectoStarWars\MPlab\S2_1991255.X\mcc_generated_files/tmr0.c
 [v _TMR0_ISR TMR0_ISR `(v  1 e 1 0 ]
 {
 "111
@@ -755,7 +755,7 @@
 {
 "151
 } 0
-"176 D:\documentos\master\Cembido\ProyectoStarWars\MPlab\S2_1991255.X\mcc_generated_files/pin_manager.c
+"176 C:\Users\davfe\Documents\GitHub\Cembido\ProyectoStarWars\MPlab\S2_1991255.X\mcc_generated_files/pin_manager.c
 [v _PIN_MANAGER_IOC PIN_MANAGER_IOC `(v  1 e 1 0 ]
 {
 "208
@@ -767,22 +767,17 @@
 [v IOCAF5_ISR@hit hit `a  1 a 1 19 ]
 "648
 } 0
-"266 D:\documentos\master\Cembido\ProyectoStarWars\MPlab\S2_1991255.X\menu.c
+"269 C:\Users\davfe\Documents\GitHub\Cembido\ProyectoStarWars\MPlab\S2_1991255.X\menu.c
 [v _startFight startFight `(v  1 e 1 0 ]
 {
-"289
+"291
 } 0
-"131 D:\documentos\master\Cembido\ProyectoStarWars\MPlab\S2_1991255.X\naves.c
+"131 C:\Users\davfe\Documents\GitHub\Cembido\ProyectoStarWars\MPlab\S2_1991255.X\naves.c
 [v _printShip printShip `(v  1 e 1 0 ]
 {
 "143
 } 0
-"159 D:\documentos\master\Cembido\ProyectoStarWars\MPlab\S2_1991255.X\lcd.c
-[v _LCDClear LCDClear `(v  1 e 1 0 ]
-{
-"165
-} 0
-"660 D:\documentos\master\Cembido\ProyectoStarWars\MPlab\S2_1991255.X\mcc_generated_files/pin_manager.c
+"660 C:\Users\davfe\Documents\GitHub\Cembido\ProyectoStarWars\MPlab\S2_1991255.X\mcc_generated_files/pin_manager.c
 [v _IOCAF5_DefaultInterruptHandler IOCAF5_DefaultInterruptHandler `(v  1 e 1 0 ]
 {
 "663
@@ -811,21 +806,26 @@
 [v _IOCAF2_ISR IOCAF2_ISR `(v  1 e 1 0 ]
 {
 "340
-[v IOCAF2_ISR@hit hit `a  1 a 1 19 ]
+[v IOCAF2_ISR@hit hit `a  1 a 1 79 ]
 "423
 } 0
-"208 D:\documentos\master\Cembido\ProyectoStarWars\MPlab\S2_1991255.X\menu.c
+"208 C:\Users\davfe\Documents\GitHub\Cembido\ProyectoStarWars\MPlab\S2_1991255.X\menu.c
 [v _winScreen winScreen `(v  1 e 1 0 ]
 {
 [v winScreen@player player `i  1 p 2 12 ]
-"239
+"241
 } 0
-"240
+"242
 [v i1_welcomeScreen welcomeScreen `(v  1 e 1 0 ]
 {
-"247
+"250
 } 0
-"176
+"159 C:\Users\davfe\Documents\GitHub\Cembido\ProyectoStarWars\MPlab\S2_1991255.X\lcd.c
+[v _LCDClear LCDClear `(v  1 e 1 0 ]
+{
+"165
+} 0
+"176 C:\Users\davfe\Documents\GitHub\Cembido\ProyectoStarWars\MPlab\S2_1991255.X\menu.c
 [v _nextTurn nextTurn `(v  1 e 1 0 ]
 {
 [v nextTurn@player player `a  1 a 1 wreg ]
@@ -833,7 +833,7 @@
 [v nextTurn@player player `a  1 a 1 2 ]
 "206
 } 0
-"124 D:\documentos\master\Cembido\ProyectoStarWars\MPlab\S2_1991255.X\functions.c
+"124 C:\Users\davfe\Documents\GitHub\Cembido\ProyectoStarWars\MPlab\S2_1991255.X\functions.c
 [v i1_disableButton disableButton `(v  1 e 1 0 ]
 {
 [v i1disableButton@player player `a  1 a 1 wreg ]
@@ -851,7 +851,7 @@
 [v enableButton@player player `a  1 a 1 0 ]
 "192
 } 0
-"116 D:\documentos\master\Cembido\ProyectoStarWars\MPlab\S2_1991255.X\naves.c
+"116 C:\Users\davfe\Documents\GitHub\Cembido\ProyectoStarWars\MPlab\S2_1991255.X\naves.c
 [v _fixShield fixShield `(v  1 e 1 0 ]
 {
 [v fixShield@player player `a  1 a 1 wreg ]
@@ -867,17 +867,17 @@
 [v fix@player player `a  1 a 1 65 ]
 "114
 } 0
-"250 D:\documentos\master\Cembido\ProyectoStarWars\MPlab\S2_1991255.X\menu.c
+"253 C:\Users\davfe\Documents\GitHub\Cembido\ProyectoStarWars\MPlab\S2_1991255.X\menu.c
 [v _failScreen failScreen `(v  1 e 1 0 ]
 {
-"255
+"258
 } 0
-"257
+"260
 [v _cooldownScreen cooldownScreen `(v  1 e 1 0 ]
 {
-"264
+"267
 } 0
-"38 D:\documentos\master\Cembido\ProyectoStarWars\MPlab\S2_1991255.X\naves.c
+"38 C:\Users\davfe\Documents\GitHub\Cembido\ProyectoStarWars\MPlab\S2_1991255.X\naves.c
 [v _attack attack `(a  1 e 1 0 ]
 {
 [v attack@isSpecial isSpecial `a  1 a 1 wreg ]
@@ -886,7 +886,7 @@
 [v attack@isSpecial isSpecial `a  1 a 1 67 ]
 "99
 } 0
-"21 D:\documentos\master\Cembido\ProyectoStarWars\MPlab\S2_1991255.X\pseudoRandom.c
+"21 C:\Users\davfe\Documents\GitHub\Cembido\ProyectoStarWars\MPlab\S2_1991255.X\pseudoRandom.c
 [v _taylorSine taylorSine `(a  1 e 1 0 ]
 {
 "37
@@ -901,7 +901,7 @@
 [v taylorSine@hit hit `a  1 a 1 6 ]
 "57
 } 0
-"10 D:\Programas\Microchip\xc8\v2.31\pic\sources\c99\common\xxtofl.c
+"10 C:\Program Files\Microchip\xc8\v2.31\pic\sources\c99\common\xxtofl.c
 [v ___xxtofl __xxtofl `(d  1 e 4 0 ]
 {
 [v ___xxtofl@sign sign `uc  1 a 1 wreg ]
@@ -916,7 +916,7 @@
 [v ___xxtofl@sign sign `uc  1 a 1 0 ]
 "44
 } 0
-"15 D:\Programas\Microchip\xc8\v2.31\pic\sources\c99\common\Umul16.c
+"15 C:\Program Files\Microchip\xc8\v2.31\pic\sources\c99\common\Umul16.c
 [v ___wmul __wmul `(ui  1 e 2 0 ]
 {
 "17
@@ -926,26 +926,26 @@
 [v ___wmul@multiplicand multiplicand `ui  1 p 2 2 ]
 "53
 } 0
-"15 D:\Programas\Microchip\xc8\v2.31\pic\sources\c99\common\flneg.c
+"15 C:\Program Files\Microchip\xc8\v2.31\pic\sources\c99\common\flneg.c
 [v ___flneg __flneg `(d  1 e 4 0 ]
 {
 [v ___flneg@f1 f1 `d  1 p 4 32 ]
 "20
 } 0
-"8 D:\Programas\Microchip\xc8\v2.31\pic\sources\c99\common\sprcmul.c
+"8 C:\Program Files\Microchip\xc8\v2.31\pic\sources\c99\common\sprcmul.c
 [v ___flmul __flmul `(d  1 e 4 0 ]
 {
-[s S1029 . 4 `uc 1 a 1 0 `uc 1 b 1 1 `uc 1 c 1 2 `uc 1 d 1 3 ]
+[s S1030 . 4 `uc 1 a 1 0 `uc 1 b 1 1 `uc 1 c 1 2 `uc 1 d 1 3 ]
 "13
-[s S1034 . 4 `i 1 wordA 2 0 `i 1 wordB 2 2 ]
-[u S1037 . 4 `l 1 i 4 0 `d 1 f 4 0 `S1029 1 fAsBytes 4 0 `S1034 1 fAsWords 4 0 ]
-[v ___flmul@prod prod `S1037  1 a 4 26 ]
+[s S1035 . 4 `i 1 wordA 2 0 `i 1 wordB 2 2 ]
+[u S1038 . 4 `l 1 i 4 0 `d 1 f 4 0 `S1030 1 fAsBytes 4 0 `S1035 1 fAsWords 4 0 ]
+[v ___flmul@prod prod `S1038  1 a 4 26 ]
 "12
 [v ___flmul@grs grs `ul  1 a 4 22 ]
-[s S1106 . 2 `uc 1 a 1 0 `uc 1 b 1 1 ]
+[s S1107 . 2 `uc 1 a 1 0 `uc 1 b 1 1 ]
 "14
-[u S1109 . 2 `i 1 i 2 0 `ui 1 n 2 0 `S1106 1 nAsBytes 2 0 ]
-[v ___flmul@temp temp `S1109  1 a 2 30 ]
+[u S1110 . 2 `i 1 i 2 0 `ui 1 n 2 0 `S1107 1 nAsBytes 2 0 ]
+[v ___flmul@temp temp `S1110  1 a 2 30 ]
 "10
 [v ___flmul@bexp bexp `uc  1 a 1 21 ]
 "11
@@ -957,7 +957,7 @@
 [v ___flmul@a a `d  1 p 4 10 ]
 "205
 } 0
-"4 D:\Programas\Microchip\xc8\v2.31\pic\sources\c99\common\Umul8_16.c
+"4 C:\Program Files\Microchip\xc8\v2.31\pic\sources\c99\common\Umul8_16.c
 [v __Umul8_16 _Umul8_16 `(ui  1 e 2 0 ]
 {
 [v __Umul8_16@multiplier multiplier `uc  1 a 1 wreg ]
@@ -971,14 +971,14 @@
 [v __Umul8_16@multiplier multiplier `uc  1 a 1 8 ]
 "60
 } 0
-"4 D:\Programas\Microchip\xc8\v2.31\pic\sources\c99\common\flge.c
+"4 C:\Program Files\Microchip\xc8\v2.31\pic\sources\c99\common\flge.c
 [v ___flge __flge `(b  1 e 0 0 ]
 {
 [v ___flge@ff1 ff1 `d  1 p 4 0 ]
 [v ___flge@ff2 ff2 `d  1 p 4 4 ]
 "19
 } 0
-"8 D:\Programas\Microchip\xc8\v2.31\pic\sources\c99\common\sprcdiv.c
+"8 C:\Program Files\Microchip\xc8\v2.31\pic\sources\c99\common\sprcdiv.c
 [v ___fldiv __fldiv `(d  1 e 4 0 ]
 {
 "21
@@ -998,7 +998,7 @@
 [v ___fldiv@b b `d  1 p 4 40 ]
 "185
 } 0
-"10 D:\Programas\Microchip\xc8\v2.31\pic\sources\c99\common\sprcadd.c
+"10 C:\Program Files\Microchip\xc8\v2.31\pic\sources\c99\common\sprcadd.c
 [v ___fladd __fladd `(d  1 e 4 0 ]
 {
 "17
@@ -1014,7 +1014,7 @@
 [v ___fladd@a a `d  1 p 4 4 ]
 "237
 } 0
-"235 D:\documentos\master\Cembido\ProyectoStarWars\MPlab\S2_1991255.X\naves.c
+"235 C:\Users\davfe\Documents\GitHub\Cembido\ProyectoStarWars\MPlab\S2_1991255.X\naves.c
 [v _printShield printShield `(v  1 e 1 0 ]
 {
 "296
@@ -1080,7 +1080,7 @@
 [v printHeart@F5901 F5901 `[8]uc  1 s 8 F5901 ]
 "233
 } 0
-"29 D:\documentos\master\Cembido\ProyectoStarWars\MPlab\S2_1991255.X\functions.c
+"29 C:\Users\davfe\Documents\GitHub\Cembido\ProyectoStarWars\MPlab\S2_1991255.X\functions.c
 [v i1_createCustomCharacter createCustomCharacter `(v  1 e 1 0 ]
 {
 "45
@@ -1101,7 +1101,7 @@
 [v basicShoot@direction direction `i  1 p 2 0 ]
 "122
 } 0
-"435 D:\documentos\master\Cembido\ProyectoStarWars\MPlab\S2_1991255.X\mcc_generated_files/pin_manager.c
+"435 C:\Users\davfe\Documents\GitHub\Cembido\ProyectoStarWars\MPlab\S2_1991255.X\mcc_generated_files/pin_manager.c
 [v _IOCAF2_DefaultInterruptHandler IOCAF2_DefaultInterruptHandler `(v  1 e 1 0 ]
 {
 "438
@@ -1121,18 +1121,18 @@
 {
 "252
 } 0
-"39 D:\documentos\master\Cembido\ProyectoStarWars\MPlab\S2_1991255.X\menu.c
+"39 C:\Users\davfe\Documents\GitHub\Cembido\ProyectoStarWars\MPlab\S2_1991255.X\menu.c
 [v i1_printMenu printMenu `(v  1 e 1 0 ]
 {
 "118
 } 0
-"9 D:\Programas\Microchip\xc8\v2.31\pic\sources\c99\common\nf_sprintf.c
+"9 C:\Program Files\Microchip\xc8\v2.31\pic\sources\c99\common\nf_sprintf.c
 [v i1_sprintf sprintf `(i  1 e 2 0 ]
 {
 [v i1sprintf@s s `*.5uc  1 a 1 wreg ]
-[s S1176 _IO_FILE 5 `*.5uc 1 buffer 1 0 `i 1 count 2 1 `i 1 limit 2 3 ]
+[s S1177 _IO_FILE 5 `*.5uc 1 buffer 1 0 `i 1 count 2 1 `i 1 limit 2 3 ]
 "13
-[v i1sprintf@f f `S1176  1 a 5 5 ]
+[v i1sprintf@f f `S1177  1 a 5 5 ]
 "12
 [v i1sprintf@ap ap `[1]*.39v  1 a 2 2 ]
 "9
@@ -1142,14 +1142,14 @@
 [v i1sprintf@s s `*.5uc  1 a 1 4 ]
 "23
 } 0
-"1390 D:\Programas\Microchip\xc8\v2.31\pic\sources\c99\common\doprnt.c
+"1390 C:\Program Files\Microchip\xc8\v2.31\pic\sources\c99\common\doprnt.c
 [v i1_vfprintf vfprintf `(i  1 e 2 0 ]
 {
 "1393
 [v i1vfprintf@cfmt cfmt `*.25uc  1 a 2 72 ]
-[s S1202 _IO_FILE 0 ]
+[s S1203 _IO_FILE 0 ]
 "1390
-[v i1vfprintf@fp fp `*.39S1202  1 p 2 65 ]
+[v i1vfprintf@fp fp `*.39S1203  1 p 2 65 ]
 [v i1vfprintf@fmt fmt `*.25DCuc  1 p 2 67 ]
 [v i1vfprintf@ap ap `*.39*.39v  1 p 2 69 ]
 "1404
@@ -1159,9 +1159,9 @@
 {
 "696
 [v i1vfpfcnvrt@ll ll `o  1 a 8 57 ]
-[s S1202 _IO_FILE 0 ]
+[s S1203 _IO_FILE 0 ]
 "692
-[v i1vfpfcnvrt@fp fp `*.39S1202  1 p 2 47 ]
+[v i1vfpfcnvrt@fp fp `*.39S1203  1 p 2 47 ]
 [v i1vfpfcnvrt@fmt fmt `*.39*.25uc  1 p 2 49 ]
 [v i1vfpfcnvrt@ap ap `*.39*.39v  1 p 2 51 ]
 "1387
@@ -1176,9 +1176,9 @@
 [v i1dtoa@s s `i  1 a 2 35 ]
 [v i1dtoa@w w `i  1 a 2 33 ]
 [v i1dtoa@p p `i  1 a 2 31 ]
-[s S1202 _IO_FILE 0 ]
+[s S1203 _IO_FILE 0 ]
 "287
-[v i1dtoa@fp fp `*.39S1202  1 p 2 16 ]
+[v i1dtoa@fp fp `*.39S1203  1 p 2 16 ]
 [v i1dtoa@d d `o  1 p 8 18 ]
 "328
 } 0
@@ -1188,14 +1188,14 @@
 "74
 [v i1pad@w w `i  1 a 2 11 ]
 [v i1pad@i i `i  1 a 2 9 ]
-[s S1202 _IO_FILE 0 ]
+[s S1203 _IO_FILE 0 ]
 "72
-[v i1pad@fp fp `*.39S1202  1 p 2 4 ]
+[v i1pad@fp fp `*.39S1203  1 p 2 4 ]
 [v i1pad@buf buf `*.7uc  1 p 1 6 ]
 [v i1pad@p p `i  1 p 2 7 ]
 "95
 } 0
-"5 D:\Programas\Microchip\xc8\v2.31\pic\sources\c99\common\strlen.c
+"5 C:\Program Files\Microchip\xc8\v2.31\pic\sources\c99\common\strlen.c
 [v i1_strlen strlen `(ui  1 e 2 0 ]
 {
 [v i1strlen@s s `*.7DCuc  1 a 1 wreg ]
@@ -1207,7 +1207,7 @@
 [v i1strlen@s s `*.7DCuc  1 a 1 4 ]
 "12
 } 0
-"8 D:\Programas\Microchip\xc8\v2.31\pic\sources\c99\common\nf_fputs.c
+"8 C:\Program Files\Microchip\xc8\v2.31\pic\sources\c99\common\nf_fputs.c
 [v i1_fputs fputs `(i  1 e 2 0 ]
 {
 [v i1fputs@s s `*.7DCuc  1 a 1 wreg ]
@@ -1217,32 +1217,32 @@
 [v i1fputs@c c `uc  1 a 1 1 ]
 "8
 [v i1fputs@s s `*.7DCuc  1 a 1 wreg ]
-[s S1176 _IO_FILE 5 `*.5uc 1 buffer 1 0 `i 1 count 2 1 `i 1 limit 2 3 ]
-[v i1fputs@fp fp `*.39S1176  1 p 2 9 ]
+[s S1177 _IO_FILE 5 `*.5uc 1 buffer 1 0 `i 1 count 2 1 `i 1 limit 2 3 ]
+[v i1fputs@fp fp `*.39S1177  1 p 2 9 ]
 "13
 [v i1fputs@s s `*.7DCuc  1 a 1 0 ]
 "19
 } 0
-"8 D:\Programas\Microchip\xc8\v2.31\pic\sources\c99\common\nf_fputc.c
+"8 C:\Program Files\Microchip\xc8\v2.31\pic\sources\c99\common\nf_fputc.c
 [v i1_fputc fputc `(i  1 e 2 0 ]
 {
 [v i1fputc@c c `i  1 p 2 0 ]
-[s S1176 _IO_FILE 5 `*.5uc 1 buffer 1 0 `i 1 count 2 1 `i 1 limit 2 3 ]
-[v i1fputc@fp fp `*.39S1176  1 p 2 2 ]
+[s S1177 _IO_FILE 5 `*.5uc 1 buffer 1 0 `i 1 count 2 1 `i 1 limit 2 3 ]
+[v i1fputc@fp fp `*.39S1177  1 p 2 2 ]
 "24
 } 0
-"7 D:\Programas\Microchip\xc8\v2.31\pic\sources\c99\common\putch.c
+"7 C:\Program Files\Microchip\xc8\v2.31\pic\sources\c99\common\putch.c
 [v i1_putch putch `(v  1 e 1 0 ]
 {
 "9
 } 0
-"1 D:\Programas\Microchip\xc8\v2.31\pic\sources\c99\common\abs.c
+"1 C:\Program Files\Microchip\xc8\v2.31\pic\sources\c99\common\abs.c
 [v i1_abs abs `(i  1 e 2 0 ]
 {
 [v i1abs@a a `i  1 p 2 3 ]
 "4
 } 0
-"7 D:\Programas\Microchip\xc8\v2.31\pic\sources\c99\common\aomod.c
+"7 C:\Program Files\Microchip\xc8\v2.31\pic\sources\c99\common\aomod.c
 [v i1___aomod __aomod `(o  1 e 8 0 ]
 {
 "12
@@ -1253,7 +1253,7 @@
 [v i1___aomod@dividend dividend `o  1 p 8 8 ]
 "36
 } 0
-"7 D:\Programas\Microchip\xc8\v2.31\pic\sources\c99\common\aodiv.c
+"7 C:\Program Files\Microchip\xc8\v2.31\pic\sources\c99\common\aodiv.c
 [v i1___aodiv __aodiv `(o  1 e 8 0 ]
 {
 "12
@@ -1266,7 +1266,7 @@
 [v i1___aodiv@dividend dividend `o  1 p 8 8 ]
 "43
 } 0
-"120 D:\documentos\master\Cembido\ProyectoStarWars\MPlab\S2_1991255.X\menu.c
+"120 C:\Users\davfe\Documents\GitHub\Cembido\ProyectoStarWars\MPlab\S2_1991255.X\menu.c
 [v i1_mainMenu mainMenu `(v  1 e 1 0 ]
 {
 "158
@@ -1276,12 +1276,12 @@
 {
 "175
 } 0
-"291
+"293
 [v i1_cleanFullMenu cleanFullMenu `(v  1 e 1 0 ]
 {
-"305
+"307
 } 0
-"131 D:\documentos\master\Cembido\ProyectoStarWars\MPlab\S2_1991255.X\lcd.c
+"131 C:\Users\davfe\Documents\GitHub\Cembido\ProyectoStarWars\MPlab\S2_1991255.X\lcd.c
 [v i1_LCDPutStr LCDPutStr `(v  1 e 1 0 ]
 {
 "133
@@ -1328,7 +1328,7 @@
 [v i1LCDWriteNibble@ch ch `uc  1 a 1 3 ]
 "99
 } 0
-"264 D:\documentos\master\Cembido\ProyectoStarWars\MPlab\S2_1991255.X\mcc_generated_files/pin_manager.c
+"264 C:\Users\davfe\Documents\GitHub\Cembido\ProyectoStarWars\MPlab\S2_1991255.X\mcc_generated_files/pin_manager.c
 [v _IOCAF0_DefaultInterruptHandler IOCAF0_DefaultInterruptHandler `(v  1 e 1 0 ]
 {
 "267

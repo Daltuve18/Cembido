@@ -95,7 +95,7 @@ void basicShoot(int direction)
             {
                 LCDGoto(j,0);
                 LCDPutChar(2);
-                __delay_ms(200);
+                __delay_ms(125);
                 j++;
                 LCDGoto(j-1,0);
                 LCDPutStr(" ");
@@ -111,7 +111,7 @@ void basicShoot(int direction)
             {
                 LCDGoto(j,0);
                 LCDPutChar(2);
-                __delay_ms(200);
+                __delay_ms(125);
                 j--;
                 LCDGoto(j+1,0);
                 LCDPutStr(" ");

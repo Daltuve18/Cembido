@@ -219,7 +219,7 @@ void winScreen(int player){
         LCDGoto(0, 1);
         LCDPutStr("Winner: 2");
     }
-    __delay_ms(1000);
+    __delay_ms(2000);
     inGame = false;
     mainState = 0;
     health1=4;
@@ -232,18 +232,21 @@ void winScreen(int player){
     special2CD = 1;
     fix2CD = 1;
     shield2CD = 1;
+    LCDClear();
     welcomeScreen();
+    inGame = true;
     printMenu();
     
     
 }
 void welcomeScreen(){
     cleanMenu();
+    
     LCDGoto(lcdOffset, 0);
-    LCDPutStr("Force");
+    LCDPutStr(">>>>Force<<<<");
     LCDGoto(lcdOffset, 1);
-    LCDPutStr("Fighters");
-    __delay_ms(500);
+    LCDPutStr("**Fighters**");
+    __delay_ms(2000);
 }
 
 
@@ -283,7 +286,6 @@ void startFight (void)
         LCDPutStr("Start Fight");
         __delay_ms(1000);
         mainState  = 0;
-        inGame = true;
         printMenu();
 
     }
