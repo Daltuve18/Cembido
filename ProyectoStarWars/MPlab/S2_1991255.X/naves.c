@@ -38,7 +38,7 @@ int shield2=3;
 bool attack(bool isSpecial, bool player){
     if (!player){
         basicShoot(0);
-        if (taylorSine()){
+        if (taylorSine(ship1,isSpecial)){
             if (isSpecial){
                 if (shield2 == 0){
                     health2 = health2-2;
@@ -67,7 +67,7 @@ bool attack(bool isSpecial, bool player){
         }
     }else{
         basicShoot(1);
-        if (taylorSine()){
+        if (taylorSine(ship2,isSpecial)){
             if (isSpecial){
                 if (shield1 == 0){
                     health1 = health1-2;
@@ -114,15 +114,26 @@ void fix(bool player){
 }
 
 void fixShield(bool player){
+    int value = 1;
     if(!player){
+        if(ship1 ==  1){
+            value  = 2;
+        }
         if (shield1<4){
-            shield1=shield1+1;
-            
+            shield1=shield1+value;
+        }
+        if (shield1 >4){
+            shield1=4;
         }
     }else{
+        if(ship2 ==  1){
+            value  = 2;
+        }
         if (shield2<4){
-            shield2=shield2+1;
-            
+            shield2=shield2+value; 
+        }
+        if (shield2 >4){
+            shield2=4;
         }
     }
     printShield();

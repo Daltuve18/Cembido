@@ -234,7 +234,6 @@ void winScreen(int player){
     shield2CD = 1;
     LCDClear();
     welcomeScreen();
-    inGame = true;
     printMenu();
     
     
@@ -286,6 +285,7 @@ void startFight (void)
         LCDPutStr("Start Fight");
         __delay_ms(1000);
         mainState  = 0;
+        inGame=true;
         printMenu();
 
     }

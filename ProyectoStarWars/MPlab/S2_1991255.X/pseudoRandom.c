@@ -18,7 +18,7 @@ Date          : 7/18/2021
 
 double counter = 0.0;
 
-bool taylorSine(void)
+bool taylorSine(int ship,bool isSpecial)
 
     /***
      Starts the game routine once the ships have been chosen
@@ -37,6 +37,12 @@ bool taylorSine(void)
         double sinx = 0; 
         double term; 
         term = counter; 
+        double prod  =  0.15;
+        if (isSpecial){
+            if (ship == 0){
+                prod = 0.0;
+            }
+        }
         while (k < N) 
             { // iterate over 
                 sinx +=  term; 
@@ -45,7 +51,7 @@ bool taylorSine(void)
             }
         sinx*=sinx;
         
-        if(sinx>0.15)
+        if(sinx>prod)
             {
              hit = true;
             }

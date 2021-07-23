@@ -14,5 +14,5 @@ Date          : 7/18/2021
 ***/
 extern double counter;
 
-bool taylorSine(void);
+bool taylorSine(int ship,bool isSpecial);
 
