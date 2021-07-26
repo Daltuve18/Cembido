@@ -11,6 +11,18 @@ Revision      : 00
 Date          : 7/18/2021
 -----------------------------------------------------------------------------
 
+Available functions:
+
+printMenu      -- Print the abilities menu
+mainMenu       -- Print the select main menu
+cleanMenu      -- Clears the menu printed
+nextTurn       -- Selects the incoming turn player
+welcomeScreen  -- Prints the welcome screen
+failScreen     -- Prints the missed shot screen
+cooldownScreen -- Prints the ability on cooldown screen
+startFight     -- Prints the start fight screen 
+cleanFullMenu  -- Clears full menu 
+
 ***/
 extern bool inGame;
 extern uint8_t mainState;
@@ -27,9 +39,9 @@ void cleanMenu (void);
 void cleanFullMenu (void);
 void mainMenu(void);
 void winScreen(int player);
-void failScreen();
+void failScreen(void);
 void startFight (void);
-void cooldownScreen();
+void cooldownScreen(void);
 void nextTurn(bool player);
-void welcomeScreen();
+void welcomeScreen(void);
 

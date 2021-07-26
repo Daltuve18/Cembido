@@ -11,6 +11,8 @@ Revision      : 00
 Date          : 7/18/2021
 -----------------------------------------------------------------------------
 
+taylorSine -- Calculates the squared sine Taylor's series, using the TMR0 value 
+
 ***/
 
 #include <stdio.h> 
@@ -21,13 +23,14 @@ double counter = 0.0;
 bool taylorSine(int ship,bool isSpecial)
 
     /***
-     Starts the game routine once the ships have been chosen
+     Calculates the Square Sine Taylor's series of 12 terms
 
         Arguments:
      
-        count --  TMR0 counter value
+        ship      --  Which player is shooting
+        isSpecial --  If the attack is a special or not
 
-        Return values: Square Sine's Taylor series expansion of 20 terms 
+        Return values:
 
     ***/
     {   

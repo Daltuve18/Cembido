@@ -2,7 +2,7 @@
 -----------------------------------------------------------------------------
 PG7233
 -----------------------------------------------------------------------------
-Package name  : functions.c
+Package name  : functions.h
 Description   : Rising Force Fighters
 Authors       : David Altuve & Leonardo Cabrera
 Email         : 19-91255@usb.ve / 20-91371@usb.ve
@@ -10,6 +10,19 @@ Version       : 01.00
 Revision      : 00
 Date          : 7/18/2021
 -----------------------------------------------------------------------------
+
+Available functions:
+
+printMenu      -- Print the abilities menu
+mainMenu       -- Print the select main menu
+cleanMenu      -- Clears the menu printed
+nextTurn       -- Selects the incoming turn player
+welcomeScreen  -- Prints the welcome screen
+failScreen     -- Prints the missed shot screen
+cooldownScreen -- Prints the ability on cooldown screen
+startFight     -- Prints the start fight screen 
+cleanFullMenu  -- Clears full menu
+
 
 ***/
 
@@ -174,6 +187,18 @@ void cleanMenu (void)
         LCDPutStr("           ");   
     }
 void nextTurn(bool player){
+    
+    /***
+     Changes the turn once a player have taken an option
+
+        Arguments: 
+     
+     * player -- Current player
+
+        Return values: None
+
+    ***/
+    
     if(!player){
         if (special1CD > 0){
             special1CD=special1CD-1;
@@ -206,6 +231,19 @@ void nextTurn(bool player){
 }
 
 void winScreen(int player){
+    /***
+     Print the win screen of the winner player
+
+        Arguments: 
+     
+     * player -- Winner player
+
+        Return values: None
+
+    ***/
+    
+    
+    
     if (player==0){
         cleanFullMenu();
         LCDGoto(0, 0);
@@ -238,25 +276,52 @@ void winScreen(int player){
     
     
 }
-void welcomeScreen(){
+void welcomeScreen(void){
+    
+    /***
+     Startup screen
+
+        Arguments: 
+
+        Return values: None
+
+    ***/
+    
     cleanMenu();
     
     LCDGoto(lcdOffset, 0);
-    LCDPutStr(">>>>Force<<<<");
+    LCDPutStr("Force");
     LCDGoto(lcdOffset, 1);
-    LCDPutStr("**Fighters**");
+    LCDPutStr("Fighters");
     __delay_ms(2000);
 }
 
 
-void failScreen(){
+void failScreen(void){
+    /***
+     Print a missed shot
+
+        Arguments: 
+
+        Return values: None
+
+    ***/
     cleanMenu();
     LCDGoto(lcdOffset, 0);
     LCDPutStr("   Miss");
     __delay_ms(500);
 }
 
-void cooldownScreen(){
+void cooldownScreen(void){
+    /***
+     Print the remaining cooldown of an ability 
+
+        Arguments: 
+
+        Return values: None
+
+    ***/
+    
     cleanMenu();
     LCDGoto(lcdOffset, 0);
     LCDPutStr("cooldown");

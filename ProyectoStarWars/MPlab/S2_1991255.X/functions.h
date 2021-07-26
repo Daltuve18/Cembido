@@ -14,9 +14,10 @@ Date          : 7/18/2021
 Available functions:
 
 CreateCustomCharacter -- Stores a custom character into the LCD's CGRAM
-idleScreen            -- Prints the idle screen with both ships
-basicShoot            -- Shoot the basic animation in a specific direction
-
+basicShot             -- Basic shot animation 
+disableButton         -- Disables a player's buttons
+enableButton          -- enables a player's buttons
+ 
 ***/
 
 /*Global Variables*/
@@ -26,7 +27,6 @@ extern bool player;
 /*Functions*/
 
 void createCustomCharacter (unsigned char *Pattern, const char Location);
-void idleScreen (void);
-void basicShoot (int direction);
+void basicShot (int direction);
 void disableButton(bool player);
 void enableButton(bool player);

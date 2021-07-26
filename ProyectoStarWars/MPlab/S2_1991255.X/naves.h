@@ -11,6 +11,13 @@ Revision      : 00
 Date          : 7/18/2021
 -----------------------------------------------------------------------------
 
+  attack      --  Performs an attack to the enemy ship
+  fix         --  Fix 1 quarter of heart
+  printShip   --  prints both ships
+  printHeart  --  prints the equivalent amount of health
+  printShield --  prints the equivalent amount of shield
+ 
+ 
 ***/
 extern uint8_t ship1;
 extern uint8_t ship2;

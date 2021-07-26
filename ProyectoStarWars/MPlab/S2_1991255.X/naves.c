@@ -11,6 +11,15 @@ Revision      : 00
 Date          : 7/18/2021
 -----------------------------------------------------------------------------
 
+  attack      --  Performs an attack to the enemy ship
+  fix         --  Fix 1 quarter of heart
+  printShip   --  prints both ships
+  printHeart  --  prints the equivalent amount of health
+  printShield --  prints the equivalent amount of shield
+ 
+ 
+ 
+ 
 ***/
 
 /*Standard Libraries */
@@ -36,8 +45,21 @@ int shield1=3;
 int shield2=3;
 
 bool attack(bool isSpecial, bool player){
+    
+    /***
+     Starts the game routine once the ships have been chosen
+
+        Arguments:
+     
+        ship      --  Which player is shooting
+        isSpecial --  If the attack is a special or not
+
+        Return values: Square Sine's Taylor series expansion of 20 terms 
+
+    ***/
+    
     if (!player){
-        basicShoot(0);
+        basicShot(0);
         if (taylorSine(ship1,isSpecial)){
             if (isSpecial){
                 if (shield2 == 0){
@@ -66,7 +88,7 @@ bool attack(bool isSpecial, bool player){
             return false;
         }
     }else{
-        basicShoot(1);
+        basicShot(1);
         if (taylorSine(ship2,isSpecial)){
             if (isSpecial){
                 if (shield1 == 0){
@@ -99,6 +121,19 @@ bool attack(bool isSpecial, bool player){
 }
 
 void fix(bool player){
+    
+    /***
+     Starts the game routine once the ships have been chosen
+
+        Arguments:
+     
+        ship      --  Which player is shooting
+        isSpecial --  If the attack is a special or not
+
+        Return values: Square Sine's Taylor series expansion of 20 terms 
+
+    ***/
+    
     if(!player){
         if (health1<4){
             health1=health1+1;
@@ -114,6 +149,19 @@ void fix(bool player){
 }
 
 void fixShield(bool player){
+    
+    /***
+     Starts the game routine once the ships have been chosen
+
+        Arguments:
+     
+        ship      --  Which player is shooting
+        isSpecial --  If the attack is a special or not
+
+        Return values: Square Sine's Taylor series expansion of 20 terms 
+
+    ***/
+    
     int value = 1;
     if(!player){
         if(ship1 ==  1){
@@ -139,7 +187,20 @@ void fixShield(bool player){
     printShield();
 }
 
-void printShip()
+void printShip(void)
+
+    /***
+     Draws both shields characters in the LCD screen
+
+        Arguments:
+     
+        ship      --  Which player is shooting
+        isSpecial --  If the attack is a special or not
+
+        Return values: Square Sine's Taylor series expansion of 20 terms 
+
+    ***/
+
 {
     LCDClear();
     LCDGoto(0,0);
@@ -156,6 +217,15 @@ void printShip()
 
 
 void printHeart(void)
+
+    /***
+     Draws both shields characters in the LCD screen
+
+        Arguments:
+
+        Return values: 
+
+    ***/
 
     {
         switch (health1){
@@ -244,6 +314,16 @@ void printHeart(void)
     }
     
 void printShield(void)
+
+    /***
+     Draws both shields characters in the LCD screen
+
+        Arguments:
+    
+
+        Return values: 
+
+    ***/
 
     {
         switch (shield1){

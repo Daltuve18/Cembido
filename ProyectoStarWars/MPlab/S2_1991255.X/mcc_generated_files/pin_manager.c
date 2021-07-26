@@ -121,18 +121,8 @@ void PIN_MANAGER_Initialize(void)
     /**
     IOCx registers 
     */
-    //interrupt on change for group IOCAF - flag
-    IOCAFbits.IOCAF0 = 0;
-    //interrupt on change for group IOCAF - flag
-    IOCAFbits.IOCAF1 = 0;
-    //interrupt on change for group IOCAF - flag
-    IOCAFbits.IOCAF2 = 0;
-    //interrupt on change for group IOCAF - flag
-    IOCAFbits.IOCAF3 = 0;
-    //interrupt on change for group IOCAF - flag
-    IOCAFbits.IOCAF4 = 0;
-    //interrupt on change for group IOCAF - flag
-    IOCAFbits.IOCAF5 = 0;
+
+
     //interrupt on change for group IOCAN - negative
     IOCANbits.IOCAN0 = 1;
     //interrupt on change for group IOCAN - negative
@@ -146,17 +136,7 @@ void PIN_MANAGER_Initialize(void)
     //interrupt on change for group IOCAN - negative
     IOCANbits.IOCAN5 = 1;
     //interrupt on change for group IOCAP - positive
-    IOCAPbits.IOCAP0 = 1;
-    //interrupt on change for group IOCAP - positive
-    IOCAPbits.IOCAP1 = 0;
-    //interrupt on change for group IOCAP - positive
-    IOCAPbits.IOCAP2 = 0;
-    //interrupt on change for group IOCAP - positive
-    IOCAPbits.IOCAP3 = 1;
-    //interrupt on change for group IOCAP - positive
-    IOCAPbits.IOCAP4 = 0;
-    //interrupt on change for group IOCAP - positive
-    IOCAPbits.IOCAP5 = 0;
+
 
 
 

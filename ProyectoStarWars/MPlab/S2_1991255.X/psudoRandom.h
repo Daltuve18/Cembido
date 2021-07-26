@@ -11,6 +11,8 @@ Revision      : 00
 Date          : 7/18/2021
 -----------------------------------------------------------------------------
 
+ taylorSine -- Calculates the squared sine Taylor's series, using the TMR0 value
+
 ***/
 extern double counter;
 
