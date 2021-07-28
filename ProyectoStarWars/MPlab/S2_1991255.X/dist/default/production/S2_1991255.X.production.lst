@@ -1,7 +1,7 @@
 
 
 Microchip MPLAB XC8 Assembler V2.31 build 20201012212115 
-                                                                                               Sun Jul 25 21:26:31 2021
+                                                                                               Sun Jul 25 22:29:48 2021
 
 Microchip MPLAB XC8 C Compiler v2.31 (Free license) build 20201012212115 Og1 
      1                           	processor	16LF1718
@@ -6323,7 +6323,7 @@ Microchip MPLAB XC8 C Compiler v2.31 (Free license) build 20201012212115 Og1
   6293  211F                     __ptext3:	
   6294 ;; *************** function _sprintf *****************
   6295 ;; Defined at:
-  6296 ;;		line 9 in file "C:\Program Files\Microchip\xc8\v2.31\pic\sources\c99\common\nf_sprintf.c"
+  6296 ;;		line 9 in file "D:\Programas\Microchip\xc8\v2.31\pic\sources\c99\common\nf_sprintf.c"
   6297 ;; Parameters:    Size  Location     Type
   6298 ;;  s               1    wreg     PTR unsigned char 
   6299 ;;		 -> s(15), 
@@ -6420,7 +6420,7 @@ Microchip MPLAB XC8 C Compiler v2.31 (Free license) build 20201012212115 Og1
   6385  2389                     __ptext4:	
   6386 ;; *************** function _vfprintf *****************
   6387 ;; Defined at:
-  6388 ;;		line 1390 in file "C:\Program Files\Microchip\xc8\v2.31\pic\sources\c99\common\doprnt.c"
+  6388 ;;		line 1390 in file "D:\Programas\Microchip\xc8\v2.31\pic\sources\c99\common\doprnt.c"
   6389 ;; Parameters:    Size  Location     Type
   6390 ;;  fp              1    wreg     PTR struct _IO_FILE
   6391 ;;		 -> sprintf@f(5), 
@@ -6477,30 +6477,29 @@ Microchip MPLAB XC8 C Compiler v2.31 (Free license) build 20201012212115 Og1
   6437  238A  00B5               	movwf	vfprintf@fp^(0+384)
   6438  238B                     l10734:
   6439                           
-  6440                           ;C:\Program Files\Microchip\xc8\v2.31\pic\sources\c99\common\doprnt.c: 1390: int vfprint
-      +                          f(FILE *fp, const char *fmt, va_list ap);C:\Program Files\Microchip\xc8\v2.31\pic\source
-      +                          s\c99\common\doprnt.c: 1391: {;C:\Program Files\Microchip\xc8\v2.31\pic\sources\c99\comm
-      +                          on\doprnt.c: 1393:     char *cfmt;;C:\Program Files\Microchip\xc8\v2.31\pic\sources\c99\
-      +                          common\doprnt.c: 1395:     cfmt = (char *)fmt;
+  6440                           ;D:\Programas\Microchip\xc8\v2.31\pic\sources\c99\common\doprnt.c: 1390: int vfprintf(FI
+      +                          LE *fp, const char *fmt, va_list ap);D:\Programas\Microchip\xc8\v2.31\pic\sources\c99\co
+      +                          mmon\doprnt.c: 1391: {;D:\Programas\Microchip\xc8\v2.31\pic\sources\c99\common\doprnt.c:
+      +                           1393:     char *cfmt;;D:\Programas\Microchip\xc8\v2.31\pic\sources\c99\common\doprnt.c:
+      +                           1395:     cfmt = (char *)fmt;
   6441  238B  0831               	movf	(vfprintf@fmt+1)^(0+384),w
   6442  238C  00B7               	movwf	(vfprintf@cfmt+1)^(0+384)
   6443  238D  0830               	movf	vfprintf@fmt^(0+384),w
   6444  238E  00B6               	movwf	vfprintf@cfmt^(0+384)
   6445  238F                     l10736:
   6446                           
-  6447                           ;C:\Program Files\Microchip\xc8\v2.31\pic\sources\c99\common\doprnt.c: 1396:     nout = 
-      +                          0;
+  6447                           ;D:\Programas\Microchip\xc8\v2.31\pic\sources\c99\common\doprnt.c: 1396:     nout = 0;
   6448  238F  0022               	movlb	2	; select bank2
   6449  2390  01D2               	clrf	_nout^(0+256)
   6450  2391  01D3               	clrf	(_nout+1)^(0+256)
   6451                           
-  6452                           ;C:\Program Files\Microchip\xc8\v2.31\pic\sources\c99\common\doprnt.c: 1397:     while (
-      +                          *cfmt) {
+  6452                           ;D:\Programas\Microchip\xc8\v2.31\pic\sources\c99\common\doprnt.c: 1397:     while (*cfm
+      +                          t) {
   6453  2392  2BA7               	goto	l10740
   6454  2393                     l10738:
   6455                           
-  6456                           ;C:\Program Files\Microchip\xc8\v2.31\pic\sources\c99\common\doprnt.c: 1398:         nou
-      +                          t += vfpfcnvrt(fp, &cfmt, ap);
+  6456                           ;D:\Programas\Microchip\xc8\v2.31\pic\sources\c99\common\doprnt.c: 1398:         nout +=
+      +                           vfpfcnvrt(fp, &cfmt, ap);
   6457  2393  30B6               	movlw	(low (vfprintf@cfmt| (0+256)))& (0+255)
   6458  2394  00B3               	movwf	??_vfprintf^(0+384)
   6459  2395  0833               	movf	??_vfprintf^(0+384),w
@@ -6521,8 +6520,8 @@ Microchip MPLAB XC8 C Compiler v2.31 (Free license) build 20201012212115 Og1
   6474  23A6  3DD3               	addwfc	(_nout+1)^(0+256),f
   6475  23A7                     l10740:
   6476                           
-  6477                           ;C:\Program Files\Microchip\xc8\v2.31\pic\sources\c99\common\doprnt.c: 1397:     while (
-      +                          *cfmt) {
+  6477                           ;D:\Programas\Microchip\xc8\v2.31\pic\sources\c99\common\doprnt.c: 1397:     while (*cfm
+      +                          t) {
   6478  23A7  0023               	movlb	3	; select bank3
   6479  23A8  0836               	movf	vfprintf@cfmt^(0+384),w
   6480  23A9  0084               	movwf	4
@@ -6537,8 +6536,8 @@ Microchip MPLAB XC8 C Compiler v2.31 (Free license) build 20201012212115 Og1
   6489  23B1                     u11460:
   6490  23B1                     l10742:
   6491                           
-  6492                           ;C:\Program Files\Microchip\xc8\v2.31\pic\sources\c99\common\doprnt.c: 1400:     return 
-      +                          nout;
+  6492                           ;D:\Programas\Microchip\xc8\v2.31\pic\sources\c99\common\doprnt.c: 1400:     return nout
+      +                          ;
   6493  23B1  0022               	movlb	2	; select bank2
   6494  23B2  0853               	movf	(_nout+1)^(0+256),w
   6495  23B3  0023               	movlb	3	; select bank3
@@ -6555,7 +6554,7 @@ Microchip MPLAB XC8 C Compiler v2.31 (Free license) build 20201012212115 Og1
   6506  06F6                     __ptext5:	
   6507 ;; *************** function _vfpfcnvrt *****************
   6508 ;; Defined at:
-  6509 ;;		line 692 in file "C:\Program Files\Microchip\xc8\v2.31\pic\sources\c99\common\doprnt.c"
+  6509 ;;		line 692 in file "D:\Programas\Microchip\xc8\v2.31\pic\sources\c99\common\doprnt.c"
   6510 ;; Parameters:    Size  Location     Type
   6511 ;;  fp              1    wreg     PTR struct _IO_FILE
   6512 ;;		 -> sprintf@f(5), 
@@ -6616,13 +6615,13 @@ Microchip MPLAB XC8 C Compiler v2.31 (Free license) build 20201012212115 Og1
   6562  06F7  00AF               	movwf	vfpfcnvrt@fp^(0+384)
   6563  06F8                     l10604:
   6564                           
-  6565                           ;C:\Program Files\Microchip\xc8\v2.31\pic\sources\c99\common\doprnt.c: 692: static int v
-      +                          fpfcnvrt(FILE *fp, char *fmt[], va_list ap);C:\Program Files\Microchip\xc8\v2.31\pic\sou
-      +                          rces\c99\common\doprnt.c: 693: {;C:\Program Files\Microchip\xc8\v2.31\pic\sources\c99\co
-      +                          mmon\doprnt.c: 694:     char c, *cp, ct[3];;C:\Program Files\Microchip\xc8\v2.31\pic\sou
-      +                          rces\c99\common\doprnt.c: 695:     int done, i;;C:\Program Files\Microchip\xc8\v2.31\pic
-      +                          \sources\c99\common\doprnt.c: 696:     long long ll;;C:\Program Files\Microchip\xc8\v2.3
-      +                          1\pic\sources\c99\common\doprnt.c: 697:     unsigned long long llu;
+  6565                           ;D:\Programas\Microchip\xc8\v2.31\pic\sources\c99\common\doprnt.c: 692: static int vfpfc
+      +                          nvrt(FILE *fp, char *fmt[], va_list ap);D:\Programas\Microchip\xc8\v2.31\pic\sources\c99
+      +                          \common\doprnt.c: 693: {;D:\Programas\Microchip\xc8\v2.31\pic\sources\c99\common\doprnt.
+      +                          c: 694:     char c, *cp, ct[3];;D:\Programas\Microchip\xc8\v2.31\pic\sources\c99\common\
+      +                          doprnt.c: 695:     int done, i;;D:\Programas\Microchip\xc8\v2.31\pic\sources\c99\common\
+      +                          doprnt.c: 696:     long long ll;;D:\Programas\Microchip\xc8\v2.31\pic\sources\c99\common
+      +                          \doprnt.c: 697:     unsigned long long llu;
   6566  06F8  0820               	movf	vfpfcnvrt@fmt^(0+384),w
   6567  06F9  0086               	movwf	6
   6568  06FA  3001               	movlw	1	; select bank2/3
@@ -6645,8 +6644,7 @@ Microchip MPLAB XC8 C Compiler v2.31 (Free license) build 20201012212115 Og1
   6585  070A                     u11290:
   6586  070A                     l10606:
   6587                           
-  6588                           ;C:\Program Files\Microchip\xc8\v2.31\pic\sources\c99\common\doprnt.c: 703:         ++*f
-      +                          mt;
+  6588                           ;D:\Programas\Microchip\xc8\v2.31\pic\sources\c99\common\doprnt.c: 703:         ++*fmt;
   6589  070A  0820               	movf	vfpfcnvrt@fmt^(0+384),w
   6590  070B  0086               	movwf	6
   6591  070C  3001               	movlw	1	; select bank2/3
@@ -6658,8 +6656,8 @@ Microchip MPLAB XC8 C Compiler v2.31 (Free license) build 20201012212115 Og1
   6597  0712  0A81               	incf	1,f
   6598  0713                     l10608:
   6599                           
-  6600                           ;C:\Program Files\Microchip\xc8\v2.31\pic\sources\c99\common\doprnt.c: 705:         flag
-      +                          s = width = 0;
+  6600                           ;D:\Programas\Microchip\xc8\v2.31\pic\sources\c99\common\doprnt.c: 705:         flags = 
+      +                          width = 0;
   6601  0713  0022               	movlb	2	; select bank2
   6602  0714  01D4               	clrf	_width^(0+256)
   6603  0715  01D5               	clrf	(_width+1)^(0+256)
@@ -6668,8 +6666,8 @@ Microchip MPLAB XC8 C Compiler v2.31 (Free license) build 20201012212115 Og1
   6606  0718  01D3               	clrf	(_flags+1)^(0+128)
   6607  0719                     l10610:
   6608                           
-  6609                           ;C:\Program Files\Microchip\xc8\v2.31\pic\sources\c99\common\doprnt.c: 706:         prec
-      +                           = -1;
+  6609                           ;D:\Programas\Microchip\xc8\v2.31\pic\sources\c99\common\doprnt.c: 706:         prec = -
+      +                          1;
   6610  0719  30FF               	movlw	255
   6611  071A  0022               	movlb	2	; select bank2
   6612  071B  00D6               	movwf	_prec^(0+256)
@@ -6677,8 +6675,8 @@ Microchip MPLAB XC8 C Compiler v2.31 (Free license) build 20201012212115 Og1
   6614  071D  00D7               	movwf	(_prec^(0+256)+1)
   6615  071E                     l10612:
   6616                           
-  6617                           ;C:\Program Files\Microchip\xc8\v2.31\pic\sources\c99\common\doprnt.c: 847:         if (
-      +                          (*fmt[0] == 'd') || (*fmt[0] == 'i')) {
+  6617                           ;D:\Programas\Microchip\xc8\v2.31\pic\sources\c99\common\doprnt.c: 847:         if ((*fm
+      +                          t[0] == 'd') || (*fmt[0] == 'i')) {
   6618  071E  0023               	movlb	3	; select bank3
   6619  071F  0820               	movf	vfpfcnvrt@fmt^(0+384),w
   6620  0720  0086               	movwf	6
@@ -6723,8 +6721,8 @@ Microchip MPLAB XC8 C Compiler v2.31 (Free license) build 20201012212115 Og1
   6659  0743                     u11310:
   6660  0743                     l10616:
   6661                           
-  6662                           ;C:\Program Files\Microchip\xc8\v2.31\pic\sources\c99\common\doprnt.c: 849:             
-      +                          ++*fmt;
+  6662                           ;D:\Programas\Microchip\xc8\v2.31\pic\sources\c99\common\doprnt.c: 849:             ++*f
+      +                          mt;
   6663  0743  0820               	movf	vfpfcnvrt@fmt^(0+384),w
   6664  0744  0086               	movwf	6
   6665  0745  3001               	movlw	1	; select bank2/3
@@ -6736,8 +6734,8 @@ Microchip MPLAB XC8 C Compiler v2.31 (Free license) build 20201012212115 Og1
   6671  074B  0A81               	incf	1,f
   6672  074C                     l10618:
   6673                           
-  6674                           ;C:\Program Files\Microchip\xc8\v2.31\pic\sources\c99\common\doprnt.c: 850:             
-      +                          ll = (long long)(*(int *)__va_arg(*(int **)ap, (int)0));
+  6674                           ;D:\Programas\Microchip\xc8\v2.31\pic\sources\c99\common\doprnt.c: 850:             ll =
+      +                           (long long)(*(int *)__va_arg(*(int **)ap, (int)0));
   6675  074C  0821               	movf	vfpfcnvrt@ap^(0+384),w
   6676  074D  0086               	movwf	6
   6677  074E  3001               	movlw	1	; select bank2/3
@@ -6767,8 +6765,8 @@ Microchip MPLAB XC8 C Compiler v2.31 (Free license) build 20201012212115 Og1
   6701  0766  00AE               	movwf	(vfpfcnvrt@ll+7)^(0+384)
   6702  0767                     l10620:
   6703                           
-  6704                           ;C:\Program Files\Microchip\xc8\v2.31\pic\sources\c99\common\doprnt.c: 852:             
-      +                          return dtoa(fp, ll);
+  6704                           ;D:\Programas\Microchip\xc8\v2.31\pic\sources\c99\common\doprnt.c: 852:             retu
+      +                          rn dtoa(fp, ll);
   6705  0767  0827               	movf	vfpfcnvrt@ll^(0+384),w
   6706  0768  0022               	movlb	2	; select bank2
   6707  0769  00B0               	movwf	dtoa@d^(0+256)
@@ -6814,8 +6812,8 @@ Microchip MPLAB XC8 C Compiler v2.31 (Free license) build 20201012212115 Og1
   6747  0793  2FF9               	goto	l1381
   6748  0794                     l10624:
   6749                           
-  6750                           ;C:\Program Files\Microchip\xc8\v2.31\pic\sources\c99\common\doprnt.c: 1372:         if 
-      +                          ((*fmt)[0] == '%') {
+  6750                           ;D:\Programas\Microchip\xc8\v2.31\pic\sources\c99\common\doprnt.c: 1372:         if ((*f
+      +                          mt)[0] == '%') {
   6751  0794  0820               	movf	vfpfcnvrt@fmt^(0+384),w
   6752  0795  0086               	movwf	6
   6753  0796  3001               	movlw	1	; select bank2/3
@@ -6838,8 +6836,8 @@ Microchip MPLAB XC8 C Compiler v2.31 (Free license) build 20201012212115 Og1
   6770  07A6                     u11320:
   6771  07A6                     l10626:
   6772                           
-  6773                           ;C:\Program Files\Microchip\xc8\v2.31\pic\sources\c99\common\doprnt.c: 1373:            
-      +                           ++*fmt;
+  6773                           ;D:\Programas\Microchip\xc8\v2.31\pic\sources\c99\common\doprnt.c: 1373:             ++*
+      +                          fmt;
   6774  07A6  0820               	movf	vfpfcnvrt@fmt^(0+384),w
   6775  07A7  0086               	movwf	6
   6776  07A8  3001               	movlw	1	; select bank2/3
@@ -6851,8 +6849,8 @@ Microchip MPLAB XC8 C Compiler v2.31 (Free license) build 20201012212115 Og1
   6782  07AE  0A81               	incf	1,f
   6783  07AF                     l10628:
   6784                           
-  6785                           ;C:\Program Files\Microchip\xc8\v2.31\pic\sources\c99\common\doprnt.c: 1374:            
-      +                           fputc((int)'%', fp);
+  6785                           ;D:\Programas\Microchip\xc8\v2.31\pic\sources\c99\common\doprnt.c: 1374:             fpu
+      +                          tc((int)'%', fp);
   6786  07AF  3025               	movlw	37
   6787  07B0  0021               	movlb	1	; select bank1
   6788  07B1  00B9               	movwf	fputc@c^(0+128)
@@ -6867,8 +6865,8 @@ Microchip MPLAB XC8 C Compiler v2.31 (Free license) build 20201012212115 Og1
   6797  07BA  31A6  2683  3186   	fcall	_fputc
   6798  07BD                     l10630:
   6799                           
-  6800                           ;C:\Program Files\Microchip\xc8\v2.31\pic\sources\c99\common\doprnt.c: 1375:            
-      +                           return 1;
+  6800                           ;D:\Programas\Microchip\xc8\v2.31\pic\sources\c99\common\doprnt.c: 1375:             ret
+      +                          urn 1;
   6801  07BD  3001               	movlw	1
   6802  07BE  0023               	movlb	3	; select bank3
   6803  07BF  00A0               	movwf	?_vfpfcnvrt^(0+384)
@@ -6877,8 +6875,7 @@ Microchip MPLAB XC8 C Compiler v2.31 (Free license) build 20201012212115 Og1
   6806  07C2  2FF9               	goto	l1381
   6807  07C3                     l10634:
   6808                           
-  6809                           ;C:\Program Files\Microchip\xc8\v2.31\pic\sources\c99\common\doprnt.c: 1379:         ++*
-      +                          fmt;
+  6809                           ;D:\Programas\Microchip\xc8\v2.31\pic\sources\c99\common\doprnt.c: 1379:         ++*fmt;
   6810  07C3  0820               	movf	vfpfcnvrt@fmt^(0+384),w
   6811  07C4  0086               	movwf	6
   6812  07C5  3001               	movlw	1	; select bank2/3
@@ -6890,15 +6887,15 @@ Microchip MPLAB XC8 C Compiler v2.31 (Free license) build 20201012212115 Og1
   6818  07CB  0A81               	incf	1,f
   6819  07CC                     l10636:
   6820                           
-  6821                           ;C:\Program Files\Microchip\xc8\v2.31\pic\sources\c99\common\doprnt.c: 1380:         ret
-      +                          urn 0;
+  6821                           ;D:\Programas\Microchip\xc8\v2.31\pic\sources\c99\common\doprnt.c: 1380:         return 
+      +                          0;
   6822  07CC  01A0               	clrf	?_vfpfcnvrt^(0+384)
   6823  07CD  01A1               	clrf	(?_vfpfcnvrt+1)^(0+384)
   6824  07CE  2FF9               	goto	l1381
   6825  07CF                     l10640:
   6826                           
-  6827                           ;C:\Program Files\Microchip\xc8\v2.31\pic\sources\c99\common\doprnt.c: 1384:     fputc((
-      +                          int)(*fmt)[0], fp);
+  6827                           ;D:\Programas\Microchip\xc8\v2.31\pic\sources\c99\common\doprnt.c: 1384:     fputc((int)
+      +                          (*fmt)[0], fp);
   6828  07CF  0820               	movf	vfpfcnvrt@fmt^(0+384),w
   6829  07D0  0086               	movwf	6
   6830  07D1  3001               	movlw	1	; select bank2/3
@@ -6930,7 +6927,7 @@ Microchip MPLAB XC8 C Compiler v2.31 (Free license) build 20201012212115 Og1
   6856  07EB  31A6  2683  3186   	fcall	_fputc
   6857  07EE                     l10642:
   6858                           
-  6859                           ;C:\Program Files\Microchip\xc8\v2.31\pic\sources\c99\common\doprnt.c: 1385:     ++*fmt;
+  6859                           ;D:\Programas\Microchip\xc8\v2.31\pic\sources\c99\common\doprnt.c: 1385:     ++*fmt;
   6860  07EE  0023               	movlb	3	; select bank3
   6861  07EF  0820               	movf	vfpfcnvrt@fmt^(0+384),w
   6862  07F0  0086               	movwf	6
@@ -6950,7 +6947,7 @@ Microchip MPLAB XC8 C Compiler v2.31 (Free license) build 20201012212115 Og1
   6876  094B                     __ptext6:	
   6877 ;; *************** function _dtoa *****************
   6878 ;; Defined at:
-  6879 ;;		line 287 in file "C:\Program Files\Microchip\xc8\v2.31\pic\sources\c99\common\doprnt.c"
+  6879 ;;		line 287 in file "D:\Programas\Microchip\xc8\v2.31\pic\sources\c99\common\doprnt.c"
   6880 ;; Parameters:    Size  Location     Type
   6881 ;;  fp              1    wreg     PTR struct _IO_FILE
   6882 ;;		 -> sprintf@f(5), 
@@ -7006,12 +7003,12 @@ Microchip MPLAB XC8 C Compiler v2.31 (Free license) build 20201012212115 Og1
   6927  094C  00BB               	movwf	dtoa@fp^(0+256)
   6928  094D                     l10518:
   6929                           
-  6930                           ;C:\Program Files\Microchip\xc8\v2.31\pic\sources\c99\common\doprnt.c: 287: static int d
-      +                          toa(FILE *fp, long long d);C:\Program Files\Microchip\xc8\v2.31\pic\sources\c99\common\d
-      +                          oprnt.c: 288: {;C:\Program Files\Microchip\xc8\v2.31\pic\sources\c99\common\doprnt.c: 28
-      +                          9:     int i, p, s, w;;C:\Program Files\Microchip\xc8\v2.31\pic\sources\c99\common\doprn
-      +                          t.c: 290:     long long n;;C:\Program Files\Microchip\xc8\v2.31\pic\sources\c99\common\d
-      +                          oprnt.c: 293:     n = d;
+  6930                           ;D:\Programas\Microchip\xc8\v2.31\pic\sources\c99\common\doprnt.c: 287: static int dtoa(
+      +                          FILE *fp, long long d);D:\Programas\Microchip\xc8\v2.31\pic\sources\c99\common\doprnt.c:
+      +                           288: {;D:\Programas\Microchip\xc8\v2.31\pic\sources\c99\common\doprnt.c: 289:     int i
+      +                          , p, s, w;;D:\Programas\Microchip\xc8\v2.31\pic\sources\c99\common\doprnt.c: 290:     lo
+      +                          ng long n;;D:\Programas\Microchip\xc8\v2.31\pic\sources\c99\common\doprnt.c: 293:     n 
+      +                          = d;
   6931  094D  0830               	movf	dtoa@d^(0+256),w
   6932  094E  00C4               	movwf	dtoa@n^(0+256)
   6933  094F  0831               	movf	(dtoa@d+1)^(0+256),w
@@ -7030,8 +7027,8 @@ Microchip MPLAB XC8 C Compiler v2.31 (Free license) build 20201012212115 Og1
   6946  095C  00CB               	movwf	(dtoa@n+7)^(0+256)
   6947  095D                     l10520:
   6948                           
-  6949                           ;C:\Program Files\Microchip\xc8\v2.31\pic\sources\c99\common\doprnt.c: 294:     s = n < 
-      +                          0 ? 1 : 0;
+  6949                           ;D:\Programas\Microchip\xc8\v2.31\pic\sources\c99\common\doprnt.c: 294:     s = n < 0 ? 
+      +                          1 : 0;
   6950  095D  3044               	movlw	low dtoa@n
   6951  095E  0086               	movwf	6
   6952  095F  3001               	movlw	high dtoa@n
@@ -7056,7 +7053,7 @@ Microchip MPLAB XC8 C Compiler v2.31 (Free license) build 20201012212115 Og1
   6971  096F  00C3               	movwf	(dtoa@s+1)^(0+256)
   6972  0970                     l10522:
   6973                           
-  6974                           ;C:\Program Files\Microchip\xc8\v2.31\pic\sources\c99\common\doprnt.c: 295:     if (s) {
+  6974                           ;D:\Programas\Microchip\xc8\v2.31\pic\sources\c99\common\doprnt.c: 295:     if (s) {
   6975  0970  0842               	movf	dtoa@s^(0+256),w
   6976  0971  0443               	iorwf	(dtoa@s+1)^(0+256),w
   6977  0972  1903               	btfsc	3,2
@@ -7067,8 +7064,7 @@ Microchip MPLAB XC8 C Compiler v2.31 (Free license) build 20201012212115 Og1
   6982  0976                     u11110:
   6983  0976                     l10524:
   6984                           
-  6985                           ;C:\Program Files\Microchip\xc8\v2.31\pic\sources\c99\common\doprnt.c: 296:         n = 
-      +                          -n;
+  6985                           ;D:\Programas\Microchip\xc8\v2.31\pic\sources\c99\common\doprnt.c: 296:         n = -n;
   6986  0976  09C4               	comf	dtoa@n^(0+256),f
   6987  0977  09C5               	comf	(dtoa@n+1)^(0+256),f
   6988  0978  09C6               	comf	(dtoa@n+2)^(0+256),f
@@ -7101,11 +7097,11 @@ Microchip MPLAB XC8 C Compiler v2.31 (Free license) build 20201012212115 Og1
   7015  0993  0ACB               	incf	(dtoa@n+7)^(0+256),f
   7016  0994                     u1112lld:
   7017  0994                     l1351:	
-  7018                           ;C:\Program Files\Microchip\xc8\v2.31\pic\sources\c99\common\doprnt.c: 297:     }
+  7018                           ;D:\Programas\Microchip\xc8\v2.31\pic\sources\c99\common\doprnt.c: 297:     }
   7019                           
   7020                           
-  7021                           ;C:\Program Files\Microchip\xc8\v2.31\pic\sources\c99\common\doprnt.c: 300:     if (!(pr
-      +                          ec < 0)) {
+  7021                           ;D:\Programas\Microchip\xc8\v2.31\pic\sources\c99\common\doprnt.c: 300:     if (!(prec <
+      +                           0)) {
   7022  0994  0022               	movlb	2	; select bank2
   7023  0995  1BD7               	btfsc	(_prec+1)^(0+256),7
   7024  0996  2998               	goto	u11131
@@ -7115,19 +7111,19 @@ Microchip MPLAB XC8 C Compiler v2.31 (Free license) build 20201012212115 Og1
   7028  0999                     u11130:
   7029  0999                     l10526:
   7030                           
-  7031                           ;C:\Program Files\Microchip\xc8\v2.31\pic\sources\c99\common\doprnt.c: 301:         flag
-      +                          s &= ~(1 << 1);
+  7031                           ;D:\Programas\Microchip\xc8\v2.31\pic\sources\c99\common\doprnt.c: 301:         flags &=
+      +                           ~(1 << 1);
   7032  0999  30FD               	movlw	253
   7033  099A  0021               	movlb	1	; select bank1
   7034  099B  05D2               	andwf	_flags^(0+128),f
   7035  099C  30FF               	movlw	255
   7036  099D  05D3               	andwf	(_flags+1)^(0+128),f
   7037  099E                     l1352:	
-  7038                           ;C:\Program Files\Microchip\xc8\v2.31\pic\sources\c99\common\doprnt.c: 302:     }
+  7038                           ;D:\Programas\Microchip\xc8\v2.31\pic\sources\c99\common\doprnt.c: 302:     }
   7039                           
   7040                           
-  7041                           ;C:\Program Files\Microchip\xc8\v2.31\pic\sources\c99\common\doprnt.c: 303:     p = (0 <
-      +                           prec) ? prec : 1;
+  7041                           ;D:\Programas\Microchip\xc8\v2.31\pic\sources\c99\common\doprnt.c: 303:     p = (0 < pre
+      +                          c) ? prec : 1;
   7042  099E  0022               	movlb	2	; select bank2
   7043  099F  0857               	movf	(_prec+1)^(0+256),w
   7044  09A0  3A80               	xorlw	128
@@ -7160,16 +7156,15 @@ Microchip MPLAB XC8 C Compiler v2.31 (Free license) build 20201012212115 Og1
   7071  09B6  00BE               	movwf	dtoa@p^(0+256)
   7072  09B7                     l1356:
   7073                           
-  7074                           ;C:\Program Files\Microchip\xc8\v2.31\pic\sources\c99\common\doprnt.c: 304:     w = widt
-      +                          h;
+  7074                           ;D:\Programas\Microchip\xc8\v2.31\pic\sources\c99\common\doprnt.c: 304:     w = width;
   7075  09B7  0855               	movf	(_width+1)^(0+256),w
   7076  09B8  00C1               	movwf	(dtoa@w+1)^(0+256)
   7077  09B9  0854               	movf	_width^(0+256),w
   7078  09BA  00C0               	movwf	dtoa@w^(0+256)
   7079  09BB                     l10532:
   7080                           
-  7081                           ;C:\Program Files\Microchip\xc8\v2.31\pic\sources\c99\common\doprnt.c: 305:     if (s ||
-      +                           (flags & (1 << 2))) {
+  7081                           ;D:\Programas\Microchip\xc8\v2.31\pic\sources\c99\common\doprnt.c: 305:     if (s || (fl
+      +                          ags & (1 << 2))) {
   7082  09BB  0842               	movf	dtoa@s^(0+256),w
   7083  09BC  0443               	iorwf	(dtoa@s+1)^(0+256),w
   7084  09BD  1D03               	btfss	3,2
@@ -7188,18 +7183,18 @@ Microchip MPLAB XC8 C Compiler v2.31 (Free license) build 20201012212115 Og1
   7097  09C6                     u11160:
   7098  09C6                     l10536:
   7099                           
-  7100                           ;C:\Program Files\Microchip\xc8\v2.31\pic\sources\c99\common\doprnt.c: 306:         --w;
+  7100                           ;D:\Programas\Microchip\xc8\v2.31\pic\sources\c99\common\doprnt.c: 306:         --w;
   7101  09C6  30FF               	movlw	255
   7102  09C7  0022               	movlb	2	; select bank2
   7103  09C8  07C0               	addwf	dtoa@w^(0+256),f
   7104  09C9  30FF               	movlw	255
   7105  09CA  3DC1               	addwfc	(dtoa@w+1)^(0+256),f
   7106  09CB                     l1357:	
-  7107                           ;C:\Program Files\Microchip\xc8\v2.31\pic\sources\c99\common\doprnt.c: 307:     }
+  7107                           ;D:\Programas\Microchip\xc8\v2.31\pic\sources\c99\common\doprnt.c: 307:     }
   7108                           
   7109                           
-  7110                           ;C:\Program Files\Microchip\xc8\v2.31\pic\sources\c99\common\doprnt.c: 310:     i = size
-      +                          of(dbuf) - 1;
+  7110                           ;D:\Programas\Microchip\xc8\v2.31\pic\sources\c99\common\doprnt.c: 310:     i = sizeof(d
+      +                          buf) - 1;
   7111  09CB  301F               	movlw	31
   7112  09CC  0022               	movlb	2	; select bank2
   7113  09CD  00CC               	movwf	dtoa@i^(0+256)
@@ -7207,17 +7202,17 @@ Microchip MPLAB XC8 C Compiler v2.31 (Free license) build 20201012212115 Og1
   7115  09CF  00CD               	movwf	(dtoa@i^(0+256)+1)
   7116  09D0                     l10538:
   7117                           
-  7118                           ;C:\Program Files\Microchip\xc8\v2.31\pic\sources\c99\common\doprnt.c: 311:     dbuf[i] 
-      +                          = '\0';
+  7118                           ;D:\Programas\Microchip\xc8\v2.31\pic\sources\c99\common\doprnt.c: 311:     dbuf[i] = '\
+      +                          0';
   7119  09D0  0026               	movlb	6	; select bank6
   7120  09D1  01EF               	clrf	(_dbuf^(0+768)+31)
   7121                           
-  7122                           ;C:\Program Files\Microchip\xc8\v2.31\pic\sources\c99\common\doprnt.c: 312:     while (!
-      +                          (i < 1) && (n || (0 < p) || ((0 < w) && (flags & (1 << 1))))) {
+  7122                           ;D:\Programas\Microchip\xc8\v2.31\pic\sources\c99\common\doprnt.c: 312:     while (!(i <
+      +                           1) && (n || (0 < p) || ((0 < w) && (flags & (1 << 1))))) {
   7123  09D2  2A40               	goto	l1360
   7124  09D3                     l10540:
   7125                           
-  7126                           ;C:\Program Files\Microchip\xc8\v2.31\pic\sources\c99\common\doprnt.c: 313:         --i;
+  7126                           ;D:\Programas\Microchip\xc8\v2.31\pic\sources\c99\common\doprnt.c: 313:         --i;
   7127  09D3  30FF               	movlw	255
   7128  09D4  0022               	movlb	2	; select bank2
   7129  09D5  07CC               	addwf	dtoa@i^(0+256),f
@@ -7225,8 +7220,8 @@ Microchip MPLAB XC8 C Compiler v2.31 (Free license) build 20201012212115 Og1
   7131  09D7  3DCD               	addwfc	(dtoa@i+1)^(0+256),f
   7132  09D8                     l10542:
   7133                           
-  7134                           ;C:\Program Files\Microchip\xc8\v2.31\pic\sources\c99\common\doprnt.c: 314:         dbuf
-      +                          [i] = (char)((int)'0' + abs(n % 10));
+  7134                           ;D:\Programas\Microchip\xc8\v2.31\pic\sources\c99\common\doprnt.c: 314:         dbuf[i] 
+      +                          = (char)((int)'0' + abs(n % 10));
   7135  09D8  300A               	movlw	10
   7136  09D9  00A0               	movwf	___aomod@divisor^(0+256)
   7137  09DA  01A1               	clrf	(___aomod@divisor+1)^(0+256)
@@ -7276,22 +7271,22 @@ Microchip MPLAB XC8 C Compiler v2.31 (Free license) build 20201012212115 Og1
   7181  0A0A  0081               	movwf	1
   7182  0A0B                     l10544:
   7183                           
-  7184                           ;C:\Program Files\Microchip\xc8\v2.31\pic\sources\c99\common\doprnt.c: 315:         --p;
+  7184                           ;D:\Programas\Microchip\xc8\v2.31\pic\sources\c99\common\doprnt.c: 315:         --p;
   7185  0A0B  30FF               	movlw	255
   7186  0A0C  07BE               	addwf	dtoa@p^(0+256),f
   7187  0A0D  30FF               	movlw	255
   7188  0A0E  3DBF               	addwfc	(dtoa@p+1)^(0+256),f
   7189  0A0F                     l10546:
   7190                           
-  7191                           ;C:\Program Files\Microchip\xc8\v2.31\pic\sources\c99\common\doprnt.c: 316:         --w;
+  7191                           ;D:\Programas\Microchip\xc8\v2.31\pic\sources\c99\common\doprnt.c: 316:         --w;
   7192  0A0F  30FF               	movlw	255
   7193  0A10  07C0               	addwf	dtoa@w^(0+256),f
   7194  0A11  30FF               	movlw	255
   7195  0A12  3DC1               	addwfc	(dtoa@w+1)^(0+256),f
   7196  0A13                     l10548:
   7197                           
-  7198                           ;C:\Program Files\Microchip\xc8\v2.31\pic\sources\c99\common\doprnt.c: 317:         n = 
-      +                          n / 10;
+  7198                           ;D:\Programas\Microchip\xc8\v2.31\pic\sources\c99\common\doprnt.c: 317:         n = n / 
+      +                          10;
   7199  0A13  300A               	movlw	10
   7200  0A14  00A0               	movwf	___aodiv@divisor^(0+256)
   7201  0A15  01A1               	clrf	(___aodiv@divisor+1)^(0+256)
@@ -7336,11 +7331,11 @@ Microchip MPLAB XC8 C Compiler v2.31 (Free license) build 20201012212115 Og1
   7240  0A3E  0827               	movf	(?___aodiv+7)^(0+256),w
   7241  0A3F  00CB               	movwf	(dtoa@n+7)^(0+256)
   7242  0A40                     l1360:	
-  7243                           ;C:\Program Files\Microchip\xc8\v2.31\pic\sources\c99\common\doprnt.c: 318:     }
+  7243                           ;D:\Programas\Microchip\xc8\v2.31\pic\sources\c99\common\doprnt.c: 318:     }
   7244                           
   7245                           
-  7246                           ;C:\Program Files\Microchip\xc8\v2.31\pic\sources\c99\common\doprnt.c: 312:     while (!
-      +                          (i < 1) && (n || (0 < p) || ((0 < w) && (flags & (1 << 1))))) {
+  7246                           ;D:\Programas\Microchip\xc8\v2.31\pic\sources\c99\common\doprnt.c: 312:     while (!(i <
+      +                           1) && (n || (0 < p) || ((0 < w) && (flags & (1 << 1))))) {
   7247  0A40  0022               	movlb	2	; select bank2
   7248  0A41  084D               	movf	(dtoa@i+1)^(0+256),w
   7249  0A42  3A80               	xorlw	128
@@ -7419,8 +7414,8 @@ Microchip MPLAB XC8 C Compiler v2.31 (Free license) build 20201012212115 Og1
   7322  0A7B                     u11210:
   7323  0A7B                     l10558:
   7324                           
-  7325                           ;C:\Program Files\Microchip\xc8\v2.31\pic\sources\c99\common\doprnt.c: 321:     if (s ||
-      +                           (flags & (1 << 2))) {
+  7325                           ;D:\Programas\Microchip\xc8\v2.31\pic\sources\c99\common\doprnt.c: 321:     if (s || (fl
+      +                          ags & (1 << 2))) {
   7326  0A7B  0022               	movlb	2	; select bank2
   7327  0A7C  0842               	movf	dtoa@s^(0+256),w
   7328  0A7D  0443               	iorwf	(dtoa@s+1)^(0+256),w
@@ -7440,7 +7435,7 @@ Microchip MPLAB XC8 C Compiler v2.31 (Free license) build 20201012212115 Og1
   7342  0A87                     u11230:
   7343  0A87                     l10562:
   7344                           
-  7345                           ;C:\Program Files\Microchip\xc8\v2.31\pic\sources\c99\common\doprnt.c: 322:         --i;
+  7345                           ;D:\Programas\Microchip\xc8\v2.31\pic\sources\c99\common\doprnt.c: 322:         --i;
   7346  0A87  30FF               	movlw	255
   7347  0A88  0022               	movlb	2	; select bank2
   7348  0A89  07CC               	addwf	dtoa@i^(0+256),f
@@ -7448,8 +7443,8 @@ Microchip MPLAB XC8 C Compiler v2.31 (Free license) build 20201012212115 Og1
   7350  0A8B  3DCD               	addwfc	(dtoa@i+1)^(0+256),f
   7351  0A8C                     l10564:
   7352                           
-  7353                           ;C:\Program Files\Microchip\xc8\v2.31\pic\sources\c99\common\doprnt.c: 323:         dbuf
-      +                          [i] = s ? '-' : '+';
+  7353                           ;D:\Programas\Microchip\xc8\v2.31\pic\sources\c99\common\doprnt.c: 323:         dbuf[i] 
+      +                          = s ? '-' : '+';
   7354  0A8C  0842               	movf	dtoa@s^(0+256),w
   7355  0A8D  0443               	iorwf	(dtoa@s+1)^(0+256),w
   7356  0A8E  1D03               	btfss	3,2
@@ -7481,8 +7476,8 @@ Microchip MPLAB XC8 C Compiler v2.31 (Free license) build 20201012212115 Og1
   7382  0AA3  0081               	movwf	1
   7383  0AA4                     l10572:
   7384                           
-  7385                           ;C:\Program Files\Microchip\xc8\v2.31\pic\sources\c99\common\doprnt.c: 327:     return p
-      +                          ad(fp, &dbuf[i], w);
+  7385                           ;D:\Programas\Microchip\xc8\v2.31\pic\sources\c99\common\doprnt.c: 327:     return pad(f
+      +                          p, &dbuf[i], w);
   7386  0AA4  0022               	movlb	2	; select bank2
   7387  0AA5  084C               	movf	dtoa@i^(0+256),w
   7388  0AA6  3E50               	addlw	(low (_dbuf| (0+768)))& (0+255)
@@ -7517,7 +7512,7 @@ Microchip MPLAB XC8 C Compiler v2.31 (Free license) build 20201012212115 Og1
   7417  2736                     __ptext7:	
   7418 ;; *************** function _pad *****************
   7419 ;; Defined at:
-  7420 ;;		line 72 in file "C:\Program Files\Microchip\xc8\v2.31\pic\sources\c99\common\doprnt.c"
+  7420 ;;		line 72 in file "D:\Programas\Microchip\xc8\v2.31\pic\sources\c99\common\doprnt.c"
   7421 ;; Parameters:    Size  Location     Type
   7422 ;;  fp              1    wreg     PTR struct _IO_FILE
   7423 ;;		 -> sprintf@f(5), 
@@ -7571,11 +7566,11 @@ Microchip MPLAB XC8 C Compiler v2.31 (Free license) build 20201012212115 Og1
   7466  2737  00A9               	movwf	pad@fp^(0+256)
   7467  2738                     l9936:
   7468                           
-  7469                           ;C:\Program Files\Microchip\xc8\v2.31\pic\sources\c99\common\doprnt.c: 72: static int pa
-      +                          d(FILE *fp, char *buf, int p);C:\Program Files\Microchip\xc8\v2.31\pic\sources\c99\commo
-      +                          n\doprnt.c: 73: {;C:\Program Files\Microchip\xc8\v2.31\pic\sources\c99\common\doprnt.c: 
-      +                          74:     int i, w;;C:\Program Files\Microchip\xc8\v2.31\pic\sources\c99\common\doprnt.c: 
-      +                          77:     if (flags & (1 << 0)) {
+  7469                           ;D:\Programas\Microchip\xc8\v2.31\pic\sources\c99\common\doprnt.c: 72: static int pad(FI
+      +                          LE *fp, char *buf, int p);D:\Programas\Microchip\xc8\v2.31\pic\sources\c99\common\doprnt
+      +                          .c: 73: {;D:\Programas\Microchip\xc8\v2.31\pic\sources\c99\common\doprnt.c: 74:     int 
+      +                          i, w;;D:\Programas\Microchip\xc8\v2.31\pic\sources\c99\common\doprnt.c: 77:     if (flag
+      +                          s & (1 << 0)) {
   7470  2738  0021               	movlb	1	; select bank1
   7471  2739  1C52               	btfss	_flags^(0+128),0
   7472  273A  2F3C               	goto	u9831
@@ -7585,8 +7580,8 @@ Microchip MPLAB XC8 C Compiler v2.31 (Free license) build 20201012212115 Og1
   7476  273D                     u9830:
   7477  273D                     l9938:
   7478                           
-  7479                           ;C:\Program Files\Microchip\xc8\v2.31\pic\sources\c99\common\doprnt.c: 78:         fputs
-      +                          ((const char *)buf, fp);
+  7479                           ;D:\Programas\Microchip\xc8\v2.31\pic\sources\c99\common\doprnt.c: 78:         fputs((co
+      +                          nst char *)buf, fp);
   7480  273D  0022               	movlb	2	; select bank2
   7481  273E  0829               	movf	pad@fp^(0+256),w
   7482  273F  00A4               	movwf	??_pad^(0+256)
@@ -7597,8 +7592,8 @@ Microchip MPLAB XC8 C Compiler v2.31 (Free license) build 20201012212115 Og1
   7487  2744  3188  2001  31A7   	fcall	_fputs
   7488  2747                     l9940:
   7489                           
-  7490                           ;C:\Program Files\Microchip\xc8\v2.31\pic\sources\c99\common\doprnt.c: 82:     w = (p < 
-      +                          0) ? 0 : p;
+  7490                           ;D:\Programas\Microchip\xc8\v2.31\pic\sources\c99\common\doprnt.c: 82:     w = (p < 0) ?
+      +                           0 : p;
   7491  2747  0021               	movlb	1	; select bank1
   7492  2748  1BC7               	btfsc	(pad@p+1)^(0+128),7
   7493  2749  2F4B               	goto	u9841
@@ -7621,17 +7616,17 @@ Microchip MPLAB XC8 C Compiler v2.31 (Free license) build 20201012212115 Og1
   7510  2756  01A8               	clrf	(pad@w+1)^(0+256)
   7511  2757                     l1343:
   7512                           
-  7513                           ;C:\Program Files\Microchip\xc8\v2.31\pic\sources\c99\common\doprnt.c: 83:     i = 0;
+  7513                           ;D:\Programas\Microchip\xc8\v2.31\pic\sources\c99\common\doprnt.c: 83:     i = 0;
   7514  2757  01A5               	clrf	pad@i^(0+256)
   7515  2758  01A6               	clrf	(pad@i+1)^(0+256)
   7516                           
-  7517                           ;C:\Program Files\Microchip\xc8\v2.31\pic\sources\c99\common\doprnt.c: 84:     while (i 
-      +                          < w) {
+  7517                           ;D:\Programas\Microchip\xc8\v2.31\pic\sources\c99\common\doprnt.c: 84:     while (i < w)
+      +                           {
   7518  2759  2F6D               	goto	l9950
   7519  275A                     l9946:
   7520                           
-  7521                           ;C:\Program Files\Microchip\xc8\v2.31\pic\sources\c99\common\doprnt.c: 85:         fputc
-      +                          (' ', fp);
+  7521                           ;D:\Programas\Microchip\xc8\v2.31\pic\sources\c99\common\doprnt.c: 85:         fputc(' '
+      +                          , fp);
   7522  275A  3020               	movlw	32
   7523  275B  0021               	movlb	1	; select bank1
   7524  275C  00B9               	movwf	fputc@c^(0+128)
@@ -7646,7 +7641,7 @@ Microchip MPLAB XC8 C Compiler v2.31 (Free license) build 20201012212115 Og1
   7533  2765  31A6  2683  31A7   	fcall	_fputc
   7534  2768                     l9948:
   7535                           
-  7536                           ;C:\Program Files\Microchip\xc8\v2.31\pic\sources\c99\common\doprnt.c: 86:         ++i;
+  7536                           ;D:\Programas\Microchip\xc8\v2.31\pic\sources\c99\common\doprnt.c: 86:         ++i;
   7537  2768  3001               	movlw	1
   7538  2769  0022               	movlb	2	; select bank2
   7539  276A  07A5               	addwf	pad@i^(0+256),f
@@ -7654,8 +7649,8 @@ Microchip MPLAB XC8 C Compiler v2.31 (Free license) build 20201012212115 Og1
   7541  276C  3DA6               	addwfc	(pad@i+1)^(0+256),f
   7542  276D                     l9950:
   7543                           
-  7544                           ;C:\Program Files\Microchip\xc8\v2.31\pic\sources\c99\common\doprnt.c: 84:     while (i 
-      +                          < w) {
+  7544                           ;D:\Programas\Microchip\xc8\v2.31\pic\sources\c99\common\doprnt.c: 84:     while (i < w)
+      +                           {
   7545  276D  0826               	movf	(pad@i+1)^(0+256),w
   7546  276E  3A80               	xorlw	128
   7547  276F  00A4               	movwf	??_pad^(0+256)
@@ -7675,8 +7670,8 @@ Microchip MPLAB XC8 C Compiler v2.31 (Free license) build 20201012212115 Og1
   7561  277B                     u9850:
   7562  277B                     l1346:
   7563                           
-  7564                           ;C:\Program Files\Microchip\xc8\v2.31\pic\sources\c99\common\doprnt.c: 90:     if (!(fla
-      +                          gs & (1 << 0))) {
+  7564                           ;D:\Programas\Microchip\xc8\v2.31\pic\sources\c99\common\doprnt.c: 90:     if (!(flags &
+      +                           (1 << 0))) {
   7565  277B  0021               	movlb	1	; select bank1
   7566  277C  1852               	btfsc	_flags^(0+128),0
   7567  277D  2F7F               	goto	u9861
@@ -7686,8 +7681,8 @@ Microchip MPLAB XC8 C Compiler v2.31 (Free license) build 20201012212115 Og1
   7571  2780                     u9860:
   7572  2780                     l9952:
   7573                           
-  7574                           ;C:\Program Files\Microchip\xc8\v2.31\pic\sources\c99\common\doprnt.c: 91:         fputs
-      +                          ((const char *)buf, fp);
+  7574                           ;D:\Programas\Microchip\xc8\v2.31\pic\sources\c99\common\doprnt.c: 91:         fputs((co
+      +                          nst char *)buf, fp);
   7575  2780  0022               	movlb	2	; select bank2
   7576  2781  0829               	movf	pad@fp^(0+256),w
   7577  2782  00A4               	movwf	??_pad^(0+256)
@@ -7698,8 +7693,8 @@ Microchip MPLAB XC8 C Compiler v2.31 (Free license) build 20201012212115 Og1
   7582  2787  3188  2001  31A7   	fcall	_fputs
   7583  278A                     l9954:
   7584                           
-  7585                           ;C:\Program Files\Microchip\xc8\v2.31\pic\sources\c99\common\doprnt.c: 94:     return (i
-      +                          nt)(strlen(buf) + (size_t)w);
+  7585                           ;D:\Programas\Microchip\xc8\v2.31\pic\sources\c99\common\doprnt.c: 94:     return (int)(
+      +                          strlen(buf) + (size_t)w);
   7586  278A  0021               	movlb	1	; select bank1
   7587  278B  0845               	movf	pad@buf^(0+128),w
   7588  278C  31AF  2772  31A7   	fcall	_strlen
@@ -7721,7 +7716,7 @@ Microchip MPLAB XC8 C Compiler v2.31 (Free license) build 20201012212115 Og1
   7604  2F72                     __ptext8:	
   7605 ;; *************** function _strlen *****************
   7606 ;; Defined at:
-  7607 ;;		line 5 in file "C:\Program Files\Microchip\xc8\v2.31\pic\sources\c99\common\strlen.c"
+  7607 ;;		line 5 in file "D:\Programas\Microchip\xc8\v2.31\pic\sources\c99\common\strlen.c"
   7608 ;; Parameters:    Size  Location     Type
   7609 ;;  s               1    wreg     PTR const unsigned char 
   7610 ;;		 -> dbuf(32), 
@@ -7806,7 +7801,7 @@ Microchip MPLAB XC8 C Compiler v2.31 (Free license) build 20201012212115 Og1
   7684  0801                     __ptext9:	
   7685 ;; *************** function _fputs *****************
   7686 ;; Defined at:
-  7687 ;;		line 8 in file "C:\Program Files\Microchip\xc8\v2.31\pic\sources\c99\common\nf_fputs.c"
+  7687 ;;		line 8 in file "D:\Programas\Microchip\xc8\v2.31\pic\sources\c99\common\nf_fputs.c"
   7688 ;; Parameters:    Size  Location     Type
   7689 ;;  s               1    wreg     PTR const unsigned char 
   7690 ;;		 -> dbuf(32), 
@@ -7908,7 +7903,7 @@ Microchip MPLAB XC8 C Compiler v2.31 (Free license) build 20201012212115 Og1
   7781  2683                     __ptext10:	
   7782 ;; *************** function _fputc *****************
   7783 ;; Defined at:
-  7784 ;;		line 8 in file "C:\Program Files\Microchip\xc8\v2.31\pic\sources\c99\common\nf_fputc.c"
+  7784 ;;		line 8 in file "D:\Programas\Microchip\xc8\v2.31\pic\sources\c99\common\nf_fputc.c"
   7785 ;; Parameters:    Size  Location     Type
   7786 ;;  c               2   25[BANK1 ] int 
   7787 ;;  fp              1   27[BANK1 ] PTR struct _IO_FILE
@@ -8061,7 +8056,7 @@ Microchip MPLAB XC8 C Compiler v2.31 (Free license) build 20201012212115 Og1
   7929  0003                     __ptext11:	
   7930 ;; *************** function _putch *****************
   7931 ;; Defined at:
-  7932 ;;		line 7 in file "C:\Program Files\Microchip\xc8\v2.31\pic\sources\c99\common\putch.c"
+  7932 ;;		line 7 in file "D:\Programas\Microchip\xc8\v2.31\pic\sources\c99\common\putch.c"
   7933 ;; Parameters:    Size  Location     Type
   7934 ;;  c               1    wreg     unsigned char 
   7935 ;; Auto vars:     Size  Location     Type
@@ -8109,7 +8104,7 @@ Microchip MPLAB XC8 C Compiler v2.31 (Free license) build 20201012212115 Og1
   7972  2FA9                     __ptext12:	
   7973 ;; *************** function _abs *****************
   7974 ;; Defined at:
-  7975 ;;		line 1 in file "C:\Program Files\Microchip\xc8\v2.31\pic\sources\c99\common\abs.c"
+  7975 ;;		line 1 in file "D:\Programas\Microchip\xc8\v2.31\pic\sources\c99\common\abs.c"
   7976 ;; Parameters:    Size  Location     Type
   7977 ;;  a               2   28[BANK1 ] int 
   7978 ;; Auto vars:     Size  Location     Type
@@ -8190,7 +8185,7 @@ Microchip MPLAB XC8 C Compiler v2.31 (Free license) build 20201012212115 Og1
   8048  11C7                     __ptext13:	
   8049 ;; *************** function ___aomod *****************
   8050 ;; Defined at:
-  8051 ;;		line 7 in file "C:\Program Files\Microchip\xc8\v2.31\pic\sources\c99\common\aomod.c"
+  8051 ;;		line 7 in file "D:\Programas\Microchip\xc8\v2.31\pic\sources\c99\common\aomod.c"
   8052 ;; Parameters:    Size  Location     Type
   8053 ;;  divisor         8    0[BANK2 ] long long 
   8054 ;;  dividend        8    8[BANK2 ] long long 
@@ -8517,7 +8512,7 @@ Microchip MPLAB XC8 C Compiler v2.31 (Free license) build 20201012212115 Og1
   8370  082D                     __ptext14:	
   8371 ;; *************** function ___aodiv *****************
   8372 ;; Defined at:
-  8373 ;;		line 7 in file "C:\Program Files\Microchip\xc8\v2.31\pic\sources\c99\common\aodiv.c"
+  8373 ;;		line 7 in file "D:\Programas\Microchip\xc8\v2.31\pic\sources\c99\common\aodiv.c"
   8374 ;; Parameters:    Size  Location     Type
   8375 ;;  divisor         8    0[BANK2 ] long long 
   8376 ;;  dividend        8    8[BANK2 ] long long 
@@ -15494,7 +15489,7 @@ Microchip MPLAB XC8 C Compiler v2.31 (Free license) build 20201012212115 Og1
  15053  1BE1                     __ptext64:	
  15054 ;; *************** function ___xxtofl *****************
  15055 ;; Defined at:
- 15056 ;;		line 10 in file "C:\Program Files\Microchip\xc8\v2.31\pic\sources\c99\common\xxtofl.c"
+ 15056 ;;		line 10 in file "D:\Programas\Microchip\xc8\v2.31\pic\sources\c99\common\xxtofl.c"
  15057 ;; Parameters:    Size  Location     Type
  15058 ;;  sign            1    wreg     unsigned char 
  15059 ;;  val             4    6[COMMON] long 
@@ -15765,7 +15760,7 @@ Microchip MPLAB XC8 C Compiler v2.31 (Free license) build 20201012212115 Og1
  15319  2037                     __ptext65:	
  15320 ;; *************** function ___wmul *****************
  15321 ;; Defined at:
- 15322 ;;		line 15 in file "C:\Program Files\Microchip\xc8\v2.31\pic\sources\c99\common\Umul16.c"
+ 15322 ;;		line 15 in file "D:\Programas\Microchip\xc8\v2.31\pic\sources\c99\common\Umul16.c"
  15323 ;; Parameters:    Size  Location     Type
  15324 ;;  multiplier      2    0[COMMON] unsigned int 
  15325 ;;  multiplicand    2    2[COMMON] unsigned int 
@@ -15855,7 +15850,7 @@ Microchip MPLAB XC8 C Compiler v2.31 (Free license) build 20201012212115 Og1
  15404  2E8D                     __ptext66:	
  15405 ;; *************** function ___flneg *****************
  15406 ;; Defined at:
- 15407 ;;		line 15 in file "C:\Program Files\Microchip\xc8\v2.31\pic\sources\c99\common\flneg.c"
+ 15407 ;;		line 15 in file "D:\Programas\Microchip\xc8\v2.31\pic\sources\c99\common\flneg.c"
  15408 ;; Parameters:    Size  Location     Type
  15409 ;;  f1              4   32[BANK0 ] unsigned int 
  15410 ;; Auto vars:     Size  Location     Type
@@ -15917,7 +15912,7 @@ Microchip MPLAB XC8 C Compiler v2.31 (Free license) build 20201012212115 Og1
  15461  0089                     __ptext67:	
  15462 ;; *************** function ___flmul *****************
  15463 ;; Defined at:
- 15464 ;;		line 8 in file "C:\Program Files\Microchip\xc8\v2.31\pic\sources\c99\common\sprcmul.c"
+ 15464 ;;		line 8 in file "D:\Programas\Microchip\xc8\v2.31\pic\sources\c99\common\sprcmul.c"
  15465 ;; Parameters:    Size  Location     Type
  15466 ;;  b               4    6[BANK0 ] unsigned int 
  15467 ;;  a               4   10[BANK0 ] unsigned int 
@@ -16668,7 +16663,7 @@ Microchip MPLAB XC8 C Compiler v2.31 (Free license) build 20201012212115 Og1
  16207  20B6                     __ptext68:	
  16208 ;; *************** function __Umul8_16 *****************
  16209 ;; Defined at:
- 16210 ;;		line 4 in file "C:\Program Files\Microchip\xc8\v2.31\pic\sources\c99\common\Umul8_16.c"
+ 16210 ;;		line 4 in file "D:\Programas\Microchip\xc8\v2.31\pic\sources\c99\common\Umul8_16.c"
  16211 ;; Parameters:    Size  Location     Type
  16212 ;;  multiplier      1    wreg     unsigned char 
  16213 ;;  multiplicand    1    0[COMMON] unsigned char 
@@ -16764,7 +16759,7 @@ Microchip MPLAB XC8 C Compiler v2.31 (Free license) build 20201012212115 Og1
  16298  1A2D                     __ptext69:	
  16299 ;; *************** function ___flge *****************
  16300 ;; Defined at:
- 16301 ;;		line 4 in file "C:\Program Files\Microchip\xc8\v2.31\pic\sources\c99\common\flge.c"
+ 16301 ;;		line 4 in file "D:\Programas\Microchip\xc8\v2.31\pic\sources\c99\common\flge.c"
  16302 ;; Parameters:    Size  Location     Type
  16303 ;;  ff1             4    0[COMMON] unsigned int 
  16304 ;;  ff2             4    4[COMMON] unsigned int 
@@ -16971,7 +16966,7 @@ Microchip MPLAB XC8 C Compiler v2.31 (Free license) build 20201012212115 Og1
  16500  0AC1                     __ptext70:	
  16501 ;; *************** function ___fldiv *****************
  16502 ;; Defined at:
- 16503 ;;		line 8 in file "C:\Program Files\Microchip\xc8\v2.31\pic\sources\c99\common\sprcdiv.c"
+ 16503 ;;		line 8 in file "D:\Programas\Microchip\xc8\v2.31\pic\sources\c99\common\sprcdiv.c"
  16504 ;; Parameters:    Size  Location     Type
  16505 ;;  a               4   36[BANK0 ] unsigned int 
  16506 ;;  b               4   40[BANK0 ] unsigned int 
@@ -17584,7 +17579,7 @@ Microchip MPLAB XC8 C Compiler v2.31 (Free license) build 20201012212115 Og1
  17108  02E0                     __ptext71:	
  17109 ;; *************** function ___fladd *****************
  17110 ;; Defined at:
- 17111 ;;		line 10 in file "C:\Program Files\Microchip\xc8\v2.31\pic\sources\c99\common\sprcadd.c"
+ 17111 ;;		line 10 in file "D:\Programas\Microchip\xc8\v2.31\pic\sources\c99\common\sprcadd.c"
  17112 ;; Parameters:    Size  Location     Type
  17113 ;;  b               4    0[COMMON] unsigned char 
  17114 ;;  a               4    4[COMMON] unsigned char 
@@ -21008,7 +21003,7 @@ Microchip MPLAB XC8 C Compiler v2.31 (Free license) build 20201012212115 Og1
  20455  22CF                     __ptext81:	
  20456 ;; *************** function i1_sprintf *****************
  20457 ;; Defined at:
- 20458 ;;		line 9 in file "C:\Program Files\Microchip\xc8\v2.31\pic\sources\c99\common\nf_sprintf.c"
+ 20458 ;;		line 9 in file "D:\Programas\Microchip\xc8\v2.31\pic\sources\c99\common\nf_sprintf.c"
  20459 ;; Parameters:    Size  Location     Type
  20460 ;;  s               1    wreg     PTR unsigned char 
  20461 ;;		 -> s(15), 
@@ -21113,7 +21108,7 @@ Microchip MPLAB XC8 C Compiler v2.31 (Free license) build 20201012212115 Og1
  20555  23BA                     __ptext82:	
  20556 ;; *************** function i1_vfprintf *****************
  20557 ;; Defined at:
- 20558 ;;		line 1390 in file "C:\Program Files\Microchip\xc8\v2.31\pic\sources\c99\common\doprnt.c"
+ 20558 ;;		line 1390 in file "D:\Programas\Microchip\xc8\v2.31\pic\sources\c99\common\doprnt.c"
  20559 ;; Parameters:    Size  Location     Type
  20560 ;;  fp              2   65[BANK0 ] PTR struct _IO_FILE
  20561 ;;		 -> i1sprintf@f(5), sprintf@f(5), 
@@ -21165,11 +21160,11 @@ Microchip MPLAB XC8 C Compiler v2.31 (Free license) build 20201012212115 Og1
  20602                           ; Regs used in i1_vfprintf: [wreg-fsr1h+status,2+status,0+pclath+cstack]
  20603                           
  20604                           
- 20605                           ;C:\Program Files\Microchip\xc8\v2.31\pic\sources\c99\common\doprnt.c: 1390: int vfprint
-      +                          f(FILE *fp, const char *fmt, va_list ap);C:\Program Files\Microchip\xc8\v2.31\pic\source
-      +                          s\c99\common\doprnt.c: 1391: {;C:\Program Files\Microchip\xc8\v2.31\pic\sources\c99\comm
-      +                          on\doprnt.c: 1393:     char *cfmt;;C:\Program Files\Microchip\xc8\v2.31\pic\sources\c99\
-      +                          common\doprnt.c: 1395:     cfmt = (char *)fmt;
+ 20605                           ;D:\Programas\Microchip\xc8\v2.31\pic\sources\c99\common\doprnt.c: 1390: int vfprintf(FI
+      +                          LE *fp, const char *fmt, va_list ap);D:\Programas\Microchip\xc8\v2.31\pic\sources\c99\co
+      +                          mmon\doprnt.c: 1391: {;D:\Programas\Microchip\xc8\v2.31\pic\sources\c99\common\doprnt.c:
+      +                           1393:     char *cfmt;;D:\Programas\Microchip\xc8\v2.31\pic\sources\c99\common\doprnt.c:
+      +                           1395:     cfmt = (char *)fmt;
  20606  23BA  0020               	movlb	0	; select bank0
  20607  23BB  0864               	movf	i1vfprintf@fmt+1,w
  20608  23BC  00E9               	movwf	i1vfprintf@cfmt+1
@@ -21177,19 +21172,18 @@ Microchip MPLAB XC8 C Compiler v2.31 (Free license) build 20201012212115 Og1
  20610  23BE  00E8               	movwf	i1vfprintf@cfmt
  20611  23BF                     i1l7094:
  20612                           
- 20613                           ;C:\Program Files\Microchip\xc8\v2.31\pic\sources\c99\common\doprnt.c: 1396:     nout = 
-      +                          0;
+ 20613                           ;D:\Programas\Microchip\xc8\v2.31\pic\sources\c99\common\doprnt.c: 1396:     nout = 0;
  20614  23BF  0022               	movlb	2	; select bank2
  20615  23C0  01D2               	clrf	_nout^(0+256)
  20616  23C1  01D3               	clrf	(_nout+1)^(0+256)
  20617                           
- 20618                           ;C:\Program Files\Microchip\xc8\v2.31\pic\sources\c99\common\doprnt.c: 1397:     while (
-      +                          *cfmt) {
+ 20618                           ;D:\Programas\Microchip\xc8\v2.31\pic\sources\c99\common\doprnt.c: 1397:     while (*cfm
+      +                          t) {
  20619  23C2  2BDA               	goto	i1l7098
  20620  23C3                     i1l7096:
  20621                           
- 20622                           ;C:\Program Files\Microchip\xc8\v2.31\pic\sources\c99\common\doprnt.c: 1398:         nou
-      +                          t += vfpfcnvrt(fp, &cfmt, ap);
+ 20622                           ;D:\Programas\Microchip\xc8\v2.31\pic\sources\c99\common\doprnt.c: 1398:         nout +=
+      +                           vfpfcnvrt(fp, &cfmt, ap);
  20623  23C3  0862               	movf	i1vfprintf@fp+1,w
  20624  23C4  00D0               	movwf	i1vfpfcnvrt@fp+1
  20625  23C5  0861               	movf	i1vfprintf@fp,w
@@ -21213,8 +21207,8 @@ Microchip MPLAB XC8 C Compiler v2.31 (Free license) build 20201012212115 Og1
  20643  23D9  3DD3               	addwfc	(_nout+1)^(0+256),f
  20644  23DA                     i1l7098:
  20645                           
- 20646                           ;C:\Program Files\Microchip\xc8\v2.31\pic\sources\c99\common\doprnt.c: 1397:     while (
-      +                          *cfmt) {
+ 20646                           ;D:\Programas\Microchip\xc8\v2.31\pic\sources\c99\common\doprnt.c: 1397:     while (*cfm
+      +                          t) {
  20647  23DA  0020               	movlb	0	; select bank0
  20648  23DB  0868               	movf	i1vfprintf@cfmt,w
  20649  23DC  0084               	movwf	4
@@ -21229,8 +21223,8 @@ Microchip MPLAB XC8 C Compiler v2.31 (Free license) build 20201012212115 Og1
  20658  23E4                     u695_20:
  20659  23E4                     i1l7100:
  20660                           
- 20661                           ;C:\Program Files\Microchip\xc8\v2.31\pic\sources\c99\common\doprnt.c: 1400:     return 
-      +                          nout;
+ 20661                           ;D:\Programas\Microchip\xc8\v2.31\pic\sources\c99\common\doprnt.c: 1400:     return nout
+      +                          ;
  20662  23E4  0022               	movlb	2	; select bank2
  20663  23E5  0853               	movf	(_nout+1)^(0+256),w
  20664  23E6  0020               	movlb	0	; select bank0
@@ -21247,7 +21241,7 @@ Microchip MPLAB XC8 C Compiler v2.31 (Free license) build 20201012212115 Og1
  20675  10D3                     __ptext83:	
  20676 ;; *************** function i1_vfpfcnvrt *****************
  20677 ;; Defined at:
- 20678 ;;		line 692 in file "C:\Program Files\Microchip\xc8\v2.31\pic\sources\c99\common\doprnt.c"
+ 20678 ;;		line 692 in file "D:\Programas\Microchip\xc8\v2.31\pic\sources\c99\common\doprnt.c"
  20679 ;; Parameters:    Size  Location     Type
  20680 ;;  fp              2   47[BANK0 ] PTR struct _IO_FILE
  20681 ;;		 -> i1sprintf@f(5), sprintf@f(5), 
@@ -21303,13 +21297,13 @@ Microchip MPLAB XC8 C Compiler v2.31 (Free license) build 20201012212115 Og1
  20726                           ; Regs used in i1_vfpfcnvrt: [wreg-fsr1h+status,2+status,0+pclath+cstack]
  20727                           
  20728                           
- 20729                           ;C:\Program Files\Microchip\xc8\v2.31\pic\sources\c99\common\doprnt.c: 692: static int v
-      +                          fpfcnvrt(FILE *fp, char *fmt[], va_list ap);C:\Program Files\Microchip\xc8\v2.31\pic\sou
-      +                          rces\c99\common\doprnt.c: 693: {;C:\Program Files\Microchip\xc8\v2.31\pic\sources\c99\co
-      +                          mmon\doprnt.c: 694:     char c, *cp, ct[3];;C:\Program Files\Microchip\xc8\v2.31\pic\sou
-      +                          rces\c99\common\doprnt.c: 695:     int done, i;;C:\Program Files\Microchip\xc8\v2.31\pic
-      +                          \sources\c99\common\doprnt.c: 696:     long long ll;;C:\Program Files\Microchip\xc8\v2.3
-      +                          1\pic\sources\c99\common\doprnt.c: 697:     unsigned long long llu;
+ 20729                           ;D:\Programas\Microchip\xc8\v2.31\pic\sources\c99\common\doprnt.c: 692: static int vfpfc
+      +                          nvrt(FILE *fp, char *fmt[], va_list ap);D:\Programas\Microchip\xc8\v2.31\pic\sources\c99
+      +                          \common\doprnt.c: 693: {;D:\Programas\Microchip\xc8\v2.31\pic\sources\c99\common\doprnt.
+      +                          c: 694:     char c, *cp, ct[3];;D:\Programas\Microchip\xc8\v2.31\pic\sources\c99\common\
+      +                          doprnt.c: 695:     int done, i;;D:\Programas\Microchip\xc8\v2.31\pic\sources\c99\common\
+      +                          doprnt.c: 696:     long long ll;;D:\Programas\Microchip\xc8\v2.31\pic\sources\c99\common
+      +                          \doprnt.c: 697:     unsigned long long llu;
  20730  10D3  0020               	movlb	0	; select bank0
  20731  10D4  0851               	movf	i1vfpfcnvrt@fmt,w
  20732  10D5  0086               	movwf	6
@@ -21333,8 +21327,7 @@ Microchip MPLAB XC8 C Compiler v2.31 (Free license) build 20201012212115 Og1
  20750  10E6                     u658_20:
  20751  10E6                     i1l6920:
  20752                           
- 20753                           ;C:\Program Files\Microchip\xc8\v2.31\pic\sources\c99\common\doprnt.c: 703:         ++*f
-      +                          mt;
+ 20753                           ;D:\Programas\Microchip\xc8\v2.31\pic\sources\c99\common\doprnt.c: 703:         ++*fmt;
  20754  10E6  0851               	movf	i1vfpfcnvrt@fmt,w
  20755  10E7  0086               	movwf	6
  20756  10E8  0852               	movf	i1vfpfcnvrt@fmt+1,w
@@ -21346,8 +21339,8 @@ Microchip MPLAB XC8 C Compiler v2.31 (Free license) build 20201012212115 Og1
  20762  10EE  0A81               	incf	1,f
  20763  10EF                     i1l6922:
  20764                           
- 20765                           ;C:\Program Files\Microchip\xc8\v2.31\pic\sources\c99\common\doprnt.c: 705:         flag
-      +                          s = width = 0;
+ 20765                           ;D:\Programas\Microchip\xc8\v2.31\pic\sources\c99\common\doprnt.c: 705:         flags = 
+      +                          width = 0;
  20766  10EF  0022               	movlb	2	; select bank2
  20767  10F0  01D4               	clrf	_width^(0+256)
  20768  10F1  01D5               	clrf	(_width+1)^(0+256)
@@ -21356,8 +21349,8 @@ Microchip MPLAB XC8 C Compiler v2.31 (Free license) build 20201012212115 Og1
  20771  10F4  01D3               	clrf	(_flags+1)^(0+128)
  20772  10F5                     i1l6924:
  20773                           
- 20774                           ;C:\Program Files\Microchip\xc8\v2.31\pic\sources\c99\common\doprnt.c: 706:         prec
-      +                           = -1;
+ 20774                           ;D:\Programas\Microchip\xc8\v2.31\pic\sources\c99\common\doprnt.c: 706:         prec = -
+      +                          1;
  20775  10F5  30FF               	movlw	255
  20776  10F6  0022               	movlb	2	; select bank2
  20777  10F7  00D6               	movwf	_prec^(0+256)
@@ -21365,8 +21358,8 @@ Microchip MPLAB XC8 C Compiler v2.31 (Free license) build 20201012212115 Og1
  20779  10F9  00D7               	movwf	(_prec^(0+256)+1)
  20780  10FA                     i1l6926:
  20781                           
- 20782                           ;C:\Program Files\Microchip\xc8\v2.31\pic\sources\c99\common\doprnt.c: 847:         if (
-      +                          (*fmt[0] == 'd') || (*fmt[0] == 'i')) {
+ 20782                           ;D:\Programas\Microchip\xc8\v2.31\pic\sources\c99\common\doprnt.c: 847:         if ((*fm
+      +                          t[0] == 'd') || (*fmt[0] == 'i')) {
  20783  10FA  0020               	movlb	0	; select bank0
  20784  10FB  0851               	movf	i1vfpfcnvrt@fmt,w
  20785  10FC  0086               	movwf	6
@@ -21411,8 +21404,8 @@ Microchip MPLAB XC8 C Compiler v2.31 (Free license) build 20201012212115 Og1
  20824  111F                     u660_20:
  20825  111F                     i1l6930:
  20826                           
- 20827                           ;C:\Program Files\Microchip\xc8\v2.31\pic\sources\c99\common\doprnt.c: 849:             
-      +                          ++*fmt;
+ 20827                           ;D:\Programas\Microchip\xc8\v2.31\pic\sources\c99\common\doprnt.c: 849:             ++*f
+      +                          mt;
  20828  111F  0851               	movf	i1vfpfcnvrt@fmt,w
  20829  1120  0086               	movwf	6
  20830  1121  0852               	movf	i1vfpfcnvrt@fmt+1,w
@@ -21424,8 +21417,8 @@ Microchip MPLAB XC8 C Compiler v2.31 (Free license) build 20201012212115 Og1
  20836  1127  0A81               	incf	1,f
  20837  1128                     i1l6932:
  20838                           
- 20839                           ;C:\Program Files\Microchip\xc8\v2.31\pic\sources\c99\common\doprnt.c: 850:             
-      +                          ll = (long long)(*(int *)__va_arg(*(int **)ap, (int)0));
+ 20839                           ;D:\Programas\Microchip\xc8\v2.31\pic\sources\c99\common\doprnt.c: 850:             ll =
+      +                           (long long)(*(int *)__va_arg(*(int **)ap, (int)0));
  20840  1128  0853               	movf	i1vfpfcnvrt@ap,w
  20841  1129  0086               	movwf	6
  20842  112A  0854               	movf	i1vfpfcnvrt@ap+1,w
@@ -21464,8 +21457,8 @@ Microchip MPLAB XC8 C Compiler v2.31 (Free license) build 20201012212115 Og1
  20875  114B  00E0               	movwf	i1vfpfcnvrt@ll+7
  20876  114C                     i1l6934:
  20877                           
- 20878                           ;C:\Program Files\Microchip\xc8\v2.31\pic\sources\c99\common\doprnt.c: 852:             
-      +                          return dtoa(fp, ll);
+ 20878                           ;D:\Programas\Microchip\xc8\v2.31\pic\sources\c99\common\doprnt.c: 852:             retu
+      +                          rn dtoa(fp, ll);
  20879  114C  0850               	movf	i1vfpfcnvrt@fp+1,w
  20880  114D  00B1               	movwf	i1dtoa@fp+1
  20881  114E  084F               	movf	i1vfpfcnvrt@fp,w
@@ -21495,8 +21488,8 @@ Microchip MPLAB XC8 C Compiler v2.31 (Free license) build 20201012212115 Og1
  20905  1168  29C6               	goto	i1l1381
  20906  1169                     i1l6938:
  20907                           
- 20908                           ;C:\Program Files\Microchip\xc8\v2.31\pic\sources\c99\common\doprnt.c: 1372:         if 
-      +                          ((*fmt)[0] == '%') {
+ 20908                           ;D:\Programas\Microchip\xc8\v2.31\pic\sources\c99\common\doprnt.c: 1372:         if ((*f
+      +                          mt)[0] == '%') {
  20909  1169  0851               	movf	i1vfpfcnvrt@fmt,w
  20910  116A  0086               	movwf	6
  20911  116B  0852               	movf	i1vfpfcnvrt@fmt+1,w
@@ -21519,8 +21512,8 @@ Microchip MPLAB XC8 C Compiler v2.31 (Free license) build 20201012212115 Og1
  20928  117B                     u661_20:
  20929  117B                     i1l6940:
  20930                           
- 20931                           ;C:\Program Files\Microchip\xc8\v2.31\pic\sources\c99\common\doprnt.c: 1373:            
-      +                           ++*fmt;
+ 20931                           ;D:\Programas\Microchip\xc8\v2.31\pic\sources\c99\common\doprnt.c: 1373:             ++*
+      +                          fmt;
  20932  117B  0851               	movf	i1vfpfcnvrt@fmt,w
  20933  117C  0086               	movwf	6
  20934  117D  0852               	movf	i1vfpfcnvrt@fmt+1,w
@@ -21532,8 +21525,8 @@ Microchip MPLAB XC8 C Compiler v2.31 (Free license) build 20201012212115 Og1
  20940  1183  0A81               	incf	1,f
  20941  1184                     i1l6942:
  20942                           
- 20943                           ;C:\Program Files\Microchip\xc8\v2.31\pic\sources\c99\common\doprnt.c: 1374:            
-      +                           fputc((int)'%', fp);
+ 20943                           ;D:\Programas\Microchip\xc8\v2.31\pic\sources\c99\common\doprnt.c: 1374:             fpu
+      +                          tc((int)'%', fp);
  20944  1184  3025               	movlw	37
  20945  1185  00F0               	movwf	i1fputc@c
  20946  1186  3000               	movlw	0
@@ -21545,8 +21538,8 @@ Microchip MPLAB XC8 C Compiler v2.31 (Free license) build 20201012212115 Og1
  20952  118C  31A6  26DB  3190   	fcall	i1_fputc
  20953  118F                     i1l6944:
  20954                           
- 20955                           ;C:\Program Files\Microchip\xc8\v2.31\pic\sources\c99\common\doprnt.c: 1375:            
-      +                           return 1;
+ 20955                           ;D:\Programas\Microchip\xc8\v2.31\pic\sources\c99\common\doprnt.c: 1375:             ret
+      +                          urn 1;
  20956  118F  3001               	movlw	1
  20957  1190  0020               	movlb	0	; select bank0
  20958  1191  00CF               	movwf	?i1_vfpfcnvrt
@@ -21555,8 +21548,7 @@ Microchip MPLAB XC8 C Compiler v2.31 (Free license) build 20201012212115 Og1
  20961  1194  29C6               	goto	i1l1381
  20962  1195                     i1l6948:
  20963                           
- 20964                           ;C:\Program Files\Microchip\xc8\v2.31\pic\sources\c99\common\doprnt.c: 1379:         ++*
-      +                          fmt;
+ 20964                           ;D:\Programas\Microchip\xc8\v2.31\pic\sources\c99\common\doprnt.c: 1379:         ++*fmt;
  20965  1195  0851               	movf	i1vfpfcnvrt@fmt,w
  20966  1196  0086               	movwf	6
  20967  1197  0852               	movf	i1vfpfcnvrt@fmt+1,w
@@ -21568,15 +21560,15 @@ Microchip MPLAB XC8 C Compiler v2.31 (Free license) build 20201012212115 Og1
  20973  119D  0A81               	incf	1,f
  20974  119E                     i1l6950:
  20975                           
- 20976                           ;C:\Program Files\Microchip\xc8\v2.31\pic\sources\c99\common\doprnt.c: 1380:         ret
-      +                          urn 0;
+ 20976                           ;D:\Programas\Microchip\xc8\v2.31\pic\sources\c99\common\doprnt.c: 1380:         return 
+      +                          0;
  20977  119E  01CF               	clrf	?i1_vfpfcnvrt
  20978  119F  01D0               	clrf	?i1_vfpfcnvrt+1
  20979  11A0  29C6               	goto	i1l1381
  20980  11A1                     i1l6954:
  20981                           
- 20982                           ;C:\Program Files\Microchip\xc8\v2.31\pic\sources\c99\common\doprnt.c: 1384:     fputc((
-      +                          int)(*fmt)[0], fp);
+ 20982                           ;D:\Programas\Microchip\xc8\v2.31\pic\sources\c99\common\doprnt.c: 1384:     fputc((int)
+      +                          (*fmt)[0], fp);
  20983  11A1  0851               	movf	i1vfpfcnvrt@fmt,w
  20984  11A2  0086               	movwf	6
  20985  11A3  0852               	movf	i1vfpfcnvrt@fmt+1,w
@@ -21603,7 +21595,7 @@ Microchip MPLAB XC8 C Compiler v2.31 (Free license) build 20201012212115 Og1
  21006  11B8  31A6  26DB  3190   	fcall	i1_fputc
  21007  11BB                     i1l6956:
  21008                           
- 21009                           ;C:\Program Files\Microchip\xc8\v2.31\pic\sources\c99\common\doprnt.c: 1385:     ++*fmt;
+ 21009                           ;D:\Programas\Microchip\xc8\v2.31\pic\sources\c99\common\doprnt.c: 1385:     ++*fmt;
  21010  11BB  0020               	movlb	0	; select bank0
  21011  11BC  0851               	movf	i1vfpfcnvrt@fmt,w
  21012  11BD  0086               	movwf	6
@@ -21623,7 +21615,7 @@ Microchip MPLAB XC8 C Compiler v2.31 (Free license) build 20201012212115 Og1
  21026  168C                     __ptext84:	
  21027 ;; *************** function i1_dtoa *****************
  21028 ;; Defined at:
- 21029 ;;		line 287 in file "C:\Program Files\Microchip\xc8\v2.31\pic\sources\c99\common\doprnt.c"
+ 21029 ;;		line 287 in file "D:\Programas\Microchip\xc8\v2.31\pic\sources\c99\common\doprnt.c"
  21030 ;; Parameters:    Size  Location     Type
  21031 ;;  fp              2   16[BANK0 ] PTR struct _IO_FILE
  21032 ;;		 -> i1sprintf@f(5), sprintf@f(5), 
@@ -21674,12 +21666,12 @@ Microchip MPLAB XC8 C Compiler v2.31 (Free license) build 20201012212115 Og1
  21072                           ; Regs used in i1_dtoa: [wreg-fsr1h+status,2+status,0+pclath+cstack]
  21073                           
  21074                           
- 21075                           ;C:\Program Files\Microchip\xc8\v2.31\pic\sources\c99\common\doprnt.c: 287: static int d
-      +                          toa(FILE *fp, long long d);C:\Program Files\Microchip\xc8\v2.31\pic\sources\c99\common\d
-      +                          oprnt.c: 288: {;C:\Program Files\Microchip\xc8\v2.31\pic\sources\c99\common\doprnt.c: 28
-      +                          9:     int i, p, s, w;;C:\Program Files\Microchip\xc8\v2.31\pic\sources\c99\common\doprn
-      +                          t.c: 290:     long long n;;C:\Program Files\Microchip\xc8\v2.31\pic\sources\c99\common\d
-      +                          oprnt.c: 293:     n = d;
+ 21075                           ;D:\Programas\Microchip\xc8\v2.31\pic\sources\c99\common\doprnt.c: 287: static int dtoa(
+      +                          FILE *fp, long long d);D:\Programas\Microchip\xc8\v2.31\pic\sources\c99\common\doprnt.c:
+      +                           288: {;D:\Programas\Microchip\xc8\v2.31\pic\sources\c99\common\doprnt.c: 289:     int i
+      +                          , p, s, w;;D:\Programas\Microchip\xc8\v2.31\pic\sources\c99\common\doprnt.c: 290:     lo
+      +                          ng long n;;D:\Programas\Microchip\xc8\v2.31\pic\sources\c99\common\doprnt.c: 293:     n 
+      +                          = d;
  21076  168C  0020               	movlb	0	; select bank0
  21077  168D  0832               	movf	i1dtoa@d,w
  21078  168E  00C5               	movwf	i1dtoa@n
@@ -21699,8 +21691,8 @@ Microchip MPLAB XC8 C Compiler v2.31 (Free license) build 20201012212115 Og1
  21092  169C  00CC               	movwf	i1dtoa@n+7
  21093  169D                     i1l6826:
  21094                           
- 21095                           ;C:\Program Files\Microchip\xc8\v2.31\pic\sources\c99\common\doprnt.c: 294:     s = n < 
-      +                          0 ? 1 : 0;
+ 21095                           ;D:\Programas\Microchip\xc8\v2.31\pic\sources\c99\common\doprnt.c: 294:     s = n < 0 ? 
+      +                          1 : 0;
  21096  169D  3045               	movlw	low i1dtoa@n
  21097  169E  0086               	movwf	6
  21098  169F  3000               	movlw	high i1dtoa@n
@@ -21725,7 +21717,7 @@ Microchip MPLAB XC8 C Compiler v2.31 (Free license) build 20201012212115 Og1
  21117  16AF  00C4               	movwf	i1dtoa@s+1
  21118  16B0                     i1l6828:
  21119                           
- 21120                           ;C:\Program Files\Microchip\xc8\v2.31\pic\sources\c99\common\doprnt.c: 295:     if (s) {
+ 21120                           ;D:\Programas\Microchip\xc8\v2.31\pic\sources\c99\common\doprnt.c: 295:     if (s) {
  21121  16B0  0843               	movf	i1dtoa@s,w
  21122  16B1  0444               	iorwf	i1dtoa@s+1,w
  21123  16B2  1903               	btfsc	3,2
@@ -21736,8 +21728,7 @@ Microchip MPLAB XC8 C Compiler v2.31 (Free license) build 20201012212115 Og1
  21128  16B6                     u640_20:
  21129  16B6                     i1l6830:
  21130                           
- 21131                           ;C:\Program Files\Microchip\xc8\v2.31\pic\sources\c99\common\doprnt.c: 296:         n = 
-      +                          -n;
+ 21131                           ;D:\Programas\Microchip\xc8\v2.31\pic\sources\c99\common\doprnt.c: 296:         n = -n;
  21132  16B6  09C5               	comf	i1dtoa@n,f
  21133  16B7  09C6               	comf	i1dtoa@n+1,f
  21134  16B8  09C7               	comf	i1dtoa@n+2,f
@@ -21770,11 +21761,11 @@ Microchip MPLAB XC8 C Compiler v2.31 (Free license) build 20201012212115 Og1
  21161  16D3  0ACC               	incf	i1dtoa@n+7,f
  21162  16D4                     u641_2lld:
  21163  16D4                     i1l1351:	
- 21164                           ;C:\Program Files\Microchip\xc8\v2.31\pic\sources\c99\common\doprnt.c: 297:     }
+ 21164                           ;D:\Programas\Microchip\xc8\v2.31\pic\sources\c99\common\doprnt.c: 297:     }
  21165                           
  21166                           
- 21167                           ;C:\Program Files\Microchip\xc8\v2.31\pic\sources\c99\common\doprnt.c: 300:     if (!(pr
-      +                          ec < 0)) {
+ 21167                           ;D:\Programas\Microchip\xc8\v2.31\pic\sources\c99\common\doprnt.c: 300:     if (!(prec <
+      +                           0)) {
  21168  16D4  0022               	movlb	2	; select bank2
  21169  16D5  1BD7               	btfsc	(_prec+1)^(0+256),7
  21170  16D6  2ED8               	goto	u642_21
@@ -21784,19 +21775,19 @@ Microchip MPLAB XC8 C Compiler v2.31 (Free license) build 20201012212115 Og1
  21174  16D9                     u642_20:
  21175  16D9                     i1l6832:
  21176                           
- 21177                           ;C:\Program Files\Microchip\xc8\v2.31\pic\sources\c99\common\doprnt.c: 301:         flag
-      +                          s &= ~(1 << 1);
+ 21177                           ;D:\Programas\Microchip\xc8\v2.31\pic\sources\c99\common\doprnt.c: 301:         flags &=
+      +                           ~(1 << 1);
  21178  16D9  30FD               	movlw	253
  21179  16DA  0021               	movlb	1	; select bank1
  21180  16DB  05D2               	andwf	_flags^(0+128),f
  21181  16DC  30FF               	movlw	255
  21182  16DD  05D3               	andwf	(_flags+1)^(0+128),f
  21183  16DE                     i1l1352:	
- 21184                           ;C:\Program Files\Microchip\xc8\v2.31\pic\sources\c99\common\doprnt.c: 302:     }
+ 21184                           ;D:\Programas\Microchip\xc8\v2.31\pic\sources\c99\common\doprnt.c: 302:     }
  21185                           
  21186                           
- 21187                           ;C:\Program Files\Microchip\xc8\v2.31\pic\sources\c99\common\doprnt.c: 303:     p = (0 <
-      +                           prec) ? prec : 1;
+ 21187                           ;D:\Programas\Microchip\xc8\v2.31\pic\sources\c99\common\doprnt.c: 303:     p = (0 < pre
+      +                          c) ? prec : 1;
  21188  16DE  0022               	movlb	2	; select bank2
  21189  16DF  0857               	movf	(_prec+1)^(0+256),w
  21190  16E0  3A80               	xorlw	128
@@ -21834,8 +21825,7 @@ Microchip MPLAB XC8 C Compiler v2.31 (Free license) build 20201012212115 Og1
  21222  16FB  00BF               	movwf	i1dtoa@p
  21223  16FC                     i1l1356:
  21224                           
- 21225                           ;C:\Program Files\Microchip\xc8\v2.31\pic\sources\c99\common\doprnt.c: 304:     w = widt
-      +                          h;
+ 21225                           ;D:\Programas\Microchip\xc8\v2.31\pic\sources\c99\common\doprnt.c: 304:     w = width;
  21226  16FC  0022               	movlb	2	; select bank2
  21227  16FD  0855               	movf	(_width+1)^(0+256),w
  21228  16FE  0020               	movlb	0	; select bank0
@@ -21846,8 +21836,8 @@ Microchip MPLAB XC8 C Compiler v2.31 (Free license) build 20201012212115 Og1
  21233  1703  00C1               	movwf	i1dtoa@w
  21234  1704                     i1l6838:
  21235                           
- 21236                           ;C:\Program Files\Microchip\xc8\v2.31\pic\sources\c99\common\doprnt.c: 305:     if (s ||
-      +                           (flags & (1 << 2))) {
+ 21236                           ;D:\Programas\Microchip\xc8\v2.31\pic\sources\c99\common\doprnt.c: 305:     if (s || (fl
+      +                          ags & (1 << 2))) {
  21237  1704  0843               	movf	i1dtoa@s,w
  21238  1705  0444               	iorwf	i1dtoa@s+1,w
  21239  1706  1D03               	btfss	3,2
@@ -21866,18 +21856,18 @@ Microchip MPLAB XC8 C Compiler v2.31 (Free license) build 20201012212115 Og1
  21252  170F                     u645_20:
  21253  170F                     i1l6842:
  21254                           
- 21255                           ;C:\Program Files\Microchip\xc8\v2.31\pic\sources\c99\common\doprnt.c: 306:         --w;
+ 21255                           ;D:\Programas\Microchip\xc8\v2.31\pic\sources\c99\common\doprnt.c: 306:         --w;
  21256  170F  30FF               	movlw	255
  21257  1710  0020               	movlb	0	; select bank0
  21258  1711  07C1               	addwf	i1dtoa@w,f
  21259  1712  30FF               	movlw	255
  21260  1713  3DC2               	addwfc	i1dtoa@w+1,f
  21261  1714                     i1l1357:	
- 21262                           ;C:\Program Files\Microchip\xc8\v2.31\pic\sources\c99\common\doprnt.c: 307:     }
+ 21262                           ;D:\Programas\Microchip\xc8\v2.31\pic\sources\c99\common\doprnt.c: 307:     }
  21263                           
  21264                           
- 21265                           ;C:\Program Files\Microchip\xc8\v2.31\pic\sources\c99\common\doprnt.c: 310:     i = size
-      +                          of(dbuf) - 1;
+ 21265                           ;D:\Programas\Microchip\xc8\v2.31\pic\sources\c99\common\doprnt.c: 310:     i = sizeof(d
+      +                          buf) - 1;
  21266  1714  301F               	movlw	31
  21267  1715  0020               	movlb	0	; select bank0
  21268  1716  00CD               	movwf	i1dtoa@i
@@ -21885,17 +21875,17 @@ Microchip MPLAB XC8 C Compiler v2.31 (Free license) build 20201012212115 Og1
  21270  1718  00CE               	movwf	i1dtoa@i+1
  21271  1719                     i1l6844:
  21272                           
- 21273                           ;C:\Program Files\Microchip\xc8\v2.31\pic\sources\c99\common\doprnt.c: 311:     dbuf[i] 
-      +                          = '\0';
+ 21273                           ;D:\Programas\Microchip\xc8\v2.31\pic\sources\c99\common\doprnt.c: 311:     dbuf[i] = '\
+      +                          0';
  21274  1719  0026               	movlb	6	; select bank6
  21275  171A  01EF               	clrf	(_dbuf^(0+768)+31)
  21276                           
- 21277                           ;C:\Program Files\Microchip\xc8\v2.31\pic\sources\c99\common\doprnt.c: 312:     while (!
-      +                          (i < 1) && (n || (0 < p) || ((0 < w) && (flags & (1 << 1))))) {
+ 21277                           ;D:\Programas\Microchip\xc8\v2.31\pic\sources\c99\common\doprnt.c: 312:     while (!(i <
+      +                           1) && (n || (0 < p) || ((0 < w) && (flags & (1 << 1))))) {
  21278  171B  2F85               	goto	i1l1360
  21279  171C                     i1l6846:
  21280                           
- 21281                           ;C:\Program Files\Microchip\xc8\v2.31\pic\sources\c99\common\doprnt.c: 313:         --i;
+ 21281                           ;D:\Programas\Microchip\xc8\v2.31\pic\sources\c99\common\doprnt.c: 313:         --i;
  21282  171C  30FF               	movlw	255
  21283  171D  0020               	movlb	0	; select bank0
  21284  171E  07CD               	addwf	i1dtoa@i,f
@@ -21903,8 +21893,8 @@ Microchip MPLAB XC8 C Compiler v2.31 (Free license) build 20201012212115 Og1
  21286  1720  3DCE               	addwfc	i1dtoa@i+1,f
  21287  1721                     i1l6848:
  21288                           
- 21289                           ;C:\Program Files\Microchip\xc8\v2.31\pic\sources\c99\common\doprnt.c: 314:         dbuf
-      +                          [i] = (char)((int)'0' + abs(n % 10));
+ 21289                           ;D:\Programas\Microchip\xc8\v2.31\pic\sources\c99\common\doprnt.c: 314:         dbuf[i] 
+      +                          = (char)((int)'0' + abs(n % 10));
  21290  1721  300A               	movlw	10
  21291  1722  00A0               	movwf	i1___aomod@divisor
  21292  1723  01A1               	clrf	i1___aomod@divisor+1
@@ -21950,22 +21940,22 @@ Microchip MPLAB XC8 C Compiler v2.31 (Free license) build 20201012212115 Og1
  21332  174F  0081               	movwf	1
  21333  1750                     i1l6850:
  21334                           
- 21335                           ;C:\Program Files\Microchip\xc8\v2.31\pic\sources\c99\common\doprnt.c: 315:         --p;
+ 21335                           ;D:\Programas\Microchip\xc8\v2.31\pic\sources\c99\common\doprnt.c: 315:         --p;
  21336  1750  30FF               	movlw	255
  21337  1751  07BF               	addwf	i1dtoa@p,f
  21338  1752  30FF               	movlw	255
  21339  1753  3DC0               	addwfc	i1dtoa@p+1,f
  21340  1754                     i1l6852:
  21341                           
- 21342                           ;C:\Program Files\Microchip\xc8\v2.31\pic\sources\c99\common\doprnt.c: 316:         --w;
+ 21342                           ;D:\Programas\Microchip\xc8\v2.31\pic\sources\c99\common\doprnt.c: 316:         --w;
  21343  1754  30FF               	movlw	255
  21344  1755  07C1               	addwf	i1dtoa@w,f
  21345  1756  30FF               	movlw	255
  21346  1757  3DC2               	addwfc	i1dtoa@w+1,f
  21347  1758                     i1l6854:
  21348                           
- 21349                           ;C:\Program Files\Microchip\xc8\v2.31\pic\sources\c99\common\doprnt.c: 317:         n = 
-      +                          n / 10;
+ 21349                           ;D:\Programas\Microchip\xc8\v2.31\pic\sources\c99\common\doprnt.c: 317:         n = n / 
+      +                          10;
  21350  1758  300A               	movlw	10
  21351  1759  00A0               	movwf	i1___aodiv@divisor
  21352  175A  01A1               	clrf	i1___aodiv@divisor+1
@@ -22010,11 +22000,11 @@ Microchip MPLAB XC8 C Compiler v2.31 (Free license) build 20201012212115 Og1
  21391  1783  0827               	movf	?i1___aodiv+7,w
  21392  1784  00CC               	movwf	i1dtoa@n+7
  21393  1785                     i1l1360:	
- 21394                           ;C:\Program Files\Microchip\xc8\v2.31\pic\sources\c99\common\doprnt.c: 318:     }
+ 21394                           ;D:\Programas\Microchip\xc8\v2.31\pic\sources\c99\common\doprnt.c: 318:     }
  21395                           
  21396                           
- 21397                           ;C:\Program Files\Microchip\xc8\v2.31\pic\sources\c99\common\doprnt.c: 312:     while (!
-      +                          (i < 1) && (n || (0 < p) || ((0 < w) && (flags & (1 << 1))))) {
+ 21397                           ;D:\Programas\Microchip\xc8\v2.31\pic\sources\c99\common\doprnt.c: 312:     while (!(i <
+      +                           1) && (n || (0 < p) || ((0 < w) && (flags & (1 << 1))))) {
  21398  1785  0020               	movlb	0	; select bank0
  21399  1786  084E               	movf	i1dtoa@i+1,w
  21400  1787  3A80               	xorlw	128
@@ -22093,8 +22083,8 @@ Microchip MPLAB XC8 C Compiler v2.31 (Free license) build 20201012212115 Og1
  21473  17C0                     u650_20:
  21474  17C0                     i1l6864:
  21475                           
- 21476                           ;C:\Program Files\Microchip\xc8\v2.31\pic\sources\c99\common\doprnt.c: 321:     if (s ||
-      +                           (flags & (1 << 2))) {
+ 21476                           ;D:\Programas\Microchip\xc8\v2.31\pic\sources\c99\common\doprnt.c: 321:     if (s || (fl
+      +                          ags & (1 << 2))) {
  21477  17C0  0020               	movlb	0	; select bank0
  21478  17C1  0843               	movf	i1dtoa@s,w
  21479  17C2  0444               	iorwf	i1dtoa@s+1,w
@@ -22114,7 +22104,7 @@ Microchip MPLAB XC8 C Compiler v2.31 (Free license) build 20201012212115 Og1
  21493  17CC                     u652_20:
  21494  17CC                     i1l6868:
  21495                           
- 21496                           ;C:\Program Files\Microchip\xc8\v2.31\pic\sources\c99\common\doprnt.c: 322:         --i;
+ 21496                           ;D:\Programas\Microchip\xc8\v2.31\pic\sources\c99\common\doprnt.c: 322:         --i;
  21497  17CC  30FF               	movlw	255
  21498  17CD  0020               	movlb	0	; select bank0
  21499  17CE  07CD               	addwf	i1dtoa@i,f
@@ -22122,8 +22112,8 @@ Microchip MPLAB XC8 C Compiler v2.31 (Free license) build 20201012212115 Og1
  21501  17D0  3DCE               	addwfc	i1dtoa@i+1,f
  21502  17D1                     i1l6870:
  21503                           
- 21504                           ;C:\Program Files\Microchip\xc8\v2.31\pic\sources\c99\common\doprnt.c: 323:         dbuf
-      +                          [i] = s ? '-' : '+';
+ 21504                           ;D:\Programas\Microchip\xc8\v2.31\pic\sources\c99\common\doprnt.c: 323:         dbuf[i] 
+      +                          = s ? '-' : '+';
  21505  17D1  0843               	movf	i1dtoa@s,w
  21506  17D2  0444               	iorwf	i1dtoa@s+1,w
  21507  17D3  1D03               	btfss	3,2
@@ -22155,8 +22145,8 @@ Microchip MPLAB XC8 C Compiler v2.31 (Free license) build 20201012212115 Og1
  21533  17E8  0081               	movwf	1
  21534  17E9                     i1l6878:
  21535                           
- 21536                           ;C:\Program Files\Microchip\xc8\v2.31\pic\sources\c99\common\doprnt.c: 327:     return p
-      +                          ad(fp, &dbuf[i], w);
+ 21536                           ;D:\Programas\Microchip\xc8\v2.31\pic\sources\c99\common\doprnt.c: 327:     return pad(f
+      +                          p, &dbuf[i], w);
  21537  17E9  0020               	movlb	0	; select bank0
  21538  17EA  0831               	movf	i1dtoa@fp+1,w
  21539  17EB  00A5               	movwf	i1pad@fp+1
@@ -22185,7 +22175,7 @@ Microchip MPLAB XC8 C Compiler v2.31 (Free license) build 20201012212115 Og1
  21562  262C                     __ptext85:	
  21563 ;; *************** function i1_pad *****************
  21564 ;; Defined at:
- 21565 ;;		line 72 in file "C:\Program Files\Microchip\xc8\v2.31\pic\sources\c99\common\doprnt.c"
+ 21565 ;;		line 72 in file "D:\Programas\Microchip\xc8\v2.31\pic\sources\c99\common\doprnt.c"
  21566 ;; Parameters:    Size  Location     Type
  21567 ;;  fp              2    4[BANK0 ] PTR struct _IO_FILE
  21568 ;;		 -> i1sprintf@f(5), sprintf@f(5), 
@@ -22234,11 +22224,11 @@ Microchip MPLAB XC8 C Compiler v2.31 (Free license) build 20201012212115 Og1
  21606                           ; Regs used in i1_pad: [wreg-fsr1h+status,2+status,0+pclath+cstack]
  21607                           
  21608                           
- 21609                           ;C:\Program Files\Microchip\xc8\v2.31\pic\sources\c99\common\doprnt.c: 72: static int pa
-      +                          d(FILE *fp, char *buf, int p);C:\Program Files\Microchip\xc8\v2.31\pic\sources\c99\commo
-      +                          n\doprnt.c: 73: {;C:\Program Files\Microchip\xc8\v2.31\pic\sources\c99\common\doprnt.c: 
-      +                          74:     int i, w;;C:\Program Files\Microchip\xc8\v2.31\pic\sources\c99\common\doprnt.c: 
-      +                          77:     if (flags & (1 << 0)) {
+ 21609                           ;D:\Programas\Microchip\xc8\v2.31\pic\sources\c99\common\doprnt.c: 72: static int pad(FI
+      +                          LE *fp, char *buf, int p);D:\Programas\Microchip\xc8\v2.31\pic\sources\c99\common\doprnt
+      +                          .c: 73: {;D:\Programas\Microchip\xc8\v2.31\pic\sources\c99\common\doprnt.c: 74:     int 
+      +                          i, w;;D:\Programas\Microchip\xc8\v2.31\pic\sources\c99\common\doprnt.c: 77:     if (flag
+      +                          s & (1 << 0)) {
  21610  262C  0021               	movlb	1	; select bank1
  21611  262D  1C52               	btfss	_flags^(0+128),0
  21612  262E  2E30               	goto	u628_21
@@ -22248,8 +22238,8 @@ Microchip MPLAB XC8 C Compiler v2.31 (Free license) build 20201012212115 Og1
  21616  2631                     u628_20:
  21617  2631                     i1l6770:
  21618                           
- 21619                           ;C:\Program Files\Microchip\xc8\v2.31\pic\sources\c99\common\doprnt.c: 78:         fputs
-      +                          ((const char *)buf, fp);
+ 21619                           ;D:\Programas\Microchip\xc8\v2.31\pic\sources\c99\common\doprnt.c: 78:         fputs((co
+      +                          nst char *)buf, fp);
  21620  2631  0020               	movlb	0	; select bank0
  21621  2632  0825               	movf	i1pad@fp+1,w
  21622  2633  00FA               	movwf	i1fputs@fp+1
@@ -22259,8 +22249,8 @@ Microchip MPLAB XC8 C Compiler v2.31 (Free license) build 20201012212115 Og1
  21626  2637  31A2  2253  31A6   	fcall	i1_fputs
  21627  263A                     i1l6772:
  21628                           
- 21629                           ;C:\Program Files\Microchip\xc8\v2.31\pic\sources\c99\common\doprnt.c: 82:     w = (p < 
-      +                          0) ? 0 : p;
+ 21629                           ;D:\Programas\Microchip\xc8\v2.31\pic\sources\c99\common\doprnt.c: 82:     w = (p < 0) ?
+      +                           0 : p;
  21630  263A  0020               	movlb	0	; select bank0
  21631  263B  1BA8               	btfsc	i1pad@p+1,7
  21632  263C  2E3E               	goto	u629_21
@@ -22279,17 +22269,17 @@ Microchip MPLAB XC8 C Compiler v2.31 (Free license) build 20201012212115 Og1
  21645  2645  01AC               	clrf	i1pad@w+1
  21646  2646                     i1l1343:
  21647                           
- 21648                           ;C:\Program Files\Microchip\xc8\v2.31\pic\sources\c99\common\doprnt.c: 83:     i = 0;
+ 21648                           ;D:\Programas\Microchip\xc8\v2.31\pic\sources\c99\common\doprnt.c: 83:     i = 0;
  21649  2646  01A9               	clrf	i1pad@i
  21650  2647  01AA               	clrf	i1pad@i+1
  21651                           
- 21652                           ;C:\Program Files\Microchip\xc8\v2.31\pic\sources\c99\common\doprnt.c: 84:     while (i 
-      +                          < w) {
+ 21652                           ;D:\Programas\Microchip\xc8\v2.31\pic\sources\c99\common\doprnt.c: 84:     while (i < w)
+      +                           {
  21653  2648  2E5A               	goto	i1l6782
  21654  2649                     i1l6778:
  21655                           
- 21656                           ;C:\Program Files\Microchip\xc8\v2.31\pic\sources\c99\common\doprnt.c: 85:         fputc
-      +                          (' ', fp);
+ 21656                           ;D:\Programas\Microchip\xc8\v2.31\pic\sources\c99\common\doprnt.c: 85:         fputc(' '
+      +                          , fp);
  21657  2649  3020               	movlw	32
  21658  264A  00F0               	movwf	i1fputc@c
  21659  264B  3000               	movlw	0
@@ -22302,7 +22292,7 @@ Microchip MPLAB XC8 C Compiler v2.31 (Free license) build 20201012212115 Og1
  21666  2652  31A6  26DB  31A6   	fcall	i1_fputc
  21667  2655                     i1l6780:
  21668                           
- 21669                           ;C:\Program Files\Microchip\xc8\v2.31\pic\sources\c99\common\doprnt.c: 86:         ++i;
+ 21669                           ;D:\Programas\Microchip\xc8\v2.31\pic\sources\c99\common\doprnt.c: 86:         ++i;
  21670  2655  3001               	movlw	1
  21671  2656  0020               	movlb	0	; select bank0
  21672  2657  07A9               	addwf	i1pad@i,f
@@ -22310,8 +22300,8 @@ Microchip MPLAB XC8 C Compiler v2.31 (Free license) build 20201012212115 Og1
  21674  2659  3DAA               	addwfc	i1pad@i+1,f
  21675  265A                     i1l6782:
  21676                           
- 21677                           ;C:\Program Files\Microchip\xc8\v2.31\pic\sources\c99\common\doprnt.c: 84:     while (i 
-      +                          < w) {
+ 21677                           ;D:\Programas\Microchip\xc8\v2.31\pic\sources\c99\common\doprnt.c: 84:     while (i < w)
+      +                           {
  21678  265A  082A               	movf	i1pad@i+1,w
  21679  265B  3A80               	xorlw	128
  21680  265C  00FD               	movwf	??i1_pad
@@ -22331,8 +22321,8 @@ Microchip MPLAB XC8 C Compiler v2.31 (Free license) build 20201012212115 Og1
  21694  2668                     u630_20:
  21695  2668                     i1l1346:
  21696                           
- 21697                           ;C:\Program Files\Microchip\xc8\v2.31\pic\sources\c99\common\doprnt.c: 90:     if (!(fla
-      +                          gs & (1 << 0))) {
+ 21697                           ;D:\Programas\Microchip\xc8\v2.31\pic\sources\c99\common\doprnt.c: 90:     if (!(flags &
+      +                           (1 << 0))) {
  21698  2668  0021               	movlb	1	; select bank1
  21699  2669  1852               	btfsc	_flags^(0+128),0
  21700  266A  2E6C               	goto	u631_21
@@ -22342,8 +22332,8 @@ Microchip MPLAB XC8 C Compiler v2.31 (Free license) build 20201012212115 Og1
  21704  266D                     u631_20:
  21705  266D                     i1l6784:
  21706                           
- 21707                           ;C:\Program Files\Microchip\xc8\v2.31\pic\sources\c99\common\doprnt.c: 91:         fputs
-      +                          ((const char *)buf, fp);
+ 21707                           ;D:\Programas\Microchip\xc8\v2.31\pic\sources\c99\common\doprnt.c: 91:         fputs((co
+      +                          nst char *)buf, fp);
  21708  266D  0020               	movlb	0	; select bank0
  21709  266E  0825               	movf	i1pad@fp+1,w
  21710  266F  00FA               	movwf	i1fputs@fp+1
@@ -22353,8 +22343,8 @@ Microchip MPLAB XC8 C Compiler v2.31 (Free license) build 20201012212115 Og1
  21714  2673  31A2  2253  31A6   	fcall	i1_fputs
  21715  2676                     i1l6786:
  21716                           
- 21717                           ;C:\Program Files\Microchip\xc8\v2.31\pic\sources\c99\common\doprnt.c: 94:     return (i
-      +                          nt)(strlen(buf) + (size_t)w);
+ 21717                           ;D:\Programas\Microchip\xc8\v2.31\pic\sources\c99\common\doprnt.c: 94:     return (int)(
+      +                          strlen(buf) + (size_t)w);
  21718  2676  0020               	movlb	0	; select bank0
  21719  2677  0826               	movf	i1pad@buf,w
  21720  2678  31AF  2724  31A6   	fcall	i1_strlen
@@ -22373,7 +22363,7 @@ Microchip MPLAB XC8 C Compiler v2.31 (Free license) build 20201012212115 Og1
  21733  2F24                     __ptext86:	
  21734 ;; *************** function i1_strlen *****************
  21735 ;; Defined at:
- 21736 ;;		line 5 in file "C:\Program Files\Microchip\xc8\v2.31\pic\sources\c99\common\strlen.c"
+ 21736 ;;		line 5 in file "D:\Programas\Microchip\xc8\v2.31\pic\sources\c99\common\strlen.c"
  21737 ;; Parameters:    Size  Location     Type
  21738 ;;  s               1    wreg     PTR const unsigned char 
  21739 ;;		 -> dbuf(32), 
@@ -22456,7 +22446,7 @@ Microchip MPLAB XC8 C Compiler v2.31 (Free license) build 20201012212115 Og1
  21811  2253                     __ptext87:	
  21812 ;; *************** function i1_fputs *****************
  21813 ;; Defined at:
- 21814 ;;		line 8 in file "C:\Program Files\Microchip\xc8\v2.31\pic\sources\c99\common\nf_fputs.c"
+ 21814 ;;		line 8 in file "D:\Programas\Microchip\xc8\v2.31\pic\sources\c99\common\nf_fputs.c"
  21815 ;; Parameters:    Size  Location     Type
  21816 ;;  s               1    wreg     PTR const unsigned char 
  21817 ;;		 -> dbuf(32), 
@@ -22555,7 +22545,7 @@ Microchip MPLAB XC8 C Compiler v2.31 (Free license) build 20201012212115 Og1
  21905  26DB                     __ptext88:	
  21906 ;; *************** function i1_fputc *****************
  21907 ;; Defined at:
- 21908 ;;		line 8 in file "C:\Program Files\Microchip\xc8\v2.31\pic\sources\c99\common\nf_fputc.c"
+ 21908 ;;		line 8 in file "D:\Programas\Microchip\xc8\v2.31\pic\sources\c99\common\nf_fputc.c"
  21909 ;; Parameters:    Size  Location     Type
  21910 ;;  c               2    0[COMMON] int 
  21911 ;;  fp              2    2[COMMON] PTR struct _IO_FILE
@@ -22711,7 +22701,7 @@ Microchip MPLAB XC8 C Compiler v2.31 (Free license) build 20201012212115 Og1
  22056  2E23                     __ptext89:	
  22057 ;; *************** function i1_putch *****************
  22058 ;; Defined at:
- 22059 ;;		line 7 in file "C:\Program Files\Microchip\xc8\v2.31\pic\sources\c99\common\putch.c"
+ 22059 ;;		line 7 in file "D:\Programas\Microchip\xc8\v2.31\pic\sources\c99\common\putch.c"
  22060 ;; Parameters:    Size  Location     Type
  22061 ;;  c               1    wreg     unsigned char 
  22062 ;; Auto vars:     Size  Location     Type
@@ -22758,7 +22748,7 @@ Microchip MPLAB XC8 C Compiler v2.31 (Free license) build 20201012212115 Og1
  22098  2F0A                     __ptext90:	
  22099 ;; *************** function i1_abs *****************
  22100 ;; Defined at:
- 22101 ;;		line 1 in file "C:\Program Files\Microchip\xc8\v2.31\pic\sources\c99\common\abs.c"
+ 22101 ;;		line 1 in file "D:\Programas\Microchip\xc8\v2.31\pic\sources\c99\common\abs.c"
  22102 ;; Parameters:    Size  Location     Type
  22103 ;;  a               2    3[COMMON] int 
  22104 ;; Auto vars:     Size  Location     Type
@@ -22836,7 +22826,7 @@ Microchip MPLAB XC8 C Compiler v2.31 (Free license) build 20201012212115 Og1
  22171  1E28                     __ptext91:	
  22172 ;; *************** function i1___aomod *****************
  22173 ;; Defined at:
- 22174 ;;		line 7 in file "C:\Program Files\Microchip\xc8\v2.31\pic\sources\c99\common\aomod.c"
+ 22174 ;;		line 7 in file "D:\Programas\Microchip\xc8\v2.31\pic\sources\c99\common\aomod.c"
  22175 ;; Parameters:    Size  Location     Type
  22176 ;;  divisor         8    0[BANK0 ] long long 
  22177 ;;  dividend        8    8[BANK0 ] long long 
@@ -23152,7 +23142,7 @@ Microchip MPLAB XC8 C Compiler v2.31 (Free license) build 20201012212115 Og1
  22482  12BB                     __ptext92:	
  22483 ;; *************** function i1___aodiv *****************
  22484 ;; Defined at:
- 22485 ;;		line 7 in file "C:\Program Files\Microchip\xc8\v2.31\pic\sources\c99\common\aodiv.c"
+ 22485 ;;		line 7 in file "D:\Programas\Microchip\xc8\v2.31\pic\sources\c99\common\aodiv.c"
  22486 ;; Parameters:    Size  Location     Type
  22487 ;;  divisor         8    0[BANK0 ] long long 
  22488 ;;  dividend        8    8[BANK0 ] long long 
@@ -26564,7 +26554,7 @@ BANK25              20      0       0      57        0.0%
 
 
 Microchip Technology PIC Macro Assembler V2.31 build 20201012212115 
-Symbol Table                                                                                   Sun Jul 25 21:26:31 2021
+Symbol Table                                                                                   Sun Jul 25 22:29:48 2021
 
                           ?i1_cleanFullMenu 0070                                ___fldiv@aexp 005D  
                               ___fldiv@bexp 005C                                           _s 01C9  

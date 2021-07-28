@@ -2,10 +2,10 @@ Microchip MPLAB XC8 Compiler V2.31
 
 Linker command line:
 
--W-3 --edf=C:\Program Files\Microchip\xc8\v2.31\pic\dat\en_msgs.txt -cn \
+-W-3 --edf=D:\Programas\Microchip\xc8\v2.31\pic\dat\en_msgs.txt -cn \
   -h+dist/default/production\S2_1991255.X.production.sym \
   --cmf=dist/default/production\S2_1991255.X.production.cmf -z -Q16LF1718 \
-  -oC:\Users\davfe\AppData\Local\Temp\sv5g.2 --defsym=__MPLAB_BUILD=1 \
+  -oC:\Users\leonardo\AppData\Local\Temp\sa4c.3 --defsym=__MPLAB_BUILD=1 \
   -Mdist/default/production/S2_1991255.X.production.map -E1 \
   -ver=XC8 Compiler --acfsm=1493 -ASTACK=02230h-027EFh -pstack=STACK \
   -ACODE=00h-07FFhx8 -ASTRCODE=00h-03FFFh -ASTRING=00h-0FFhx64 \
@@ -34,7 +34,8 @@ Linker command line:
   -ASFR31=0F80h-0FEFh -ACONFIG=08007h-08008h -DCONFIG=2 \
   -AIDLOC=08000h-08003h -DIDLOC=2 -DCODE=2 -DSTRCODE=2 -DSTRING=2 -DCONST=2 \
   -DENTRY=2 -preset_vec=00h,intentry=04h,init,end_init -ppowerup=CODE \
-  -pcinit=CODE -pfunctab=ENTRY -k C:\Users\davfe\AppData\Local\Temp\sv5g.o \
+  -pcinit=CODE -pfunctab=ENTRY -k \
+  C:\Users\leonardo\AppData\Local\Temp\sa4c.o \
   dist/default/production\S2_1991255.X.production.o 
 
 Object code version is 3.11
@@ -44,7 +45,7 @@ Machine type is 16LF1718
 
 
                 Name                               Link     Load   Length Selector   Space Scale
-C:\Users\davfe\AppData\Local\Temp\sv5g.o
+C:\Users\leonardo\AppData\Local\Temp\sa4c.o
                 end_init                             29       29        2        8       0
                 reset_vec                             0        0        2        0       0
                 config                             8007     8007        2        0       4
@@ -1895,7 +1896,7 @@ Total ram usage:        2 bytes
 
  *************** function _sprintf *****************
  Defined at:
-		line 9 in file "C:\Program Files\Microchip\xc8\v2.31\pic\sources\c99\common\nf_sprintf.c"
+		line 9 in file "D:\Programas\Microchip\xc8\v2.31\pic\sources\c99\common\nf_sprintf.c"
  Parameters:    Size  Location     Type
   s               1    wreg     PTR unsigned char 
 		 -> s(15), 
@@ -1935,7 +1936,7 @@ Total ram usage:       14 bytes
 
  *************** function _vfprintf *****************
  Defined at:
-		line 1390 in file "C:\Program Files\Microchip\xc8\v2.31\pic\sources\c99\common\doprnt.c"
+		line 1390 in file "D:\Programas\Microchip\xc8\v2.31\pic\sources\c99\common\doprnt.c"
  Parameters:    Size  Location     Type
   fp              1    wreg     PTR struct _IO_FILE
 		 -> sprintf@f(5), 
@@ -1977,7 +1978,7 @@ Total ram usage:        8 bytes
 
  *************** function _vfpfcnvrt *****************
  Defined at:
-		line 692 in file "C:\Program Files\Microchip\xc8\v2.31\pic\sources\c99\common\doprnt.c"
+		line 692 in file "D:\Programas\Microchip\xc8\v2.31\pic\sources\c99\common\doprnt.c"
  Parameters:    Size  Location     Type
   fp              1    wreg     PTR struct _IO_FILE
 		 -> sprintf@f(5), 
@@ -2023,7 +2024,7 @@ Total ram usage:       16 bytes
 
  *************** function _dtoa *****************
  Defined at:
-		line 287 in file "C:\Program Files\Microchip\xc8\v2.31\pic\sources\c99\common\doprnt.c"
+		line 287 in file "D:\Programas\Microchip\xc8\v2.31\pic\sources\c99\common\doprnt.c"
  Parameters:    Size  Location     Type
   fp              1    wreg     PTR struct _IO_FILE
 		 -> sprintf@f(5), 
@@ -2064,7 +2065,7 @@ Total ram usage:       30 bytes
 
  *************** function _pad *****************
  Defined at:
-		line 72 in file "C:\Program Files\Microchip\xc8\v2.31\pic\sources\c99\common\doprnt.c"
+		line 72 in file "D:\Programas\Microchip\xc8\v2.31\pic\sources\c99\common\doprnt.c"
  Parameters:    Size  Location     Type
   fp              1    wreg     PTR struct _IO_FILE
 		 -> sprintf@f(5), 
@@ -2103,7 +2104,7 @@ Total ram usage:        9 bytes
 
  *************** function _strlen *****************
  Defined at:
-		line 5 in file "C:\Program Files\Microchip\xc8\v2.31\pic\sources\c99\common\strlen.c"
+		line 5 in file "D:\Programas\Microchip\xc8\v2.31\pic\sources\c99\common\strlen.c"
  Parameters:    Size  Location     Type
   s               1    wreg     PTR const unsigned char 
 		 -> dbuf(32), 
@@ -2137,7 +2138,7 @@ Total ram usage:        5 bytes
 
  *************** function _fputs *****************
  Defined at:
-		line 8 in file "C:\Program Files\Microchip\xc8\v2.31\pic\sources\c99\common\nf_fputs.c"
+		line 8 in file "D:\Programas\Microchip\xc8\v2.31\pic\sources\c99\common\nf_fputs.c"
  Parameters:    Size  Location     Type
   s               1    wreg     PTR const unsigned char 
 		 -> dbuf(32), 
@@ -2173,7 +2174,7 @@ Total ram usage:        8 bytes
 
  *************** function _fputc *****************
  Defined at:
-		line 8 in file "C:\Program Files\Microchip\xc8\v2.31\pic\sources\c99\common\nf_fputc.c"
+		line 8 in file "D:\Programas\Microchip\xc8\v2.31\pic\sources\c99\common\nf_fputc.c"
  Parameters:    Size  Location     Type
   c               2   25[BANK1 ] int 
   fp              1   27[BANK1 ] PTR struct _IO_FILE
@@ -2207,7 +2208,7 @@ Total ram usage:        8 bytes
 
  *************** function _putch *****************
  Defined at:
-		line 7 in file "C:\Program Files\Microchip\xc8\v2.31\pic\sources\c99\common\putch.c"
+		line 7 in file "D:\Programas\Microchip\xc8\v2.31\pic\sources\c99\common\putch.c"
  Parameters:    Size  Location     Type
   c               1    wreg     unsigned char 
  Auto vars:     Size  Location     Type
@@ -2237,7 +2238,7 @@ Total ram usage:        0 bytes
 
  *************** function _abs *****************
  Defined at:
-		line 1 in file "C:\Program Files\Microchip\xc8\v2.31\pic\sources\c99\common\abs.c"
+		line 1 in file "D:\Programas\Microchip\xc8\v2.31\pic\sources\c99\common\abs.c"
  Parameters:    Size  Location     Type
   a               2   28[BANK1 ] int 
  Auto vars:     Size  Location     Type
@@ -2267,7 +2268,7 @@ Total ram usage:        4 bytes
 
  *************** function ___aomod *****************
  Defined at:
-		line 7 in file "C:\Program Files\Microchip\xc8\v2.31\pic\sources\c99\common\aomod.c"
+		line 7 in file "D:\Programas\Microchip\xc8\v2.31\pic\sources\c99\common\aomod.c"
  Parameters:    Size  Location     Type
   divisor         8    0[BANK2 ] long long 
   dividend        8    8[BANK2 ] long long 
@@ -2299,7 +2300,7 @@ Total ram usage:       19 bytes
 
  *************** function ___aodiv *****************
  Defined at:
-		line 7 in file "C:\Program Files\Microchip\xc8\v2.31\pic\sources\c99\common\aodiv.c"
+		line 7 in file "D:\Programas\Microchip\xc8\v2.31\pic\sources\c99\common\aodiv.c"
  Parameters:    Size  Location     Type
   divisor         8    0[BANK2 ] long long 
   dividend        8    8[BANK2 ] long long 
@@ -3941,7 +3942,7 @@ Total ram usage:       28 bytes
 
  *************** function ___xxtofl *****************
  Defined at:
-		line 10 in file "C:\Program Files\Microchip\xc8\v2.31\pic\sources\c99\common\xxtofl.c"
+		line 10 in file "D:\Programas\Microchip\xc8\v2.31\pic\sources\c99\common\xxtofl.c"
  Parameters:    Size  Location     Type
   sign            1    wreg     unsigned char 
   val             4    6[COMMON] long 
@@ -3973,7 +3974,7 @@ Total ram usage:       14 bytes
 
  *************** function ___wmul *****************
  Defined at:
-		line 15 in file "C:\Program Files\Microchip\xc8\v2.31\pic\sources\c99\common\Umul16.c"
+		line 15 in file "D:\Programas\Microchip\xc8\v2.31\pic\sources\c99\common\Umul16.c"
  Parameters:    Size  Location     Type
   multiplier      2    0[COMMON] unsigned int 
   multiplicand    2    2[COMMON] unsigned int 
@@ -4003,7 +4004,7 @@ Total ram usage:        6 bytes
 
  *************** function ___flneg *****************
  Defined at:
-		line 15 in file "C:\Program Files\Microchip\xc8\v2.31\pic\sources\c99\common\flneg.c"
+		line 15 in file "D:\Programas\Microchip\xc8\v2.31\pic\sources\c99\common\flneg.c"
  Parameters:    Size  Location     Type
   f1              4   32[BANK0 ] unsigned int 
  Auto vars:     Size  Location     Type
@@ -4032,7 +4033,7 @@ Total ram usage:        4 bytes
 
  *************** function ___flmul *****************
  Defined at:
-		line 8 in file "C:\Program Files\Microchip\xc8\v2.31\pic\sources\c99\common\sprcmul.c"
+		line 8 in file "D:\Programas\Microchip\xc8\v2.31\pic\sources\c99\common\sprcmul.c"
  Parameters:    Size  Location     Type
   b               4    6[BANK0 ] unsigned int 
   a               4   10[BANK0 ] unsigned int 
@@ -4068,7 +4069,7 @@ Total ram usage:       26 bytes
 
  *************** function __Umul8_16 *****************
  Defined at:
-		line 4 in file "C:\Program Files\Microchip\xc8\v2.31\pic\sources\c99\common\Umul8_16.c"
+		line 4 in file "D:\Programas\Microchip\xc8\v2.31\pic\sources\c99\common\Umul8_16.c"
  Parameters:    Size  Location     Type
   multiplier      1    wreg     unsigned char 
   multiplicand    1    0[COMMON] unsigned char 
@@ -4100,7 +4101,7 @@ Total ram usage:        9 bytes
 
  *************** function ___flge *****************
  Defined at:
-		line 4 in file "C:\Program Files\Microchip\xc8\v2.31\pic\sources\c99\common\flge.c"
+		line 4 in file "D:\Programas\Microchip\xc8\v2.31\pic\sources\c99\common\flge.c"
  Parameters:    Size  Location     Type
   ff1             4    0[COMMON] unsigned int 
   ff2             4    4[COMMON] unsigned int 
@@ -4131,7 +4132,7 @@ Total ram usage:       12 bytes
 
  *************** function ___fldiv *****************
  Defined at:
-		line 8 in file "C:\Program Files\Microchip\xc8\v2.31\pic\sources\c99\common\sprcdiv.c"
+		line 8 in file "D:\Programas\Microchip\xc8\v2.31\pic\sources\c99\common\sprcdiv.c"
  Parameters:    Size  Location     Type
   a               4   36[BANK0 ] unsigned int 
   b               4   40[BANK0 ] unsigned int 
@@ -4166,7 +4167,7 @@ Total ram usage:       26 bytes
 
  *************** function ___fladd *****************
  Defined at:
-		line 10 in file "C:\Program Files\Microchip\xc8\v2.31\pic\sources\c99\common\sprcadd.c"
+		line 10 in file "D:\Programas\Microchip\xc8\v2.31\pic\sources\c99\common\sprcadd.c"
  Parameters:    Size  Location     Type
   b               4    0[COMMON] unsigned char 
   a               4    4[COMMON] unsigned char 
@@ -4519,7 +4520,7 @@ Total ram usage:        2 bytes
 
  *************** function i1_sprintf *****************
  Defined at:
-		line 9 in file "C:\Program Files\Microchip\xc8\v2.31\pic\sources\c99\common\nf_sprintf.c"
+		line 9 in file "D:\Programas\Microchip\xc8\v2.31\pic\sources\c99\common\nf_sprintf.c"
  Parameters:    Size  Location     Type
   s               1    wreg     PTR unsigned char 
 		 -> s(15), 
@@ -4559,7 +4560,7 @@ Total ram usage:       15 bytes
 
  *************** function i1_vfprintf *****************
  Defined at:
-		line 1390 in file "C:\Program Files\Microchip\xc8\v2.31\pic\sources\c99\common\doprnt.c"
+		line 1390 in file "D:\Programas\Microchip\xc8\v2.31\pic\sources\c99\common\doprnt.c"
  Parameters:    Size  Location     Type
   fp              2   65[BANK0 ] PTR struct _IO_FILE
 		 -> i1sprintf@f(5), sprintf@f(5), 
@@ -4599,7 +4600,7 @@ Total ram usage:        9 bytes
 
  *************** function i1_vfpfcnvrt *****************
  Defined at:
-		line 692 in file "C:\Program Files\Microchip\xc8\v2.31\pic\sources\c99\common\doprnt.c"
+		line 692 in file "D:\Programas\Microchip\xc8\v2.31\pic\sources\c99\common\doprnt.c"
  Parameters:    Size  Location     Type
   fp              2   47[BANK0 ] PTR struct _IO_FILE
 		 -> i1sprintf@f(5), sprintf@f(5), 
@@ -4643,7 +4644,7 @@ Total ram usage:       18 bytes
 
  *************** function i1_dtoa *****************
  Defined at:
-		line 287 in file "C:\Program Files\Microchip\xc8\v2.31\pic\sources\c99\common\doprnt.c"
+		line 287 in file "D:\Programas\Microchip\xc8\v2.31\pic\sources\c99\common\doprnt.c"
  Parameters:    Size  Location     Type
   fp              2   16[BANK0 ] PTR struct _IO_FILE
 		 -> i1sprintf@f(5), sprintf@f(5), 
@@ -4682,7 +4683,7 @@ Total ram usage:       31 bytes
 
  *************** function i1_pad *****************
  Defined at:
-		line 72 in file "C:\Program Files\Microchip\xc8\v2.31\pic\sources\c99\common\doprnt.c"
+		line 72 in file "D:\Programas\Microchip\xc8\v2.31\pic\sources\c99\common\doprnt.c"
  Parameters:    Size  Location     Type
   fp              2    4[BANK0 ] PTR struct _IO_FILE
 		 -> i1sprintf@f(5), sprintf@f(5), 
@@ -4719,7 +4720,7 @@ Total ram usage:       10 bytes
 
  *************** function i1_strlen *****************
  Defined at:
-		line 5 in file "C:\Program Files\Microchip\xc8\v2.31\pic\sources\c99\common\strlen.c"
+		line 5 in file "D:\Programas\Microchip\xc8\v2.31\pic\sources\c99\common\strlen.c"
  Parameters:    Size  Location     Type
   s               1    wreg     PTR const unsigned char 
 		 -> dbuf(32), 
@@ -4752,7 +4753,7 @@ Total ram usage:        5 bytes
 
  *************** function i1_fputs *****************
  Defined at:
-		line 8 in file "C:\Program Files\Microchip\xc8\v2.31\pic\sources\c99\common\nf_fputs.c"
+		line 8 in file "D:\Programas\Microchip\xc8\v2.31\pic\sources\c99\common\nf_fputs.c"
  Parameters:    Size  Location     Type
   s               1    wreg     PTR const unsigned char 
 		 -> dbuf(32), 
@@ -4788,7 +4789,7 @@ Total ram usage:        8 bytes
 
  *************** function i1_fputc *****************
  Defined at:
-		line 8 in file "C:\Program Files\Microchip\xc8\v2.31\pic\sources\c99\common\nf_fputc.c"
+		line 8 in file "D:\Programas\Microchip\xc8\v2.31\pic\sources\c99\common\nf_fputc.c"
  Parameters:    Size  Location     Type
   c               2    0[COMMON] int 
   fp              2    2[COMMON] PTR struct _IO_FILE
@@ -4822,7 +4823,7 @@ Total ram usage:        9 bytes
 
  *************** function i1_putch *****************
  Defined at:
-		line 7 in file "C:\Program Files\Microchip\xc8\v2.31\pic\sources\c99\common\putch.c"
+		line 7 in file "D:\Programas\Microchip\xc8\v2.31\pic\sources\c99\common\putch.c"
  Parameters:    Size  Location     Type
   c               1    wreg     unsigned char 
  Auto vars:     Size  Location     Type
@@ -4851,7 +4852,7 @@ Total ram usage:        0 bytes
 
  *************** function i1_abs *****************
  Defined at:
-		line 1 in file "C:\Program Files\Microchip\xc8\v2.31\pic\sources\c99\common\abs.c"
+		line 1 in file "D:\Programas\Microchip\xc8\v2.31\pic\sources\c99\common\abs.c"
  Parameters:    Size  Location     Type
   a               2    3[COMMON] int 
  Auto vars:     Size  Location     Type
@@ -4880,7 +4881,7 @@ Total ram usage:        4 bytes
 
  *************** function i1___aomod *****************
  Defined at:
-		line 7 in file "C:\Program Files\Microchip\xc8\v2.31\pic\sources\c99\common\aomod.c"
+		line 7 in file "D:\Programas\Microchip\xc8\v2.31\pic\sources\c99\common\aomod.c"
  Parameters:    Size  Location     Type
   divisor         8    0[BANK0 ] long long 
   dividend        8    8[BANK0 ] long long 
@@ -4911,7 +4912,7 @@ Total ram usage:       19 bytes
 
  *************** function i1___aodiv *****************
  Defined at:
-		line 7 in file "C:\Program Files\Microchip\xc8\v2.31\pic\sources\c99\common\aodiv.c"
+		line 7 in file "D:\Programas\Microchip\xc8\v2.31\pic\sources\c99\common\aodiv.c"
  Parameters:    Size  Location     Type
   divisor         8    0[BANK0 ] long long 
   dividend        8    8[BANK0 ] long long 
@@ -5271,40 +5272,40 @@ Total ram usage:        0 bytes
 MODULE INFORMATION
 
 Module		Function		Class		Link	Load	Size
-C:\Program Files\Microchip\xc8\v2.31\pic\sources\c99\common\sprcadd.c
-		___fladd       		CODE           	02E0	0000	575
-
-C:\Program Files\Microchip\xc8\v2.31\pic\sources\c99\common\sprcadd.c estimated size: 575
-
-C:\Program Files\Microchip\xc8\v2.31\pic\sources\c99\common\flneg.c
-		___flneg       		CODE           	2E8D	0000	12
-
-C:\Program Files\Microchip\xc8\v2.31\pic\sources\c99\common\flneg.c estimated size: 12
-
-C:\Program Files\Microchip\xc8\v2.31\pic\sources\c99\common\putch.c
+D:\Programas\Microchip\xc8\v2.31\pic\sources\c99\common\putch.c
 		_putch         		CODE           	0003	0000	1
 
-C:\Program Files\Microchip\xc8\v2.31\pic\sources\c99\common\putch.c estimated size: 1
+D:\Programas\Microchip\xc8\v2.31\pic\sources\c99\common\putch.c estimated size: 1
 
-C:\Program Files\Microchip\xc8\v2.31\pic\sources\c99\common\nf_fputs.c
-		_fputs         		CODE           	0801	0000	44
+D:\Programas\Microchip\xc8\v2.31\pic\sources\c99\common\abs.c
+		_abs           		CODE           	2FA9	0000	28
 
-C:\Program Files\Microchip\xc8\v2.31\pic\sources\c99\common\nf_fputs.c estimated size: 44
+D:\Programas\Microchip\xc8\v2.31\pic\sources\c99\common\abs.c estimated size: 28
+
+D:\Programas\Microchip\xc8\v2.31\pic\sources\c99\common\Umul16.c
+		___wmul        		CODE           	2037	0000	31
+
+D:\Programas\Microchip\xc8\v2.31\pic\sources\c99\common\Umul16.c estimated size: 31
+
+D:\Programas\Microchip\xc8\v2.31\pic\sources\c99\common\sprcmul.c
+		___flmul       		CODE           	0089	0000	599
+
+D:\Programas\Microchip\xc8\v2.31\pic\sources\c99\common\sprcmul.c estimated size: 599
+
+D:\Programas\Microchip\xc8\v2.31\pic\sources\c99\common\sprcdiv.c
+		___fldiv       		CODE           	0AC1	0000	436
+
+D:\Programas\Microchip\xc8\v2.31\pic\sources\c99\common\sprcdiv.c estimated size: 436
+
+D:\Programas\Microchip\xc8\v2.31\pic\sources\c99\common\aodiv.c
+		___aodiv       		CODE           	082D	0000	286
+
+D:\Programas\Microchip\xc8\v2.31\pic\sources\c99\common\aodiv.c estimated size: 286
 
 mcc_generated_files/interrupt_manager.c
 		_INTERRUPT_InterruptManager		CODE           	0004	0000	37
 
 mcc_generated_files/interrupt_manager.c estimated size: 37
-
-C:\Program Files\Microchip\xc8\v2.31\pic\sources\c99\common\xxtofl.c
-		___xxtofl      		CODE           	1BE1	0000	173
-
-C:\Program Files\Microchip\xc8\v2.31\pic\sources\c99\common\xxtofl.c estimated size: 173
-
-C:\Program Files\Microchip\xc8\v2.31\pic\sources\c99\common\aomod.c
-		___aomod       		CODE           	11C7	0000	244
-
-C:\Program Files\Microchip\xc8\v2.31\pic\sources\c99\common\aomod.c estimated size: 244
 
 mcc_generated_files/tmr0.c
 		_TMR0_SetInterruptHandler		CODE           	2E6F	0000	9
@@ -5315,15 +5316,10 @@ mcc_generated_files/tmr0.c
 
 mcc_generated_files/tmr0.c estimated size: 135
 
-C:\Program Files\Microchip\xc8\v2.31\pic\sources\c99\common\abs.c
-		_abs           		CODE           	2FA9	0000	28
+D:\Programas\Microchip\xc8\v2.31\pic\sources\c99\common\flge.c
+		___flge        		CODE           	1A2D	0000	138
 
-C:\Program Files\Microchip\xc8\v2.31\pic\sources\c99\common\abs.c estimated size: 28
-
-C:\Program Files\Microchip\xc8\v2.31\pic\sources\c99\common\strlen.c
-		_strlen        		CODE           	2F72	0000	27
-
-C:\Program Files\Microchip\xc8\v2.31\pic\sources\c99\common\strlen.c estimated size: 27
+D:\Programas\Microchip\xc8\v2.31\pic\sources\c99\common\flge.c estimated size: 138
 
 functions.c
 		_basicShot     		CODE           	182D	0000	119
@@ -5357,25 +5353,30 @@ mcc_generated_files/pin_manager.c
 
 mcc_generated_files/pin_manager.c estimated size: 970
 
+D:\Programas\Microchip\xc8\v2.31\pic\sources\c99\common\xxtofl.c
+		___xxtofl      		CODE           	1BE1	0000	173
+
+D:\Programas\Microchip\xc8\v2.31\pic\sources\c99\common\xxtofl.c estimated size: 173
+
 pseudoRandom.c
 		_taylorSine    		CODE           	13BC	0000	356
 
 pseudoRandom.c estimated size: 356
 
-C:\Program Files\Microchip\xc8\v2.31\pic\sources\c99\common\Umul8_16.c
-		__Umul8_16     		CODE           	20B6	0000	35
+D:\Programas\Microchip\xc8\v2.31\pic\sources\c99\common\nf_fputs.c
+		_fputs         		CODE           	0801	0000	44
 
-C:\Program Files\Microchip\xc8\v2.31\pic\sources\c99\common\Umul8_16.c estimated size: 35
+D:\Programas\Microchip\xc8\v2.31\pic\sources\c99\common\nf_fputs.c estimated size: 44
 
-C:\Program Files\Microchip\xc8\v2.31\pic\sources\c99\common\aodiv.c
-		___aodiv       		CODE           	082D	0000	286
+D:\Programas\Microchip\xc8\v2.31\pic\sources\c99\common\sprcadd.c
+		___fladd       		CODE           	02E0	0000	575
 
-C:\Program Files\Microchip\xc8\v2.31\pic\sources\c99\common\aodiv.c estimated size: 286
+D:\Programas\Microchip\xc8\v2.31\pic\sources\c99\common\sprcadd.c estimated size: 575
 
-C:\Program Files\Microchip\xc8\v2.31\pic\sources\c99\common\nf_fputc.c
-		_fputc         		CODE           	2683	0000	88
+D:\Programas\Microchip\xc8\v2.31\pic\sources\c99\common\strlen.c
+		_strlen        		CODE           	2F72	0000	27
 
-C:\Program Files\Microchip\xc8\v2.31\pic\sources\c99\common\nf_fputc.c estimated size: 88
+D:\Programas\Microchip\xc8\v2.31\pic\sources\c99\common\strlen.c estimated size: 27
 
 shared
 		i1_vfpfcnvrt   		CODE           	10D3	0000	244
@@ -5413,10 +5414,10 @@ mcc_generated_files/mcc.c
 
 mcc_generated_files/mcc.c estimated size: 24
 
-C:\Program Files\Microchip\xc8\v2.31\pic\sources\c99\common\sprcmul.c
-		___flmul       		CODE           	0089	0000	599
+D:\Programas\Microchip\xc8\v2.31\pic\sources\c99\common\flneg.c
+		___flneg       		CODE           	2E8D	0000	12
 
-C:\Program Files\Microchip\xc8\v2.31\pic\sources\c99\common\sprcmul.c estimated size: 599
+D:\Programas\Microchip\xc8\v2.31\pic\sources\c99\common\flneg.c estimated size: 12
 
 naves.c
 		_fixShield     		CODE           	19A9	0000	132
@@ -5427,19 +5428,6 @@ naves.c
 		_printHeart    		CODE           	0E2C	0000	468
 
 naves.c estimated size: 1266
-
-C:\Program Files\Microchip\xc8\v2.31\pic\sources\c99\common\doprnt.c
-		_vfpfcnvrt     		CODE           	06F6	0000	260
-		_pad           		CODE           	2736	0000	100
-		_dtoa          		CODE           	094B	0000	374
-		_vfprintf      		CODE           	2389	0000	49
-
-C:\Program Files\Microchip\xc8\v2.31\pic\sources\c99\common\doprnt.c estimated size: 783
-
-C:\Program Files\Microchip\xc8\v2.31\pic\sources\c99\common\sprcdiv.c
-		___fldiv       		CODE           	0AC1	0000	436
-
-C:\Program Files\Microchip\xc8\v2.31\pic\sources\c99\common\sprcdiv.c estimated size: 436
 
 menu.c
 		_cleanMenu     		CODE           	2096	0000	32
@@ -5455,11 +5443,6 @@ menu.c
 
 menu.c estimated size: 1113
 
-C:\Program Files\Microchip\xc8\v2.31\pic\sources\c99\common\nf_sprintf.c
-		_sprintf       		CODE           	211F	0000	36
-
-C:\Program Files\Microchip\xc8\v2.31\pic\sources\c99\common\nf_sprintf.c estimated size: 36
-
 lcd.c
 		_LCDClear      		CODE           	2F3E	0000	26
 		_LCDPutCmd     		CODE           	20D9	0000	35
@@ -5471,18 +5454,36 @@ lcd.c
 
 lcd.c estimated size: 245
 
-C:\Program Files\Microchip\xc8\v2.31\pic\sources\c99\common\flge.c
-		___flge        		CODE           	1A2D	0000	138
+D:\Programas\Microchip\xc8\v2.31\pic\sources\c99\common\Umul8_16.c
+		__Umul8_16     		CODE           	20B6	0000	35
 
-C:\Program Files\Microchip\xc8\v2.31\pic\sources\c99\common\flge.c estimated size: 138
+D:\Programas\Microchip\xc8\v2.31\pic\sources\c99\common\Umul8_16.c estimated size: 35
 
-C:\Program Files\Microchip\xc8\v2.31\pic\sources\c99\common\Umul16.c
-		___wmul        		CODE           	2037	0000	31
+D:\Programas\Microchip\xc8\v2.31\pic\sources\c99\common\nf_sprintf.c
+		_sprintf       		CODE           	211F	0000	36
 
-C:\Program Files\Microchip\xc8\v2.31\pic\sources\c99\common\Umul16.c estimated size: 31
+D:\Programas\Microchip\xc8\v2.31\pic\sources\c99\common\nf_sprintf.c estimated size: 36
+
+D:\Programas\Microchip\xc8\v2.31\pic\sources\c99\common\aomod.c
+		___aomod       		CODE           	11C7	0000	244
+
+D:\Programas\Microchip\xc8\v2.31\pic\sources\c99\common\aomod.c estimated size: 244
 
 main.c
 		_main          		CODE           	1C8E	0000	180
 
 main.c estimated size: 180
+
+D:\Programas\Microchip\xc8\v2.31\pic\sources\c99\common\nf_fputc.c
+		_fputc         		CODE           	2683	0000	88
+
+D:\Programas\Microchip\xc8\v2.31\pic\sources\c99\common\nf_fputc.c estimated size: 88
+
+D:\Programas\Microchip\xc8\v2.31\pic\sources\c99\common\doprnt.c
+		_vfpfcnvrt     		CODE           	06F6	0000	260
+		_pad           		CODE           	2736	0000	100
+		_dtoa          		CODE           	094B	0000	374
+		_vfprintf      		CODE           	2389	0000	49
+
+D:\Programas\Microchip\xc8\v2.31\pic\sources\c99\common\doprnt.c estimated size: 783
 
